@@ -1,0 +1,547 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0c32dd4a6a555c8408b2fd9600dc8594
+  m_SerializeEntries:
+  - m_GUID: 65e8e108deb43aa44aa4100e3e676c4a
+    m_Address: Assets/Prefabs/Scenarios/Begin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2e654ec46bdeb584aad591e314860864
+    m_Address: Assets/Prefabs/Scenarios/Boss kraid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 144cf6e1d03b3dd479d4763fc912758a
+    m_Address: Assets/Prefabs/Scenarios/Ridley.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 53bdf595997bb2048880a9bb9ab6a30b
+    m_Address: Assets/Prefabs/Scenarios/water demo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4bc3bf911969f0449b4bc5550b8f3b8e
+    m_Address: Assets/Prefabs/UI/PC/Pause menu.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 054f19a9a8fa7ba4ca667ed714387eb6
+    m_Address: Assets/Prefabs/UI/PC/Retry menu.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 496800b04d018ba4dbb23e29af3db3be
+    m_Address: Assets/Prefabs/UI/PC/Acq message.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c282521ea7bcbeb4c973cabb0437a7a5
+    m_Address: Assets/Prefabs/Enemies/Covid plus.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4d403aa1c9bc56f4fa8d368cff16e47a
+    m_Address: Assets/Prefabs/Enemies/Choot.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b8c447ab996e2c540b995650005c1b96
+    m_Address: Assets/Prefabs/Enemies/Black Pirate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2b60310e9ac7ef94c9113b53d440cb04
+    m_Address: Assets/Prefabs/Enemies/Avispa.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b9c7253d4838742448ede4915d98c0af
+    m_Address: Assets/Prefabs/Enemies/Concha fire.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b175963e0d5c3fa4b94aa70a0bf5b770
+    m_Address: Assets/Prefabs/Enemies/Concha.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3774a77a0fd811c40a2697d1f6edf2c4
+    m_Address: Assets/Prefabs/Enemies/Evir.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cf416fff9aa2b5941b81b258683cb7b7
+    m_Address: Assets/Prefabs/Enemies/Evir 2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3dee790a583c2044fb2f9dfba3f78a02
+    m_Address: Assets/Prefabs/Enemies/Gadora.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 721d7a961c888434897874222693290c
+    m_Address: Assets/Prefabs/Enemies/Covid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8559be07da2d9dd41b157983d16f3570
+    m_Address: Assets/Prefabs/Enemies/Dillo neutral.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bd93e4fcf55380e47ad00cef095a4b28
+    m_Address: Assets/Prefabs/Enemies/Fire neutral.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4e71cf428b82b3542a3d8e8b8fdd8c79
+    m_Address: Assets/Prefabs/Enemies/Fish.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d01aba124be8f3146bdc75c8d4c60ba1
+    m_Address: Assets/Prefabs/Enemies/Ly.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 687752bf7cd079940b74d288add0cdfa
+    m_Address: Assets/Prefabs/Enemies/Red Platt.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 48bcd118c4abf634981ddd18e4849ebb
+    m_Address: "Assets/Prefabs/Enemies/Pi\xF1a espina 3.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 66e1f114acc0e944d855c70fcfb85158
+    m_Address: Assets/Prefabs/Enemies/Ly Fire.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cebf9a2513f59f04f8f2d03fb26c7906
+    m_Address: Assets/Prefabs/Enemies/Red Pirate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 84e8262c5b86d414d93436688179d180
+    m_Address: Assets/Prefabs/Enemies/Plat.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c5cf38ec73aa9d84f99d85fc7f96b078
+    m_Address: Assets/Prefabs/Enemies/Moto.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3788f7b656d4c1b46a4a1621a709cdd3
+    m_Address: Assets/Prefabs/Enemies/Ice Pirate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2099a1bb44d7ca745a71cbff06263b3b
+    m_Address: Assets/Prefabs/Enemies/Krab feo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: aaa4ab30302ee3a49aef1d202900f1d3
+    m_Address: Assets/Prefabs/Enemies/Krab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2d11aef54d070ea4780a606a781abafb
+    m_Address: Assets/Prefabs/Enemies/Kraid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 59a5821b5c9dd854bb41b9e8ba9ceb0b
+    m_Address: Assets/Prefabs/Enemies/Krus krab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 17b28ebf960d7a24f9774243b0e5b5ea
+    m_Address: Assets/Prefabs/Enemies/Larva.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2543c853180e78f40b43195576a29d7a
+    m_Address: Assets/Prefabs/Enemies/Metaldillo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 80bab29f87fd82442891ab32d5efd64f
+    m_Address: "Assets/Prefabs/Enemies/Pi\xF1a espina 2.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 26bb29abac99d264aa42af6d89209981
+    m_Address: "Assets/Prefabs/Enemies/Pi\xF1a espina.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8063864b8704d3942b5e6fa5163bd940
+    m_Address: Assets/Prefabs/Enemies/Powamp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0ea68555ff5c37c4bb05399881842203
+    m_Address: Assets/Prefabs/Enemies/Ridley.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b58618152ce620e458db7f9218e626dd
+    m_Address: Assets/Prefabs/Enemies/Scizer.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2f023c17a066057468f90890cf539359
+    m_Address: Assets/Prefabs/Enemies/Turret.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 597882853596230419d5bc57a7718178
+    m_Address: Assets/Prefabs/Items/Ice Beam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: af91fbf0561f6134096732762364a41a
+    m_Address: Assets/Prefabs/Items/EnergyTank.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b51920c89997a384dbb44b377bb70389
+    m_Address: Assets/Prefabs/Items/High Jump.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0b30775c02434b14d857f301bd7ac917
+    m_Address: Assets/Prefabs/Items/Missiles.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 85def5089ee9008409e265bc68d26b9c
+    m_Address: Assets/Prefabs/Items/Screw Attack.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5f12120a33afb4e4c9e41d10d0b39b17
+    m_Address: Assets/Prefabs/Items/Gravity Suit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3fc8566b7f4f43644b2d3196ac7fe95b
+    m_Address: Assets/Prefabs/Items/Plasma.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 582d013a7c0ae5b4db15caf042153860
+    m_Address: Assets/Prefabs/Items/Gravity Jump.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d2f5eecaaa084864dab0ac834c378c2e
+    m_Address: Assets/Prefabs/Items/Spazer Beam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a2c16417a01292741b47272791dd065c
+    m_Address: Assets/Prefabs/Items/SuperMissiles.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3bf99848ea47c134bb899214ae0fe77c
+    m_Address: Assets/Prefabs/Items/Speed Booster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0372ed434a7f5a741b5c975d58a19c35
+    m_Address: Assets/Prefabs/Items/Bomb.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4421aa7d7ad064240841f6ecbdbec61b
+    m_Address: Assets/Prefabs/Items/Charge Beam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3621569d5b482e345a2b65fa99762177
+    m_Address: Assets/Prefabs/Items/Super bomb.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bccb81efe6a1c09469ab7d11ee28ede4
+    m_Address: Assets/Prefabs/Audios/EnemyDeath.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7f2e0c8c54deb6c44aebc2f957df0ce4
+    m_Address: Assets/Prefabs/Audios/SuperMissile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1526e6a0d59e4104091250b4d03d7a52
+    m_Address: Assets/Prefabs/Audios/Reject.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b60ed1da80de53742b8d9c37b597d0f0
+    m_Address: Assets/Prefabs/Audios/SMissileImpact.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 76ccfbdb4f53cdc499ee6df31c3e92b9
+    m_Address: Assets/Prefabs/Audios/Superbomb.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ba920352bef274648ab24ab5e4dbe706
+    m_Address: Assets/Prefabs/Audios/LifeAquired.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 83feef687a4d45547a6e9aa0c211a130
+    m_Address: Assets/Prefabs/Audios/AmmoAcquired.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7a220b2ce8382d44fa0dc1509b38d1bc
+    m_Address: Assets/Prefabs/Audios/Pirate blast.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3553b7564a3ab144e87e09c406a70e4a
+    m_Address: Assets/Prefabs/Audios/Missile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 07759624580da1c43b6b18596dbfbb47
+    m_Address: Assets/Prefabs/Audios/MissileImpact.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 942609e8d3a45a247b79839dae17ca0d
+    m_Address: Assets/Prefabs/Audios/NormalBeam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1bd5c655935a62c4f90661eef2a1de61
+    m_Address: Assets/Prefabs/Audios/SpazerBeam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8a3457c5508498546a0fbf856bf07b7f
+    m_Address: Assets/Prefabs/Audios/PlasmaBeam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5f3cf6df8fc17e84eaddd378d64345b3
+    m_Address: Assets/Prefabs/Audios/IceBeam.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4e15429ac66bc2345aa128da8e59dde9
+    m_Address: Assets/Prefabs/Audios/FreezedEnemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 79ea7e457b2098946a9490c650b23d59
+    m_Address: Assets/Prefabs/Audios/NormalBeamCharged.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b90b2da1b6c00fe4fa9bc4e6b2ea8801
+    m_Address: Assets/Prefabs/Audios/Charged.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 801ac4936316da24b85ca0391b1058c3
+    m_Address: Assets/Prefabs/Audios/Charging.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 49a3ad49b42ec304aa85bbe0db514ff3
+    m_Address: Assets/Prefabs/Audios/Kraid claw.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d7bc03ec1b1c4bc46bb3b2c966f0ff24
+    m_Address: Enemy ins/Bullet black pirate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8558d56c18a1fa145ac9337cad46db36
+    m_Address: Assets/Prefabs/Enemy ins/GadoraBlast.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 38a651ad823c8b149bab66549f69948d
+    m_Address: "Enemy ins/Pi\xF1a projectil 1.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 60534814d7dd78d4cb6af9721c607633
+    m_Address: Enemy ins/Big Bullet 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7a93c7dd3b551814c993742aba74f5db
+    m_Address: Enemy ins/Big Claw.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e540229e66b1244aafcb223fe45069e
+    m_Address: Assets/Prefabs/Enemy ins/Fireball.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b7a6bc19c5705ca4490f12a0bfca9ff0
+    m_Address: Enemy ins/Ice blast.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a73f6de1d576098418a9b5df77c20295
+    m_Address: "Enemy ins/Pi\xF1a projectil 2.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: da0e46845dbb9d64fb2cad818f4afcbb
+    m_Address: "Enemy ins/Pi\xF1a projectil.prefab"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c0006296d903ff747a7acf43e23f82ab
+    m_Address: Enemy ins/Turret bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b7448810fc9b70a4d89867c4d29c85e6
+    m_Address: Enemy ins/Evir projectil.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8f987a3a4d0738242a5555690b8f93dc
+    m_Address: Assets/Prefabs/Scenarios/Save 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 080148b3dafcd584cb6308d9f38db8d2
+    m_Address: Assets/Prefabs/Scenarios/Boss serris.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 21d40e19763852d4e92282795ef63d6f
+    m_Address: Assets/Prefabs/Others/Power ghost.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4192fab993b12ba48878343d399f62c1, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 61d66329477019c4bb1e746ea67557f7, type: 2}
+    - {fileID: 11400000, guid: 9045b17da9e96924ca34d98964cbb1d9, type: 2}

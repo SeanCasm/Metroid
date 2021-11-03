@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5308001063827605019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671138251056074468}
+  - component: {fileID: 5999238706005282191}
+  m_Layer: 7
+  m_Name: HurtBox
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1671138251056074468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5308001063827605019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5999238706005282191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5308001063827605019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efbd828323091b4a8f0eae89aa660d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  invMissiles: 0
+  invSuperMissiles: 0
+  invBeams: 0
+  invBombs: 0
+  invSuperBombs: 0
+  invFreeze: 0
+  invPlasma: 0
+  materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
+  deathClip: {fileID: 5122862422074326034, guid: bccb81efe6a1c09469ab7d11ee28ede4, type: 3}
+  freezedCol: {fileID: 0}
+  rigidCol: {fileID: 0}
+  collideDamage: 0
+  deadPrefab: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}

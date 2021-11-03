@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: 12b787167f766d646a7b7ef0e900527f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8431610324023101731
+    second: Hornad_0
+  - first:
+      213: 6377771591887944840
+    second: Hornad_1
+  - first:
+      213: -4413279383703658922
+    second: Hornad_2
+  - first:
+      213: 4596482149499103481
+    second: Hornad_3
+  - first:
+      213: -826103959775347478
+    second: Hornad_4
+  - first:
+      213: 8568129056324819576
+    second: Hornad_5
+  - first:
+      213: -6593447785076872817
+    second: Hornad_6
+  - first:
+      213: -3606218401253291143
+    second: Hornad_7
+  - first:
+      213: -8258353318287276584
+    second: Hornad_8
+  - first:
+      213: 3729869921122391719
+    second: Hornad_9
+  - first:
+      213: 2965558852527578925
+    second: Hornad_10
+  - first:
+      213: -2872773073817331519
+    second: Hornad_11
+  - first:
+      213: -7665596147590321474
+    second: Hornad_12
+  - first:
+      213: -6616960325718922539
+    second: Hornad_13
+  - first:
+      213: -2776549886055109477
+    second: Hornad_14
+  - first:
+      213: -3539924561993943958
+    second: Hornad_15
+  - first:
+      213: 7581800625980014240
+    second: Hornad_16
+  - first:
+      213: -8451971340945265677
+    second: Hornad_17
+  - first:
+      213: -9059848172864483072
+    second: Hornad_18
+  - first:
+      213: -3667703003820283272
+    second: Hornad_19
+  - first:
+      213: 7793743326866861695
+    second: Hornad_20
+  - first:
+      213: 794004645177772027
+    second: Hornad_21
+  - first:
+      213: -607760950776434403
+    second: Hornad_22
+  - first:
+      213: -7734036700923278709
+    second: Hornad_23
+  - first:
+      213: 8078568713596754249
+    second: Hornad_24
+  - first:
+      213: 7315500180749424885
+    second: Hornad_25
+  - first:
+      213: 3701348292900258069
+    second: Hornad_26
+  - first:
+      213: 6540742789889279371
+    second: Hornad_27
+  - first:
+      213: 8365764100591857026
+    second: Hornad_28
+  - first:
+      213: -7316618485535636092
+    second: Hornad_29
+  - first:
+      213: 3877897669738335434
+    second: Hornad_30
+  - first:
+      213: -1889291759602461502
+    second: Hornad_31
+  - first:
+      213: -8997863948473069991
+    second: Hornad_32
+  - first:
+      213: 6135051822022637877
+    second: Hornad_33
+  - first:
+      213: 7677153359735424474
+    second: Hornad_34
+  - first:
+      213: 4459834235666466508
+    second: Hornad_35
+  - first:
+      213: 8807432171012179193
+    second: Hornad_36
+  - first:
+      213: -4705088488737842112
+    second: Hornad_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hornad_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd636183517ecfa80800000000000000
+      internalID: -8431610324023101731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 192
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cfe01d875628850800000000000000
+      internalID: 6377771591887944840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 192
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ed9c778c1e0c2c0800000000000000
+      internalID: -4413279383703658922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 192
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f86159692cf9cf30800000000000000
+      internalID: 4596482149499103481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 191
+        width: 23
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecfb0253d61984f0800000000000000
+      internalID: -826103959775347478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 191
+        width: 23
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a91f71bfb18e670800000000000000
+      internalID: 8568129056324819576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 165
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89286d4c2e5f74a0800000000000000
+      internalID: -6593447785076872817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 165
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b02da787324fdc0800000000000000
+      internalID: -3606218401253291143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 165
+        width: 22
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d581d1696f646d80800000000000000
+      internalID: -8258353318287276584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 165
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a61aea7ee823c330800000000000000
+      internalID: 3729869921122391719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_10
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 165
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fdb6d6018c72920800000000000000
+      internalID: 2965558852527578925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 165
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c89fc62c1cd128d0800000000000000
+      internalID: -2872773073817331519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 126
+        width: 26
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaa647fae45e9590800000000000000
+      internalID: -7665596147590321474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 124
+        width: 32
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daaba454a5db24a0800000000000000
+      internalID: -6616960325718922539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 132
+        width: 33
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ca884e696b779d0800000000000000
+      internalID: -2776549886055109477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 132
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64bbaebd59afdec0800000000000000
+      internalID: -3539924561993943958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_16
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 132
+        width: 22
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae7f5dcf77f73960800000000000000
+      internalID: 7581800625980014240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 132
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbec2b88d094ba80800000000000000
+      internalID: -8451971340945265677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 23
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001d0718614f44280800000000000000
+      internalID: -9059848172864483072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 98
+        width: 23
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87aa8a3ec83b91dc0800000000000000
+      internalID: -3667703003820283272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 98
+        width: 22
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e68744340f82c60800000000000000
+      internalID: 7793743326866861695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 98
+        width: 22
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7c4d9940fd40b00800000000000000
+      internalID: 794004645177772027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 98
+        width: 22
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11fd94a2acc097f0800000000000000
+      internalID: -607760950776434403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 22
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a42a1e89e2ba490800000000000000
+      internalID: -7734036700923278709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 71
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949d4836177dc1070800000000000000
+      internalID: 8078568713596754249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 71
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f810ebb7a0e58560800000000000000
+      internalID: 7315500180749424885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 72
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511815c69a4dd5330800000000000000
+      internalID: 3701348292900258069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 72
+        width: 22
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b854c8eb9e265ca50800000000000000
+      internalID: 6540742789889279371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 72
+        width: 22
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d2e72302a291470800000000000000
+      internalID: 8365764100591857026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 72
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4858794a046267a90800000000000000
+      internalID: -7316618485535636092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 23
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc8118726f01d530800000000000000
+      internalID: 3877897669738335434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_31
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 36
+        width: 23
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c492df8723e7c5e0800000000000000
+      internalID: -1889291759602461502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_32
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 36
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e08fd596a212380800000000000000
+      internalID: -8997863948473069991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539b5429025142550800000000000000
+      internalID: 6135051822022637877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad50a3d2e4aba8a60800000000000000
+      internalID: 7677153359735424474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_35
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 36
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6860eab9384ed30800000000000000
+      internalID: 4459834235666466508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_36
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4478055e84a3a70800000000000000
+      internalID: 8807432171012179193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hornad_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c5008b2fa24beb0800000000000000
+      internalID: -4705088488737842112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2ad4e195d3a838741978c7bd690c4f83
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

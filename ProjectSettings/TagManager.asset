@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerDetect
+  - EnemyBeam
+  - Enemy
+  - Beam
+  - Suelo
+  - Trap
+  - Boss
+  - Bomb
+  - Room
+  - SuperBomb
+  - SuperMissile
+  - Super Missile Tank
+  - Missile
+  - VirtualCAM
+  - Gun
+  - Crumble
+  - Power
+  - Speed
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Hit
+  - Hurt
+  - Player
+  - Enemy
+  - Drop
+  - Background
+  - Gun
+  - 2nd Cam
+  - Slope
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3426895733
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 930449575
+    locked: 0
+  - name: Foreground
+    uniqueID: 2181901
+    locked: 0

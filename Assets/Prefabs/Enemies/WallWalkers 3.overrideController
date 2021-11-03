@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WallWalkers 3
+  m_Controller: {fileID: 9100000, guid: b66c986bff97f7947bd8616a4afb9af6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 29192b90bcd8b1040b3cfd3b91f5b7ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 786be3a95da9eb04fbcd2c0f83864f29, type: 2}

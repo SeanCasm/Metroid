@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a90d817a0b74c504681b5e53de3cbece, type: 3}
+  m_Name: new Beams
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 4374123270714136259, guid: ad4b7e519766e1f4995e27561315cb23, type: 3}
+  chargingLoad: {fileID: 7840715671931198795, guid: f334e4df56e0a9b4aa52b2b12cdabb91, type: 3}
+  limitedAmmo:
+  - {fileID: 4774927664216399705, guid: 0032efe936d5a37478d98eb2a70b563a, type: 3}
+  - {fileID: 3256416437917347827, guid: 237659fdefafb87408ab6ecbf6e2e1b6, type: 3}
+  - {fileID: 351056426103883310, guid: 475d84b72c17dd643bed303973b5dd77, type: 3}
+  - {fileID: 4374123270714136259, guid: 6dfefe5eba8d2194c992ca9383042d5a, type: 3}
+  beams:
+  - {fileID: 9138191430410896773, guid: 3d246caa22ec54917a285457f0736c2f, type: 3}
+  - {fileID: 6549151509881346881, guid: 1ab8d14060f5ce64499efbfabfceadd7, type: 3}
+  - {fileID: 7426397115488978364, guid: 79857cf8527dbdc4f9d099f8336508a1, type: 3}
+  - {fileID: 7732796515086214950, guid: 88d911e554439554899b5923b20af703, type: 3}
+  - {fileID: 7732796515086214950, guid: b60edd410ce7ff04681e8b4bc1183097, type: 3}
+  - {fileID: 4633565312394270705, guid: 567aaae69a2c531499ffc8d7730c4c6f, type: 3}
+  - {fileID: 2950322049571986289, guid: 3c3f290c030608f49bc63a69d1bdb418, type: 3}
+  - {fileID: 4943558043069164451, guid: a11715c3ab63eda44b235abdf5929dae, type: 3}
+  - {fileID: 8962746881424450070, guid: 2757fe4bcf9516a4ab46f8f10bbd8888, type: 3}
+  - {fileID: 972333102740077268, guid: 7bde4c6722d4a504a85a76d0ea414aff, type: 3}

@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: 16e5cab630711cf40823da5f2e549583
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7007815160896129951
+    second: Cacatacs_0
+  - first:
+      213: 5396910720375224749
+    second: Cacatacs_1
+  - first:
+      213: 7363232363228251935
+    second: Cacatacs_2
+  - first:
+      213: 3370556697003784390
+    second: Cacatacs_3
+  - first:
+      213: -6351216370165835228
+    second: Cacatacs_4
+  - first:
+      213: 1676842813894918524
+    second: Cacatacs_5
+  - first:
+      213: 8555973364326715410
+    second: Cacatacs_6
+  - first:
+      213: 783503251593611377
+    second: Cacatacs_7
+  - first:
+      213: 8653713053054435423
+    second: Cacatacs_8
+  - first:
+      213: 2583390821811381194
+    second: Cacatacs_9
+  - first:
+      213: -3724055768775551896
+    second: Cacatacs_10
+  - first:
+      213: 4979500022083162831
+    second: Cacatacs_11
+  - first:
+      213: 7597902697819478210
+    second: Cacatacs_12
+  - first:
+      213: 815464703537391590
+    second: Cacatacs_13
+  - first:
+      213: -3156499405203624573
+    second: Cacatacs_14
+  - first:
+      213: 4445106631131582923
+    second: Cacatacs_15
+  - first:
+      213: 1551630883960333369
+    second: Cacatacs_16
+  - first:
+      213: 6856332770880364355
+    second: Cacatacs_17
+  - first:
+      213: 6931690974617116530
+    second: Cacatacs_18
+  - first:
+      213: -1203201931682103199
+    second: Cacatacs_19
+  - first:
+      213: 5508428225750511605
+    second: Cacatacs_20
+  - first:
+      213: -361984756398123882
+    second: Cacatacs_21
+  - first:
+      213: 3899129538203181110
+    second: Cacatacs_22
+  - first:
+      213: -678678169700018505
+    second: Cacatacs_23
+  - first:
+      213: 6891481234915088863
+    second: Cacatacs_24
+  - first:
+      213: -8187589822652771557
+    second: Cacatacs_25
+  - first:
+      213: -8913533339837110815
+    second: Cacatacs_26
+  - first:
+      213: -1604828671492932806
+    second: Cacatacs_27
+  - first:
+      213: -7313703836769029900
+    second: Cacatacs_28
+  - first:
+      213: 9066046297836436409
+    second: Cacatacs_29
+  - first:
+      213: 2031919049832525602
+    second: Cacatacs_30
+  - first:
+      213: 3717956753611070084
+    second: Cacatacs_31
+  - first:
+      213: 404758539131139804
+    second: Cacatacs_32
+  - first:
+      213: 1097578253058867450
+    second: Cacatacs_33
+  - first:
+      213: -2106539193693103802
+    second: Cacatacs_34
+  - first:
+      213: 5379523950485805107
+    second: Cacatacs_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cacatacs_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b8fc482c2c04160800000000000000
+      internalID: 7007815160896129951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 191
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da97674c4bda5ea40800000000000000
+      internalID: 5396910720375224749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 191
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1741e082d47f2660800000000000000
+      internalID: 7363232363228251935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 191
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8793c357f96ce20800000000000000
+      internalID: 3370556697003784390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 190
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a9e9c8c52fbd7a0800000000000000
+      internalID: -6351216370165835228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 190
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c718f5aa7a7554710800000000000000
+      internalID: 1676842813894918524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210d560817cecb670800000000000000
+      internalID: 8555973364326715410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 192
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178c99f5e009fda00800000000000000
+      internalID: 783503251593611377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53571427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5088732c2a281870800000000000000
+      internalID: 8653713053054435423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 152
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3621ad34c0ad320800000000000000
+      internalID: 2583390821811381194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 152
+        width: 24
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864936a520f715cc0800000000000000
+      internalID: -3724055768775551896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 166
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2115733ecba1540800000000000000
+      internalID: 4979500022083162831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8138d8f3c217960800000000000000
+      internalID: 7597902697819478210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_13
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 119
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7273dc3dc115b00800000000000000
+      internalID: 815464703537391590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 119
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d2b1bc38cd134d0800000000000000
+      internalID: -3156499405203624573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 119
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1d4590ee030bd30800000000000000
+      internalID: 4445106631131582923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 119
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9342bfc6110888510800000000000000
+      internalID: 1551630883960333369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_17
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 119
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f91362456962f50800000000000000
+      internalID: 6856332770880364355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 120
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f95da3730523060800000000000000
+      internalID: 6931690974617116530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_19
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 120
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160460dc73e5d4fe0800000000000000
+      internalID: -1203201931682103199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53571427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff2892594ed17c40800000000000000
+      internalID: 5508428225750511605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 83
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69498cc28c8f9faf0800000000000000
+      internalID: -361984756398123882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_22
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 83
+        width: 24
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63065d118ad7c1630800000000000000
+      internalID: 3899129538203181110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 96
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6d73aecc9d496f0800000000000000
+      internalID: -678678169700018505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd95267aba573af50800000000000000
+      internalID: 6891481234915088863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 52
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b139d2e9f66df5e80800000000000000
+      internalID: -8187589822652771557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 52
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5686147a4cc4480800000000000000
+      internalID: -8913533339837110815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_27
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 53
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b3d4673d08ab9e0800000000000000
+      internalID: -1604828671492932806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_28
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 52
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f078f03c11808a90800000000000000
+      internalID: -7313703836769029900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 53
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb39cbe21111dd70800000000000000
+      internalID: 9066046297836436409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_30
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 53
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fed993c93d23c10800000000000000
+      internalID: 2031919049832525602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 52
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a904508f5d89330800000000000000
+      internalID: 3717956753611070084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53571427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6b7b03fbdfd9500800000000000000
+      internalID: 404758539131139804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_33
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 15
+        width: 24
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af084ce1b916b3f00800000000000000
+      internalID: 1097578253058867450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 15
+        width: 24
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6491c76a3c114c2e0800000000000000
+      internalID: -2106539193693103802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cacatacs_35
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 26
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3389961f788e7aa40800000000000000
+      internalID: 5379523950485805107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 959a607fa509bbc4d8b4c4c999228617
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

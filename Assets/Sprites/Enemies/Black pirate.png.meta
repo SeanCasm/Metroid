@@ -1,0 +1,2112 @@
+fileFormatVersion: 2
+guid: 02ac32b88a231044ca82eee86e4494a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5077796895730867841
+    second: Black pirate_0
+  - first:
+      213: -4604031156628521321
+    second: Black pirate_1
+  - first:
+      213: -348636844597101606
+    second: Black pirate_2
+  - first:
+      213: -3446320661868132827
+    second: Black pirate_3
+  - first:
+      213: -3404354720859070485
+    second: Black pirate_4
+  - first:
+      213: 2809232444071310480
+    second: Black pirate_5
+  - first:
+      213: 8450323838269614788
+    second: Black pirate_6
+  - first:
+      213: -21074078490737485
+    second: Black pirate_7
+  - first:
+      213: -6335488798771715862
+    second: Black pirate_8
+  - first:
+      213: 250784225622650009
+    second: Black pirate_9
+  - first:
+      213: -3581207259421529870
+    second: Black pirate_10
+  - first:
+      213: 7197050894255429126
+    second: Black pirate_11
+  - first:
+      213: 4027113508899389762
+    second: Black pirate_12
+  - first:
+      213: -2506080059187033552
+    second: Black pirate_13
+  - first:
+      213: 2642550898388673342
+    second: Black pirate_14
+  - first:
+      213: -4288500864489194677
+    second: Black pirate_15
+  - first:
+      213: 3863878922064787912
+    second: Black pirate_16
+  - first:
+      213: -2982751009777859168
+    second: Black pirate_17
+  - first:
+      213: 6150407602644115508
+    second: Black pirate_18
+  - first:
+      213: 8540245474777374188
+    second: Black pirate_19
+  - first:
+      213: 6771220866801209374
+    second: Black pirate_20
+  - first:
+      213: -1389858515092641668
+    second: Black pirate_21
+  - first:
+      213: -3015545982590367147
+    second: Black pirate_22
+  - first:
+      213: 1743289539432468562
+    second: Black pirate_23
+  - first:
+      213: 4676952148220948617
+    second: Black pirate_24
+  - first:
+      213: -5340692979803902082
+    second: Black pirate_25
+  - first:
+      213: 422230813348281928
+    second: Black pirate_26
+  - first:
+      213: 4858401180637115665
+    second: Black pirate_27
+  - first:
+      213: -592393788446764408
+    second: Black pirate_28
+  - first:
+      213: 8688504502467368242
+    second: Black pirate_29
+  - first:
+      213: 8165008778775507890
+    second: Black pirate_30
+  - first:
+      213: 5368250641306836524
+    second: Black pirate_31
+  - first:
+      213: -2448960656985182918
+    second: Black pirate_32
+  - first:
+      213: 7863342280461908777
+    second: Black pirate_33
+  - first:
+      213: -7518324996163835001
+    second: Black pirate_34
+  - first:
+      213: -1329679594552063370
+    second: Black pirate_35
+  - first:
+      213: 2782277442001521818
+    second: Black pirate_36
+  - first:
+      213: -6093843840398552099
+    second: Black pirate_37
+  - first:
+      213: -3594921897269600890
+    second: Black pirate_38
+  - first:
+      213: 2839529835384775649
+    second: Black pirate_39
+  - first:
+      213: 1037755259111651695
+    second: Black pirate_40
+  - first:
+      213: -8030817209055071581
+    second: Black pirate_41
+  - first:
+      213: -3278726353691673682
+    second: Black pirate_42
+  - first:
+      213: 8378003252755467042
+    second: Black pirate_43
+  - first:
+      213: -4633086958395491946
+    second: Black pirate_44
+  - first:
+      213: -1667306012584184857
+    second: Black pirate_45
+  - first:
+      213: -821398463368676142
+    second: Black pirate_46
+  - first:
+      213: 8198824454186782932
+    second: Black pirate_47
+  - first:
+      213: 6851804482888354029
+    second: Black pirate_48
+  - first:
+      213: -5436922561570390739
+    second: Black pirate_49
+  - first:
+      213: 2392923377494778657
+    second: Black pirate_50
+  - first:
+      213: -5166270747955881518
+    second: Black pirate_51
+  - first:
+      213: 4589760152006495401
+    second: Black pirate_52
+  - first:
+      213: -2423684782739060399
+    second: Black pirate_53
+  - first:
+      213: -3462850807996213327
+    second: Black pirate_54
+  - first:
+      213: -2080500512861528484
+    second: Black pirate_55
+  - first:
+      213: 2962157787032226208
+    second: Black pirate_56
+  - first:
+      213: -6869843364909137182
+    second: Black pirate_57
+  - first:
+      213: 5164482927053632431
+    second: Black pirate_58
+  - first:
+      213: 2852152800232951001
+    second: Black pirate_59
+  - first:
+      213: 6006687875160272836
+    second: Black pirate_60
+  - first:
+      213: -9196895870310814580
+    second: Black pirate_61
+  - first:
+      213: 4288922560472821579
+    second: Black pirate_62
+  - first:
+      213: -5000210965244962016
+    second: Black pirate_63
+  - first:
+      213: -548964287260914287
+    second: Black pirate_64
+  - first:
+      213: -1913112654989624231
+    second: Black pirate_65
+  - first:
+      213: 2619554092767192562
+    second: Black pirate_66
+  - first:
+      213: 6560966517869711015
+    second: Black pirate_67
+  - first:
+      213: 5737224041511707898
+    second: Black pirate_68
+  - first:
+      213: -3234733145444259186
+    second: Black pirate_69
+  - first:
+      213: -2873795274730825178
+    second: Black pirate_70
+  - first:
+      213: 1345579858053200756
+    second: Black pirate_71
+  - first:
+      213: 5595626941495988167
+    second: Black pirate_72
+  - first:
+      213: 1537320703177212818
+    second: Black pirate_73
+  - first:
+      213: -6409642270686852808
+    second: Black pirate_74
+  - first:
+      213: -2028740636212002723
+    second: Black pirate_75
+  - first:
+      213: 1834061122307401920
+    second: Black pirate_76
+  - first:
+      213: -6751197290030587791
+    second: Black pirate_77
+  - first:
+      213: 3415728780838557827
+    second: Black pirate_78
+  - first:
+      213: -1688669515619929790
+    second: Black pirate_79
+  - first:
+      213: -1178405717839119120
+    second: Black pirate_80
+  - first:
+      213: -5569898876553099515
+    second: Black pirate_81
+  - first:
+      213: 6333951832451689500
+    second: Black pirate_82
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Black pirate_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 389
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71616c60aa0889b0800000000000000
+      internalID: -5077796895730867841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 389
+        width: 37
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e73566e023b10c0800000000000000
+      internalID: -4604031156628521321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 389
+        width: 40
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb3d2213a4692bf0800000000000000
+      internalID: -348636844597101606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 389
+        width: 48
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c24f0e953c20d0800000000000000
+      internalID: -3446320661868132827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 389
+        width: 46
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef55cd1b6d41c0d0800000000000000
+      internalID: -3404354720859070485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 389
+        width: 41
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0947f5026066cf620800000000000000
+      internalID: 2809232444071310480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 389
+        width: 38
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca631952c4954570800000000000000
+      internalID: 8450323838269614788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 389
+        width: 44
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4479dbc3125bff0800000000000000
+      internalID: -21074078490737485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_8
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 389
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0eebe1182d318a0800000000000000
+      internalID: -6335488798771715862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 390
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c628bace6fa7300800000000000000
+      internalID: 250784225622650009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 329
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8212bb8fefc4ec0800000000000000
+      internalID: -3581207259421529870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 329
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606908e18af01e360800000000000000
+      internalID: 7197050894255429126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 329
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2410028566e23e730800000000000000
+      internalID: 4027113508899389762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_13
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 329
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a8775c67d983dd0800000000000000
+      internalID: -2506080059187033552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 329
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33a85f8a0a3ca420800000000000000
+      internalID: 2642550898388673342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_15
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 329
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b7a296f2f2c74c0800000000000000
+      internalID: -4288500864489194677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_16
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 328
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97acc68614f9530800000000000000
+      internalID: 3863878922064787912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_17
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 329
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5c0c882c32b96d0800000000000000
+      internalID: -2982751009777859168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_18
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 329
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430e67bd023aa5550800000000000000
+      internalID: 6150407602644115508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_19
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 329
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced1ebad20c058670800000000000000
+      internalID: 8540245474777374188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_20
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 328
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10166db08538fd50800000000000000
+      internalID: 6771220866801209374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 329
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e9d75b0b36bce0800000000000000
+      internalID: -1389858515092641668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 281
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a48d7e7e0a626d0800000000000000
+      internalID: -3015545982590367147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_23
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 281
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250d68a8998613810800000000000000
+      internalID: 1743289539432468562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 281
+        width: 37
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980b532033fd7e040800000000000000
+      internalID: 4676952148220948617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 281
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fad54f70c02e5b0800000000000000
+      internalID: -5340692979803902082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_26
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 281
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e39da00b01cd500800000000000000
+      internalID: 422230813348281928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 281
+        width: 40
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b63402228c6340800000000000000
+      internalID: 4858401180637115665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_28
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 309
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8829b70fcf467c7f0800000000000000
+      internalID: -592393788446764408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 278
+        width: 36
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23513f2bfc4c39870800000000000000
+      internalID: 8688504502467368242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_30
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 278
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b33cd66930ff4170800000000000000
+      internalID: 8165008778775507890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_31
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 278
+        width: 37
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e5b5c148bdf7a40800000000000000
+      internalID: 5368250641306836524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_32
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 278
+        width: 39
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dad73f14b830ed0800000000000000
+      internalID: -2448960656985182918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_33
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 278
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bfd3e6424302d60800000000000000
+      internalID: 7863342280461908777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_34
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 278
+        width: 43
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78be6b1ff3b89a790800000000000000
+      internalID: -7518324996163835001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_35
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 278
+        width: 42
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a83a524770c8de0800000000000000
+      internalID: -1329679594552063370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 225
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c4515a792ac9620800000000000000
+      internalID: 2782277442001521818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_37
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 225
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3975050515e6ba0800000000000000
+      internalID: -6093843840398552099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 225
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dd8f5c4954c1ec0800000000000000
+      internalID: -3594921897269600890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_39
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 225
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3ab3f3759086720800000000000000
+      internalID: 2839529835384775649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_40
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 225
+        width: 47
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69b42fe8e8d66e00800000000000000
+      internalID: 1037755259111651695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_41
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 225
+        width: 37
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2bd262c4ecc8090800000000000000
+      internalID: -8030817209055071581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_42
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 225
+        width: 31
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabfe74b0cf9f72d0800000000000000
+      internalID: -3278726353691673682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_43
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 225
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b8e8fd195a44470800000000000000
+      internalID: 8378003252755467042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_44
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 224
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699775f55f7f3bfb0800000000000000
+      internalID: -4633086958395491946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_45
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 225
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3fb0ce30a8cd8e0800000000000000
+      internalID: -1667306012584184857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_46
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 222
+        width: 39
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcbbd3137ec994f0800000000000000
+      internalID: -821398463368676142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_47
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 178
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0d69fd66318c170800000000000000
+      internalID: 8198824454186782932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_48
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 178
+        width: 58
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de84df0ffdf761f50800000000000000
+      internalID: 6851804482888354029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_49
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 178
+        width: 52
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d3a4e7cbb2c84b0800000000000000
+      internalID: -5436922561570390739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_50
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 178
+        width: 55
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123ed42322f553120800000000000000
+      internalID: 2392923377494778657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_51
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 178
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d919967028bd48b0800000000000000
+      internalID: -5166270747955881518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_52
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 178
+        width: 58
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac07986a8a12bf30800000000000000
+      internalID: 4589760152006495401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_53
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 178
+        width: 50
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159815508875d5ed0800000000000000
+      internalID: -2423684782739060399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_54
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 178
+        width: 55
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7163f798b71ffc0800000000000000
+      internalID: -3462850807996213327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_55
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 178
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eded77ec39023e0800000000000000
+      internalID: -2080500512861528484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_56
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 178
+        width: 58
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a986b820d2bb1920800000000000000
+      internalID: 2962157787032226208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_57
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 178
+        width: 48
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2440c8bd969a0a0800000000000000
+      internalID: -6869843364909137182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_58
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 178
+        width: 37
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3f99b0cddeba740800000000000000
+      internalID: 5164482927053632431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_59
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 86
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc45074cd1e49720800000000000000
+      internalID: 2852152800232951001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_60
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 86
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfe2933cca0c5350800000000000000
+      internalID: 6006687875160272836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_61
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 86
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cedd5eeef0e5080800000000000000
+      internalID: -9196895870310814580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_62
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 86
+        width: 45
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f24265850558b30800000000000000
+      internalID: 4288922560472821579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_63
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 86
+        width: 37
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b9f8e8e9eab9ab0800000000000000
+      internalID: -5000210965244962016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_64
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 86
+        width: 36
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d0077a3efa168f0800000000000000
+      internalID: -548964287260914287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_65
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 86
+        width: 35
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cf9082d224375e0800000000000000
+      internalID: -1913112654989624231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_66
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 86
+        width: 35
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f52f4181968a5420800000000000000
+      internalID: 2619554092767192562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_67
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 86
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae0bd8594c3d0b50800000000000000
+      internalID: 6560966517869711015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_68
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 86
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4e22f5ed6be9f40800000000000000
+      internalID: 5737224041511707898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_69
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 86
+        width: 38
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8aec92b75beb13d0800000000000000
+      internalID: -3234733145444259186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_70
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 86
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a19747c6a3e18d0800000000000000
+      internalID: -2873795274730825178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_71
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 86
+        width: 49
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b7e2070c57ca210800000000000000
+      internalID: 1345579858053200756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_72
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 86
+        width: 53
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf497f6e09a7ad40800000000000000
+      internalID: 5595626941495988167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_73
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 86
+        width: 52
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2934bb2d809a55510800000000000000
+      internalID: 1537320703177212818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_74
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 11
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839c16680506c07a0800000000000000
+      internalID: -6409642270686852808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_75
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 11
+        width: 23
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d500f2dd32778d3e0800000000000000
+      internalID: -2028740636212002723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_76
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 11
+        width: 23
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8ac7b9fd4e37910800000000000000
+      internalID: 1834061122307401920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_77
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 11
+        width: 23
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170a52785ddee42a0800000000000000
+      internalID: -6751197290030587791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_78
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 11
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388d5f69a3b176f20800000000000000
+      internalID: 3415728780838557827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_79
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 11
+        width: 23
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2417172c504a098e0800000000000000
+      internalID: -1688669515619929790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_80
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 11
+        width: 23
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcf8ea3e3675afe0800000000000000
+      internalID: -1178405717839119120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_81
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 11
+        width: 23
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507843c7b7eb3b2b0800000000000000
+      internalID: -5569898876553099515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black pirate_82
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 10
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ca7b502a7b6e750800000000000000
+      internalID: 6333951832451689500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 360ec547c09155d4096a611bc4e3c494
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

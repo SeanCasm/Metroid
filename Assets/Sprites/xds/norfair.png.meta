@@ -1,0 +1,3051 @@
+fileFormatVersion: 2
+guid: 0225bd693d2656e429f757891d310d3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1620770305646759829
+    second: norfair_0
+  - first:
+      213: 7793782120161381616
+    second: norfair_1
+  - first:
+      213: -5819620454234600826
+    second: norfair_2
+  - first:
+      213: -3699895108156561244
+    second: norfair_3
+  - first:
+      213: -7284081360042414422
+    second: norfair_4
+  - first:
+      213: -6584803714191290598
+    second: norfair_5
+  - first:
+      213: 2837353364454330895
+    second: norfair_6
+  - first:
+      213: 7212426759941846619
+    second: norfair_7
+  - first:
+      213: 3083738759778093724
+    second: norfair_8
+  - first:
+      213: 699074296650217597
+    second: norfair_9
+  - first:
+      213: -3078501435260351299
+    second: norfair_10
+  - first:
+      213: -595110563680535660
+    second: norfair_11
+  - first:
+      213: 8441233109190281451
+    second: norfair_12
+  - first:
+      213: 179782354525695652
+    second: norfair_13
+  - first:
+      213: 5298399994000521987
+    second: norfair_14
+  - first:
+      213: -2411919002960327872
+    second: norfair_15
+  - first:
+      213: -987143877550380871
+    second: norfair_16
+  - first:
+      213: -5314136032058394474
+    second: norfair_17
+  - first:
+      213: 542933904835396913
+    second: norfair_18
+  - first:
+      213: 4319924967111867936
+    second: norfair_19
+  - first:
+      213: -2119165514809134375
+    second: norfair_20
+  - first:
+      213: -4751851640370066992
+    second: norfair_21
+  - first:
+      213: 4430061936264206574
+    second: norfair_22
+  - first:
+      213: -3901467783700765969
+    second: norfair_23
+  - first:
+      213: -8238964839024639452
+    second: norfair_24
+  - first:
+      213: 3523048364391189211
+    second: norfair_25
+  - first:
+      213: -710353650403266201
+    second: norfair_26
+  - first:
+      213: 1604893035889780001
+    second: norfair_27
+  - first:
+      213: 8831446973461527281
+    second: norfair_28
+  - first:
+      213: 1725856022949972129
+    second: norfair_29
+  - first:
+      213: 4490935607410013063
+    second: norfair_30
+  - first:
+      213: -4476825361053419288
+    second: norfair_31
+  - first:
+      213: 158467015350767116
+    second: norfair_32
+  - first:
+      213: -6988648486471088021
+    second: norfair_33
+  - first:
+      213: 3527041253286776002
+    second: norfair_34
+  - first:
+      213: 2160294379607192742
+    second: norfair_35
+  - first:
+      213: -8824457582149608622
+    second: norfair_36
+  - first:
+      213: 4094071552383431500
+    second: norfair_37
+  - first:
+      213: 8261325011596726193
+    second: norfair_38
+  - first:
+      213: 3178230337809939869
+    second: norfair_39
+  - first:
+      213: 2456674258013848545
+    second: norfair_40
+  - first:
+      213: 1884397594629111646
+    second: norfair_41
+  - first:
+      213: 5442475994005803103
+    second: norfair_42
+  - first:
+      213: 5918487605090886985
+    second: norfair_43
+  - first:
+      213: 1808139001773161350
+    second: norfair_44
+  - first:
+      213: 5104078698549516866
+    second: norfair_45
+  - first:
+      213: -5208348971583774172
+    second: norfair_46
+  - first:
+      213: 8775620283337229231
+    second: norfair_47
+  - first:
+      213: 719565945057474958
+    second: norfair_48
+  - first:
+      213: 8115657390617164555
+    second: norfair_49
+  - first:
+      213: 5315843350280541310
+    second: norfair_50
+  - first:
+      213: 3545201560908274726
+    second: norfair_51
+  - first:
+      213: 3071914913439970609
+    second: norfair_52
+  - first:
+      213: -2874254082010411937
+    second: norfair_53
+  - first:
+      213: 3881705708381601504
+    second: norfair_54
+  - first:
+      213: -1324322210502537029
+    second: norfair_55
+  - first:
+      213: 6354999858095038447
+    second: norfair_56
+  - first:
+      213: 8663515611263142606
+    second: norfair_57
+  - first:
+      213: -3213757995637228192
+    second: norfair_58
+  - first:
+      213: -5269005539248025518
+    second: norfair_59
+  - first:
+      213: -2786138684782739997
+    second: norfair_60
+  - first:
+      213: 7297656736647334210
+    second: norfair_61
+  - first:
+      213: 5554842863192584395
+    second: norfair_62
+  - first:
+      213: 3922030617637444416
+    second: norfair_63
+  - first:
+      213: -1987532982528563927
+    second: norfair_64
+  - first:
+      213: -7131320943462307820
+    second: norfair_65
+  - first:
+      213: -7448253469224784084
+    second: norfair_66
+  - first:
+      213: 2476108832732720125
+    second: norfair_67
+  - first:
+      213: -366531179112995914
+    second: norfair_68
+  - first:
+      213: 3847304632370573867
+    second: norfair_69
+  - first:
+      213: -1637283433614956502
+    second: norfair_70
+  - first:
+      213: -6720436113292066800
+    second: norfair_71
+  - first:
+      213: 729846764965405417
+    second: norfair_72
+  - first:
+      213: 2421626720035099967
+    second: norfair_73
+  - first:
+      213: -8636647551123691088
+    second: norfair_74
+  - first:
+      213: 3186285006180241184
+    second: norfair_75
+  - first:
+      213: 4950310534527586290
+    second: norfair_76
+  - first:
+      213: 280961358187019701
+    second: norfair_77
+  - first:
+      213: 3342410104556820001
+    second: norfair_78
+  - first:
+      213: -7168456532772874162
+    second: norfair_79
+  - first:
+      213: 1217372362697737958
+    second: norfair_80
+  - first:
+      213: -7624566365797060829
+    second: norfair_81
+  - first:
+      213: -9144620638327558904
+    second: norfair_82
+  - first:
+      213: 6538185839431477945
+    second: norfair_83
+  - first:
+      213: 3203012691479080567
+    second: norfair_84
+  - first:
+      213: -6992076985322324847
+    second: norfair_85
+  - first:
+      213: -5240157482859341629
+    second: norfair_86
+  - first:
+      213: -7667709206520948869
+    second: norfair_87
+  - first:
+      213: 3088917954320496666
+    second: norfair_88
+  - first:
+      213: -7739170904728782968
+    second: norfair_89
+  - first:
+      213: 6943399481651433526
+    second: norfair_90
+  - first:
+      213: 9072847875309685405
+    second: norfair_91
+  - first:
+      213: 1764506324772598046
+    second: norfair_92
+  - first:
+      213: -5573713646825484822
+    second: norfair_93
+  - first:
+      213: -903200285443556218
+    second: norfair_94
+  - first:
+      213: -7713640164186420273
+    second: norfair_95
+  - first:
+      213: -5365378122324975379
+    second: norfair_96
+  - first:
+      213: -6336565025591603532
+    second: norfair_97
+  - first:
+      213: -740548559316157594
+    second: norfair_98
+  - first:
+      213: -7448320801799963861
+    second: norfair_99
+  - first:
+      213: -4133745434578427953
+    second: norfair_100
+  - first:
+      213: -7740308432521596638
+    second: norfair_101
+  - first:
+      213: 6637257550090413289
+    second: norfair_102
+  - first:
+      213: 8741510226389416798
+    second: norfair_103
+  - first:
+      213: -8800079706450006275
+    second: norfair_104
+  - first:
+      213: 8255568198993083438
+    second: norfair_105
+  - first:
+      213: -7636246569136291183
+    second: norfair_106
+  - first:
+      213: -6626790196445198989
+    second: norfair_107
+  - first:
+      213: -2462100001681262303
+    second: norfair_108
+  - first:
+      213: 6674195186949778222
+    second: norfair_109
+  - first:
+      213: 1532158656436439893
+    second: norfair_110
+  - first:
+      213: 586662084139282836
+    second: norfair_111
+  - first:
+      213: -4936924628394671185
+    second: norfair_112
+  - first:
+      213: 5834504246655757376
+    second: norfair_113
+  - first:
+      213: -4559708544030750957
+    second: norfair_114
+  - first:
+      213: 6024747687301055344
+    second: norfair_115
+  - first:
+      213: 1561455275994823830
+    second: norfair_116
+  - first:
+      213: 9156630478957337887
+    second: norfair_117
+  - first:
+      213: -8155985580345556162
+    second: norfair_118
+  - first:
+      213: -8915562078260563064
+    second: norfair_119
+  - first:
+      213: 5619941391648082839
+    second: norfair_120
+  - first:
+      213: -2410426099399643391
+    second: norfair_121
+  - first:
+      213: 7492375041561211442
+    second: norfair_122
+  - first:
+      213: -8981503238537570806
+    second: norfair_123
+  - first:
+      213: -5578506500235514783
+    second: norfair_124
+  - first:
+      213: 7502022704194387088
+    second: norfair_125
+  - first:
+      213: -4619778271593004185
+    second: norfair_126
+  - first:
+      213: 5533226352328646902
+    second: norfair_127
+  - first:
+      213: -4289066478009217603
+    second: norfair_128
+  - first:
+      213: -7127568450417562048
+    second: norfair_129
+  - first:
+      213: 8000991678248666204
+    second: norfair_130
+  - first:
+      213: -2800216009923743740
+    second: norfair_131
+  - first:
+      213: 2700324034556875527
+    second: norfair_132
+  - first:
+      213: -1900671568944839533
+    second: norfair_133
+  - first:
+      213: 4499378408094082516
+    second: norfair_134
+  - first:
+      213: -516592445600109961
+    second: norfair_135
+  - first:
+      213: 138890422378195032
+    second: norfair_136
+  - first:
+      213: 8984660721681389223
+    second: norfair_137
+  - first:
+      213: -8644068667041962470
+    second: norfair_138
+  - first:
+      213: 7699609820450606588
+    second: norfair_139
+  - first:
+      213: 4015922854351018357
+    second: norfair_140
+  - first:
+      213: -4338141124718886228
+    second: norfair_141
+  - first:
+      213: -5181655903967088470
+    second: norfair_142
+  - first:
+      213: -2228984384174672220
+    second: norfair_143
+  - first:
+      213: 6403997829652151390
+    second: norfair_144
+  - first:
+      213: 6433667760304089271
+    second: norfair_145
+  - first:
+      213: 1556009984336731461
+    second: norfair_146
+  - first:
+      213: -7495875661200571630
+    second: norfair_147
+  - first:
+      213: -6090713118242929224
+    second: norfair_148
+  - first:
+      213: -7818803883806648111
+    second: norfair_149
+  - first:
+      213: 158661469633842840
+    second: norfair_150
+  - first:
+      213: 2104866216967324734
+    second: norfair_151
+  - first:
+      213: -3462788981853052565
+    second: norfair_152
+  - first:
+      213: 9180888343312131427
+    second: norfair_153
+  - first:
+      213: 4620274123966887632
+    second: norfair_154
+  - first:
+      213: 7768355537433214306
+    second: norfair_155
+  - first:
+      213: -3092013058182690148
+    second: norfair_156
+  - first:
+      213: -1170620653571761982
+    second: norfair_157
+  - first:
+      213: 6019778609189314087
+    second: norfair_158
+  - first:
+      213: 2005514623638534592
+    second: norfair_159
+  - first:
+      213: 3132486366629297619
+    second: norfair_160
+  - first:
+      213: 8766792456947659561
+    second: norfair_161
+  - first:
+      213: 100122748119364698
+    second: norfair_162
+  - first:
+      213: 1527022473312367662
+    second: norfair_163
+  - first:
+      213: 1979506483419133179
+    second: norfair_164
+  - first:
+      213: -5069632658853125870
+    second: norfair_165
+  - first:
+      213: -7487467343362465514
+    second: norfair_166
+  - first:
+      213: 6866201189261989423
+    second: norfair_167
+  - first:
+      213: -5844270518033344921
+    second: norfair_168
+  - first:
+      213: -806703825569890955
+    second: norfair_169
+  - first:
+      213: 6375268039870388824
+    second: norfair_170
+  - first:
+      213: 1150277977370370148
+    second: norfair_171
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 7
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 7
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 13
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: norfair_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b607c658efdd189e0800000000000000
+      internalID: -1620770305646759829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc82098b83192c60800000000000000
+      internalID: 7793782120161381616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68acfb1d70e8c3fa0800000000000000
+      internalID: -5819620454234600826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a86f14800557acc0800000000000000
+      internalID: -3699895108156561244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaea0a3889eb9ea90800000000000000
+      internalID: -7284081360042414422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f84f3e8e31e94a0800000000000000
+      internalID: -6584803714191290598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f025f8e1add406720800000000000000
+      internalID: 2837353364454330895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56fad2dcefa71460800000000000000
+      internalID: 7212426759941846619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a4dac4014abca20800000000000000
+      internalID: 3083738759778093724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7831737e5c93b900800000000000000
+      internalID: 699074296650217597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcc6c65147f645d0800000000000000
+      internalID: -3078501435260351299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b3db9681ebdb7f0800000000000000
+      internalID: -595110563680535660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be88d8b0ac8452570800000000000000
+      internalID: 8441233109190281451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 106
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae23625917be7200800000000000000
+      internalID: 179782354525695652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b3550f8b2b78940800000000000000
+      internalID: 5298399994000521987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b09891274278ed0800000000000000
+      internalID: -2411919002960327872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_16
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8686c9fd5fc42f0800000000000000
+      internalID: -987143877550380871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_17
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6983e013f656046b0800000000000000
+      internalID: -5314136032058394474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_18
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135ca368283e88700800000000000000
+      internalID: 542933904835396913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_19
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e3b01aed473fb30800000000000000
+      internalID: 4319924967111867936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_20
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d23b8d21363792e0800000000000000
+      internalID: -2119165514809134375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_21
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d982660c180e0eb0800000000000000
+      internalID: -4751851640370066992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8d10c0cddba7d30800000000000000
+      internalID: 4430061936264206574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_23
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2a2e9b8b33bd9c0800000000000000
+      internalID: -3901467783700765969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c00d712159ad80800000000000000
+      internalID: -8238964839024639452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdace0e42d164e030800000000000000
+      internalID: 3523048364391189211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761bfca5e115426f0800000000000000
+      internalID: -710353650403266201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12565ba86b9b54610800000000000000
+      internalID: 1604893035889780001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa7fd93b3a9f8a70800000000000000
+      internalID: 8831446973461527281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8c66da8e873f710800000000000000
+      internalID: 1725856022949972129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783b3d41422035e30800000000000000
+      internalID: 4490935607410013063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e873f8ad0f1fd1c0800000000000000
+      internalID: -4476825361053419288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e499e29ecf23200800000000000000
+      internalID: 158467015350767116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_33
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68c1df9a35530f90800000000000000
+      internalID: -6988648486471088021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_37
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43b8d4b26011d830800000000000000
+      internalID: 4094071552383431500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_38
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfc542e35f16a270800000000000000
+      internalID: 8261325011596726193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_39
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9df78b37a75b1c20800000000000000
+      internalID: 3178230337809939869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_40
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e303cdb83cd71220800000000000000
+      internalID: 2456674258013848545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_41
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ff77bd0a9b62a10800000000000000
+      internalID: 1884397594629111646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f509e41c41f878b40800000000000000
+      internalID: 5442475994005803103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_43
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945aefc8e11b22250800000000000000
+      internalID: 5918487605090886985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bf73997dcc71910800000000000000
+      internalID: 1808139001773161350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a9ea4a88455d640800000000000000
+      internalID: 5104078698549516866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4226a72943a38b7b0800000000000000
+      internalID: -5208348971583774172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa34708072449c970800000000000000
+      internalID: 8775620283337229231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e897e932a696cf900800000000000000
+      internalID: 719565945057474958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b728ee56b90a070800000000000000
+      internalID: 8115657390617164555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74181fcc5ba5c940800000000000000
+      internalID: 5315843350280541310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_59
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2505e81e06bb0e6b0800000000000000
+      internalID: -5269005539248025518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_61
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249c998232c764560800000000000000
+      internalID: 7297656736647334210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_63
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b5c72211add6630800000000000000
+      internalID: 3922030617637444416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_64
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9252305684dda64e0800000000000000
+      internalID: -1987532982528563927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_65
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41820a1a265780d90800000000000000
+      internalID: -7131320943462307820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f29c9aeec72a890800000000000000
+      internalID: -7448253469224784084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_67
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbad384dd7ec5220800000000000000
+      internalID: 2476108832732720125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b36dd5a5d1d9eaf0800000000000000
+      internalID: -366531179112995914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_69
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22b923ed2f546530800000000000000
+      internalID: 3847304632370573867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28afbe44633749e0800000000000000
+      internalID: -1637283433614956502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_71
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010058b16f63cb2a0800000000000000
+      internalID: -6720436113292066800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e22b3e04cfe02a00800000000000000
+      internalID: 729846764965405417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_81
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f66487949103690800000000000000
+      internalID: -7624566365797060829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_83
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba6dc2516d4cba50800000000000000
+      internalID: 6538185839431477945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_84
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eada69213637c20800000000000000
+      internalID: 3203012691479080567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_85
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cbda7070727fe90800000000000000
+      internalID: -6992076985322324847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_86
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8501b68883747b0800000000000000
+      internalID: -5240157482859341629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_87
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7793581a13d69590800000000000000
+      internalID: -7667709206520948869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18799f738a0eda20800000000000000
+      internalID: 3088917954320496666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_89
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8873a97e011f89490800000000000000
+      internalID: -7739170904728782968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63017757a09eb5060800000000000000
+      internalID: 6943399481651433526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_91
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9acdf4921b39ed70800000000000000
+      internalID: 9072847875309685405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1130045729cc7810800000000000000
+      internalID: 1764506324772598046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_93
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed483118f036a2b0800000000000000
+      internalID: -5573713646825484822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cfa1130203773f0800000000000000
+      internalID: -903200285443556218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_103
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bb2648c35105970800000000000000
+      internalID: 8741510226389416798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_104
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe6cedb126dfd580800000000000000
+      internalID: -8800079706450006275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_105
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c7eff798ba19270800000000000000
+      internalID: 8255568198993083438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_106
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1920655343a960690800000000000000
+      internalID: -7636246569136291183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_107
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375c7d33d69e804a0800000000000000
+      internalID: -6626790196445198989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_108
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129bc4ed71dd4ddd0800000000000000
+      internalID: -2462100001681262303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_109
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b63cf39218f9c50800000000000000
+      internalID: 6674195186949778222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b0f682e22534510800000000000000
+      internalID: 1532158656436439893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_111
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491ff48ae0e342800800000000000000
+      internalID: 586662084139282836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa388a915358c7bb0800000000000000
+      internalID: -4936924628394671185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 77
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cac6623b258f050800000000000000
+      internalID: 5834504246655757376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_122
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232324c67634af760800000000000000
+      internalID: 7492375041561211442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_123
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0692fdf36a4b5380800000000000000
+      internalID: -8981503238537570806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_124
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c214ce4e92592b0800000000000000
+      internalID: -5578506500235514783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_125
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cfb6ce6e98c1860800000000000000
+      internalID: 7502022704194387088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_126
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76381ac732043efb0800000000000000
+      internalID: -4619778271593004185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_127
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f021681d08f9cc40800000000000000
+      internalID: 5533226352328646902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd893043cc2a74c0800000000000000
+      internalID: -4289066478009217603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_129
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e6490024ac51d90800000000000000
+      internalID: -7127568450417562048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c544ed05a8b390f60800000000000000
+      internalID: 8000991678248666204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_131
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400322a0062a329d0800000000000000
+      internalID: -2800216009923743740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_137
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a65937d25defac70800000000000000
+      internalID: 8984660721681389223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_138
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1621e678591a0880800000000000000
+      internalID: -8644068667041962470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_139
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd411166528ada60800000000000000
+      internalID: 7699609820450606588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_140
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57917fa0f8c6bb730800000000000000
+      internalID: 4015922854351018357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_141
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca20e9ba1a3dbc3c0800000000000000
+      internalID: -4338141124718886228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_142
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa07cbfa86f0718b0800000000000000
+      internalID: -5181655903967088470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_151
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34ce0a1cacf53d10800000000000000
+      internalID: 2104866216967324734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_152
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61238484c3b1ffc0800000000000000
+      internalID: -3462788981853052565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_153
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365e4a94e41196f70800000000000000
+      internalID: 9180888343312131427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_154
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6b9f326d28e1040800000000000000
+      internalID: 4620274123966887632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_155
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d35a9e33ebecb60800000000000000
+      internalID: 7768355537433214306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_157
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89e11c7be11cfe0800000000000000
+      internalID: -1170620653571761982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_159
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c973ddace405db10800000000000000
+      internalID: 2005514623638534592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_160
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd71baf0c3d87b20800000000000000
+      internalID: 3132486366629297619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_161
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92370f78a47e9a970800000000000000
+      internalID: 8766792456947659561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_162
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a543793eb15b36100800000000000000
+      internalID: 100122748119364698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_163
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2472d559d2113510800000000000000
+      internalID: 1527022473312367662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_165
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2112753f4fb05a9b0800000000000000
+      internalID: -5069632658853125870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_167
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26535a5a95a94f50800000000000000
+      internalID: 6866201189261989423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_169
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d35fd05230ec4f0800000000000000
+      internalID: -806703825569890955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: norfair_171
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460ad1ad9bb96ff00800000000000000
+      internalID: 1150277977370370148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4c56723c5ae82e4ea50f272239dd5fc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

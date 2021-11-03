@@ -1,0 +1,987 @@
+fileFormatVersion: 2
+guid: 6f472b52e1398314d9c4c1ec9f19f8b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1388856922576863098
+    second: Moto_0
+  - first:
+      213: 8155444238537676111
+    second: Moto_1
+  - first:
+      213: -7837453240405076311
+    second: Moto_2
+  - first:
+      213: -2113048674528392864
+    second: Moto_3
+  - first:
+      213: -7860636323130802301
+    second: Moto_4
+  - first:
+      213: -5017245567621902587
+    second: Moto_5
+  - first:
+      213: 8765899726312235848
+    second: Moto_6
+  - first:
+      213: 2570874734953896195
+    second: Moto_7
+  - first:
+      213: -4877704236891572117
+    second: Moto_8
+  - first:
+      213: 2522593044396681052
+    second: Moto_9
+  - first:
+      213: -4354048850205407253
+    second: Moto_10
+  - first:
+      213: 8038853165274041019
+    second: Moto_11
+  - first:
+      213: -5749006850987067374
+    second: Moto_12
+  - first:
+      213: 4398551242636173466
+    second: Moto_13
+  - first:
+      213: -214018639080276170
+    second: Moto_14
+  - first:
+      213: -4203358056237630833
+    second: Moto_15
+  - first:
+      213: 2932790594312454958
+    second: Moto_16
+  - first:
+      213: 3053934104571480226
+    second: Moto_17
+  - first:
+      213: -5546742568755810223
+    second: Moto_18
+  - first:
+      213: 100833788387435623
+    second: Moto_19
+  - first:
+      213: -6183784912032591980
+    second: Moto_20
+  - first:
+      213: 8549732135834388525
+    second: Moto_21
+  - first:
+      213: -5881212660028296052
+    second: Moto_22
+  - first:
+      213: -1471246442378298070
+    second: Moto_23
+  - first:
+      213: 1329042722469992548
+    second: Moto_24
+  - first:
+      213: 6784675002514687568
+    second: Moto_25
+  - first:
+      213: 1226305955693650046
+    second: Moto_26
+  - first:
+      213: -7757634403555227511
+    second: Moto_27
+  - first:
+      213: 8340431511720943038
+    second: Moto_28
+  - first:
+      213: 2445489505920264368
+    second: Moto_29
+  - first:
+      213: -1627892496719174056
+    second: Moto_30
+  - first:
+      213: -463914967384562846
+    second: Moto_31
+  - first:
+      213: 5599024096567371836
+    second: Moto_32
+  - first:
+      213: -8773242623624432835
+    second: Moto_33
+  - first:
+      213: 174090062195518906
+    second: Moto_34
+  - first:
+      213: -1742638205236986885
+    second: Moto_35
+  - first:
+      213: -989328562517768635
+    second: Moto_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Moto_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 175
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f390a3306364310800000000000000
+      internalID: 1388856922576863098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 175
+        width: 30
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f455b875355fd2170800000000000000
+      internalID: 8155444238537676111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 175
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6dbed6dc5cb3390800000000000000
+      internalID: -7837453240405076311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 175
+        width: 30
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06900a90d61fca2e0800000000000000
+      internalID: -2113048674528392864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 36
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f714b59e869e290800000000000000
+      internalID: -7860636323130802301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 144
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f4efe1db92f5ab0800000000000000
+      internalID: -5017245567621902587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 144
+        width: 30
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843e88b7b5bb6a970800000000000000
+      internalID: 8765899726312235848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_7
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 142
+        width: 34
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30914fa43f49da320800000000000000
+      internalID: 2570874734953896195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 144
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68f8a8f6d9ee4cb0800000000000000
+      internalID: -4877704236891572117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 144
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57a224320d020320800000000000000
+      internalID: 2522593044396681052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 113
+        width: 24
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be70fc4b3af4393c0800000000000000
+      internalID: -4354048850205407253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_11
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 113
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba0fa5bc5ebf8f60800000000000000
+      internalID: 8038853165274041019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 82
+        width: 35
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218f0a38abc6730b0800000000000000
+      internalID: -5749006850987067374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 111
+        width: 30
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90aea7fc0bca0d30800000000000000
+      internalID: 4398551242636173466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 82
+        width: 25
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fbe428e27a70df0800000000000000
+      internalID: -214018639080276170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 82
+        width: 24
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8afd224e1caaa5c0800000000000000
+      internalID: -4203358056237630833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 82
+        width: 33
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23c996c18d53b820800000000000000
+      internalID: 2932790594312454958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 81
+        width: 29
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a80f6e33e0c16a20800000000000000
+      internalID: 3053934104571480226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_18
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 80
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150b5c885030603b0800000000000000
+      internalID: -5546742568755810223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 79
+        width: 34
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764a03adbcb366100800000000000000
+      internalID: 100833788387435623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_20
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 81
+        width: 35
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f80e6b268ce2aa0800000000000000
+      internalID: -6183784912032591980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 50
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2886214410c6a670800000000000000
+      internalID: 8549732135834388525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 50
+        width: 29
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84bb76ee3cb16ea0800000000000000
+      internalID: -5881212660028296052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 49
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dfbf8d725159be0800000000000000
+      internalID: -1471246442378298070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_24
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 48
+        width: 34
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46854248055b17210800000000000000
+      internalID: 1329042722469992548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 50
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0564c51d7f1082e50800000000000000
+      internalID: 6784675002514687568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_26
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 50
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e01bf4c6b40110800000000000000
+      internalID: 1226305955693650046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_27
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 50
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988cdb69c98575490800000000000000
+      internalID: -7757634403555227511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_28
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 50
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdd999354a2fb370800000000000000
+      internalID: 8340431511720943038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 15
+        width: 29
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8a256bfbf10f120800000000000000
+      internalID: 2445489505920264368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_30
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 13
+        width: 36
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a78036609869e0800000000000000
+      internalID: -1627892496719174056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 13
+        width: 32
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2636e0b8bc7df89f0800000000000000
+      internalID: -463914967384562846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_32
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 13
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3820cc30cab3bd40800000000000000
+      internalID: 5599024096567371836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_33
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 12
+        width: 34
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33bc82015e2f3680800000000000000
+      internalID: -8773242623624432835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 13
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abde61c3dfd7a6200800000000000000
+      internalID: 174090062195518906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moto_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 13
+        width: 31
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb33d409c7e0d7e0800000000000000
+      internalID: -1742638205236986885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: efe4b11dcc366704591cbede854c4fba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

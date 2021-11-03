@@ -1,0 +1,912 @@
+fileFormatVersion: 2
+guid: 9ce6d137f4166574abe0e24fd023bef0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8183047373111569927
+    second: Towards_0
+  - first:
+      213: 8859251160306084607
+    second: Towards_1
+  - first:
+      213: 7960837521797860148
+    second: Towards_2
+  - first:
+      213: -1610985397125883843
+    second: Towards_3
+  - first:
+      213: 9079741425232094108
+    second: Towards_4
+  - first:
+      213: -7226684198594996501
+    second: Towards_5
+  - first:
+      213: 8528322031812462975
+    second: Towards_6
+  - first:
+      213: 4258306833664281502
+    second: Towards_7
+  - first:
+      213: 4978315771776946534
+    second: Towards_8
+  - first:
+      213: -9162188542775935970
+    second: Towards_9
+  - first:
+      213: 5678082416290466648
+    second: Towards_10
+  - first:
+      213: 8147849055263836187
+    second: Towards_11
+  - first:
+      213: 272064102095267900
+    second: Towards_12
+  - first:
+      213: -8226471751457604172
+    second: Towards_13
+  - first:
+      213: -5126101137965816634
+    second: Towards_14
+  - first:
+      213: 2625871164951166499
+    second: Towards_15
+  - first:
+      213: 2441045142980127142
+    second: Towards_16
+  - first:
+      213: -5420570539162531065
+    second: Towards_17
+  - first:
+      213: -2563725598113327653
+    second: Towards_18
+  - first:
+      213: -7341436033437832949
+    second: Towards_19
+  - first:
+      213: -3212274514062158337
+    second: Towards_20
+  - first:
+      213: -1770987022668326390
+    second: Towards_21
+  - first:
+      213: 2521797426991089306
+    second: Towards_22
+  - first:
+      213: 8852199653902202315
+    second: Towards_23
+  - first:
+      213: 2732773811873843513
+    second: Towards_24
+  - first:
+      213: -2738031055171277594
+    second: Towards_25
+  - first:
+      213: 7241584328320732177
+    second: Towards_26
+  - first:
+      213: -4716428441533913743
+    second: Towards_27
+  - first:
+      213: -3051635696284291390
+    second: Towards_28
+  - first:
+      213: 8829055744084617753
+    second: Towards_29
+  - first:
+      213: -5467295101514012888
+    second: Towards_30
+  - first:
+      213: -2056600799208427243
+    second: Towards_31
+  - first:
+      213: 7536953322315624001
+    second: Towards_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Towards_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e228eea36009170800000000000000
+      internalID: 8183047373111569927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffae202fdf162fa70800000000000000
+      internalID: 8859251160306084607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bcc593c839a7e60800000000000000
+      internalID: 7960837521797860148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 144
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3858f11151a4a9e0800000000000000
+      internalID: -1610985397125883843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 144
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93ab5f38b8b10e70800000000000000
+      internalID: 9079741425232094108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be611de8209a5bb90800000000000000
+      internalID: -7226684198594996501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79c154f3bfaa5670800000000000000
+      internalID: 8528322031812462975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b8d25f08b881b30800000000000000
+      internalID: 4258306833664281502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6615d7471d7861540800000000000000
+      internalID: 4978315771776946534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 117
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cbfae401e59d080800000000000000
+      internalID: -9162188542775935970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 119
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b8264bfd99cce40800000000000000
+      internalID: 5678082416290466648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 119
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18c08eeb89f21170800000000000000
+      internalID: 8147849055263836187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 115
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3826810cd096c300800000000000000
+      internalID: 272064102095267900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd759b1783b5dd80800000000000000
+      internalID: -8226471751457604172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c462dc9c2e6cd8b0800000000000000
+      internalID: -5126101137965816634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_15
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 81
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32efadc79e7f07420800000000000000
+      internalID: 2625871164951166499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 80
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9e504df9550e120800000000000000
+      internalID: 2441045142980127142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 80
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b054560d346c4b0800000000000000
+      internalID: -5420570539162531065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd511e6d621db6cd0800000000000000
+      internalID: -2563725598113327653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 80
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b096fadf2dafd1a90800000000000000
+      internalID: -7341436033437832949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 57
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5d84c4955bb63d0800000000000000
+      internalID: -3212274514062158337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_21
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 58
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a170c9fa03c67e0800000000000000
+      internalID: -1770987022668326390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_22
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 57
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a964c4716693ff220800000000000000
+      internalID: 2521797426991089306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 32
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc53dab2fa459da70800000000000000
+      internalID: 8852199653902202315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 34
+        width: 35
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9390b349d43cce520800000000000000
+      internalID: 2732773811873843513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 40
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec2784134f800ad0800000000000000
+      internalID: -2738031055171277594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 34
+        width: 35
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cc79c34964f7460800000000000000
+      internalID: 7241584328320732177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 34
+        width: 32
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17562d53251eb8eb0800000000000000
+      internalID: -4716428441533913743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 32
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cea213a08966a5d0800000000000000
+      internalID: -3051635696284291390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 15
+        width: 35
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a2940cb6b178a70800000000000000
+      internalID: 8829055744084617753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15
+        width: 40
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827260872144024b0800000000000000
+      internalID: -5467295101514012888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_31
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 16
+        width: 35
+        height: 14
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511b56e287c7573e0800000000000000
+      internalID: -2056600799208427243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towards_32
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 32
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ea2593d13a89860800000000000000
+      internalID: 7536953322315624001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 39af908389d3ac04f8729ce973694891
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

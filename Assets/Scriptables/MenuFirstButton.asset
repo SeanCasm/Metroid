@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed482795bafd9e4dbc69130fb166ad6, type: 3}
+  m_Name: MenuFirstButton
+  m_EditorClassIdentifier: 
+  mainMenuFirst: {fileID: 591208676207910155, guid: 3bb1b15c014f88645a6f7214bd6666ab, type: 3}
+  pauseFirst: {fileID: 0}
+  settingsFirst: {fileID: 0}
+  playerMenuFirst: {fileID: 0}
+  onItemFirst: {fileID: 0}
+  onRetryFirst: {fileID: 0}
+  selectGameFirst: []

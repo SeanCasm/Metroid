@@ -1,0 +1,1584 @@
+fileFormatVersion: 2
+guid: 1f56c361216d78e41af99fa5ee0818b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8352886157025502390
+    second: Walkers_0
+  - first:
+      213: -7878161114062312029
+    second: Walkers_1
+  - first:
+      213: -3087408623630418182
+    second: Walkers_2
+  - first:
+      213: -3867967941833324188
+    second: Walkers_3
+  - first:
+      213: -8692180410050894852
+    second: Walkers_4
+  - first:
+      213: 9125546163975105687
+    second: Walkers_5
+  - first:
+      213: 2196944598518313411
+    second: Walkers_6
+  - first:
+      213: 7616301222335004382
+    second: Walkers_7
+  - first:
+      213: -8353183414766643031
+    second: Walkers_8
+  - first:
+      213: -4575229753160328760
+    second: Walkers_9
+  - first:
+      213: -8380649923991800772
+    second: Walkers_10
+  - first:
+      213: -4569903117052884544
+    second: Walkers_11
+  - first:
+      213: 9173512146615399046
+    second: Walkers_12
+  - first:
+      213: -2747104275950998119
+    second: Walkers_13
+  - first:
+      213: -439576001540239186
+    second: Walkers_14
+  - first:
+      213: 2354424480903211185
+    second: Walkers_15
+  - first:
+      213: -7612663214871118931
+    second: Walkers_16
+  - first:
+      213: 2576586529537143629
+    second: Walkers_17
+  - first:
+      213: 4941777440949705983
+    second: Walkers_18
+  - first:
+      213: -7169683721640549308
+    second: Walkers_19
+  - first:
+      213: -8055268113411709427
+    second: Walkers_20
+  - first:
+      213: -8726270157508454535
+    second: Walkers_21
+  - first:
+      213: -2015220836672944452
+    second: Walkers_22
+  - first:
+      213: 6764869381529294906
+    second: Walkers_23
+  - first:
+      213: -8701298929851558795
+    second: Walkers_24
+  - first:
+      213: 4985479550049596397
+    second: Walkers_25
+  - first:
+      213: 3320322034389033452
+    second: Walkers_26
+  - first:
+      213: 3781280312360235134
+    second: Walkers_27
+  - first:
+      213: 1458259583798659846
+    second: Walkers_28
+  - first:
+      213: 5609610591707834638
+    second: Walkers_29
+  - first:
+      213: -3365360750223880933
+    second: Walkers_30
+  - first:
+      213: 6501827169770622372
+    second: Walkers_31
+  - first:
+      213: 59082636495548146
+    second: Walkers_32
+  - first:
+      213: -1798611571300134053
+    second: Walkers_33
+  - first:
+      213: -10168545904987515
+    second: Walkers_34
+  - first:
+      213: -2333479970398101833
+    second: Walkers_35
+  - first:
+      213: -3805761491334265852
+    second: Walkers_36
+  - first:
+      213: 3943126929903725498
+    second: Walkers_37
+  - first:
+      213: -36312903156229084
+    second: Walkers_38
+  - first:
+      213: -2918721899305242553
+    second: Walkers_39
+  - first:
+      213: 568524178139554620
+    second: Walkers_40
+  - first:
+      213: 1223592138931298800
+    second: Walkers_41
+  - first:
+      213: -7522967170512497927
+    second: Walkers_42
+  - first:
+      213: 2476941265956933865
+    second: Walkers_43
+  - first:
+      213: 1016061143364265152
+    second: Walkers_44
+  - first:
+      213: -760216086015545358
+    second: Walkers_45
+  - first:
+      213: -4590095301728530513
+    second: Walkers_46
+  - first:
+      213: -1851823654953846472
+    second: Walkers_47
+  - first:
+      213: 2808835758774205481
+    second: Walkers_48
+  - first:
+      213: 2233193199732567519
+    second: Walkers_49
+  - first:
+      213: -196981205733872200
+    second: Walkers_50
+  - first:
+      213: 750937479858071356
+    second: Walkers_51
+  - first:
+      213: 4251584932357702960
+    second: Walkers_52
+  - first:
+      213: -5653713279681261085
+    second: Walkers_53
+  - first:
+      213: 2347392894639264193
+    second: Walkers_54
+  - first:
+      213: -1736438025238194494
+    second: Walkers_55
+  - first:
+      213: 732895054278948226
+    second: Walkers_56
+  - first:
+      213: 1475184100990969027
+    second: Walkers_57
+  - first:
+      213: -8256029868861157998
+    second: Walkers_58
+  - first:
+      213: 7249084678577024785
+    second: Walkers_59
+  - first:
+      213: 3835145166615657252
+    second: Walkers_60
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walkers_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 380
+        width: 27
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b9731bb46941c80800000000000000
+      internalID: -8352886157025502390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 380
+        width: 28
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad250105362ba290800000000000000
+      internalID: -7878161114062312029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 380
+        width: 30
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afef700f6325725d0800000000000000
+      internalID: -3087408623630418182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 380
+        width: 32
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4690d6876a7325ac0800000000000000
+      internalID: -3867967941833324188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 379
+        width: 30
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3ae4f58fb2f5780800000000000000
+      internalID: -8692180410050894852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 379
+        width: 28
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c2a2d03e374ae70800000000000000
+      internalID: 9125546163975105687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 349
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1b5e1f87d1d7e10800000000000000
+      internalID: 2196944598518313411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 349
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edeb6abdb9982b960800000000000000
+      internalID: 7616301222335004382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 349
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8562bf0f7831c80800000000000000
+      internalID: -8353183414766643031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 349
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c99415b7c48180c0800000000000000
+      internalID: -4575229753160328760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c347095fb43f1bb80800000000000000
+      internalID: -8380649923991800772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 322
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9cc12d3517490c0800000000000000
+      internalID: -4569903117052884544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 322
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682fdb9a1bcde4f70800000000000000
+      internalID: 9173512146615399046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 322
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99debfe373350e9d0800000000000000
+      internalID: -2747104275950998119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea05860a4ff46e9f0800000000000000
+      internalID: -439576001540239186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 295
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b828b257989ca020800000000000000
+      internalID: 2354424480903211185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 296
+        width: 28
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab7ce2c3236a5690800000000000000
+      internalID: -7612663214871118931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 295
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d433e1a1ccfd1c320800000000000000
+      internalID: 2576586529537143629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 275
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc98de5668b49440800000000000000
+      internalID: 4941777440949705983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 275
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444e6bb44aa208c90800000000000000
+      internalID: -7169683721640549308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 273
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0660995450f53090800000000000000
+      internalID: -8055268113411709427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_21
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 273
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977dd97868f06e680800000000000000
+      internalID: -8726270157508454535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_22
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 274
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6c42e735f7804e0800000000000000
+      internalID: -2015220836672944452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 273
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3858f55cd4a1ed50800000000000000
+      internalID: 6764869381529294906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57416b989b6ce3780800000000000000
+      internalID: -8701298929851558795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 252
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de33eaf8c3bff2540800000000000000
+      internalID: 4985479550049596397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 252
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce129a76c47241e20800000000000000
+      internalID: 3320322034389033452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_27
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 251
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70f866f86ec97430800000000000000
+      internalID: 3781280312360235134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_28
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 251
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bc0a28d57cc3410800000000000000
+      internalID: 1458259583798659846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_29
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 251
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09a307bc1759dd40800000000000000
+      internalID: 5609610591707834638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d0dd56a36db41d0800000000000000
+      internalID: -3365360750223880933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 229
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad492ddc512b3a50800000000000000
+      internalID: 6501827169770622372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 228
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fee5b84857e1d000800000000000000
+      internalID: 59082636495548146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 228
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b539fbb2e4c0a07e0800000000000000
+      internalID: -1798611571300134053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 229
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5827379e2cfdbdff0800000000000000
+      internalID: -10168545904987515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 228
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be9ee98450dd9fd0800000000000000
+      internalID: -2333479970398101833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 201
+        width: 20
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404092166183f2bc0800000000000000
+      internalID: -3805761491334265852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 201
+        width: 20
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb20391d0dc8b630800000000000000
+      internalID: 3943126929903725498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 201
+        width: 20
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c1c926b9dfe7ff0800000000000000
+      internalID: -36312903156229084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_39
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 201
+        width: 20
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740f1c985ed9e77d0800000000000000
+      internalID: -2918721899305242553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_40
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 202
+        width: 20
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33aa345abdc3e700800000000000000
+      internalID: 568524178139554620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 34
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1e5f641921bf010800000000000000
+      internalID: 1223592138931298800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 171
+        width: 32
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f25da0873d099790800000000000000
+      internalID: -7522967170512497927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 170
+        width: 34
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e09ede35fcdf5220800000000000000
+      internalID: 2476941265956933865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 171
+        width: 32
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4ed400a36c91e00800000000000000
+      internalID: 1016061143364265152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 36
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff61806f7b2375f0800000000000000
+      internalID: -760216086015545358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_46
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 139
+        width: 38
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf084774a4bc40c0800000000000000
+      internalID: -4590095301728530513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_47
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 139
+        width: 34
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8397fcb72300d46e0800000000000000
+      internalID: -1851823654953846472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_48
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 139
+        width: 34
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cb622ad3dfaf620800000000000000
+      internalID: 2808835758774205481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 38
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdda0e81265edfe10800000000000000
+      internalID: 2233193199732567519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_50
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 110
+        width: 38
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdedc413ae244df0800000000000000
+      internalID: -196981205733872200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_51
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 112
+        width: 40
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37a777c8addb6a00800000000000000
+      internalID: 750937479858071356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 81
+        width: 38
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035859958f9a00b30800000000000000
+      internalID: 4251584932357702960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 81
+        width: 40
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e190be0ab9f981b0800000000000000
+      internalID: -5653713279681261085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_54
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 80
+        width: 42
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1df31966d939020800000000000000
+      internalID: 2347392894639264193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 38
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6523be0dee6e7e0800000000000000
+      internalID: -1736438025238194494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 36
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285ffe73b24cb2a00800000000000000
+      internalID: 732895054278948226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_57
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 49
+        width: 34
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4eeddbf18e87410800000000000000
+      internalID: 1475184100990969027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_58
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 48
+        width: 42
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d048b9390bc6d80800000000000000
+      internalID: -8256029868861157998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 58
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f6f4d9b1ce99460800000000000000
+      internalID: 7249084678577024785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walkers_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 58
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bbe26a53c293530800000000000000
+      internalID: 3835145166615657252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c79903df28cf8a24992bb00a08b78e49
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

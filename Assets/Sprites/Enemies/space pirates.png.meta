@@ -1,0 +1,2112 @@
+fileFormatVersion: 2
+guid: 6dcac50c00a3a2b49ab7ee0fb0d62442
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7550931354876384427
+    second: space pirates_0
+  - first:
+      213: -3961135967604467726
+    second: space pirates_1
+  - first:
+      213: 5637933645530132759
+    second: space pirates_2
+  - first:
+      213: -1907131614715177007
+    second: space pirates_3
+  - first:
+      213: -2329665731670625770
+    second: space pirates_4
+  - first:
+      213: 7959072836004224711
+    second: space pirates_5
+  - first:
+      213: 8935842606478526787
+    second: space pirates_6
+  - first:
+      213: -2172669170666497723
+    second: space pirates_7
+  - first:
+      213: -5859980545070791953
+    second: space pirates_8
+  - first:
+      213: 8181047651825402971
+    second: space pirates_9
+  - first:
+      213: -2685789641386037151
+    second: space pirates_10
+  - first:
+      213: -1619536366347743290
+    second: space pirates_11
+  - first:
+      213: -4245154994391510182
+    second: space pirates_12
+  - first:
+      213: -524151812688639830
+    second: space pirates_13
+  - first:
+      213: -292090968017096753
+    second: space pirates_14
+  - first:
+      213: 6630672447500250064
+    second: space pirates_15
+  - first:
+      213: -934969860921211484
+    second: space pirates_16
+  - first:
+      213: -8930172608573145779
+    second: space pirates_17
+  - first:
+      213: -7836052082757573713
+    second: space pirates_18
+  - first:
+      213: 1424397276528364609
+    second: space pirates_19
+  - first:
+      213: 8752150247219984604
+    second: space pirates_20
+  - first:
+      213: -3772631178696091604
+    second: space pirates_21
+  - first:
+      213: -8085951658051003616
+    second: space pirates_22
+  - first:
+      213: -343856841208020184
+    second: space pirates_23
+  - first:
+      213: -3386479594060032231
+    second: space pirates_24
+  - first:
+      213: -198186697331459266
+    second: space pirates_25
+  - first:
+      213: 6322163805473196247
+    second: space pirates_26
+  - first:
+      213: 1452417638770129019
+    second: space pirates_27
+  - first:
+      213: -2284923413296767687
+    second: space pirates_28
+  - first:
+      213: 3183309564062010967
+    second: space pirates_29
+  - first:
+      213: -4364718043313629612
+    second: space pirates_30
+  - first:
+      213: -8015753252349312714
+    second: space pirates_31
+  - first:
+      213: -4094935546912181022
+    second: space pirates_32
+  - first:
+      213: -5280482819192694978
+    second: space pirates_33
+  - first:
+      213: 4874865881607702900
+    second: space pirates_34
+  - first:
+      213: 937300349891539602
+    second: space pirates_35
+  - first:
+      213: -3818933604151043678
+    second: space pirates_36
+  - first:
+      213: 5448585776825214845
+    second: space pirates_37
+  - first:
+      213: -8398229206634983556
+    second: space pirates_38
+  - first:
+      213: -2551921860615819422
+    second: space pirates_39
+  - first:
+      213: -6458013210365601879
+    second: space pirates_40
+  - first:
+      213: 4924988696807283661
+    second: space pirates_41
+  - first:
+      213: -1711231010741149745
+    second: space pirates_42
+  - first:
+      213: 3507524356649794641
+    second: space pirates_43
+  - first:
+      213: -8183725113155123865
+    second: space pirates_44
+  - first:
+      213: -8949009550661040831
+    second: space pirates_45
+  - first:
+      213: -7403110321131302594
+    second: space pirates_46
+  - first:
+      213: -1821368075576639858
+    second: space pirates_47
+  - first:
+      213: -5132043969280907228
+    second: space pirates_48
+  - first:
+      213: 4944542932231162756
+    second: space pirates_49
+  - first:
+      213: 5766222992428842800
+    second: space pirates_50
+  - first:
+      213: 3175410465212574161
+    second: space pirates_51
+  - first:
+      213: 2919443201906820860
+    second: space pirates_52
+  - first:
+      213: 7621281978768431031
+    second: space pirates_53
+  - first:
+      213: 7376778388030153919
+    second: space pirates_54
+  - first:
+      213: -6351849663482515596
+    second: space pirates_55
+  - first:
+      213: 7052815492128403439
+    second: space pirates_56
+  - first:
+      213: 3423693518441006758
+    second: space pirates_57
+  - first:
+      213: -2525478904758620010
+    second: space pirates_58
+  - first:
+      213: 104763890563958371
+    second: space pirates_59
+  - first:
+      213: -5673110852735209033
+    second: space pirates_60
+  - first:
+      213: -3478172919539824902
+    second: space pirates_61
+  - first:
+      213: -7239653600661986223
+    second: space pirates_62
+  - first:
+      213: 1583716458046127435
+    second: space pirates_63
+  - first:
+      213: -7301888479645593870
+    second: space pirates_64
+  - first:
+      213: 9029905458084494575
+    second: space pirates_65
+  - first:
+      213: -7127225475788408401
+    second: space pirates_66
+  - first:
+      213: 8854103643772531874
+    second: space pirates_67
+  - first:
+      213: -6007601110964832820
+    second: space pirates_68
+  - first:
+      213: -9074950365889637116
+    second: space pirates_69
+  - first:
+      213: -8470869266865083524
+    second: space pirates_70
+  - first:
+      213: 8458855657149517808
+    second: space pirates_71
+  - first:
+      213: 5378678591507872243
+    second: space pirates_72
+  - first:
+      213: -4478679023960963216
+    second: space pirates_73
+  - first:
+      213: 1351850435809316440
+    second: space pirates_74
+  - first:
+      213: 1801376385491092600
+    second: space pirates_75
+  - first:
+      213: -3611162985041169213
+    second: space pirates_76
+  - first:
+      213: 6705417549357300288
+    second: space pirates_77
+  - first:
+      213: -133424679176630604
+    second: space pirates_78
+  - first:
+      213: 424497982653339414
+    second: space pirates_79
+  - first:
+      213: 6111541398592916030
+    second: space pirates_80
+  - first:
+      213: 2187868359417143719
+    second: space pirates_81
+  - first:
+      213: -6068000427320426937
+    second: space pirates_82
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: space pirates_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 409
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba414ca8f0c4ac860800000000000000
+      internalID: 7550931354876384427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 409
+        width: 37
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f799ef03d73709c0800000000000000
+      internalID: -3961135967604467726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 409
+        width: 40
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711fb0197c6fd3e40800000000000000
+      internalID: 5637933645530132759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 409
+        width: 48
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d71cfc96e18885e0800000000000000
+      internalID: -1907131614715177007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 409
+        width: 46
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6123f523c5d5bafd0800000000000000
+      internalID: -2329665731670625770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 409
+        width: 41
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce1e7b439e447e60800000000000000
+      internalID: 7959072836004224711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_6
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 409
+        width: 38
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34904f7a18d720c70800000000000000
+      internalID: 8935842606478526787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_7
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 409
+        width: 44
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5491bfb86e029d1e0800000000000000
+      internalID: -2172669170666497723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 409
+        width: 42
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe20b54edba2daea0800000000000000
+      internalID: -5859980545070791953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 410
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54c8998e7be88170800000000000000
+      internalID: 8181047651825402971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 349
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160f2c31d882abad0800000000000000
+      internalID: -2685789641386037151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 349
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf040761404689e0800000000000000
+      internalID: -1619536366347743290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 349
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5391de360e2615c0800000000000000
+      internalID: -4245154994391510182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 349
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8015414b6d9b8f0800000000000000
+      internalID: -524151812688639830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 349
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfad39efc842fbf0800000000000000
+      internalID: -292090968017096753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 349
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbe83fc571e40c50800000000000000
+      internalID: 6630672447500250064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 348
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5481c7dd15603f0800000000000000
+      internalID: -934969860921211484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 349
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4df21b9357a11480800000000000000
+      internalID: -8930172608573145779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_18
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 349
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa366cdd520c04390800000000000000
+      internalID: -7836052082757573713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 349
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cc186b6c974c310800000000000000
+      internalID: 1424397276528364609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 348
+        width: 34
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8f46a6742e57970800000000000000
+      internalID: 8752150247219984604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_21
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 349
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2891456eebe4abc0800000000000000
+      internalID: -3772631178696091604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 301
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b93e6eecde8cf80800000000000000
+      internalID: -8085951658051003616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 301
+        width: 40
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823453656006a3bf0800000000000000
+      internalID: -343856841208020184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_24
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 301
+        width: 37
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91751f460cec001d0800000000000000
+      internalID: -3386479594060032231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_25
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 301
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bb952bf36ef3df0800000000000000
+      internalID: -198186697331459266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_26
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 301
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8cf0d1c76dcb750800000000000000
+      internalID: 6322163805473196247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_27
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 301
+        width: 40
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78b760b526082410800000000000000
+      internalID: 1452417638770129019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_28
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 329
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d197bf2425a40e0800000000000000
+      internalID: -2284923413296767687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 298
+        width: 36
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e0500ce236d2c20800000000000000
+      internalID: 3183309564062010967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 298
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4569d8b90186d63c0800000000000000
+      internalID: -4364718043313629612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_31
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 298
+        width: 37
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6318982e2e252c090800000000000000
+      internalID: -8015753252349312714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_32
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 298
+        width: 39
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4fd24e0dddb27c0800000000000000
+      internalID: -4094935546912181022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_33
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 298
+        width: 42
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3757776ad4f7b6b0800000000000000
+      internalID: -5280482819192694978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_34
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 298
+        width: 43
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47906e0f0b007a340800000000000000
+      internalID: 4874865881607702900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_35
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 298
+        width: 42
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2927223c3b5f10d00800000000000000
+      internalID: 937300349891539602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_36
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 245
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a956cfde1c600bc0800000000000000
+      internalID: -3818933604151043678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_37
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 245
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77a9eb65e34d9b40800000000000000
+      internalID: 5448585776825214845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_38
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 245
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f0634480f737b80800000000000000
+      internalID: -8398229206634983556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_39
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 245
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fa073a690c59cd0800000000000000
+      internalID: -2551921860615819422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_40
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 245
+        width: 47
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7d06183378066a0800000000000000
+      internalID: -6458013210365601879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_41
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 245
+        width: 37
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb13044023195440800000000000000
+      internalID: 4924988696807283661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_42
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 245
+        width: 31
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf1424567c7048e0800000000000000
+      internalID: -1711231010741149745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_43
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 245
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c342791da3da030800000000000000
+      internalID: 3507524356649794641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_44
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 244
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76502fa6e519d6e80800000000000000
+      internalID: -8183725113155123865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_45
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 245
+        width: 34
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14545414a3bbec380800000000000000
+      internalID: -8949009550661040831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 242
+        width: 39
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31d0f3e26ed24990800000000000000
+      internalID: -7403110321131302594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_47
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 198
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e7402a26339b6e0800000000000000
+      internalID: -1821368075576639858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_48
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 198
+        width: 58
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428635f533157c8b0800000000000000
+      internalID: -5132043969280907228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 198
+        width: 52
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b8e4c799b8e9440800000000000000
+      internalID: 4944542932231162756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_50
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 198
+        width: 55
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f3967c24db50050800000000000000
+      internalID: 5766222992428842800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_51
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 198
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9ad0b7ef2511c20800000000000000
+      internalID: 3175410465212574161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_52
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 198
+        width: 58
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6c59fcf12f38820800000000000000
+      internalID: 2919443201906820860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_53
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 198
+        width: 50
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71495949b34c960800000000000000
+      internalID: 7621281978768431031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_54
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 198
+        width: 55
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4e05d2cd49f5660800000000000000
+      internalID: 7376778388030153919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_55
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 198
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fa0757262b9d7a0800000000000000
+      internalID: -6351849663482515596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 198
+        width: 58
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef6faa9252a0e160800000000000000
+      internalID: 7052815492128403439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_57
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 198
+        width: 48
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6cb729d17638f20800000000000000
+      internalID: 3423693518441006758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_58
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 198
+        width: 37
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690be121152b3fcd0800000000000000
+      internalID: -2525478904758620010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_59
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 106
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3664a521432347100800000000000000
+      internalID: 104763890563958371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_60
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 106
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1fd43acbf0541b0800000000000000
+      internalID: -5673110852735209033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 106
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af60277682c0bbfc0800000000000000
+      internalID: -3478172919539824902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_62
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 106
+        width: 45
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1542aa35865978b90800000000000000
+      internalID: -7239653600661986223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_63
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 106
+        width: 37
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d77ca4abd7af510800000000000000
+      internalID: 1583716458046127435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_64
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 106
+        width: 36
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe05356d1b7aaa90800000000000000
+      internalID: -7301888479645593870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_65
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 106
+        width: 35
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecbc70fb2ba05d70800000000000000
+      internalID: 9029905458084494575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_66
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 106
+        width: 35
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa974810132071d90800000000000000
+      internalID: -7127225475788408401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_67
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 106
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4bd8b5a5810ea70800000000000000
+      internalID: 8854103643772531874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_68
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 106
+        width: 37
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5f2b48e96b0aca0800000000000000
+      internalID: -6007601110964832820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_69
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 106
+        width: 38
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405d8de29bc4f0280800000000000000
+      internalID: -9074950365889637116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_70
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 106
+        width: 40
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7babb9484d617a80800000000000000
+      internalID: -8470869266865083524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_71
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 106
+        width: 49
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff43ba3764e36570800000000000000
+      internalID: 8458855657149517808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_72
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 106
+        width: 53
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f933d77ea7e4aa40800000000000000
+      internalID: 5378678591507872243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_73
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 106
+        width: 52
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07740d1282988d1c0800000000000000
+      internalID: -4478679023960963216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_74
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e0fd71fccb2c210800000000000000
+      internalID: 1351850435809316440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_75
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 23
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87449fb4746cff810800000000000000
+      internalID: 1801376385491092600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_76
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 31
+        width: 23
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4f49ad56292edc0800000000000000
+      internalID: -3611162985041169213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_77
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 31
+        width: 23
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04abc1cfbbd6e0d50800000000000000
+      internalID: 6705417549357300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_78
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 31
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be086116faf52ef0800000000000000
+      internalID: -133424679176630604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_79
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 31
+        width: 23
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6171ce78aae14e500800000000000000
+      internalID: 424497982653339414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_80
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 31
+        width: 23
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a893d858e80d450800000000000000
+      internalID: 6111541398592916030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_81
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 31
+        width: 23
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1206a5eaedc5e10800000000000000
+      internalID: 2187868359417143719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space pirates_82
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 30
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eb5a0d2c12acba0800000000000000
+      internalID: -6068000427320426937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0a684b1b1b057e44ab610335a77fa7f7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

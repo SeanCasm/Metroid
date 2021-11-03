@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 04eae3ff68dfa004587569f7c74380c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7940451141992525510
+    second: Flyings_0
+  - first:
+      213: 5481868931794596107
+    second: Flyings_1
+  - first:
+      213: -2800883043578654787
+    second: Flyings_2
+  - first:
+      213: -2586443633394057229
+    second: Flyings_3
+  - first:
+      213: 8094478103202304245
+    second: Flyings_4
+  - first:
+      213: 2009826821099773618
+    second: Flyings_5
+  - first:
+      213: 4348653748430444304
+    second: Flyings_6
+  - first:
+      213: -7139376760406164407
+    second: Flyings_7
+  - first:
+      213: -8059199201341993981
+    second: Flyings_8
+  - first:
+      213: -936592786923770314
+    second: Flyings_9
+  - first:
+      213: -8357195922447241939
+    second: Flyings_10
+  - first:
+      213: 2332689741972585377
+    second: Flyings_11
+  - first:
+      213: -902013870692430664
+    second: Flyings_12
+  - first:
+      213: -7389945439282797271
+    second: Flyings_13
+  - first:
+      213: -1387003416069403638
+    second: Flyings_14
+  - first:
+      213: -8869102086896946772
+    second: Flyings_15
+  - first:
+      213: 8727541053766026960
+    second: Flyings_16
+  - first:
+      213: -3511044684026353636
+    second: Flyings_17
+  - first:
+      213: 7177651693195175776
+    second: Flyings_18
+  - first:
+      213: 8214533453919594856
+    second: Flyings_19
+  - first:
+      213: 4243010851452873988
+    second: Flyings_20
+  - first:
+      213: -4121606008278893601
+    second: Flyings_21
+  - first:
+      213: 3521369255784064269
+    second: Flyings_22
+  - first:
+      213: 3382985123969430486
+    second: Flyings_23
+  - first:
+      213: -4862944090281560420
+    second: Flyings_24
+  - first:
+      213: 3234168432409375628
+    second: Flyings_25
+  - first:
+      213: -136752839054356028
+    second: Flyings_26
+  - first:
+      213: -5442541470048297206
+    second: Flyings_27
+  - first:
+      213: 8292184227028635649
+    second: Flyings_28
+  - first:
+      213: 4330674092343549377
+    second: Flyings_29
+  - first:
+      213: -6602984882641986957
+    second: Flyings_30
+  - first:
+      213: 1551298951343623487
+    second: Flyings_31
+  - first:
+      213: 9166843502826909648
+    second: Flyings_32
+  - first:
+      213: -349932096310769734
+    second: Flyings_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flyings_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 129
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31d035b1c9ddc190800000000000000
+      internalID: -7940451141992525510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 131
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01fdd0dfb2831c40800000000000000
+      internalID: 5481868931794596107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 132
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf441a26b34129d0800000000000000
+      internalID: -2800883043578654787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 133
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fff9ff083b1b1cd0800000000000000
+      internalID: -2586443633394057229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 140
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f01d8fc2fc555070800000000000000
+      internalID: 8094478103202304245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 131
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be54b368d654eb10800000000000000
+      internalID: 2009826821099773618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 133
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171e564b85895c30800000000000000
+      internalID: 4348653748430444304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 98
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cbf4699a6dbec90800000000000000
+      internalID: -7139376760406164407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 98
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c06ed9609f72090800000000000000
+      internalID: -8059199201341993981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 99
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e273492dd8003f0800000000000000
+      internalID: -936592786923770314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 99
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d603c3696450c80800000000000000
+      internalID: -8357195922447241939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab397116f06f5020800000000000000
+      internalID: 2332689741972585377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_12
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 100
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc07e6e9276b73f0800000000000000
+      internalID: -902013870692430664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_13
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 99
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925e70ec6c3a17990800000000000000
+      internalID: -7389945439282797271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c0ee2edbf50cce0800000000000000
+      internalID: -1387003416069403638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 79
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1f4d974ae9ae480800000000000000
+      internalID: -8869102086896946772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 75
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6cc5019547e1970800000000000000
+      internalID: 8727541053766026960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_17
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 76
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18e5125673464fc0800000000000000
+      internalID: -3511044684026353636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 78
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0672166af242c9360800000000000000
+      internalID: 7177651693195175776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 54
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869a07467a2eff170800000000000000
+      internalID: 8214533453919594856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_20
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 54
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40de9f293e332ea30800000000000000
+      internalID: 4243010851452873988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 51
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbbb643c2d1dc6c0800000000000000
+      internalID: -4121606008278893601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 51
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05adfd5eaa6ed030800000000000000
+      internalID: 3521369255784064269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 55
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3f0a2eb07c2fe20800000000000000
+      internalID: 3382985123969430486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96be286d1a538cb0800000000000000
+      internalID: -4862944090281560420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83fa8dcd0312ec20800000000000000
+      internalID: 3234168432409375628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_26
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1932674082a1ef0800000000000000
+      internalID: -136752839054356028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_27
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f507a6e553874b0800000000000000
+      internalID: -5442541470048297206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1009320ee91c31370800000000000000
+      internalID: 8292184227028635649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_29
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cddf106425a91c30800000000000000
+      internalID: 4330674092343549377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a99dcbb3c7d54a0800000000000000
+      internalID: -6602984882641986957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dc5475d22578510800000000000000
+      internalID: 1551298951343623487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_32
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df6899099b273f70800000000000000
+      internalID: 9166843502826909648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flyings_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab783e7cc9ac42bf0800000000000000
+      internalID: -349932096310769734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8f1edbab87e7b984dbcccd850beb4db1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

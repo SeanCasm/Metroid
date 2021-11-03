@@ -1,0 +1,1488 @@
+fileFormatVersion: 2
+guid: 21f9bdde2fe306c4c88a0c4da832378e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1760781921426782045
+    second: Kraid_final_0
+  - first:
+      213: -3095666789296791976
+    second: Kraid_final_1
+  - first:
+      213: -2040165807818058614
+    second: Kraid_final_2
+  - first:
+      213: -6520147962045359330
+    second: Kraid_final_3
+  - first:
+      213: -6259199138042749309
+    second: Kraid_final_4
+  - first:
+      213: -8890357986632287091
+    second: Kraid_final_5
+  - first:
+      213: 6375180307237025922
+    second: Kraid_final_6
+  - first:
+      213: 6413268145016937973
+    second: Kraid_final_7
+  - first:
+      213: -7844005556480004464
+    second: Kraid_final_8
+  - first:
+      213: 7413245357746723030
+    second: Kraid_final_9
+  - first:
+      213: 6130718900630121943
+    second: Kraid_final_10
+  - first:
+      213: -2247749058878438253
+    second: Kraid_final_11
+  - first:
+      213: 6291002386387900977
+    second: Kraid_final_12
+  - first:
+      213: -4941056388184331778
+    second: Kraid_final_13
+  - first:
+      213: 6387410485559412967
+    second: Kraid_final_14
+  - first:
+      213: 3129617108913945044
+    second: Kraid_final_15
+  - first:
+      213: 2790672823253857967
+    second: Kraid_final_16
+  - first:
+      213: -7608201918122384632
+    second: Kraid_final_17
+  - first:
+      213: -7927994020768245834
+    second: Kraid_final_18
+  - first:
+      213: 1046603855707135444
+    second: Kraid_final_19
+  - first:
+      213: 2189651836044809652
+    second: Kraid_final_20
+  - first:
+      213: 3147176993595007476
+    second: Kraid_final_21
+  - first:
+      213: 357829285751631654
+    second: Kraid_final_22
+  - first:
+      213: 5078869310684115112
+    second: Kraid_final_23
+  - first:
+      213: -8468680980074195003
+    second: Kraid_final_24
+  - first:
+      213: -8591562771352807829
+    second: Kraid_final_25
+  - first:
+      213: 6725170546207737793
+    second: Kraid_final_26
+  - first:
+      213: 4502860592903688666
+    second: Kraid_final_27
+  - first:
+      213: 4273739599181439839
+    second: Kraid_final_28
+  - first:
+      213: -2593655867845850558
+    second: Kraid_final_29
+  - first:
+      213: 5480370041272967952
+    second: Kraid_final_30
+  - first:
+      213: -3722021989633539879
+    second: Kraid_final_31
+  - first:
+      213: -3499602207894129419
+    second: Kraid_final_32
+  - first:
+      213: -748296538681401393
+    second: Kraid_final_33
+  - first:
+      213: 7073845885168171930
+    second: Kraid_final_34
+  - first:
+      213: 902684008457885483
+    second: Kraid_final_35
+  - first:
+      213: 996461264559326556
+    second: Kraid_final_36
+  - first:
+      213: 3134900148307257864
+    second: Kraid_final_37
+  - first:
+      213: 6549399234593699772
+    second: Kraid_final_38
+  - first:
+      213: -3962660020752109539
+    second: Kraid_final_39
+  - first:
+      213: 2696899626923096703
+    second: Kraid_final_40
+  - first:
+      213: 5966174683650762816
+    second: Kraid_final_41
+  - first:
+      213: -2902823847299127692
+    second: Kraid_final_42
+  - first:
+      213: 2270734492290175055
+    second: Kraid_final_43
+  - first:
+      213: -3144085133273837454
+    second: Kraid_final_44
+  - first:
+      213: -2673678919369667638
+    second: Kraid_final_45
+  - first:
+      213: -9141732380572586578
+    second: Kraid_final_46
+  - first:
+      213: -4207728897949800891
+    second: Kraid_final_47
+  - first:
+      213: 794074370478187809
+    second: Kraid_final_48
+  - first:
+      213: 1389771706176448791
+    second: Kraid_final_49
+  - first:
+      213: -2703847434183274396
+    second: Kraid_final_50
+  - first:
+      213: 2329057067821780990
+    second: Kraid_final_51
+  - first:
+      213: 2917737704705466272
+    second: Kraid_final_52
+  - first:
+      213: -9096299720121527240
+    second: Kraid_final_53
+  - first:
+      213: 157639494633910840
+    second: Kraid_final_54
+  - first:
+      213: 1527214080728381250
+    second: Kraid_final_55
+  - first:
+      213: -4015737777599713620
+    second: Kraid_final_56
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 25
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 25
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 25
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kraid_final_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 256
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a84d66eb227097e0800000000000000
+      internalID: -1760781921426782045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 434
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e9df8e47bf905d0800000000000000
+      internalID: -3095666789296791976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 435
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a845b1ec100efa3e0800000000000000
+      internalID: -2040165807818058614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 436
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b9c4749f7c385a0800000000000000
+      internalID: -6520147962045359330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 435
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ed78eeb8bd229a0800000000000000
+      internalID: -6259199138042749309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 436
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb9b8a38a1f9480800000000000000
+      internalID: -8890357986632287091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 436
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288bde756b0397850800000000000000
+      internalID: 6375180307237025922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 313
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd10112661800950800000000000000
+      internalID: 6413268145016937973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 313
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ea1d5718e742390800000000000000
+      internalID: -7844005556480004464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 313
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d89e45306321e660800000000000000
+      internalID: 7413245357746723030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dde4d1bb50b41550800000000000000
+      internalID: 6130718900630121943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 231
+        width: 72
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940559d3246ec0e0800000000000000
+      internalID: -2247749058878438253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_12
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 205
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a19c9d6512e4750800000000000000
+      internalID: 6291002386387900977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 258
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9291fc467dd6bb0800000000000000
+      internalID: -4941056388184331778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 258
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8cf52aef3a4a850800000000000000
+      internalID: 6387410485559412967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9fccbdd22ae6b20800000000000000
+      internalID: 3129617108913945044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_16
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 248
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6f16aa5267ab620800000000000000
+      internalID: 2790672823253857967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_17
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 258
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803aeda5aac3a6690800000000000000
+      internalID: -7608201918122384632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 258
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b710b2417b1af190800000000000000
+      internalID: -7927994020768245834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 248
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd5aff59a8468e00800000000000000
+      internalID: 1046603855707135444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 248
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b59b3d5eb4336e10800000000000000
+      internalID: 2189651836044809652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_21
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 248
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1238c1dc40dab20800000000000000
+      internalID: 3147176993595007476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_22
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 247
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f257be6d347f400800000000000000
+      internalID: 357829285751631654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_23
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 247
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0b5f3aab4cb7640800000000000000
+      internalID: 5078869310684115112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_24
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 247
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c712928483397a80800000000000000
+      internalID: -8468680980074195003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_25
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b669b04fd23a4c880800000000000000
+      internalID: -8591562771352807829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_26
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c1a4fafa945d50800000000000000
+      internalID: 6725170546207737793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 198
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad111212adf5d7e30800000000000000
+      internalID: 4502860592903688666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53eabfa58f5f4b30800000000000000
+      internalID: 4273739599181439839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 153
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ac07fdabb710cd0800000000000000
+      internalID: -2593655867845850558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_30
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 152
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013a4cb248f2e0c40800000000000000
+      internalID: 5480370041272967952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 156
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d043b578b8b85cc0800000000000000
+      internalID: -3722021989633539879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_32
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 156
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f43c47655aee6fc0800000000000000
+      internalID: -3499602207894129419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_33
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 156
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf9d3143448d95f0800000000000000
+      internalID: -748296538681401393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 156
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bbe4d8a595b2260800000000000000
+      internalID: 7073845885168171930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_35
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 156
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27de84b25af68c00800000000000000
+      internalID: 902684008457885483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55ce7a9d3424dd00800000000000000
+      internalID: 996461264559326556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 121
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a6c225317618b20800000000000000
+      internalID: 3134900148307257864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 116
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb73c2657e324ea50800000000000000
+      internalID: 6549399234593699772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 116
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10bd69c4bdc109c0800000000000000
+      internalID: -3962660020752109539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 116
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a72a10cef4d6520800000000000000
+      internalID: 2696899626923096703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 116
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048aeeeb34c1cc250800000000000000
+      internalID: 5966174683650762816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_42
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 116
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476e338371917b7d0800000000000000
+      internalID: -2902823847299127692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_43
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 115
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40de286df4438f10800000000000000
+      internalID: 2270734492290175055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 75
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27050a7ba37fd54d0800000000000000
+      internalID: -3144085133273837454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 26
+        width: 75
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb4587403f25ead0800000000000000
+      internalID: -2673678919369667638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_46
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 48
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eade848b5da022180800000000000000
+      internalID: -9141732380572586578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_47
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 49
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5466e8e5cd42b95c0800000000000000
+      internalID: -4207728897949800891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_48
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 49
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1252899ce6e150b00800000000000000
+      internalID: 794074370478187809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7192981e006794310800000000000000
+      internalID: 1389771706176448791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_50
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 5
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46097ae85110a7ad0800000000000000
+      internalID: -2703847434183274396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_51
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff41253019725020800000000000000
+      internalID: 2329057067821780990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_52
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af9bbccbf2ed7820800000000000000
+      internalID: 2917737704705466272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_53
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 6
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834dbab499373c180800000000000000
+      internalID: -9096299720121527240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_54
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 6
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832f930094c003200800000000000000
+      internalID: 157639494633910840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_55
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 258
+        width: 1
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2473ac96d11c13510800000000000000
+      internalID: 1527214080728381250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kraid_final_56
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 258
+        width: 1
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae6d0f74cb3548c0800000000000000
+      internalID: -4015737777599713620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 02af34fc34470f641882e0c1615800cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

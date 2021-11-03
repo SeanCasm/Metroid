@@ -1,0 +1,1710 @@
+fileFormatVersion: 2
+guid: 29cb496cd0a820e499b51ab4cf82b023
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5529105562516088763
+    second: SNES - Super Metroid - Objects & Items_0
+  - first:
+      213: -6709996260003573752
+    second: SNES - Super Metroid - Objects & Items_4
+  - first:
+      213: -242523821994941082
+    second: SNES - Super Metroid - Objects & Items_8
+  - first:
+      213: 8365424814296599434
+    second: SNES - Super Metroid - Objects & Items_24
+  - first:
+      213: -8003814093237196519
+    second: SNES - Super Metroid - Objects & Items_25
+  - first:
+      213: 492323500917238264
+    second: SNES - Super Metroid - Objects & Items_32
+  - first:
+      213: 6350064902736675665
+    second: SNES - Super Metroid - Objects & Items_36
+  - first:
+      213: 466524091102455944
+    second: SNES - Super Metroid - Objects & Items_37
+  - first:
+      213: 6455714572947123595
+    second: SNES - Super Metroid - Objects & Items_38
+  - first:
+      213: -7256367656741960906
+    second: SNES - Super Metroid - Objects & Items_39
+  - first:
+      213: 3014009188278104686
+    second: SNES - Super Metroid - Objects & Items_40
+  - first:
+      213: 2721831675974565530
+    second: SNES - Super Metroid - Objects & Items_45
+  - first:
+      213: -3174295610184713529
+    second: SNES - Super Metroid - Objects & Items_46
+  - first:
+      213: 8947029055128061289
+    second: SNES - Super Metroid - Objects & Items_47
+  - first:
+      213: -5603445481288420742
+    second: SNES - Super Metroid - Objects & Items_48
+  - first:
+      213: -6975778789617534296
+    second: SNES - Super Metroid - Objects & Items_49
+  - first:
+      213: -5559562161454349968
+    second: SNES - Super Metroid - Objects & Items_50
+  - first:
+      213: 6090601720764284560
+    second: SNES - Super Metroid - Objects & Items_53
+  - first:
+      213: -8784149345001395665
+    second: SNES - Super Metroid - Objects & Items_54
+  - first:
+      213: 8249058004784669822
+    second: SNES - Super Metroid - Objects & Items_55
+  - first:
+      213: 3372670990493904219
+    second: SNES - Super Metroid - Objects & Items_56
+  - first:
+      213: -9080225761873516179
+    second: SNES - Super Metroid - Objects & Items_57
+  - first:
+      213: 2702265521708382939
+    second: SNES - Super Metroid - Objects & Items_58
+  - first:
+      213: -9184283323926638873
+    second: SNES - Super Metroid - Objects & Items_59
+  - first:
+      213: -7923700259810204841
+    second: SNES - Super Metroid - Objects & Items_60
+  - first:
+      213: -7701410768069326661
+    second: SNES - Super Metroid - Objects & Items_61
+  - first:
+      213: 5640822696610617358
+    second: SNES - Super Metroid - Objects & Items_62
+  - first:
+      213: -5658207431906645359
+    second: SNES - Super Metroid - Objects & Items_63
+  - first:
+      213: 8007444767071561657
+    second: SNES - Super Metroid - Objects & Items_64
+  - first:
+      213: -8725044164153162191
+    second: SNES - Super Metroid - Objects & Items_65
+  - first:
+      213: -6066451354878948244
+    second: SNES - Super Metroid - Objects & Items_66
+  - first:
+      213: -6992488428067827619
+    second: SNES - Super Metroid - Objects & Items_67
+  - first:
+      213: 6380939395085632018
+    second: SNES - Super Metroid - Objects & Items_68
+  - first:
+      213: 6732781538323121758
+    second: SNES - Super Metroid - Objects & Items_69
+  - first:
+      213: 422595090832136130
+    second: SNES - Super Metroid - Objects & Items_70
+  - first:
+      213: 3489784131672902027
+    second: SNES - Super Metroid - Objects & Items_71
+  - first:
+      213: 131230269595478695
+    second: SNES - Super Metroid - Objects & Items_72
+  - first:
+      213: -7886169725842539505
+    second: SNES - Super Metroid - Objects & Items_73
+  - first:
+      213: 574631718913397799
+    second: SNES - Super Metroid - Objects & Items_74
+  - first:
+      213: -2905592503238586752
+    second: SNES - Super Metroid - Objects & Items_75
+  - first:
+      213: 9127590948526549200
+    second: SNES - Super Metroid - Objects & Items_76
+  - first:
+      213: -8981214553810711444
+    second: SNES - Super Metroid - Objects & Items_77
+  - first:
+      213: -6953461858415811546
+    second: SNES - Super Metroid - Objects & Items_78
+  - first:
+      213: -7184082728024169840
+    second: SNES - Super Metroid - Objects & Items_79
+  - first:
+      213: -4392424347842619719
+    second: SNES - Super Metroid - Objects & Items_1
+  - first:
+      213: -6141277309860363814
+    second: SNES - Super Metroid - Objects & Items_2
+  - first:
+      213: 418980756511747012
+    second: SNES - Super Metroid - Objects & Items_3
+  - first:
+      213: -6047410120628483946
+    second: SNES - Super Metroid - Objects & Items_5
+  - first:
+      213: 8994973938939510404
+    second: SNES - Super Metroid - Objects & Items_6
+  - first:
+      213: -7214552945346294982
+    second: SNES - Super Metroid - Objects & Items_7
+  - first:
+      213: -4168408125093721019
+    second: SNES - Super Metroid - Objects & Items_9
+  - first:
+      213: 3883438143654965975
+    second: SNES - Super Metroid - Objects & Items_10
+  - first:
+      213: 2705456826101777092
+    second: SNES - Super Metroid - Objects & Items_11
+  - first:
+      213: -2701119431097996385
+    second: SNES - Super Metroid - Objects & Items_12
+  - first:
+      213: -7588473618869542630
+    second: SNES - Super Metroid - Objects & Items_13
+  - first:
+      213: 8227986413772207028
+    second: SNES - Super Metroid - Objects & Items_14
+  - first:
+      213: 4944866180020501164
+    second: SNES - Super Metroid - Objects & Items_15
+  - first:
+      213: 848112955086998302
+    second: SNES - Super Metroid - Objects & Items_16
+  - first:
+      213: 4885791308427191209
+    second: SNES - Super Metroid - Objects & Items_17
+  - first:
+      213: 7250735866035218967
+    second: SNES - Super Metroid - Objects & Items_18
+  - first:
+      213: -749557119928366212
+    second: SNES - Super Metroid - Objects & Items_19
+  - first:
+      213: -5783698737293472190
+    second: SNES - Super Metroid - Objects & Items_20
+  - first:
+      213: -4840942174738585013
+    second: SNES - Super Metroid - Objects & Items_21
+  - first:
+      213: 8484999192541654860
+    second: SNES - Super Metroid - Objects & Items_22
+  - first:
+      213: -4673723604235849164
+    second: SNES - Super Metroid - Objects & Items_23
+  - first:
+      213: 2701646522077303741
+    second: SNES - Super Metroid - Objects & Items_26
+  - first:
+      213: 2167825153446433220
+    second: SNES - Super Metroid - Objects & Items_27
+  - first:
+      213: 8713359535075647126
+    second: SNES - Super Metroid - Objects & Items_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 49
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548979c09cba443b0800000000000000
+      internalID: -5529105562516088763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800994ed3fd41e2a0800000000000000
+      internalID: -6709996260003573752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_8
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665eb6c6ed162acf0800000000000000
+      internalID: -242523821994941082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_24
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 287
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b0363fb85f71470800000000000000
+      internalID: 8365424814296599434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_25
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 287
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919e45cfc7dbce090800000000000000
+      internalID: -8003814093237196519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 206
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9afba9d9515d600800000000000000
+      internalID: 492323500917238264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_36
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 206
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1538b4c8266ff1850800000000000000
+      internalID: 6350064902736675665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_37
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 255
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888e259603d697600800000000000000
+      internalID: 466524091102455944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_38
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 255
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d63d3433e479950800000000000000
+      internalID: 6455714572947123595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_39
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 256
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6330344ef043c4b90800000000000000
+      internalID: -7256367656741960906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_40
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 256
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6274194369e3d920800000000000000
+      internalID: 3014009188278104686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_45
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 215
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ebed80d73e5c520800000000000000
+      internalID: 2721831675974565530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_46
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 215
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cabbdee5f2a2f3d0800000000000000
+      internalID: -3174295610184713529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_47
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965c102b58b3a2c70800000000000000
+      internalID: 8947029055128061289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_48
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a723989e5009c32b0800000000000000
+      internalID: -5603445481288420742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_49
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa742d662e013f90800000000000000
+      internalID: -6975778789617534296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_50
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 215
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0718fc38ba778d2b0800000000000000
+      internalID: -5559562161454349968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_53
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 88
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eb982eef9268450800000000000000
+      internalID: 6090601720764284560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_54
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 121
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a263d06be681680800000000000000
+      internalID: -8784149345001395665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_55
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 121
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7468cacc8a8a7270800000000000000
+      internalID: 8249058004784669822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_56
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 177
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d67ac85622ece20800000000000000
+      internalID: 3372670990493904219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_57
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 177
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69ad2757ce8cf180800000000000000
+      internalID: -9080225761873516179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_58
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdab63ebc20608520800000000000000
+      internalID: 2702265521708382939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_59
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee0fc03afeda8080800000000000000
+      internalID: -9184283323926638873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_60
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a753689c590290800000000000000
+      internalID: -7923700259810204841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_61
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb80cd3d5b71f1590800000000000000
+      internalID: -7701410768069326661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_62
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 137
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08df603b5a384e40800000000000000
+      internalID: 5640822696610617358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_63
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 137
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19aaab3b1520a71b0800000000000000
+      internalID: -5658207431906645359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_64
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 135
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b76cd32798202f60800000000000000
+      internalID: 8007444767071561657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_65
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 135
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1364e0a5f8a6ae680800000000000000
+      internalID: -8725044164153162191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_66
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 135
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cc04952a2afcba0800000000000000
+      internalID: -6066451354878948244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_67
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 135
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50dcfc82d0b5fe90800000000000000
+      internalID: -6992488428067827619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_68
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21200697296ad8850800000000000000
+      internalID: 6380939395085632018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_69
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56ce062325af6d50800000000000000
+      internalID: 6732781538323121758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_70
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c79fd00ffb5dd500800000000000000
+      internalID: 422595090832136130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_71
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8988279d243e6030800000000000000
+      internalID: 3489784131672902027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_72
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa64032c3932d100800000000000000
+      internalID: 131230269595478695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_73
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c37b4ca62be8290800000000000000
+      internalID: -7886169725842539505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_74
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724518af08089f700800000000000000
+      internalID: 574631718913397799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_76
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8eefd8b97bbae70800000000000000
+      internalID: 9127590948526549200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_78
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624e5e1e747508f90800000000000000
+      internalID: -6953461858415811546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_79
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 93
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092a91f52d20d4c90800000000000000
+      internalID: -7184082728024169840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b65014e359fa03c0800000000000000
+      internalID: -4392424347842619719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad14b9613dcc5caa0800000000000000
+      internalID: -6141277309860363814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb6b9737c480d500800000000000000
+      internalID: 418980756511747012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69846dc2988431ca0800000000000000
+      internalID: -6047410120628483946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48eb26ad32194dc70800000000000000
+      internalID: 8994973938939510404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bc26f0252c0eb90800000000000000
+      internalID: -7214552945346294982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ccfe835e6d626c0800000000000000
+      internalID: -4168408125093721019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2b1c39a6eb4e530800000000000000
+      internalID: 3883438143654965975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 276
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2c3f236a6bb8520800000000000000
+      internalID: 2705456826101777092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 206
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9baf754032b38ad0800000000000000
+      internalID: -2701119431097996385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 206
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11abd7f27350b690800000000000000
+      internalID: -7588473618869542630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 206
+        width: 8
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3f1a1bc0eaf2270800000000000000
+      internalID: 8227986413772207028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 44
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaf6f97791bf9440800000000000000
+      internalID: 4944866180020501164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 44
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b0e593d3a15cb00800000000000000
+      internalID: 848112955086998302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 44
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a36e791f41ddc340800000000000000
+      internalID: 4885791308427191209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_18
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 54
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aa637aad9cf9460800000000000000
+      internalID: 7250735866035218967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 54
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b0ecf45c90995f0800000000000000
+      internalID: -749557119928366212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 55
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e4fbb44ac2cbfa0800000000000000
+      internalID: -5783698737293472190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 55
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4aef709db481dcb0800000000000000
+      internalID: -4840942174738585013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_22
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4febe66fc5c0c570800000000000000
+      internalID: 8484999192541654860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_23
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432f927f429932fb0800000000000000
+      internalID: -4673723604235849164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_26
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 28
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db35619a23d2e7520800000000000000
+      internalID: 2701646522077303741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_27
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 28
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1d45ecd79a51e10800000000000000
+      internalID: 2167825153446433220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Metroid - Objects & Items_28
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 51
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e5270f4521ce870800000000000000
+      internalID: 8713359535075647126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 29059deb36261484f83e44a9cf1bed23
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
