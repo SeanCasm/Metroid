@@ -19,6 +19,7 @@ public class CollectorManager : MonoBehaviour
     [SerializeField] ButtonUtilities buttonEssentials;
     [SerializeField] PlayerController pContr;
     [SerializeField] AudioMixerGroup mixerToMute;
+    [SerializeField] InputManager inputManager;
     private PlayerInventory inventory;
     private float audioAux;
     private SkinSwapper skin;
@@ -49,6 +50,7 @@ public class CollectorManager : MonoBehaviour
     }
     public void SetPause()
     {
+        inputManager.DisableUIInput();
         mixerToMute.audioMixer.GetFloat("SE volume", out audioAux);
         mixerToMute.audioMixer.SetFloat("SE volume", -80);
         Pause.PausePlayer(true);
@@ -129,7 +131,6 @@ public class CollectorManager : MonoBehaviour
         inventory.reserve.Add(reserve.ID);
         audioPlayer.ClipAndPlay(reserveAcquired);
         panel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = reserve.nameItem;
-        OnMenuHandler.onAnyMenu = true;
     }
     private void ItemAcquired(ItemAcquired item)
     {
@@ -145,7 +146,6 @@ public class CollectorManager : MonoBehaviour
         panel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.Message;
         AddToPlayerInventory(item);
         audioPlayer.ClipAndPlay(itemAcquired);
-        OnMenuHandler.onAnyMenu = true;
     }
     public void HandlePickupItem(ItemAcquired itemS)
     {
@@ -168,8 +168,8 @@ public class CollectorManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(audioLenght);
         Pause.UnpausePlayer();
         pContr.enabled = true;
+        inputManager.EnableUIInput();
         mixerToMute.audioMixer.SetFloat("SE volume", audioAux);
-        OnMenuHandler.onAnyMenu = false;
         Destroy(panel); Destroy(itemGot.gameObject);
     }
     #endregion

@@ -12,12 +12,10 @@ public class BoyonIA : EnemyBase
     private bool onPlayer,isStunned;
     private PlayerHealth pHealth;
     private float currentSpeed;
-    private EnemyHealth eHealth;
     private void Start()
     {
         currentSpeed=speed;
         animator=GetComponent<Animator>();
-        eHealth=GetComponentInChildren<EnemyHealth>();
     }
     private void Update()
     {
@@ -57,6 +55,6 @@ public class BoyonIA : EnemyBase
         CancelInvoke("Damage");
     }
     void Damage(){
-        pHealth.ConstantDamage(eHealth.collideDamage);
+        pHealth.ConstantDamage(enemyHealth.collideDamage);
     }
 }

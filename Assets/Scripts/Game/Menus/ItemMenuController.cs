@@ -25,13 +25,11 @@ public class ItemMenuController : Controller
     {
         StartCoroutine("SelectContinueButtonLater");
         base.inputManager.Back+=Back;
-        OnMenuHandler.onItemMenu = true;
         firstItem.Select();
     }
     void OnDisable()
     {
         base.inputManager.Back -= Back;
-        OnMenuHandler.onItemMenu = false;
         menuPointer.SetActive(false);
     }
     IEnumerator SelectContinueButtonLater()

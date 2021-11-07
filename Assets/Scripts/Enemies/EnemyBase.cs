@@ -13,7 +13,7 @@ namespace Enemy
         [SerializeField] bool stopAll;
         public Animator anim { get; set; }
         public Rigidbody2D rigid { get; set; }
-        private EnemyHealth enemyHealth;
+        protected EnemyHealth enemyHealth;
         protected PlayerDetector pDetect;
         private float curGravity;
         private bool isVisible,isSubscribed;

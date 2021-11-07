@@ -203,12 +203,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 59a5821b5c9dd854bb41b9e8ba9ceb0b
-    m_Address: Assets/Prefabs/Enemies/Krus krab.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 17b28ebf960d7a24f9774243b0e5b5ea
     m_Address: Assets/Prefabs/Enemies/Larva.prefab
     m_ReadOnly: 0

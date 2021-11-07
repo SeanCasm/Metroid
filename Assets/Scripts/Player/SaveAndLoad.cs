@@ -54,7 +54,7 @@ public class SaveAndLoad : MonoBehaviour
         position.y = data.position[1];
         position.z = 0;
         pContr.SetTransformCenter(position);
-        SceneHandler.current.LoadStartScene(OnCompleted);
+        SceneHandler.current.LoadFromSaveGame(OnCompleted);
     }
     void OnCompleted(){
         SaveStation.loaded = true;

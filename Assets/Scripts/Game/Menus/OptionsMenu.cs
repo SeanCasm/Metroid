@@ -9,14 +9,7 @@ public class OptionsMenu : MonoBehaviour
     public bool fromMenuCalled { get; set; }
     public void Back()
     {
-        if (fromMenuCalled)
-        {
-            mainMenu?.Invoke();
-            OnMenuHandler.onSlots=true;
-        }
-        else
-        {
-            pauseMenu?.Invoke();
-        }
+        if (fromMenuCalled) mainMenu?.Invoke();
+        else pauseMenu?.Invoke();
     }
 }

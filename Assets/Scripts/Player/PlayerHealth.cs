@@ -200,7 +200,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         player.ResetState();
         Player.Animation.Death.current.StartAnimation(Retry.Completed,_renderer.transform.eulerAngles.y,player.TransformCenter());
         Retry.Start.Invoke();
-        OnMenuHandler.onAnyMenu = AudioListener.pause = true;
+        AudioListener.pause = true;
         gameObject.SetActive(false);
         Time.timeScale = 0f;
     }

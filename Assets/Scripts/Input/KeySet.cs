@@ -44,10 +44,12 @@ public class KeySet : MonoBehaviour
      
     public void StartRebindind()
     {
-        actionTextAux = actionText.text;
-        actionText.text = text;
-        //rebindKeys.Input.SwitchCurrentActionMap("NNN");
-        PerformIR();
+        if(!binding){
+            actionTextAux = actionText.text;
+            actionText.text = text;
+            //rebindKeys.Input.SwitchCurrentActionMap("NNN");
+            PerformIR();
+        }
     }
     private string BindToText()
     {
@@ -60,12 +62,24 @@ public class KeySet : MonoBehaviour
     {
         binding = true;
         action.Disable();
+        #if UNITY_STANDALONE
         rebindingOperation = action.PerformInteractiveRebinding()
         .WithControlsExcluding("Mouse").
         OnMatchWaitForAnother(0.1f).
         OnCancel(op => RebindCancel()).
         OnComplete(operation => RebindComplete()).
         Start();
+        #endif
+        #if UNITY_ANDROID
+        rebindingOperation = action.PerformInteractiveRebinding()
+        .WithControlsExcluding("Keyboard").
+        WithControlsExcluding("Mouse").
+        OnMatchWaitForAnother(0.1f).
+        OnCancel(op => RebindCancel()).
+        OnComplete(operation => RebindComplete()).
+        Start();
+        #endif
+         
     }
     private void RebindCancel()
     {

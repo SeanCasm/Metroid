@@ -1,47 +1,82 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Enemy;
+using Player.Weapon;
 
-public class MetroidIA : MonoBehaviour
+public class MetroidIA : EnemyBase
 {
-    public float visionRadius;
-    
-    public float speed;
-
-    GameObject player;
-    private bool _enemyDetected;
-    private Animator _animator;
-    Vector3 initialPosition;
-
-    Animator anim;
-    Rigidbody2D rb2d;
-    // Start is called before the first frame update
-    void Start()
+    [Header("Configuration")]
+    [SerializeField] float damageDelay;
+    [SerializeField] float sideRotation, catchRadius;
+    [SerializeField] Transform catchPlayer;
+    [SerializeField] LayerMask playerLayer;
+    [SerializeField] Collider2D hurtbox;
+    private bool onPlayer, followPlayer, startChecks;
+    private PlayerHealth pHealth;
+    private new void Awake()
     {
-        
-        player = GameObject.FindGameObjectWithTag("Player");
-        initialPosition = transform.position;
-        _animator = GetComponent<Animator>();
-        rb2d= GetComponent<Rigidbody2D>();
+        base.Awake();
+        pHealth = FindObjectOfType<PlayerHealth>();
+        anim.speed = 0;
     }
-
-    // Update is called once per frame
-    void Update()
+    private new void OnEnable()
     {
-        _enemyDetected = false;
-        Vector3 target = initialPosition;
-        float dist = Vector3.Distance(player.transform.position, transform.position);
-        if (dist < visionRadius)
+        base.OnEnable();
+        pDetect.OnDetection += EnableComp;
+    }
+    private void OnDisable()
+    {
+        pDetect.OnDetection -= EnableComp;
+    }
+    private void Update()
+    {
+        if (startChecks)
         {
-            target = player.transform.position;
-            _enemyDetected = true;
-        }
-        float fixedSpeed = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
+            var hit = Physics2D.OverlapCircle(catchPlayer.position, catchRadius, playerLayer);
+            onPlayer = hit != null ? true : false;
+            if (onPlayer && !IsInvoking(nameof(Damage)))
+            {
+                InvokeRepeating(nameof(Damage), damageDelay, damageDelay);
+                anim.SetFloat("Anim speed", 2f);
+            }
+            else if (!onPlayer)
+            {
+                CancelInvoke(nameof(Damage));
+                anim.SetFloat("Anim speed", 1f);
+            }
 
+            if ((pDetect.detected || followPlayer) && !onPlayer)
+            {
+                followPlayer = true;
+                if (transform.position.x < pDetect.GetPlayerTransformCenter().x)
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, -sideRotation);
+                }
+                else
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, sideRotation);
+                }
+                transform.position = Vector2.MoveTowards(transform.position, pDetect.GetPlayerTransformCenter(), speed * Time.deltaTime);
+            }
+            else if (onPlayer)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                transform.position = pDetect.GetPlayerTransformCenter();
+            }
+        }
     }
-    void LateUpdate()
+    /*private void OnDrawGizmos() {
+        Gizmos.DrawWireSphere(catchPlayer.position,catchRadius);
+    }*/
+    private void EnableComp()
     {
-        _animator.SetBool("EnemyDetected", _enemyDetected);
+        anim.speed = 1;
+        startChecks = true;
+        hurtbox.enabled=true;
+    }
+    void Damage()
+    {
+        pHealth.ConstantDamage(enemyHealth.collideDamage);
     }
 }

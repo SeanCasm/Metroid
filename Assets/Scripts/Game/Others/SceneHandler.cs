@@ -12,13 +12,12 @@ public class SceneHandler : MonoBehaviour
     [SerializeField]AssetReference initialRoom;
     [SerializeField] Vector2 spawn;
     private PlayerController pContr{get;set;}
-    private Action Completed;
     private GameObject scenario;
      private void Awake() {
         if(current==null){
             current=this;
             DontDestroyOnLoad(gameObject);
-        }else Destroy(gameObject);
+        }else Destroy(this);
     }
      public void SetCurrentScenario(GameObject cur){
         scenario=cur;
@@ -28,18 +27,14 @@ public class SceneHandler : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
         StartCoroutine(CheckUnload(operation));
     }
-    /// <summary>
-    /// Loads async the scene 1 and unload the scene 0.
-    /// </summary>
-    public void LoadStartScene()
-    {
-        Completed =NewGame;
-        if(Slots.retry) StartingLoad();
-        else AnimationHandle.current.StartRetry(StartingLoad);
+    public void LoadFromNewGame(){
+        AnimationHandle.current.StartRetry(StartingLoad);
     }
-    public void LoadStartScene(Action action)
+    public void LoadFromRetryScreen(){
+        StartingLoad();
+    }
+    public void LoadFromSaveGame(Action action)
     {
-        Completed=action;
         if (Slots.retry) StartingLoad();
         else AnimationHandle.current.StartRetry(StartingLoad);
     }
@@ -57,11 +52,11 @@ public class SceneHandler : MonoBehaviour
     }
     void OnLoadComplete(AsyncOperationHandle<GameObject> obj){
         SetCurrentScenario(obj.Result);
-        Slots.retry = OnMenuHandler.onSlots = false;
-        EnableGame();
+        AnimationHandle.current.EnableEnd(EnableAll);
+        Slots.retry = false;
         AudioListener.pause=false;
     }
-    void NewGame(){
+    void EnableAll(){
         pContr.SetTransformCenter(spawn);
         List<Behaviour> behaviours = pContr.GetComponents<Behaviour>().ToList();
         behaviours.Add(pContr.GetComponentInChildren<Gun>());
@@ -72,8 +67,5 @@ public class SceneHandler : MonoBehaviour
         }
         Pause.onGame = true;
         Time.timeScale = 1f;
-    }
-    void EnableGame(){
-        AnimationHandle.current.EnableEnd(Completed);
     }
 }

@@ -48,7 +48,6 @@ public class MapTerminal : MonoBehaviour
     {
         animator.SetTrigger("Detected");
         light.SetTrigger("Activated");
-        print(minimapTiles.minimapScripts.Count);
         minimapTiles.minimapScripts.ForEach(item =>
         {
             item.SetTile();

@@ -44,14 +44,15 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     private void Start()
     {
         CurrentControlScheme(playerInput);
+        controlPanel.text = "Gamepad options";
     }
     public void CurrentControlScheme(PlayerInput playerInput)
     {
         switch (playerInput.currentControlScheme)
         {
             case "Gamepad":
-                if (!isTouchingStick)
-                {
+            #if UNITY_STANDALONE
+
                     RebindKeys.deviceType = CurrentDevice.Gamepad;
                     actualDevice = CurrentDevice.Gamepad;
                     controlPanel.text = "Gamepad options";
@@ -60,20 +61,21 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
                  InputControlPath.HumanReadableStringOptions.OmitDevice
              ), InputControlPath.ToHumanReadableString(GetSelectEffectivePath(1),
                  InputControlPath.HumanReadableStringOptions.OmitDevice));
-
+                 keyCollection.ForEach(item =>
+                    {
+                        item.Start();
+                        item.SetIndex(false);
+                        item.SetKeyText();
+                    });
+/*
 #if UNITY_ANDROID
                     touchpad.SetActive(false);
                     selectBack.SetActive(true);
                     inputButton.interactable = true;
 
 #endif
-                    keyCollection.ForEach(item =>
-                    {
-                        item.Start();
-                        item.SetIndex(false);
-                        item.SetKeyText();
-                    });
-                }
+*/
+            #endif
                 break;
 #if UNITY_STANDALONE
             case "Keyboard&Mouse":
@@ -103,8 +105,8 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
                     options.SetActive(true);
                     eventSystem.SetSelectedGameObject(options.GetChild(0));
                 }
-                inputButton.interactable = false;
-                controlPanel.text = "No controls";
+                //inputButton.interactable = false;
+                //controlPanel.text = "No controls";
                 touchpad.SetActive(true);
                 actualDevice = CurrentDevice.Touch;
                 selectBack.SetActive(false);
@@ -146,6 +148,14 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     public void DisablePlayerInput() => inputClass.Player.Disable();
     public void DisableFireInput() => inputClass.Player.Fire.Disable();
     public void EnableFireInput() => inputClass.Player.Fire.Enable();
+    public void DisableAll(){
+        inputClass.Player.Disable();
+        inputClass.UI.Disable();
+    }
+    public void EnableAll(){
+        inputClass.Player.Enable();
+        inputClass.UI.Enable();
+    }
     public string GetBackEffectivePath(byte index)
     {
         return inputClass.UI.Cancel.bindings[index].effectivePath;
@@ -179,13 +189,7 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
         inputClass.Player.Morphball.Enable();
         inputClass.Player.Tab.Enable();
     }
-    public void OnAD(InputAction.CallbackContext context)
-    {
-        if (context.phase == InputActionPhase.Started)
-            HorizontalMovement?.Invoke(context);
-        if (context.phase == InputActionPhase.Canceled)
-            HorizontalMovementCanceled.Invoke(context);
-    }
+     
 
     public void OnAimdown(InputAction.CallbackContext context)
     {
@@ -270,7 +274,13 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     {
         Submit.Invoke(context);
     }
-
+    public void OnAD(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started)
+            HorizontalMovement?.Invoke(context);
+        if (context.phase == InputActionPhase.Canceled)
+            HorizontalMovementCanceled.Invoke(context);
+    }
     public void OnWS(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
@@ -278,7 +288,6 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
         if (context.phase == InputActionPhase.Canceled)
             VerticalMovementCanceled.Invoke(context);
     }
-
     public void OnClick(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
@@ -307,11 +316,6 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
 
     public void OnScrollWheel(InputAction.CallbackContext context)
     {
-    }
-
-    public void OnWASD(InputAction.CallbackContext context)
-    {
-        print(context);
     }
 }
 public enum CurrentDevice { Gamepad, Keyboard, Touch }

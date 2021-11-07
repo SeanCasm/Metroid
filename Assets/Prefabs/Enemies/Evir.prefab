@@ -147,7 +147,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4aa3df6f0420c64fbb9f9bd98117e80, type: 2}
+  - {fileID: 2100000, guid: 15e62be6b8268bd42859b35c7e6c75d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -193,10 +193,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   detectPlayer: 1
+  stopAll: 0
   shootPoint: {fileID: 8044590964919419177}
-  playerDetector: {fileID: 0}
-  collision: {fileID: 8353612417467780393}
   bulletsPool: {fileID: 6296947183627783864}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  groundAware: 0
 --- !u!61 &8259594262503058682
 BoxCollider2D:
   m_ObjectHideFlags: 0

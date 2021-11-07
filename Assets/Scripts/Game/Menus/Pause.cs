@@ -15,14 +15,10 @@ public class Pause : MonoBehaviour
     [SerializeField] FirstSelectedHandler menuFirst;
     [SerializeField] PlayerController pContr;
     public static System.Action<bool> OnPauseInput,OnPause;
-    public static bool gamePaused, onGame,escPause;
+    public static bool onGame,escPause;
     public GameObject player;
     public GameObject playerMenu;
     private bool enterPause;
-    /// <summary>
-    /// When player starts navigate on the sub-menus from esc or enter menu
-    /// </summary>
-    public bool onSubMenu { get; set; }
     #endregion
     #region Unity Methods
     private void OnEnable()
@@ -37,14 +33,14 @@ public class Pause : MonoBehaviour
         GameEvents.MinimapShortcout -= QuickMinimap;
         inputManager.Pause -= PauseMenu;
         inputManager.PlayerPause -= Menu;
-        escPause=gamePaused  = onGame = false;
+        escPause=onGame = false;
     }
     #endregion
     private void PauseMenu(InputAction.CallbackContext context)
     {
         if (CheckBeforePause())
         {
-            if (gamePaused)
+            if (Time.timeScale==0)
             {
                 unpauseEvent.Invoke();
             }
@@ -55,7 +51,7 @@ public class Pause : MonoBehaviour
     {
         if (CheckBeforePause())
         {
-            if (gamePaused) unpauseEvent.Invoke();
+            if (Time.timeScale==0) unpauseEvent.Invoke();
             else { enterPause = true; EnterPause(false); pauseEvent.Invoke(); }
         }
     }
@@ -84,22 +80,20 @@ public class Pause : MonoBehaviour
     #region Private Methods
     private bool CheckBeforePause()
     {
-        if (!OnMenuHandler.onAnyMenu && player.activeSelf && !enterPause && !onSubMenu && onGame) return true;
+        if (player.activeSelf && !enterPause && onGame) return true;
         else return false;
     }
     
     #region UnityEvent
-    private void GeneralPause()
+    public void GeneralPause()
     {
         PausePlayer(false);
         OnPause?.Invoke(false);
         gameSettings.SetEffectsVolume(true);
         gameSettings.SetMusicVolume(true);
-        //playerC.rb.velocity = Vector2.zero;
         Time.timeScale = 0f;
-        gamePaused = true;
     }
-    private void Unpause()
+    public void Unpause()
     {
         OnPauseInput?.Invoke(false);
         #if UNITY_ANDROID
@@ -113,7 +107,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         playerMenu.SetActive(false);
-        escPause=enterPause = gamePaused = false;
+        escPause=enterPause = false;
     }
     /// <summary>
     /// Used in Resume button onclick event at playerMenu.
@@ -149,11 +143,6 @@ public class Pause : MonoBehaviour
         });
         //Setting the first select.
         options = GetComponentAtIndex(pauseMenu, 2);
-
-        options.onClick.AddListener(() =>
-        {
-            onSubMenu = true;
-        });
 
         GameEvents.timeCounter.Invoke(false);//pauses the time counter.
     }

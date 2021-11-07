@@ -20,7 +20,6 @@ public class SaveStation : MonoBehaviour
         if (col.CompareTag("Player") && !loaded && 
         (playerController=col.GetComponentInParent<PlayerController>()).GroundState!=GroundState.Balled)
         {
-            OnMenuHandler.onAnyMenu = true;
             GameEvents.save.Invoke(this);
             var gC= col.GetComponent<GameComponents>();
             saveLoad = gC.GetSaveAndLoad;
@@ -41,6 +40,7 @@ public class SaveStation : MonoBehaviour
         {
             saveLoad.SetPositions(spawn.position.x, spawn.position.y, spawn.position.z);
             SaveAndLoad.sectorName = actualSectorLoad;
+            inputManager.DisableUIInput();
             saveLoad.SavePlayerSlot(gameSlot);
             PlayerAnimatorUpdate(false, true);
             Invoke("stopSavingAnim",4f);
@@ -60,7 +60,6 @@ public class SaveStation : MonoBehaviour
     void OnStation()
     {
         playerController.SetAnimation(20, true);
-
         playerController.SetTransformCenter(spawn.position);
         playerController.SetConstraints(RigidbodyConstraints2D.FreezeAll);
         inputManager.DisablePlayerInput();
@@ -70,12 +69,11 @@ public class SaveStation : MonoBehaviour
         GameEvents.saveMessage.Invoke();
         unFreezeMoves();
         PlayerAnimatorUpdate(false, false);
-        inputManager.EnablePlayerInput();
+        inputManager.EnableAll();
     }
     void unFreezeMoves()
     {
         playerController.SetConstraints(RigidbodyConstraints2D.FreezeRotation);
-        OnMenuHandler.onAnyMenu = false;
     }
     void PlayerAnimatorUpdate(bool saved, bool isSaving)
     {

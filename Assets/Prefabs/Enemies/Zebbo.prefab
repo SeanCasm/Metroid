@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4aa3df6f0420c64fbb9f9bd98117e80, type: 2}
+  - {fileID: 2100000, guid: 15e62be6b8268bd42859b35c7e6c75d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,11 +223,17 @@ MonoBehaviour:
   invFreeze: 0
   invPlasma: 0
   invCharged: 0
+  missiles: 0
+  superMissiles: 0
+  beams: 0
+  bombs: 0
+  superBombs: 0
+  plasma: 0
+  charged: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   deathClip: {fileID: 5122862422074326034, guid: bccb81efe6a1c09469ab7d11ee28ede4, type: 3}
   freezedCol: {fileID: 8002042709845723290}
   rigidCol: {fileID: 0}
-  scriptableDrop: {fileID: 11400000, guid: 1d30ec1cb362ce94ba3a8032345942bf, type: 2}
   collideDamage: 7
   deadPrefab: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
 --- !u!1 &8002042709845723290

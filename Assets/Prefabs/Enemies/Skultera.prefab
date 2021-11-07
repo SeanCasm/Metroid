@@ -212,7 +212,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4aa3df6f0420c64fbb9f9bd98117e80, type: 2}
+  - {fileID: 2100000, guid: 15e62be6b8268bd42859b35c7e6c75d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -415,6 +415,14 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: beams
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: bombs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: health
       value: 18
       objectReference: {fileID: 0}
@@ -445,7 +453,7 @@ PrefabInstance:
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: scriptableDrop
       value: 
-      objectReference: {fileID: 11400000, guid: f5349e5d6fb601147a9a34c74b8c06ab, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
 --- !u!1 &4392498457630002413 stripped

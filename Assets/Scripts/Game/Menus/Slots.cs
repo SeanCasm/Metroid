@@ -22,10 +22,6 @@ public class Slots : MonoBehaviour
     private int slotToDelete;
     public static int slot;
     public static bool retry;
-    void OnEnable()
-    {
-        OnMenuHandler.onSlots=true;
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -110,21 +106,21 @@ public class Slots : MonoBehaviour
     private void NewGameData()
     {
         SaveAndLoad.newGame = true;
-        SceneHandler.current.LoadStartScene();
+        if(!retry) SceneHandler.current.LoadFromNewGame();
+        else SceneHandler.current.LoadFromRetryScreen();
     }
     public void SetData(int loadSlot)
     {
         slot=loadSlot;
         SaveAndLoad.slot = loadSlot;
-        if (SaveSystem.LoadPlayerSlot(loadSlot) != null) { SaveAndLoad.newGame = false; saveLoad.LoadPlayerSlot(loadSlot); }
+        if (SaveSystem.LoadPlayerSlot(loadSlot) != null) { 
+            SaveAndLoad.newGame = false;
+            saveLoad.LoadPlayerSlot(loadSlot); 
+        }
         else NewGameData();
         startGame.Invoke();
         Pause.OnPauseInput?.Invoke(false);
         GameEvents.timeCounter.Invoke(true);
-    }
-    void OnDisable()
-    {
-        OnMenuHandler.onSlots = false;
     }
     private void OnDestroy() {
         pointer.SetParent(canvas);

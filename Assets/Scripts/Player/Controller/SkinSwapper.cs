@@ -18,7 +18,6 @@ public class SkinSwapper : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        print(spriteRenderer);
         playerController=GetComponent<PlayerController>();
         SetPowerSuit();
     }

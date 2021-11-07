@@ -7,7 +7,7 @@ public class TouchpadHandler : MonoBehaviour
 {
     [SerializeField] GameObject[] otherButtons;
     [SerializeField] GameObject directionalPad;
-    [SerializeField] GameObject dpad;
+    [SerializeField] GameObject dpad,virtualGamepad;
     private GraphicRaycaster graphicRaycaster;
     [Header("Personalizacion")]
     [SerializeField] Image beamButton;
@@ -24,6 +24,11 @@ public class TouchpadHandler : MonoBehaviour
             e.SetActive(!enable);
         }
         //graphicRaycaster.enabled=!enable;
+    }
+    //Unity button onClick event
+    public void HideVirtualGamepad(Image image){
+        virtualGamepad.SetActive(!virtualGamepad.activeSelf);
+        image.color = !virtualGamepad.activeSelf ?  new Color(1,1,1,.5f) : new Color(1,1,1,1f);
     }
     public void SwapSpriteSuits(string suit){
         suit = suit.ToLower();

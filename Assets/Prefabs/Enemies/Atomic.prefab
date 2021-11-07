@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4aa3df6f0420c64fbb9f9bd98117e80, type: 2}
+  - {fileID: 2100000, guid: 15e62be6b8268bd42859b35c7e6c75d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -373,6 +373,14 @@ PrefabInstance:
       value: HurtBox
       objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: beams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: bombs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: health
       value: 15
       objectReference: {fileID: 0}
@@ -385,6 +393,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: missiles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 
       objectReference: {fileID: 8833819837983755383}
@@ -393,13 +405,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: dissolveTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: collideDamage
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
+      propertyPath: superMissiles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: scriptableDrop
       value: 
-      objectReference: {fileID: 11400000, guid: f5349e5d6fb601147a9a34c74b8c06ab, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: invulnerableType
       value: 0

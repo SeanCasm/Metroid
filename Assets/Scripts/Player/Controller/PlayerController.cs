@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputManager inputManager;
     [SerializeField] BoxCollider2D edgeCollider,hurtBox;
     [SerializeField, Range(.01f, 1f)] float jumpTime = 0.35f;
-    [SerializeField] Transform camHandle,screw;
+    [SerializeField] Transform camHandle;
     [Header("Floor config")]
     [SerializeField] LayerMask groundLayer,slopeLayer;
     [SerializeField] float overHeadCheck=.01f;
@@ -35,11 +35,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(0, 200)] float maxSpeed;
     [SerializeField, Range(0.15f, 3)] float speedIncreaseOverTime = 1.5f;
     [Header("Misc events")]
-    [SerializeField] UnityEvent onMorphball, onEnable;
     [SerializeField] UnityEvent<bool> onScrew;
+    [SerializeField] UnityEvent onMorphball, onEnable;
     private Vector2 posFrontRay, posBackRay, slopePerp,direction;
     private RaycastHit2D frontHit, backHit;
-    private SkinSwapper skin;
     private float jumpForce = 88, speed = 88, frontAngle, backAngle, curSpinOffset = 1,slow2Gravity = 1,curGroundDis;
     private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, slopeAngle, aim,spriteCenter;
     public float xInput{get;private set;}=0;
@@ -195,7 +194,6 @@ public class PlayerController : MonoBehaviour
         gun = GetComponentInChildren<Gun>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        skin = GetComponent<SkinSwapper>();
         for (int i = 0; i < anim.parameterCount - 2; i++) animatorHash[i] = Animator.StringToHash(anim.parameters[i].name);
         currentSpeed = speed;
         curGroundDis =groundDistance;

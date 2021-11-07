@@ -85,15 +85,6 @@
                     "processors": "",
                     "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "WASD",
-                    "type": "PassThrough",
-                    "id": "ed37193d-3ea1-45d1-b1a0-07a896a12ad3",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "Press(behavior=2)",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -264,17 +255,6 @@
                 },
                 {
                     "name": "1D Axis",
-                    "id": "279e6579-3010-47f4-b6a0-3d5a4b90a61e",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WS",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
                     "id": "e6462232-d0bf-4e52-990a-04fae7cccf45",
                     "path": "1DAxis",
                     "interactions": "",
@@ -371,72 +351,6 @@
                     "action": "Aim up",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4af38773-6bfc-4f4d-b717-b499eebf0df3",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
-                    "id": "f0eafafc-5600-4407-aa45-c36ceae7c5a4",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WASD",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "15399c0f-7445-420a-bb70-81c36c5748d8",
-                    "path": "<Gamepad>/dpad/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "1dcf63f9-b478-48de-8813-3932c9d94e10",
-                    "path": "<Gamepad>/dpad/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "f2fae378-00ea-4ded-829c-0609969d1520",
-                    "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "4b6591ef-a22b-4a6e-8f3d-e51965e1c7a6",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "WASD",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         },
