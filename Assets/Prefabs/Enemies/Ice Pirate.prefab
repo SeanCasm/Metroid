@@ -167,7 +167,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164532759450319849}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -178,7 +178,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4921098635597488340
 MonoBehaviour:
@@ -197,9 +197,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
   slopeFrontRay: 0.303
   groundHitSlope: 0.303
   coll: {fileID: 6598507123168578821}

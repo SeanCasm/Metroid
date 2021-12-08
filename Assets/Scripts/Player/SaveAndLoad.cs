@@ -54,6 +54,7 @@ public class SaveAndLoad : MonoBehaviour
         position.y = data.position[1];
         position.z = 0;
         pContr.SetTransformCenter(position);
+        Sensor.doorsUnlocked = new Dictionary<string, bool>(data.doorsUnlocked);
         SceneHandler.current.LoadFromSaveGame(OnCompleted);
     }
     void OnCompleted(){

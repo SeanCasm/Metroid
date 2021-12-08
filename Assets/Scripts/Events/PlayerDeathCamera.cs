@@ -16,7 +16,7 @@ public class PlayerDeathCamera : MonoBehaviour
         Retry.Completed -= OnPlayerDeath;
     }
     private void OnPlayerDeath(){
-        CurrentCamera.current.CMConfiner.m_BoundingShape2D=null;
+        CurrentCamera.current.SwapConfiner(null);
         cam.LookAt = camHandle;
     }
 }

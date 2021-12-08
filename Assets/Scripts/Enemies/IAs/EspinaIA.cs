@@ -9,15 +9,22 @@ public class EspinaIA : EnemyBase
     private GroundSlopeChecker efd;
     public GameObject bulletPrefab;
     private bool _isAttacking;
+    private int upsideDown=1;
     GameObject[] bulletArray = new GameObject[5];
     Weapon[] bulletComponent = new Weapon[5];
     new void Awake()
     {
         base.Awake();
+        upsideDown = (Vector2)transform.up == Vector2.up ? 1 : -1;
         efd = GetComponent<GroundSlopeChecker>();
+    }
+    private new void OnEnable() {
+        base.OnEnable();
         pDetect.OnDetection+=PlayerDetected;
     }
-    private void OnDisable() =>pDetect.OnDetection-=PlayerDetected;
+    private void OnDisable(){
+        pDetect.OnDetection-=PlayerDetected;
+    }
     void Start()=>currentSpeed = speed;
     void Update()
     {
@@ -27,7 +34,6 @@ public class EspinaIA : EnemyBase
     void FixedUpdate()=>efd.SetOnGroundVelocity(currentSpeed);
     private void PlayerDetected(){
         anim.SetBool("Attack",_isAttacking=true);
-        rigid.gravityScale = 0;
     }
     public void Shoot()
     {
@@ -39,7 +45,7 @@ public class EspinaIA : EnemyBase
         int angle=0;
         for(int i=0;i<bulletComponent.Length;i++){
             bulletComponent[i].SetDirectionAround(angle);
-            angle+=45;
+            angle+=(45*upsideDown);
         }
         rigid.gravityScale = 1;
         anim.SetBool("Attack",_isAttacking=false);

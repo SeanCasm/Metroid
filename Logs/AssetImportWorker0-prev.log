@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.2f1 (e5d502d80fbb) revision 15062274'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 19042.1288; Version 2009; 64bit' Language: 'es' Physical Memory: 15774 MB
+OS: 'Windows 10 Home Single Language; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 15774 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49390
+51059
 Successfully changed project path to: C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 90.96 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 109.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.2f1 (e5d502d80fbb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Resources/UnitySubsystems
@@ -36,516 +36,60 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001646 seconds.
+Registered in 0.002391 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 88.01 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 103.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.599 seconds
+- Completed reload, in  1.786 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003543 seconds.
+Registered in 0.005446 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 94.95 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 92.36 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.083 seconds
+- Completed reload, in  1.115 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.12 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4723 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.6 MB.
-System memory in use after: 197.8 MB.
+Unloading 4726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 198.2 MB.
+System memory in use after: 198.4 MB.
 
-Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 5162.
-Total: 3.817900 ms (FindLiveObjects: 0.501500 ms CreateObjectMapping: 0.217300 ms MarkObjects: 3.029700 ms  DeleteObjects: 0.068600 ms)
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 5166.
+Total: 4.249100 ms (FindLiveObjects: 0.427700 ms CreateObjectMapping: 0.174700 ms MarkObjects: 3.566700 ms  DeleteObjects: 0.078700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0b843a7a4ab8d9578801f946ddac82') in 0.187972 seconds 
+  path: Assets/Prefabs/Scenarios/Pirates z1.prefab
+  artifactKey: Guid(f49d00e50103c3448973eeea0635ed95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Pirates z1.prefab using Guid(f49d00e50103c3448973eeea0635ed95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e3e7b2f27cbad2c9b6864a66eb8c05') in 0.344753 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.132365 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a9c4195687503bd352748b2a727b6c') in 0.015392 seconds 
+  Time since last request: 1579.441254 seconds.
+  path: Assets/Prefabs/Scenarios/Boss selection.prefab
+  artifactKey: Guid(9feff8612a6624e47b5bb65bbbbcdaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Boss selection.prefab using Guid(9feff8612a6624e47b5bb65bbbbcdaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5212563ff9ad039a0b4666935fc977') in 0.078568 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.964484 seconds.
-  path: Assets/Prefabs/Scenarios/Begin.prefab
-  artifactKey: Guid(65e8e108deb43aa44aa4100e3e676c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Scenarios/Begin.prefab using Guid(65e8e108deb43aa44aa4100e3e676c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e53a69e85c149dcb8017d0e730e020') in 0.235515 seconds 
+  Time since last request: 27.302466 seconds.
+  path: Assets/Prefabs/Scenarios/Pirates z1.prefab
+  artifactKey: Guid(f49d00e50103c3448973eeea0635ed95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Pirates z1.prefab using Guid(f49d00e50103c3448973eeea0635ed95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d260aaf5b3fbedec2277aa91fdb902') in 0.051291 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.595757 seconds.
-  path: Assets/Prefabs/Scenarios/Begin.prefab
-  artifactKey: Guid(65e8e108deb43aa44aa4100e3e676c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Scenarios/Begin.prefab using Guid(65e8e108deb43aa44aa4100e3e676c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8cb3fe7a875da200e28d84559664622') in 0.110998 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 62.611921 seconds.
-  path: Assets/Prefabs/Enemies/Boyon.prefab
-  artifactKey: Guid(da7ba9272387e8a4fab9bc4dcfa73c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Boyon.prefab using Guid(da7ba9272387e8a4fab9bc4dcfa73c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd934eb45d8ed18354682371e88abdc') in 0.014946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.375148 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92293d259ff7a1977c8224f739e5ca64') in 0.015952 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.772189 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32388482284e6191df0fdcf4a77e1923') in 0.014725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 51.567584 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced3d2e9dfc314542bda3a62db925a1b') in 0.015692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 62.349382 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5635df695fe99505a41dc1c9d57988') in 0.014774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.217830 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ba92ca640e5a4b03588030c7719bde') in 0.015810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.118779 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ceb123cf4b427ad258dc65c3471d8c2') in 0.023902 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003392 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.931 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 196.8 MB.
-System memory in use after: 197.3 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5996.
-Total: 4.479300 ms (FindLiveObjects: 0.611000 ms CreateObjectMapping: 0.259000 ms MarkObjects: 3.574900 ms  DeleteObjects: 0.033400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 260.117259 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892bb5db02b51865241e7759335dfaa1') in 0.129800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 100.293750 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5b809807989cf2234a49d436263bf1') in 0.011931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.645126 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac931069eab7f3ba95a6149aad78ce4') in 0.011983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.373454 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b46df4f7731042791235389193e871a1') in 0.011494 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003583 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.921 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 196.7 MB.
-System memory in use after: 197.2 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6050.
-Total: 3.996600 ms (FindLiveObjects: 0.519300 ms CreateObjectMapping: 0.233600 ms MarkObjects: 3.222800 ms  DeleteObjects: 0.019800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003753 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.922 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 196.8 MB.
-System memory in use after: 197.3 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6066.
-Total: 4.158700 ms (FindLiveObjects: 0.639500 ms CreateObjectMapping: 0.299500 ms MarkObjects: 3.197400 ms  DeleteObjects: 0.021200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 165.320266 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b16ebcd53d469fef0154d4694262c5aa') in 0.132857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.499528 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902e0be352f99b4717de335a1d9cc6ce') in 0.012263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.357255 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356fbff0e94d55051b6ba10a6fad1fc1') in 0.012088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.435045 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcb98b87c19958d6ae90fd2e1f13ab3') in 0.014204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 99.057907 seconds.
-  path: Assets/Sprites/Enemies/Metroids.png
-  artifactKey: Guid(f968214e70bc6a74d905ebee309af540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Metroids.png using Guid(f968214e70bc6a74d905ebee309af540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd58f4aaf75efb669473535204f3825b') in 0.055151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 133.324234 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a229120f255ed13fc3b043d098ea860') in 0.017220 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.774278 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89cd678524835c3c5faa4e210ab5142e') in 0.013276 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.446901 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229daf13c15fbbb6ccd08987f9b6d43a') in 0.016443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.948958 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bef142b76a3abbe73f29fba4f4f69f') in 0.013085 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.634998 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a699b6820cd451b68fd73a32beb4dd') in 0.012407 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.138264 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e82051bffc4574db0ac1e6a074de6b') in 0.012101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.988093 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40036f5e964d8ea94f44e5e8634d067e') in 0.014996 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003615 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.06 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.963 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4548 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.4 MB.
-System memory in use after: 197.9 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6140.
-Total: 4.354500 ms (FindLiveObjects: 0.530400 ms CreateObjectMapping: 0.356200 ms MarkObjects: 3.440300 ms  DeleteObjects: 0.025800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003484 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.945 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.4 MB.
-System memory in use after: 197.9 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6156.
-Total: 4.179200 ms (FindLiveObjects: 0.472000 ms CreateObjectMapping: 0.284800 ms MarkObjects: 3.400300 ms  DeleteObjects: 0.021400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 293.677021 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d1351f517b7dc4c4bf4ca5257322c1') in 0.135775 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003728 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.965 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.4 MB.
-System memory in use after: 197.9 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6210.
-Total: 4.294700 ms (FindLiveObjects: 0.532400 ms CreateObjectMapping: 0.316300 ms MarkObjects: 3.421300 ms  DeleteObjects: 0.023500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 95.602820 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f03e4a7e4097c3b392da2195b3f9ba') in 0.126773 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.389717 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460a4cff7917e7e0184b7428085c07eb') in 0.013470 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.544074 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34dd731ff89218ab6aee2ccdc2e606e') in 0.016311 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003498 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.946 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.6 MB.
-System memory in use after: 198.1 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6264.
-Total: 4.474500 ms (FindLiveObjects: 0.543700 ms CreateObjectMapping: 0.354300 ms MarkObjects: 3.550800 ms  DeleteObjects: 0.024600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 114.600306 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77365bca62681da24d994f3b99b4b06b') in 0.129545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.536206 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba52f5461fda2cda3077653f9c55e13d') in 0.011388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.190330 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7f99b75f9e87587ed8e88c417986b8') in 0.015703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.243772 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9931a9a75144527be18fee9a85c0bd53') in 0.016672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.927728 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b669b5fb20d02b2c22b2cc1a0babaad') in 0.013272 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003327 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.941 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.6 MB.
-System memory in use after: 198.1 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6318.
-Total: 5.134000 ms (FindLiveObjects: 0.613200 ms CreateObjectMapping: 0.362700 ms MarkObjects: 4.132300 ms  DeleteObjects: 0.024600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 18.077690 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc8dd6a963cf21ea1971a2544f324d2') in 0.124482 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003384 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.7 MB.
-System memory in use after: 198.2 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6372.
-Total: 5.315900 ms (FindLiveObjects: 0.587700 ms CreateObjectMapping: 0.366400 ms MarkObjects: 4.332200 ms  DeleteObjects: 0.028400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 110.553818 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b85db82a9926a9ba499e7571460da1c') in 0.123656 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003466 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 197.8 MB.
-System memory in use after: 198.3 MB.
-
-Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 6426.
-Total: 4.458900 ms (FindLiveObjects: 0.639500 ms CreateObjectMapping: 0.177100 ms MarkObjects: 3.617900 ms  DeleteObjects: 0.022700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 46.194447 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5099d69c1704f2a0036327d54cc42457') in 0.125422 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.408616 seconds.
-  path: Assets/Prefabs/Enemies/Metroid.prefab
-  artifactKey: Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Metroid.prefab using Guid(cb0d5db928b30c445a0708710afdd14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9529fe2097d1bda98aa317f408900bf7') in 0.023730 seconds 
+  Time since last request: 5.656124 seconds.
+  path: Assets/Prefabs/Scenarios/Boss selection.prefab
+  artifactKey: Guid(9feff8612a6624e47b5bb65bbbbcdaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Boss selection.prefab using Guid(9feff8612a6624e47b5bb65bbbbcdaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e444a060f7a5d6e35f4bdd8a406f50cd') in 0.047598 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

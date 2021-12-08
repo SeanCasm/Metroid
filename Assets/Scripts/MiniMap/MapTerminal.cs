@@ -8,7 +8,7 @@ using TMPro;
 public class MapTerminal : MonoBehaviour
 {
     [SerializeField] MinimapTilesMapUpdater minimapTiles;
-    [SerializeField] GameObject acqPanel,arm;
+    [SerializeField] GameObject acqPanel,arm,armLeft;
     [SerializeField] Animator light;
     private int id;
     TextMeshProUGUI panelText;
@@ -33,11 +33,16 @@ public class MapTerminal : MonoBehaviour
     {
         if (other.GetComponent<Gun>() && active)
         {
+            print(other);
             pContr = other.GetComponentInParent<PlayerController>();
 
-            if(pContr.leftLook && pContr.isGrounded && !pContr.IsJumping){
+            if(pContr.isGrounded && !pContr.IsJumping){
                 pAnim = other.GetComponentInParent<Animator>();
-                arm.SetActive(true);
+                if(other.transform.position.x > transform.position.x){
+                    arm.SetActive(true);
+                }else{
+                    armLeft.SetActive(true);
+                }
                 SetPlayer();
                 PassMapData();
             }
@@ -81,6 +86,7 @@ public class MapTerminal : MonoBehaviour
         panelText.text = "";
         ClearReferences();
         arm.SetActive(false);
+        armLeft.SetActive(false);
 
         pContr.SetAllInput(true);
         pContr = null;

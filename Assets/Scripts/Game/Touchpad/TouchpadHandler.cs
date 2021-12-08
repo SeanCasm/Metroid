@@ -20,6 +20,7 @@ public class TouchpadHandler : MonoBehaviour
     //Called in a UnityEvent from MapController
     public void OnMap(bool enable){
         directionalPad.GetComponent<Canvas>().overrideSorting=enable;
+        dpad.GetComponent<Canvas>().overrideSorting=enable;
         foreach(var e in otherButtons){
             e.SetActive(!enable);
         }

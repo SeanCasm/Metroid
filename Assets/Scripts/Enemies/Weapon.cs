@@ -28,6 +28,7 @@ namespace Enemy.Weapons
             BackToShootPoint();
         }
         protected void BackToShootPoint(){
+            CancelInvoke(nameof(BackToShootPoint));
             if(!pooleable){
                 Destroy(gameObject);
             }else{

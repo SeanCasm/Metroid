@@ -57,7 +57,7 @@ public class SkinSwapper : MonoBehaviour
     }
     void LateUpdate()
     {
-        if(!PlayerHealth.current.isDead && suitRight.Count>0){
+        if(!PlayerHealth.current.isDead && suitRight.Count>0 && playerController.GroundState!=GroundState.Balled){
             int index = int.Parse(spriteRenderer.sprite.name);
             spriteRenderer.sprite = playerController.leftLook ? suitLeft[index] : suitRight[index] ;
         }

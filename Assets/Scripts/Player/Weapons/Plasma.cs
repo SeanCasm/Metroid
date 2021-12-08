@@ -30,7 +30,7 @@ namespace Player.Weapon
                     if (rejected) Reject();
                 }
             }
-            else if ((collision.IsTouching(floorCol) && collision.tag == "Suelo")) FloorCollision();
+            //else if ((collision.IsTouching(floorCol) && collision.tag == "Suelo")) FloorCollision();
         }
         new void OnBecameInvisible()
         {

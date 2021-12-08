@@ -7,11 +7,13 @@ namespace Player.Weapon
     public class Weapon : WeaponBase<float>, IPlayerWeapon
     {
         [SerializeField] protected float hotPoints;
-        [SerializeField] protected int iD;
+        [SerializeField] protected int iD,tier;
         [SerializeField] protected WeaponType beamType;
         public WeaponType BeamType => beamType;
         protected bool rejected;
         public int ID { get => iD; }
+
+        public int weaponTier => tier;
 
         public void TryDoDamage(float damage, IDamageable<float> healthManager, WeaponType beamType, IInvulnerable iInvulnerable)
         {

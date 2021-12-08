@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3121007783968516360}
   - component: {fileID: 7128419840325159585}
-  - component: {fileID: 7932619973797140296}
+  - component: {fileID: 6247176706916503614}
   m_Layer: 7
   m_Name: Hurtbox
   m_TagString: Enemy
@@ -201,7 +201,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1139752, y: 0.08233136}
   m_EdgeRadius: 0
---- !u!114 &7932619973797140296
+--- !u!114 &6247176706916503614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,11 +210,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5301704394361407519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efbd828323091b4a8f0eae89aa660d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a07db27b4104964baf115409b8a1de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  enemyType: 1
   invMissiles: 0
   invSuperMissiles: 0
   invBeams: 0
@@ -231,9 +230,9 @@ MonoBehaviour:
   plasma: 0
   charged: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
-  deathClip: {fileID: 5122862422074326034, guid: bccb81efe6a1c09469ab7d11ee28ede4, type: 3}
   freezedCol: {fileID: 8002042709845723290}
   rigidCol: {fileID: 0}
+  pooleable: 1
   collideDamage: 7
   deadPrefab: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
 --- !u!1 &8002042709845723290

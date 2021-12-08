@@ -18,6 +18,7 @@ public class GameData
     public List<int> mappers = new List<int>();
     public List<(string name, int xpos, int ypos)> tileInfo { get; set; } = new List<(string name, int xpos, int ypos)>();
     public List<(string name, int xpos, int ypos)> tileInfoUnexplroed { get; set; } = new List<(string name, int xpos, int ypos)>();
+    public Dictionary<string,bool> doorsUnlocked= new Dictionary<string, bool>();
     public int[] time = new int[4];
     public bool[] miniMapItem = new bool[40];
     public GameData(PlayerInventory inventory, PlayerHealth energy, MapSaveSystem map, float[] pos, string sectorName)
@@ -45,6 +46,7 @@ public class GameData
             position[1] = pos[1];
             mappers = new List<int>(MapSaveSystem.mappers);
             miniMapItem = map.miniMapItem;
+            doorsUnlocked = new Dictionary<string, bool>(Sensor.doorsUnlocked);
     }
     void SelectItemsData(PlayerInventory inventory)
     {

@@ -12,7 +12,6 @@ public class PirateIA : EnemyBase
     [SerializeField] float minAltitude;
     private float currentSpeed, horizontalVelocity;
     private GroundSlopeChecker efd;
-    private EnemyHealth enemyHealth;
     private bool idleShooting;
     #endregion
     #region Unity Methods
@@ -68,7 +67,7 @@ public class PirateIA : EnemyBase
         if (pDetect.detected) { rigid.SetVelocity(0f, 0f); rigid.gravityScale = 0; }
         else if (!pDetect.detected && !idleShooting)
         {
-            rigid.gravityScale = 1;
+            //rigid.gravityScale = 1;
             if (pDetect.detected) efd.SetOnGroundVelocity(horizontalVelocity * 2f);
             else efd.SetOnGroundVelocity(speed);
         }

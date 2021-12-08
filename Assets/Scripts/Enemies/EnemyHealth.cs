@@ -4,7 +4,6 @@ using UnityEngine;
 using System;
 public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvulnerable
 {
-    [SerializeField] EnemyType enemyType;
     [Header("Default invulnerabilities")]
     [SerializeField] bool invMissiles;
     [SerializeField] bool invSuperMissiles, invBeams, invBombs, invSuperBombs, invFreeze, invPlasma, invCharged;
@@ -15,15 +14,17 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     [SerializeField] Materials materials;
     [SerializeField] GameObject freezedCol;
     [SerializeField] Collider2D rigidCol;
-    private Action OnDeath;
+    [SerializeField] bool pooleable;
+    protected List<Behaviour> componentsToDisable = new List<Behaviour>();
+    protected Action OnDeath;
     public Action OnDamage;
     public Action<float> OnSideDamage;
     public int collideDamage;
     public GameObject deadPrefab;
     private Behaviour[] components;
-    private Collider2D hurtbox;
+    protected Collider2D hurtbox;
     private PlayerController playerController;
-    private Material dissolve;
+    protected Material dissolve;
     public bool unFreezing { get; set; }
     public bool freezed { get; set; }
     public bool InvPlasma => invPlasma;
@@ -34,18 +35,21 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     public bool InvSpazer => invCharged;
 
     #region Unity methods
-    private void Start()
+    protected void Start()
     {
         maxHealth = health;
         AddDefaultInv2Dictionary();
-        if (enemyType == EnemyType.Destroyable) OnDeath = DestroyOnDeath;
-        else OnDeath = ResetOnDeath;
+        OnDeath = DestroyOnDeath;
     }
     private void Awake()
     {
         anim = GetComponentInParent<Animator>();
+        componentsToDisable = new List<Behaviour>(){
+            {anim},
+            {GetComponentInParent<Enemy.EnemyBase>()}
+        };
         _renderer = GetComponentInParent<SpriteRenderer>();
-        dissolve=_renderer.material;
+        dissolve = _renderer.material;
         rb2d = GetComponentInParent<Rigidbody2D>();
         hurtbox = GetComponent<Collider2D>();
     }
@@ -128,33 +132,36 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         OnDamage?.Invoke();
         if (health <= 0)
         {
-            hurtbox.enabled=false;
-            var obj = DropManager.instance.TryToDrop();
-            if (obj != null) Instantiate(obj, transform.position, Quaternion.identity);
+            hurtbox.enabled = false;
+
+            rb2d.velocity = Vector2.zero;
+
             StartCoroutine(nameof(Dissolve));
         }
         else StartCoroutine(VisualFeedBack());
     }
     #endregion
     #region Private methods
-    IEnumerator Dissolve(){
-        float fade=1;
-        while(fade>0){
-            dissolve.SetFloat("_Fade",fade-=Time.deltaTime);
+    IEnumerator Dissolve()
+    {
+        float fade = 1;
+        var obj = DropManager.instance.TryToDrop();
+        if(pooleable && obj != null)Instantiate(obj, transform.position, Quaternion.identity);
+        foreach (var item in componentsToDisable)
+        {
+            item.enabled = false;
+        }
+        while (fade > 0)
+        {
+            dissolve.SetFloat("_Fade", fade -= Time.deltaTime);
             yield return null;
         }
-        gameObject.GetParent().SetActive(false);
+        if (!pooleable && obj != null) Instantiate(obj, transform.position, Quaternion.identity);
         OnDeath?.Invoke();
     }
     private void DestroyOnDeath()
     {
         Destroy(gameObject.GetParent());
-    }
-    private void ResetOnDeath()
-    {
-        health = maxHealth;
-        _renderer.color = Color.white;
-        gameObject.GetParent().SetActive(false);
     }
     private IEnumerator VisualFeedBack()
     {

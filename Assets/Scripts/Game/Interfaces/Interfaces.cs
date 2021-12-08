@@ -20,6 +20,8 @@ public interface IBeamsInvulnerable{
     bool InvBeams { get; }
 }
 public interface IPlayerWeapon{
+    int weaponTier{get;}
+
 }
 public interface IDrop{
 

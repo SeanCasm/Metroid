@@ -5,8 +5,7 @@ using Cinemachine;
 public class CamConfinerSwapper : MonoBehaviour
 {
     [SerializeField]Collider2D newConfiner;
-    public static System.Action SwapCam;
     private void OnEnable() {
-        CurrentCamera.current.CMConfiner.m_BoundingShape2D = newConfiner;
+        CurrentCamera.current.SwapConfiner(newConfiner);
     }
 }

@@ -10,14 +10,15 @@ public class CurrentCamera : MonoBehaviour
     public Camera main;
     float aux;
     CinemachineFramingTransposer framingTransposer;
-    public CinemachineConfiner2D CMConfiner{get;set;}
+    private Collider2D curCollider;
+    private CinemachineConfiner2D CMConfiner;
     private void Start() {
         if(current==null){
             current=this;
         }
         virtualCam=GetComponent<CinemachineVirtualCamera>();
         CMConfiner = GetComponent<CinemachineConfiner2D>();
-
+        curCollider=CMConfiner.m_BoundingShape2D;
     }
     public void SetPosition2CenterOfPlayer(){
         var componentBase = virtualCam.GetCinemachineComponent(CinemachineCore.Stage.Body);
@@ -31,6 +32,12 @@ public class CurrentCamera : MonoBehaviour
     IEnumerator SetDeadZoneHeight(){
         yield return new WaitForEndOfFrame();
         framingTransposer.m_DeadZoneHeight = aux;
+    }
+    public void SwapConfiner(Collider2D newCol){
+        CMConfiner.m_BoundingShape2D = newCol;
+    }
+    public void SetDefaultConfiner(){
+        CMConfiner.m_BoundingShape2D = curCollider;
     }
     public void OnWarpCamera(){
         virtualCam.gameObject.SetActive(false);

@@ -9,12 +9,12 @@ namespace Enemy
         [Header("Settings")]
         [SerializeField] float wallDistance;
         [SerializeField] float wallEdgeOffset;
-        [SerializeField] LayerMask groundLayer, slopeLayer;
+        [SerializeField] LayerMask groundLayer;
         [SerializeField, Range(.01f, 1f)] float slopeFrontRay = 0.08f;
         [SerializeField, Range(.01f, 1f)] float groundHitSlope;
         [SerializeField] CapsuleCollider2D coll;
         private Vector2 slopePerp, posFrontRay;
-        private RaycastHit2D frontHit, slopeHit;
+        private RaycastHit2D frontHit, slopeHit,midHit;
         private float slopeAngle, frontAngle;
         private bool facingRight, wallInFront, onSlope;
         private float spriteWitdh;
@@ -91,25 +91,23 @@ namespace Enemy
         {
             posFrontRay = new Vector2((coll.bounds.center.x + (coll.bounds.size.x/2)*dir), coll.bounds.center.y);
 
-            frontHit = Physics2D.Raycast(posFrontRay, Vector2.down, slopeFrontRay, slopeLayer);
-            RaycastHit2D slopeHit = Physics2D.Raycast(new Vector2(coll.bounds.min.x + coll.size.x / 2,  coll.bounds.center.y), Vector2.down, groundHitSlope, slopeLayer);
-            Debug.DrawRay(posFrontRay,Vector2.down*slopeFrontRay,Color.red);
-            if (frontHit)
-            {
+            frontHit = Physics2D.Raycast(posFrontRay, Vector2.down, slopeFrontRay, groundLayer);
+            RaycastHit2D slopeHit = Physics2D.Raycast(new Vector2(coll.bounds.min.x + coll.size.x / 2,  coll.bounds.center.y), Vector2.down, groundHitSlope, groundLayer);
+            midHit = Physics2D.Raycast(new Vector2(coll.bounds.min.x+coll.size.x/2, coll.bounds.min.y+ .05f), 
+            Vector2.down, groundHitSlope, groundLayer);
+            if(frontHit && midHit){
+                slopeAngle = Vector2.Angle(midHit.normal, Vector2.up);
                 frontAngle = Vector2.Angle(frontHit.normal, Vector2.up);
-            }
-            if (slopeHit)
-            {
-                slopeAngle = Vector2.Angle(slopeHit.normal, Vector2.up);
-                slopePerp = Vector2.Perpendicular(slopeHit.normal).normalized;
+                slopePerp = Vector2.Perpendicular(frontHit.normal).normalized;
+
                 if ((slopePerp.y < 0 && dir < 0) || (slopePerp.y > 0 && dir > 0)) frontAngle *= -1;
-                onSlope = true;
-                rigid.gravityScale = 0;
-            }
-            else
-            {
-                onSlope = false;
-                rigid.gravityScale = 1;
+                if ((frontAngle > 0) || (frontAngle == 0 && slopeAngle != 0) || slopeAngle != 0)
+                {
+                    onSlope = true;
+                }
+                else {
+                    onSlope = false;
+                }
             }
         }
         public void SetOnGroundVelocity(float speed)

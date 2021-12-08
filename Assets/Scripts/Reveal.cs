@@ -1,66 +1,69 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Reveal : MonoBehaviour
 {
-    [SerializeField]PolygonCollider2D confiner;
-    private Collider2D previousConfiner;
-    private SpriteRenderer sprite;
+    [SerializeField] Collider2D confiner;
+    private Tilemap tilemap;
     private Color tempColor;
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        tilemap = GetComponentInParent<Tilemap>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if(confiner!=null){
-                previousConfiner = CurrentCamera.current.CMConfiner.m_BoundingShape2D;
-                CurrentCamera.current.CMConfiner.m_BoundingShape2D = confiner;
+            if(confiner!=null && confiner is PolygonCollider2D){
+                CurrentCamera.current.SwapConfiner(confiner);
             }
-            StartCoroutine(FadeOut(sprite));
+            print("XD");
+            StartCoroutine(FadeOut(tilemap.color));
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if(confiner!=null)
+            if(confiner!=null && confiner is PolygonCollider2D)
             {
-                CurrentCamera.current.CMConfiner.m_BoundingShape2D=previousConfiner;
-                previousConfiner=null;
+                CurrentCamera.current.SetDefaultConfiner();
             }
-            StartCoroutine(FadeIn(sprite));
+            StartCoroutine(FadeIn(tilemap.color));
         }
     }
-    IEnumerator FadeOut(SpriteRenderer sprite)
+    IEnumerator FadeOut(Color color)
     {
         for (float i = 1f; i >= 0f; i -= 0.1f)
         {
-            tempColor = sprite.color;
+            tempColor = color;
             tempColor.a = i;
-            sprite.color = tempColor;
+            color= tempColor;
+            tilemap.color=color;
             yield return new WaitForSeconds(0.05f);
         }
         //Fixed alpha
-        tempColor=sprite.color;
+        tempColor=color;
         tempColor.a=0;
-        sprite.color=tempColor;
+        color=tempColor;
+         tilemap.color=color;
     }
-    IEnumerator FadeIn(SpriteRenderer sprite)
+    IEnumerator FadeIn(Color color)
     {
         for (float i = 0f; i <= 1f; i += 0.1f)
         {
-            tempColor = sprite.color;
+            tempColor = color;
             tempColor.a = i;
-            sprite.color = tempColor;
+            color= tempColor;
+            tilemap.color=color;
             yield return new WaitForSeconds(0.05f);
         }
         //Fixed alpha
-        tempColor = sprite.color;
+        tempColor = color;
         tempColor.a = 1;
-        sprite.color = tempColor;
+        color = tempColor;
+        tilemap.color=color;
     }
 }

@@ -163,7 +163,7 @@ MonoBehaviour:
   checkDelay: 0.25
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 16392
   coll: {fileID: 6814984193152905739}
 --- !u!95 &5286252242009494626
 Animator:

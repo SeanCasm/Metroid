@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(.01f, 1f)] float jumpTime = 0.35f;
     [SerializeField] Transform camHandle;
     [Header("Floor config")]
-    [SerializeField] LayerMask groundLayer,slopeLayer;
+    [SerializeField] LayerMask groundLayer;
     [SerializeField] float overHeadCheck=.01f;
     [SerializeField] float wallDistance, wallEdgeOffset, edgesOffset, spinOffset;
     [SerializeField, Range(.001f, .88f)] float groundDistance = 0.18f,airGroundDistance = 0.18f;
@@ -132,7 +132,6 @@ public class PlayerController : MonoBehaviour
             else
             {
                 anim.SetFloat(animatorHash[16], 1);
-                spriteRenderer.flipX = false;
                 gun.OnStand?.Invoke();
             }
         }
@@ -305,19 +304,6 @@ public class PlayerController : MonoBehaviour
         }
         else wallInFront = false;
     }
-    private void OnDrawGizmos()
-    {
-        /*
-        Gizmos.DrawWireCube(new Vector2(capsule.bounds.center.x + (capsule.size.x / 2) * direction.x,
-        capsule.bounds.center.y), new Vector2(wallDistance, capsule.bounds.size.y - wallDistance));
-        */
-        /*
-        
-        */
-        /*Gizmos.DrawWireCube(new Vector2(capsule.bounds.center.x,capsule.bounds.min.y), 
-        new Vector2(capsule.bounds.size.x / edgesOffset, curGroundDis));*/
-    }
-     
     void CheckGround()
     {
         RaycastHit2D raycastHit2D = Physics2D.BoxCast(new Vector2(capsule.bounds.center.x,capsule.bounds.min.y), 
@@ -365,24 +351,37 @@ public class PlayerController : MonoBehaviour
     }
     private void CheckSlopesAndEdges()
     {
+        Vector2 v=new Vector2(capsule.bounds.min.x + capsule.size.x/2, capsule.bounds.min.y);
         posFrontRay = new Vector2(transform.position.x + capsule.size.x/2*(direction.x - slopeEdgesOffset), capsule.bounds.min.y+ .02f);
-        RaycastHit2D slopeHit= Physics2D.Raycast(posFrontRay,Vector2.down,groundHitSlope,slopeLayer);
-        backHit = Physics2D.Raycast(posBackRay, Vector2.down, slopeBackRay, groundLayer);
-        frontHit = Physics2D.Raycast(posFrontRay,Vector2.down,slopeFrontRay,groundLayer);
+        RaycastHit2D hit2D = Physics2D.Raycast(posFrontRay, Vector2.down, groundHitSlope, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(v, Vector2.down, groundHitSlope, groundLayer);
 
-        if(frontHit && backHit){
+        if (hit2D && hit)
+        {
+            frontAngle = Vector2.Angle(hit2D.normal, Vector2.up);
+            slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
+            slopePerp = Vector2.Perpendicular(hit2D.normal).normalized;
+            if ((slopePerp.y < 0 && xInput < 0) || (slopePerp.y > 0 && xInput > 0)) frontAngle *= -1;
+
+            if ((frontAngle != 0) || (frontAngle == 0 && slopeAngle != 0) || slopeAngle != 0)
+                onSlope = true;
+            else if(frontAngle==0 && slopeAngle==0 && backAngle==0){
+                onSlope = false;
+            }
+            
+        }
+
+        posBackRay = new Vector2(transform.position.x - capsule.size.x/2 * (direction.x - slopeEdgesOffset), capsule.bounds.min.y+.02f);
+
+        frontHit = Physics2D.Raycast(posFrontRay, Vector2.down, slopeFrontRay, groundLayer);
+        backHit = Physics2D.Raycast(posBackRay, Vector2.down, slopeBackRay, groundLayer);
+        if (frontHit && backHit)
+        {
             frontAngle = Vector2.Angle(frontHit.normal, Vector2.up);
             backAngle = Vector2.Angle(backHit.normal, Vector2.up);
         }
 
-        if(slopeHit){
-            slopeAngle = Vector2.Angle(slopeHit.normal,Vector2.up);
-            slopePerp = Vector2.Perpendicular(slopeHit.normal).normalized;
-            if ((slopePerp.y < 0 && xInput < 0) || (slopePerp.y > 0 && xInput > 0)) frontAngle *= -1;
-            onSlope=true;
-        }else onSlope=false;
-
-        if ((!frontHit || !backHit) && !slopeHit && !onSlope)
+        if ((!frontHit || !backHit) && !hit && !onSlope)
         { // enable the edge collider when player is on ground edge
             edgeCollider.enabled = true;
             edgeCollider.transform.localPosition = new Vector3(0, 0.075f / 2);
@@ -652,7 +651,6 @@ public class PlayerController : MonoBehaviour
     public void OnLeft(bool value)
     {
         leftLook = value;
-        if(GroundState==GroundState.Balled) spriteRenderer.flipX=true;
         if (value)
         {
             transform.eulerAngles = new Vector2(0, 180);

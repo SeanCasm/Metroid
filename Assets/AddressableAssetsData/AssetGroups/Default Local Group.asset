@@ -30,7 +30,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 144cf6e1d03b3dd479d4763fc912758a
-    m_Address: Assets/Prefabs/Scenarios/Ridley.prefab
+    m_Address: Assets/Prefabs/Scenarios/Map room.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
@@ -515,20 +515,20 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 8f987a3a4d0738242a5555690b8f93dc
-    m_Address: Assets/Prefabs/Scenarios/Save 1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 080148b3dafcd584cb6308d9f38db8d2
-    m_Address: Assets/Prefabs/Scenarios/Boss serris.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 21d40e19763852d4e92282795ef63d6f
     m_Address: Assets/Prefabs/Others/Power ghost.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f49d00e50103c3448973eeea0635ed95
+    m_Address: Assets/Prefabs/Scenarios/Pirates z1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9feff8612a6624e47b5bb65bbbbcdaa2
+    m_Address: Assets/Prefabs/Scenarios/Boss selection.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
