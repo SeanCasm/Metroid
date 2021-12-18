@@ -1,5 +1,5 @@
 # Metroid
-Metroid 2D made with Unity.
+Metroid2D made in Unity.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/51692672/120400439-e04aff00-c30b-11eb-90df-8f645c00e7aa.gif" alt="animated"></p>
 
