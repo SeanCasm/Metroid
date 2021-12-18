@@ -12,7 +12,9 @@ public interface IBossFreezeable{
 public interface IFreezeUndamageable{
     
 }
- 
+public interface IFulleable{
+    void SetFullCapacity();
+}
 public interface IBeamsInvulnerable{
 
     bool InvMissiles { get; }

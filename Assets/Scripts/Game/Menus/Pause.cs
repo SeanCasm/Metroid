@@ -13,7 +13,6 @@ public class Pause : MonoBehaviour
     [SerializeField] GameSettings gameSettings;
     [SerializeField] GameObject pauseMenu;
     [SerializeField] FirstSelectedHandler menuFirst;
-    [SerializeField] PlayerController pContr;
     public static System.Action<bool> OnPauseInput,OnPause;
     public static bool onGame,escPause;
     public GameObject player;
@@ -59,11 +58,17 @@ public class Pause : MonoBehaviour
     public static void PausePlayer(bool calledfromItemOrWarp)
     {
         if (!calledfromItemOrWarp) OnPauseInput?.Invoke(true);
+        PauseSystem.instance.EnablePlayerAnimator(false);
+        PauseSystem.instance.EnablePlayerContoller(false);
+
         Time.timeScale = 0f;
     }
     public static void UnpausePlayer()
     {
         OnPauseInput?.Invoke(false);
+        PauseSystem.instance.EnablePlayerAnimator(true);
+        PauseSystem.instance.EnablePlayerContoller(true);
+
         Time.timeScale = 1f;
     }
 #if UNITY_ANDROID
@@ -99,8 +104,8 @@ public class Pause : MonoBehaviour
         #if UNITY_ANDROID
         unpauseAndroid.Invoke();
         #endif
-        pContr.enabled=true;
         OnPause?.Invoke(true);
+        PauseSystem.instance.EnablePlayerContoller(true);
         gameSettings.SetEffectsVolume(false);
         gameSettings.SetMusicVolume(false);
         GameEvents.timeCounter?.Invoke(true);

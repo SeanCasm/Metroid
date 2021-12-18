@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private float jumpForce = 88, speed = 88, frontAngle, backAngle, curSpinOffset = 1,slow2Gravity = 1,curGroundDis;
     private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, slopeAngle, aim,spriteCenter;
     public float xInput{get;private set;}=0;
-    private Animator anim;
+    public Animator anim{get;set;}
     private PlayerFXHandler playerFX;
     private SpriteRenderer spriteRenderer;
     private Gun gun;

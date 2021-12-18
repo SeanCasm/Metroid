@@ -7,10 +7,9 @@ public class BaseDataDebug : BaseData
 {
     public override void SetInventoryData(PlayerInventory inventory)
     {
-        inventory.limitedAmmo[0] = new CountableAmmo(false, 0, beams.limitedAmmo[0], missileAmmo, missileAmmo);
-        inventory.limitedAmmo[1] = new CountableAmmo(false, 1, beams.limitedAmmo[1], missileAmmo, missileAmmo);
-        inventory.limitedAmmo[2] = new CountableAmmo(false, 2, beams.limitedAmmo[2], missileAmmo, missileAmmo);
-        inventory.limitedAmmo[3] = new CountableAmmo(false, 3, beams.limitedAmmo[3], missileAmmo, missileAmmo);
+        for(int i =0;i<4;i++){
+            inventory.limitedAmmo[i] = new LimitedAmmo(false, i, beams.limitedAmmo[i], missileAmmo, missileAmmo,inventory);
+        }
         for (int i = 0; i < 11; i++)
         {
             inventory.AddToItems(i, true);

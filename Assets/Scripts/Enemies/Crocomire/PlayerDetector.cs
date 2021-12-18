@@ -7,6 +7,7 @@ public class PlayerDetector : MonoBehaviour
     [SerializeField] Collider2D detector;
     public bool detected{get;set;}
     public GameObject player { get;set; }
+    public PlayerHealth playerHealth{get;private set;}
     private PlayerController playerController;
     public Vector3 GetPlayerTransformCenter(){
         return playerController.TransformCenter();
@@ -17,6 +18,7 @@ public class PlayerDetector : MonoBehaviour
         {
             OnDetection?.Invoke();
             detected = true;
+            playerHealth=col.GetComponentInParent<PlayerHealth>();
             player = col.GetComponentInParent<PlayerController>().gameObject;
             playerController =col.GetComponentInParent<PlayerController>();
         }
@@ -28,6 +30,7 @@ public class PlayerDetector : MonoBehaviour
             OnOut?.Invoke();
             detected = false;
             player = null;
+            playerHealth=null;
         }
     }
 }

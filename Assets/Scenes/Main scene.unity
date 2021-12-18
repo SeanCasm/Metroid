@@ -2083,7 +2083,6 @@ MonoBehaviour:
   gameSettings: {fileID: 533298388}
   pauseMenu: {fileID: 704629424803450444}
   menuFirst: {fileID: 1925283452}
-  pContr: {fileID: 210899529}
   player: {fileID: 210899525}
   playerMenu: {fileID: 881477260}
 --- !u!82 &128693698
@@ -2195,7 +2194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pInventory: {fileID: 210899527}
-  pHealth: {fileID: 210899530}
   health: {fileID: 4123820630485888709}
   healthImage: {fileID: 559181951}
   hudElements:
@@ -7884,14 +7882,126 @@ PrefabInstance:
       propertyPath: buttonEssentials
       value: 
       objectReference: {fileID: 1925283449}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateText
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetEnable
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSelection
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899527, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: baseData
       value: 
       objectReference: {fileID: 11400000, guid: 6a01ece67ea3b1a4dbe2b2a45cc65d66, type: 2}
     - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: death.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 8407729404374444544}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 210899530, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 546514065, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: mainCanvas
       value: 
@@ -66672,6 +66782,7 @@ GameObject:
   - component: {fileID: 1925283452}
   - component: {fileID: 1925283454}
   - component: {fileID: 1925283444}
+  - component: {fileID: 1925283450}
   m_Layer: 2
   m_Name: References
   m_TagString: Untagged
@@ -66945,9 +67056,9 @@ MonoBehaviour:
   - {fileID: 351056426103883310, guid: 475d84b72c17dd643bed303973b5dd77, type: 3}
   - {fileID: 4374123270714136259, guid: 6dfefe5eba8d2194c992ca9383042d5a, type: 3}
   buttonEssentials: {fileID: 1925283449}
-  pContr: {fileID: 210899529}
   mixerToMute: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   inputManager: {fileID: 1227241134}
+  playerHealth: {fileID: 210899530}
 --- !u!114 &1925283449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66978,6 +67089,19 @@ MonoBehaviour:
     unselected: {r: 0.58431375, g: 0.58431375, b: 0.58431375, a: 1}
     check: {fileID: -4532114073746202998, guid: 49e03d2467e04e74ab3fb47537db5ccb, type: 3}
     uncheck: {fileID: -8346291274449466048, guid: 49e03d2467e04e74ab3fb47537db5ccb, type: 3}
+--- !u!114 &1925283450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925283441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c19dbde12057ab4ba4f1193b1864dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 210899529}
 --- !u!114 &1925283451
 MonoBehaviour:
   m_ObjectHideFlags: 0

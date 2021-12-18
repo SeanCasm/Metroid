@@ -14,6 +14,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
     [SerializeField] BaseData baseData;
     [SerializeField] float invTime;
     [SerializeField] UnityEvent death;
+    public UnityEvent<int,int> healthUpdate;
     private int healthRound=1;
     private float currentTankSize;
     private PlayerController player;
@@ -38,17 +39,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         audioPlayer = GetComponent<AudioSource>();
         player=GetComponent<PlayerController>();;
     }
-    private void Awake() => baseData.SetHealthData(this);
-    private void OnEnable() {
-
-        GameEvents.healthTank+=FillHealth;
-        GameEvents.refullAll+=HandleRefullAll;
-    }
-    private void OnDisable()
-    {
-        GameEvents.refullAll -= HandleRefullAll;
-        GameEvents.healthTank-=FillHealth;
-    }
+    private void Awake() => baseData.SetHealthData(this); 
     #endregion
     #region Public Methods
     public void FreezeMe(){
@@ -76,17 +67,17 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         ETanks = data.tanks;
         health = 99;
         currentTankSize = 16f * ETanks;
-        GameEvents.playerHealth.Invoke(MyHealth,ETanks);
+        healthUpdate.Invoke(health,ETanks);
     }
     /// <summary>
     /// Adds a tank to the total tanks count and refill the player health
     /// </summary>
-    private void FillHealth()
+    public void FillHealth()
     {
         ETanks += 1;
         health = 99;
         healthRound = ETanks + 1;
-        GameEvents.playerHealth.Invoke(health,ETanks);
+        healthUpdate.Invoke(health,ETanks);
     }
     /// <summary>
     /// Sets damage to the player
@@ -123,10 +114,10 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
             int healthNext = health + amount - 99;
             health = healthNext;
             healthRound++;
-            GameEvents.playerHealth.Invoke(health,ETanks);
+            healthUpdate.Invoke(health,ETanks);
             return;
         }
-        GameEvents.playerHealth.Invoke(health,ETanks);
+        healthUpdate.Invoke(health,ETanks);
     }
 
     #endregion
@@ -175,7 +166,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         if (health >= amount)
         {
             health -= amount;
-            GameEvents.playerHealth.Invoke(health, ETanks);
+            healthUpdate.Invoke(health,ETanks);
         }
         else
         if (health < amount)
@@ -191,7 +182,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
             if (ETanks > 0) ETanks--;
             int healthPrev = amount - health;
             health = 99 - healthPrev;
-            GameEvents.playerHealth.Invoke(health, ETanks);
+            healthUpdate.Invoke(health,ETanks);
         }
     }
     private void OnDeath(){
@@ -204,10 +195,10 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         gameObject.SetActive(false);
         Time.timeScale = 0f;
     }
-    private void HandleRefullAll()
+    public void SetFullCapacity()
     {
         this.health=99;this.healthRound=ETanks+1;
-        GameEvents.playerHealth.Invoke(health,ETanks);
+        healthUpdate.Invoke(health,ETanks);
     }
 
     public void SetDide(float side)

@@ -16,7 +16,7 @@ namespace Player{
         public float jumpForce,jumpForceUp;
         public Beams beams;
         public virtual void SetInventoryData(PlayerInventory inventory){
-            inventory.limitedAmmo[0]=new CountableAmmo(false, 0, beams.limitedAmmo[0], missileAmmo, missileAmmo);
+            inventory.limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], missileAmmo, missileAmmo,inventory);
             inventory.AddToItems(4,true);//add the morfball item, initial game item by default.
             //inventory.transform.position=spawn;
             inventory.SetSuit();
@@ -26,6 +26,7 @@ namespace Player{
         public virtual void SetHealthData(PlayerHealth playerHealth){
             playerHealth.MyHealth=health;
             playerHealth.ETanks=energyTanks;
+            playerHealth.healthUpdate.Invoke(health,energyTanks);
         }
     }
 }

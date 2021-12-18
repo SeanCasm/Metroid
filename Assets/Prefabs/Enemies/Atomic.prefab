@@ -124,6 +124,10 @@ MonoBehaviour:
   detectPlayer: 1
   stopAll: 1
   distance: 1.5
+  horizontalPattern: 1
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!50 &5669440645377911599
 Rigidbody2D:
   serializedVersion: 4

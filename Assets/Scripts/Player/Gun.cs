@@ -14,7 +14,7 @@ public class Gun : MonoBehaviour
     [SerializeField] Pool pool;
     [SerializeField] Shinespark shinespark;
     public Action OnStand;
-    private CountableAmmo ammo;
+    private LimitedAmmo ammo;
     private GameObject chargingLoad;
     private PlayerController playerController;
     private PlayerInventory inventory;

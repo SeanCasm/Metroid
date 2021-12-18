@@ -6,15 +6,6 @@ using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 public static class GameEvents
 {
-    /// <summary>
-    /// Updates the player health, when receiving damage and getting health.
-    /// </summary>
-    public static Action<int,int> playerHealth;
-    public static Action healthTank;
-    /// <summary>
-    /// Refulls all player health and inventory ammo.
-    /// </summary>
-    public static Action refullAll;
     public static Action<int, float> damagePlayer;
     public static Action<SaveStation> save;
     /// <summary>

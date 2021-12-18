@@ -41,10 +41,10 @@ GameObject:
   - component: {fileID: 164532759450319846}
   - component: {fileID: 164532759450319844}
   - component: {fileID: 164532759450319847}
-  - component: {fileID: 3494437719759214564}
   - component: {fileID: 1578709582}
   - component: {fileID: 4921098635597488340}
   - component: {fileID: -2637492250937147470}
+  - component: {fileID: 6481960626006166184}
   m_Layer: 9
   m_Name: Ice Pirate
   m_TagString: Untagged
@@ -142,23 +142,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3494437719759214564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164532759450319849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9234c694661dc9429c68f7da2c4448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 37
-  detectPlayer: 1
-  stopAll: 1
-  bulletsPool: {fileID: -2637492250937147470}
-  minAltitude: 0
 --- !u!50 &1578709582
 Rigidbody2D:
   serializedVersion: 4
@@ -220,6 +203,24 @@ MonoBehaviour:
   - {fileID: 164532760072587563}
   - {fileID: 164532759282534580}
   poolSize: 4
+--- !u!114 &6481960626006166184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164532759450319849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc86bead3c96fdf4e9eed41f54c320cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 37
+  detectPlayer: 1
+  stopAll: 1
+  bulletsPool: {fileID: -2637492250937147470}
+  minAltitude: 0
+  playerDetector: {fileID: 1263482251045205264}
 --- !u!1 &164532760072587562
 GameObject:
   m_ObjectHideFlags: 0

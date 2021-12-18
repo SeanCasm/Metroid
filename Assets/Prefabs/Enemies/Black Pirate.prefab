@@ -94,11 +94,11 @@ GameObject:
   - component: {fileID: 2439020459736602655}
   - component: {fileID: 2439020459736602654}
   - component: {fileID: 7166945843266349744}
-  - component: {fileID: 8704235739347019986}
   - component: {fileID: 2474954557359816546}
   - component: {fileID: 4552512665245189555}
   - component: {fileID: 85172685}
   - component: {fileID: 8950548213099278661}
+  - component: {fileID: 5508823421176573434}
   m_Layer: 9
   m_Name: Black Pirate
   m_TagString: Untagged
@@ -197,23 +197,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8704235739347019986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2439020459736602653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9234c694661dc9429c68f7da2c4448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 37
-  detectPlayer: 1
-  stopAll: 1
-  bulletsPool: {fileID: 8950548213099278661}
-  minAltitude: 0.2
 --- !u!50 &2474954557359816546
 Rigidbody2D:
   serializedVersion: 4
@@ -348,9 +331,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
   slopeFrontRay: 0.303
   groundHitSlope: 0.303
   coll: {fileID: 8973029058489233443}
@@ -374,6 +354,23 @@ MonoBehaviour:
   - {fileID: 6726278828629599563}
   - {fileID: 4903963648580586947}
   poolSize: 4
+--- !u!114 &5508823421176573434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439020459736602653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb10b9fef2cdf604ab8db81441c859d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 37
+  detectPlayer: 1
+  stopAll: 1
+  bulletsPool: {fileID: 8950548213099278661}
+  minAltitude: 0.2
 --- !u!1 &2542759771964458624
 GameObject:
   m_ObjectHideFlags: 0

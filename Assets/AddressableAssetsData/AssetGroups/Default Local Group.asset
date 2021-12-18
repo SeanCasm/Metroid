@@ -533,6 +533,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 104183b32433fcb4b857bffa5668eb16
+    m_Address: Assets/Prefabs/Scenarios/Ridley.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4192fab993b12ba48878343d399f62c1, type: 2}
   m_SchemaSet:

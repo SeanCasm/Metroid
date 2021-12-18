@@ -146,9 +146,9 @@ GameObject:
   - component: {fileID: 4797035500508930268}
   - component: {fileID: 4797035500508930266}
   - component: {fileID: 4797035500508930264}
-  - component: {fileID: 4797035500508930269}
   - component: {fileID: 5526882113270997002}
   - component: {fileID: -4301795562785522963}
+  - component: {fileID: 6293877968243812359}
   m_Layer: 9
   m_Name: Red Pirate
   m_TagString: Untagged
@@ -364,23 +364,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4797035500508930269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4797035500508930263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9234c694661dc9429c68f7da2c4448a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 37
-  detectPlayer: 1
-  stopAll: 1
-  bulletsPool: {fileID: -4301795562785522963}
-  minAltitude: 0
 --- !u!114 &5526882113270997002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +404,23 @@ MonoBehaviour:
   - {fileID: 4797035500108285593}
   - {fileID: 8327087444589706009}
   poolSize: 4
+--- !u!114 &6293877968243812359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797035500508930263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb10b9fef2cdf604ab8db81441c859d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 37
+  detectPlayer: 1
+  stopAll: 1
+  bulletsPool: {fileID: -4301795562785522963}
+  minAltitude: 0.2
 --- !u!1 &5793779569752352019
 GameObject:
   m_ObjectHideFlags: 0
