@@ -29,7 +29,7 @@ public class Warp : MonoBehaviour
             sounds.audioMixer.SetFloat("SE volume",-80);
             playerController=other.GetComponentInParent<PlayerController>();
             playerController.enabled=false;
-            GameEvents.OnWarp.Invoke(cameraTransition);
+            CurrentCamera.current.MoveTo(cameraTransition);
             StartCoroutine("Resume");
             inputManager.DisableUIInput();
             Pause.PausePlayer(true);
@@ -54,4 +54,3 @@ public class Warp : MonoBehaviour
         Destroy(gameObject);
     }
 }
-public enum CameraTransition{Left, Right, Up, Down}

@@ -19,7 +19,6 @@ public class Reveal : MonoBehaviour
             if(confiner!=null && confiner is PolygonCollider2D){
                 CurrentCamera.current.SwapConfiner(confiner);
             }
-            print("XD");
             StartCoroutine(FadeOut(tilemap.color));
         }
     }
@@ -48,7 +47,7 @@ public class Reveal : MonoBehaviour
         tempColor=color;
         tempColor.a=0;
         color=tempColor;
-         tilemap.color=color;
+        tilemap.color=color;
     }
     IEnumerator FadeIn(Color color)
     {

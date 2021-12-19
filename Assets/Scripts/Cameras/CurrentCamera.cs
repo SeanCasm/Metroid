@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.UI;
 public class CurrentCamera : MonoBehaviour
 {
     public static CurrentCamera current;
     [SerializeField] Transform camHandler;
-    public CinemachineVirtualCamera virtualCam{get;set;}
+    [SerializeField] CinemachineConfiner2D CMConfiner;
+    [Header("Animation config")]
+    [SerializeField] Animator doorWarp;
+    [SerializeField] float time;
+    public CinemachineVirtualCamera virtualCam;
     public Camera main;
     float aux;
     CinemachineFramingTransposer framingTransposer;
     private Collider2D curCollider;
-    private CinemachineConfiner2D CMConfiner;
-    private void Start() {
-        if(current==null){
-            current=this;
-        }
-        virtualCam=GetComponent<CinemachineVirtualCamera>();
-        CMConfiner = GetComponent<CinemachineConfiner2D>();
+    private void Awake() {
+        current=this;
         curCollider=CMConfiner.m_BoundingShape2D;
     }
     public void SetPosition2CenterOfPlayer(){
@@ -39,14 +39,36 @@ public class CurrentCamera : MonoBehaviour
     public void SetDefaultConfiner(){
         CMConfiner.m_BoundingShape2D = curCollider;
     }
-    public void OnWarpCamera(){
+    public void MoveTo(CameraTransition cameraTransition){
+        OnWarpCamera();
+        switch(cameraTransition){
+            case CameraTransition.Left:
+            StartCoroutine(MoveTo(Vector2.left));
+            break;
+            case CameraTransition.Right:
+            StartCoroutine(MoveTo(Vector2.right));
+            break;
+        }
+    }
+    IEnumerator MoveTo(Vector2 dir){
+        Vector2 pos = main.transform.position;
+        while(main.transform.position.x<=pos.x+1.8f*dir.x){
+            yield return null;
+            main.transform.Translate(dir * (Time.deltaTime * (1.8f*time)));
+        }
+        OnWarpCameraFinished();
+    }
+    private void OnWarpCamera(){
+        doorWarp.SetTrigger("Start");
         virtualCam.gameObject.SetActive(false);
         virtualCam.Follow = null;
         CMConfiner.m_BoundingShape2D = null;
     }
-    public void OnWarpCameraFinished(){
+    private void OnWarpCameraFinished(){
+        doorWarp.SetTrigger("End");
         virtualCam.Follow = camHandler;
         virtualCam.transform.position = camHandler.position;
         virtualCam.gameObject.SetActive(true);
     }
 }
+public enum CameraTransition{Left, Right, Up, Down}

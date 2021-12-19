@@ -50,14 +50,14 @@ public class CollectorManager : MonoBehaviour
     private void Start()
     {
         instance = this;
-        GameEvents.verifyRegistry += CheckRegisterItems;
+        GameEvents.instance.CheckExistence += CheckRegisterItems;
         inventory = player.GetComponent<PlayerInventory>();
         audioPlayer = GetComponent<AudioSource>();
         //skin = player.GetComponent<SkinSwapper>();
     }
     private void OnDisable()
     {
-        GameEvents.verifyRegistry -= CheckRegisterItems;
+        GameEvents.instance.CheckExistence -= CheckRegisterItems;
     }
     #endregion
     #region Private Methods

@@ -17,7 +17,7 @@ public class ItemAcquired : MonoBehaviour,ICollecteable
     #endregion
     #region Unity Methods
     private void OnEnable() {
-        bool registered = GameEvents.verifyRegistry.Invoke(iD, false);
+        bool registered = GameEvents.instance.CheckExistence.Invoke(iD, false);
         if (registered) Destroy(gameObject);
     }
     private void Awake()

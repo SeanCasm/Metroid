@@ -59,7 +59,10 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         if (other.CompareTag("Player") && !freezed && (playerController = other.GetComponentInParent<PlayerController>()) != null)
         {
             if (playerController.status != Status.Powered)
-                GameEvents.damagePlayer.Invoke(collideDamage, transform.position.x);
+            {
+                PlayerKnockBack playerKnockBack = other.GetComponent<PlayerKnockBack>();
+                playerKnockBack.HitPlayer(collideDamage,transform.position.x);
+            }
         }
     }
     #endregion

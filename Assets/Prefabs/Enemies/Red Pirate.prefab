@@ -384,6 +384,7 @@ MonoBehaviour:
   slopeFrontRay: 0.303
   groundHitSlope: 0.303
   coll: {fileID: 4411294274188969379}
+  canFlip: 1
 --- !u!114 &-4301795562785522963
 MonoBehaviour:
   m_ObjectHideFlags: 0

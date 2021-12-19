@@ -16,6 +16,6 @@ public class MiniMap : MonoBehaviour
     }
     public void SetTile(){
         cellPos = References.instance.map.WorldToCell(transform.position);
-        GameEvents.UnexploredMap.Invoke(this);
+        GameEvents.instance.UnexploredMap.Invoke(this);
     } 
 }

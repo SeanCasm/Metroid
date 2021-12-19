@@ -120,7 +120,7 @@ public class Slots : MonoBehaviour
         else NewGameData();
         startGame.Invoke();
         Pause.OnPauseInput?.Invoke(false);
-        GameEvents.timeCounter.Invoke(true);
+        GameEvents.instance.timeCounter.Invoke(true);
     }
     private void OnDestroy() {
         pointer.SetParent(canvas);

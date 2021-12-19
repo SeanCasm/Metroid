@@ -12,12 +12,12 @@ public class SaveMenu : MonoBehaviour
     private GameObject saveMenu;
     private SaveStation currentST;
     private void OnEnable() {
-        GameEvents.save+=HandleSavePanel;
-        GameEvents.saveMessage+=HandleAcceptSave;
+        GameEvents.instance.save+=HandleSavePanel;
+        GameEvents.instance.saveMessage+=HandleAcceptSave;
     }
     private void OnDisable() {
-        GameEvents.save -= HandleSavePanel;
-        GameEvents.saveMessage -= HandleAcceptSave;
+        GameEvents.instance.save -= HandleSavePanel;
+        GameEvents.instance.saveMessage -= HandleAcceptSave;
     }
     private void HandleSavePanel(SaveStation currentST)
     {

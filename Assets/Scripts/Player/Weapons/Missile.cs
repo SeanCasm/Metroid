@@ -25,7 +25,7 @@ namespace Player.Weapon
         {
             base.OnTriggerEnter2D(collision);
             if(collision.tag=="Suelo" && beamType==WeaponType.SuperMissile){
-                GameEvents.OnMissileImpact?.Invoke(transform.position);
+                GameEvents.instance.OnMissileImpact?.Invoke(transform.position);
             }
         }
         new void OnBecameInvisible()

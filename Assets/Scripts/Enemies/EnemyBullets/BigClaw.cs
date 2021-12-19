@@ -18,9 +18,6 @@ public class BigClaw : Weapon
     {
         this.dissapearCallback = dissapearCallback;
     }
-    protected override void OnEnable() {
-        
-    }
     new void Start() {
         base.Start();
         curSpeed=speed;

@@ -9,6 +9,7 @@ public class TouchpadHandler : MonoBehaviour
     [SerializeField] GameObject directionalPad;
     [SerializeField] GameObject dpad,virtualGamepad;
     private GraphicRaycaster graphicRaycaster;
+    [SerializeField] Button inputButton;
     [Header("Personalizacion")]
     [SerializeField] Image beamButton;
     [SerializeField] Image[] suitButtons;
@@ -28,6 +29,7 @@ public class TouchpadHandler : MonoBehaviour
     }
     //Unity button onClick event
     public void HideVirtualGamepad(Image image){
+        inputButton.interactable=!inputButton.interactable;
         virtualGamepad.SetActive(!virtualGamepad.activeSelf);
         image.color = !virtualGamepad.activeSelf ?  new Color(1,1,1,.5f) : new Color(1,1,1,1f);
     }

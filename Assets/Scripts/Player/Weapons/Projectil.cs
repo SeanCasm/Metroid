@@ -51,26 +51,26 @@ namespace Player.Weapon
         {
             if (collision.CompareTag("Enemy") )
             {
-                collided=true;
                 health = collision.GetComponent<IDamageable<float>>();
                 iInvulnerable = collision.GetComponent<IInvulnerable>();
                 if (health == null && iInvulnerable != null)Reject();
                 if (health != null && iInvulnerable != null)
                 {
                     TryDoDamage(damage, health, beamType, iInvulnerable);
-                    Instantiate(impactPrefab, transform.position, Quaternion.identity, null);
+                    if(!collided)Instantiate(impactPrefab, transform.position, Quaternion.identity, null);
                     if (rejected) Reject();
                 }
                 BackToGun();
             }
             else if (collision.CompareTag("EnemyBeam"))
             {
-                collided=true;
                 IDrop iDrop = collision.GetComponent<IDrop>();
                 if (iDrop != null) FloorCollision();
             }
             else if(collision.CompareTag("Suelo")) FloorCollision();
-            else if(collision.CompareTag("Crumble"))collision.GetComponent<CrumbleBlock>().CheckCollision(gameObject.tag, FloorCollision);
+            else if(collision.CompareTag("Crumble")){
+                collision.GetComponent<CrumbleBlock>().CheckCollision(gameObject.tag, FloorCollision);
+            }
         }
         private void PoolChanged(){
             poolRemoved=true;
@@ -87,12 +87,13 @@ namespace Player.Weapon
             }else{
                 OnChildCollided?.Invoke();
             }
+            collided=true;
             rejected=false;
         }
         public void FloorCollision()
         {
             if (impactClip) Instantiate(impactClip);
-            Instantiate(impactPrefab, transform.position, Quaternion.identity,null);
+            if(!collided)Instantiate(impactPrefab, transform.position, Quaternion.identity,null);
             BackToGun();
         }
         protected void OnBecameInvisible()

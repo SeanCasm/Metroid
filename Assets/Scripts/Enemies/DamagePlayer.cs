@@ -12,7 +12,8 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.tag == "Player" && collision.IsTouching(col))
         {
-            GameEvents.damagePlayer.Invoke(damage,transform.position.x);
+            PlayerKnockBack playerKnockBack = col.GetComponent<PlayerKnockBack>();
+            playerKnockBack.HitPlayer(damage,transform.position.x);
         }
     }
 }

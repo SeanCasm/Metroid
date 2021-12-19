@@ -4,24 +4,15 @@ using Cinemachine.Utility;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using Enemy.Weapons;
-public class Fireball : Weapon
+public class Fireball : LookPlayerFirst
 {
     [SerializeField]private GameObject groundFireBall;
     [SerializeField] float groundFireBallTime;
-    new void Start()
-    {
-        base.Start();
-    }
     new void Awake()
     {
         base.OnEnable();
         transform.SetParent(null);
         base.SetDirectionAndRotation();
-    }
-    
-    new void FixedUpdate()
-    {
-        base.FixedUpdate();
     }
     new void OnTriggerEnter2D(Collider2D collision)
     {

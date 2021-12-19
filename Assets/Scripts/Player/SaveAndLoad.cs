@@ -45,10 +45,10 @@ public class SaveAndLoad : MonoBehaviour
         sectorName = data.actualSector;
         health.LoadHealth(data);
         map.LoadMap(data);
-        Boss.defeateds = new List<int>(data.bossesDefeated);
+        GameDataContainer.instance.InitBossList(data.bossesDefeated);
         TimeCounter.SetTimeAfterLoad(data.time);
         inventory.LoadInventory(data);
-        MapSaveSystem.mappers=new List<int>(data.mappers);
+        GameDataContainer.instance.InitMapTerminalsList(data.mappers);
         Vector3 position = new Vector3();
         position.x = data.position[0];
         position.y = data.position[1];
@@ -59,9 +59,9 @@ public class SaveAndLoad : MonoBehaviour
     }
     void OnCompleted(){
         SaveStation.loaded = true;
-        List<Behaviour> behaviours = GetComponents<Behaviour>().ToList();
+        List<Behaviour> behaviours = pContr.GetComponents<Behaviour>().ToList();
         behaviours.Add(pContr.GetComponentInChildren<Gun>());
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        pContr.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         foreach (var e in behaviours)
         {
             e.enabled = true;

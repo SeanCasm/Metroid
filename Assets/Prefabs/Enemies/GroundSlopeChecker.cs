@@ -13,6 +13,7 @@ namespace Enemy
         [SerializeField, Range(.01f, 1f)] float slopeFrontRay = 0.08f;
         [SerializeField, Range(.01f, 1f)] float groundHitSlope;
         [SerializeField] CapsuleCollider2D coll;
+        [SerializeField] bool canFlip;
         private Vector2 slopePerp, posFrontRay;
         private RaycastHit2D frontHit, slopeHit,midHit;
         private float slopeAngle, frontAngle;
@@ -83,8 +84,7 @@ namespace Enemy
             facingRight = !facingRight;
             dir = facingRight ? 1 : -1;
             transform.position = new Vector3(transform.position.x + (spriteWitdh / 2) * dir, transform.position.y, 0);
-
-            transform.RotateAround(transform.position, transform.up, 180);
+            if(canFlip) transform.RotateAround(transform.position, transform.up, 180);
             wallInFront = false;
         }
         private void OnSlope()

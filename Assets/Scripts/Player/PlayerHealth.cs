@@ -9,7 +9,6 @@ using UnityEngine.Events;
 public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
 {
     #region Properties
-    public static PlayerHealth current;
     [SerializeField] Materials materials;
     [SerializeField] BaseData baseData;
     [SerializeField] float invTime;
@@ -32,7 +31,6 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
     #endregion
     #region Unity Methods
     private void Start() {
-        if(current==null)current=this;
         anim = GetComponentInChildren<Animator>();
         _renderer = GetComponentInChildren<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
@@ -190,7 +188,6 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         StopAllCoroutines();
         player.ResetState();
         Player.Animation.Death.current.StartAnimation(Retry.Completed,_renderer.transform.eulerAngles.y,player.TransformCenter());
-        Retry.Start.Invoke();
         AudioListener.pause = true;
         gameObject.SetActive(false);
         Time.timeScale = 0f;

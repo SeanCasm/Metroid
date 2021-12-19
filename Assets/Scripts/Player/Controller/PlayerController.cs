@@ -229,8 +229,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (isJumping && jumpTimeCounter > 0f) rb.velocity = Vector2.up * (currentJumpForce / slow2Forces) * Time.deltaTime;
 
-                if (onJumpingState) rb.velocity = new Vector2(xVelocity/2 , rb.velocity.y);
-                else if (_onSpin || morphSpin) rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+                if (onJumpingState) SetVelocity( new Vector2(xVelocity/2 , rb.velocity.y));
+                else if (_onSpin || morphSpin) SetVelocity( new Vector2(xVelocity, rb.velocity.y));
             }
             else if (isGrounded && xInput != 0 && !wallInFront)
             {
@@ -238,7 +238,7 @@ public class PlayerController : MonoBehaviour
                 if ((frontAngle == 0 && backAngle != 0 && slopeAngle==0) && ((frontHit.point.y > backHit.point.y) || (frontHit.point.y < backHit.point.y)))
                 {
                     transform.position.Set(frontHit.point.x,frontHit.point.y,0);
-                    rb.velocity.Set(rb.velocity.x, 0f);
+                    SetVelocity( new Vector2(rb.velocity.x, 0f));
                 }
             }
         }
@@ -535,12 +535,12 @@ public class PlayerController : MonoBehaviour
         if(freeze){
             xInput = yInput = 0;
             inputManager.DisablePlayerInput();
-            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            SetConstraints(RigidbodyConstraints2D.FreezeAll);
             anim.enabled=this.enabled=false;
         }else{
             anim.enabled=this.enabled=true;
             inputManager.EnablePlayerInput();
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            SetConstraints(RigidbodyConstraints2D.FreezeRotation);
         }
     }
 
@@ -784,10 +784,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && !isJumping)
         {
             jumpTimeCounter = jumpTime;
-            JumpManager(() =>
-            {
-                IsJumping = onJumpingState = true;
-            },
+            JumpManager(() => IsJumping = onJumpingState = true,
             () =>
             {
                 if (_groundState == GroundState.Balled) morphSpin=IsJumping = true;

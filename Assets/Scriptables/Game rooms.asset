@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e2e581d8cd4e1479c996eae7ac7b9b, type: 3}
   m_Name: Game rooms
   m_EditorClassIdentifier: 
-  roomScenarios:
-  - {fileID: 7676941103258580810, guid: 8f987a3a4d0738242a5555690b8f93dc, type: 3}
-  - {fileID: 5922225402975987311, guid: 65e8e108deb43aa44aa4100e3e676c4a, type: 3}
+  roomScenarios: []

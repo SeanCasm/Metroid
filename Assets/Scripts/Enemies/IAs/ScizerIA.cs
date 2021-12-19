@@ -5,45 +5,45 @@ using Enemy.Weapons;
 using Enemy;
 public class ScizerIA : EnemyBase
 {
-    [SerializeField]GameObject scizerBulltet;
-    [SerializeField]Transform[] shootPoints;
+    [SerializeField] GameObject scizerBulltet;
+    [SerializeField] Transform[] shootPoints;
     Throw pF;
     private GroundSlopeChecker efd;
     bool attacking;
-    private new void OnEnable() {
+    private new void OnEnable()
+    {
         base.OnEnable();
-        pDetect.OnDetection+=SetAttack;
-        pDetect.OnOut+=StopAttack;
+        pDetect.OnDetection += SetAttack;
+        pDetect.OnOut += StopAttack;
     }
-    private void OnDisable() {
-        pDetect.OnDetection -=SetAttack;
-        pDetect.OnOut -=StopAttack;
+    private void OnDisable()
+    {
+        pDetect.OnDetection -= SetAttack;
+        pDetect.OnOut -= StopAttack;
     }
     new void Awake()
     {
         base.Awake();
         efd = GetComponent<GroundSlopeChecker>();
     }
-    private void FixedUpdate() {
-        if(!attacking)efd.SetOnGroundVelocity(speed);
+    private void FixedUpdate()
+    {
+        if (!attacking) efd.SetOnGroundVelocity(speed);
         else rigid.SetVelocity(0f, 0f);
     }
     public void Attack()
     {
-            if (pDetect.GetPlayerTransformCenter().x < transform.position.x)
-            {
-                GameObject mb = Instantiate(scizerBulltet, shootPoints[1].position, Quaternion.identity) as GameObject;
-                pF = mb.GetComponent<Throw>();
-                pF.ThrowPrefab(shootPoints[1], pDetect.GetPlayerTransformCenter());
-            }
-            else if (pDetect.GetPlayerTransformCenter().x > transform.position.x)
-            {
-                GameObject mb = Instantiate(scizerBulltet, shootPoints[0].position, Quaternion.identity) as GameObject;
-                pF = mb.GetComponent<Throw>();
-                pF.ThrowPrefab(shootPoints[0], pDetect.GetPlayerTransformCenter());
-            }
+        if (pDetect.GetPlayerTransformCenter().x < transform.position.x) ThrowPrefab(1);
+        else if (pDetect.GetPlayerTransformCenter().x > transform.position.x) ThrowPrefab(0);
     }
-    private void SetAttack(){
+    private void ThrowPrefab(int shootPoint)
+    {
+        GameObject mb = Instantiate(scizerBulltet, shootPoints[shootPoint].position, Quaternion.identity) as GameObject;
+        pF = mb.GetComponent<Throw>();
+        pF.ThrowPrefab(shootPoints[shootPoint], pDetect.GetPlayerTransformCenter());
+    }
+    private void SetAttack()
+    {
         attacking = true;
         anim.SetBool("Attacking", true);
     }

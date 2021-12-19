@@ -11,9 +11,8 @@ public class EvirIA : EnemyBase
     [SerializeField] float groundAware;
     private float currentSpeed;
     private int dir=1;
-    new void Awake()
-    {
-        base.Awake();
+    private new void OnEnable() {
+        base.OnEnable();
         pDetect.OnDetection+=Attack;
         pDetect.OnOut+=OnPlayerExit;
     }

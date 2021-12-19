@@ -20,7 +20,7 @@ public class SaveStation : MonoBehaviour
         if (col.CompareTag("Player") && !loaded && 
         (playerController=col.GetComponentInParent<PlayerController>()).GroundState!=GroundState.Balled)
         {
-            GameEvents.save.Invoke(this);
+            GameEvents.instance.save.Invoke(this);
             var gC= col.GetComponent<GameComponents>();
             saveLoad = gC.GetSaveAndLoad;
             inputManager = gC.GetInputManager;
@@ -66,7 +66,7 @@ public class SaveStation : MonoBehaviour
     }
     void stopSavingAnim()
     {
-        GameEvents.saveMessage.Invoke();
+        GameEvents.instance.saveMessage.Invoke();
         unFreezeMoves();
         PlayerAnimatorUpdate(false, false);
         inputManager.EnableAll();

@@ -56,11 +56,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.42, y: 2.0444446}
+    - - {x: 0.48, y: 2.0444446}
       - {x: -3.68, y: 2.044445}
       - {x: -3.68, y: -0.80901706}
-      - {x: 0.42, y: -0.80901694}
-      - {x: 0.42, y: 0.30901712}
+      - {x: 0.48, y: -0.80901694}
+      - {x: 0.48, y: 0.30901712}
 --- !u!1 &1329454615146513108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6237,6 +6237,10 @@ PrefabInstance:
     - target: {fileID: 758174252501090673, guid: a8d90b10eeec382479caea196d2e12da, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981165804203235146, guid: a8d90b10eeec382479caea196d2e12da, type: 3}
+      propertyPath: actualSectorLoad
+      value: Map room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8d90b10eeec382479caea196d2e12da, type: 3}

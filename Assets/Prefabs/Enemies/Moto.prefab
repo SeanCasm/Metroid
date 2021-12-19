@@ -365,12 +365,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
   slopeFrontRay: 0.187
   groundHitSlope: 0.187
   coll: {fileID: 6663302369964107622}
+  canFlip: 1
 --- !u!1001 &4615481048980065036
 PrefabInstance:
   m_ObjectHideFlags: 0

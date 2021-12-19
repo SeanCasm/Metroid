@@ -40,11 +40,11 @@ public class GameData
             time[3] = TimeCounter.miliseconds;
             reserve = new List<int>(inventory.reserve);
             SelectItemsData(inventory);
-            bossesDefeated = new List<int>(Boss.defeateds);
+            bossesDefeated = new List<int>(GameDataContainer.instance.bossesDefeated);
             tanks = energy.ETanks;
             position[0] = pos[0];
             position[1] = pos[1];
-            mappers = new List<int>(MapSaveSystem.mappers);
+            mappers = new List<int>(GameDataContainer.instance.mapTerminals);
             miniMapItem = map.miniMapItem;
             doorsUnlocked = new Dictionary<string, bool>(Sensor.doorsUnlocked);
     }

@@ -22,14 +22,12 @@ public class PlayerKnockBack : MonoBehaviour
         player = GetComponentInParent<PlayerController>();
         shinespark.Init();
     }
-    private void OnEnable()=>GameEvents.damagePlayer += HandleHit;
-    private void OnDisable()=>GameEvents.damagePlayer -= HandleHit;
     #endregion
     #region Private Methods
 
-    private void HandleHit(int damage, float xPosition)
+    public void HitPlayer(int damage, float xPosition)
     {
-        if (!PlayerHealth.current.invulnerable)
+        if (!health.invulnerable)
         {
             knockBack?.Invoke();
             Hitted(transform.position.x, xPosition,damage);

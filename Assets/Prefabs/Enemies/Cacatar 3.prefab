@@ -344,12 +344,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
   slopeFrontRay: 0.163
   groundHitSlope: 0.163
   coll: {fileID: 8109958685337576616}
+  canFlip: 0
 --- !u!61 &7705301335545073502
 BoxCollider2D:
   m_ObjectHideFlags: 0

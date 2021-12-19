@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Debug data
   m_EditorClassIdentifier: 
   missileAmmo: 999
-  health: 999
-  totalHealth: 999
+  health: 1
+  totalHealth: 1
   energyTanks: 0
   spawn: {x: 40.885, y: 0.3255416, z: 0}
   jumpForce: 88

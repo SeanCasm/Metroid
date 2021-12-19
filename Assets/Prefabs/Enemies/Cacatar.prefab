@@ -380,12 +380,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
   slopeFrontRay: 0.163
   groundHitSlope: 0.163
   coll: {fileID: 7128304241385295836}
+  canFlip: 0
 --- !u!1 &8940878941004448637
 GameObject:
   m_ObjectHideFlags: 0

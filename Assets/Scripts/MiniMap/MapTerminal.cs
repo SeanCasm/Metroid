@@ -18,7 +18,7 @@ public class MapTerminal : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        MapSaveSystem.mappers.ForEach(item =>
+        GameDataContainer.instance.mapTerminals.ForEach(item =>
         {
             if (item == id)
             {
@@ -33,16 +33,12 @@ public class MapTerminal : MonoBehaviour
     {
         if (other.GetComponent<Gun>() && active)
         {
-            print(other);
             pContr = other.GetComponentInParent<PlayerController>();
-
             if(pContr.isGrounded && !pContr.IsJumping){
-                pAnim = other.GetComponentInParent<Animator>();
-                if(other.transform.position.x > transform.position.x){
-                    arm.SetActive(true);
-                }else{
-                    armLeft.SetActive(true);
-                }
+                pAnim = pContr.anim;
+                if(other.transform.position.x > transform.position.x) arm.SetActive(true);
+                else armLeft.SetActive(true);
+
                 SetPlayer();
                 PassMapData();
             }
@@ -67,7 +63,7 @@ public class MapTerminal : MonoBehaviour
         var obj = Instantiate(acqPanel, References.instance.canvas.position, Quaternion.identity, References.instance.canvas);
         panelText = obj.GetChild(0).GetComponent<TextMeshProUGUI>();
         panelText.text = "Map update completed";
-        MapSaveSystem.mappers.Add(id);
+        GameDataContainer.instance.AddMapTerminal(id);
         Destroy(obj, 1f);
         Invoke("TransitionToMinimap", 1f);
     }
@@ -77,7 +73,7 @@ public class MapTerminal : MonoBehaviour
         acqPanel = null;
     }
     private void TransitionToMinimap(){
-        float time=GameEvents.StartTransition.Invoke();
+        float time=GameEvents.instance.StartTransition.Invoke();
         Invoke("EnablePlayer",time/2);
     }
     private void EnablePlayer()
@@ -89,10 +85,8 @@ public class MapTerminal : MonoBehaviour
         armLeft.SetActive(false);
 
         pContr.SetAllInput(true);
-        pContr = null;
-        pAnim = null;
         active = false;
-        GameEvents.MinimapShortcout.Invoke();
+        GameEvents.instance.MinimapShortcout.Invoke();
     }
     private void TurnOff(){
         light.gameObject.SetActive(false);

@@ -430,11 +430,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
-  slopeLayer:
-    serializedVersion: 2
-    m_Bits: 16384
-  slopeFrontRay: 0.1338
-  groundHitSlope: 0.073
+  slopeFrontRay: 0.163
+  groundHitSlope: 0.163
   coll: {fileID: 3669754201645900082}
 --- !u!1001 &221265109106624293
 PrefabInstance:

@@ -17,6 +17,7 @@ public class PlayerInventory : MonoBehaviour,IFulleable
     [SerializeField] ItemMenuController imCont;
     [SerializeField] PlayerFXHandler playerFX;
     [SerializeField] SkinSwapper skin;
+    [SerializeField] PlayerHealth playerHealth;
     [SerializeField] TouchpadHandler touchpadHandler;
     public UnityEvent<int,int> ammoUpdate;
     public UnityEvent<int,bool> viewUpdate;
@@ -254,7 +255,7 @@ public class PlayerInventory : MonoBehaviour,IFulleable
         else
         {
             skin.SetScrewAttack(false);
-            if (pCont.OnSpin) PlayerHealth.current.invulnerable = false;
+            if (pCont.OnSpin) playerHealth.invulnerable = false;
 
             if(CheckItem(9))pCont.jumpType=JumpType.Space;
             else pCont.jumpType = JumpType.Default;

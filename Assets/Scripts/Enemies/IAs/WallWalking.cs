@@ -21,13 +21,13 @@ public class WallWalking : EnemyBase
     private new void OnEnable()
     {
         base.OnEnable();
-        GameEvents.OnMissileImpact += ReactToMissileImpact;
-        GameEvents.OnCrumble += ReactToCrumbleBlock;
+        GameEvents.instance.OnMissileImpact += ReactToMissileImpact;
+        GameEvents.instance.OnCrumble += ReactToCrumbleBlock;
     }
     private void OnDisable()
     {
-        GameEvents.OnMissileImpact -= ReactToMissileImpact;
-        GameEvents.OnCrumble -= ReactToCrumbleBlock;
+        GameEvents.instance.OnMissileImpact -= ReactToMissileImpact;
+        GameEvents.instance.OnCrumble -= ReactToCrumbleBlock;
     }
     new void Awake()
     {
@@ -76,8 +76,7 @@ public class WallWalking : EnemyBase
     #region Private Methods 
     private void ReactToMissileImpact(Vector2 pos)
     {
-        if (transform.eulerAngles.z != 0 && Vector2.Distance(transform.position, pos) < 1.2f &&
-            enabled)
+        if (transform.eulerAngles.z != 0 && Vector2.Distance(transform.position, pos) < 1.2f)
             Fall();
     }
     private void ReactToCrumbleBlock(Vector2 pos)
@@ -117,7 +116,7 @@ public class WallWalking : EnemyBase
         if (wallHit)
         {
             wallAngle = Vector2.Angle(wallHit.normal, Vector2.up);
-            if (CheckWallAngle(89, 91) || CheckWallAngle(-1, 1) || CheckWallAngle(179, 181)) wallInFront = true;
+            if ((CheckWallAngle(89, 91) || CheckWallAngle(-1, 1) || CheckWallAngle(179, 181))) wallInFront = true;
         }
         else wallAngle = 0;
 

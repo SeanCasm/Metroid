@@ -13,10 +13,10 @@ public class TransitionSubscriber : MonoBehaviour
         animator=GetComponent<Animator>();
     }
     private void OnEnable() {
-        GameEvents.StartTransition+=StartTrantision;
+        GameEvents.instance.StartTransition+=StartTrantision;
     }
     private void OnDisable() {
-        GameEvents.StartTransition -=StartTrantision;
+        GameEvents.instance.StartTransition -=StartTrantision;
     }
     private float StartTrantision(){
         animator.SetTrigger("Start");

@@ -22,14 +22,14 @@ public class Pause : MonoBehaviour
     #region Unity Methods
     private void OnEnable()
     {
-        GameEvents.MinimapShortcout += QuickMinimap;
+        GameEvents.instance.MinimapShortcout += QuickMinimap;
         inputManager.Pause+=PauseMenu;
         inputManager.PlayerPause += Menu;
 
     }
     private void OnDisable()
     {
-        GameEvents.MinimapShortcout -= QuickMinimap;
+        GameEvents.instance.MinimapShortcout -= QuickMinimap;
         inputManager.Pause -= PauseMenu;
         inputManager.PlayerPause -= Menu;
         escPause=onGame = false;
@@ -101,6 +101,7 @@ public class Pause : MonoBehaviour
     public void Unpause()
     {
         OnPauseInput?.Invoke(false);
+        UnpausePlayer();
         #if UNITY_ANDROID
         unpauseAndroid.Invoke();
         #endif
@@ -108,7 +109,7 @@ public class Pause : MonoBehaviour
         PauseSystem.instance.EnablePlayerContoller(true);
         gameSettings.SetEffectsVolume(false);
         gameSettings.SetMusicVolume(false);
-        GameEvents.timeCounter?.Invoke(true);
+        GameEvents.instance.timeCounter?.Invoke(true);
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         playerMenu.SetActive(false);
@@ -149,7 +150,7 @@ public class Pause : MonoBehaviour
         //Setting the first select.
         options = GetComponentAtIndex(pauseMenu, 2);
 
-        GameEvents.timeCounter.Invoke(false);//pauses the time counter.
+        GameEvents.instance.timeCounter.Invoke(false);//pauses the time counter.
     }
     private Button GetComponentAtIndex(GameObject someObject, int index)
     {

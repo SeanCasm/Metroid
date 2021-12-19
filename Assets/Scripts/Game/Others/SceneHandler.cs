@@ -12,6 +12,7 @@ public class SceneHandler : MonoBehaviour
     [SerializeField]AssetReference initialRoom;
     [SerializeField] Vector2 spawn;
     private PlayerController pContr{get;set;}
+    private Action OnLoadGame;
     private GameObject scenario;
      private void Awake() {
         if(current==null){
@@ -35,6 +36,7 @@ public class SceneHandler : MonoBehaviour
     }
     public void LoadFromSaveGame(Action action)
     {
+        OnLoadGame=action;
         if (Slots.retry) StartingLoad();
         else AnimationHandle.current.StartRetry(StartingLoad);
     }
@@ -47,8 +49,14 @@ public class SceneHandler : MonoBehaviour
         }
         if(SaveAndLoad.newGame)initialRoom.InstantiateAsync(Vector3.zero, Quaternion.identity, null).Completed+=OnLoadComplete;
         else{
-            Addressables.InstantiateAsync("Assets/Prefabs/Scenarios/"+SaveAndLoad.sectorName+".prefab").Completed+=OnLoadComplete;
+            Addressables.InstantiateAsync("Assets/Prefabs/Scenarios/"+SaveAndLoad.sectorName+".prefab").Completed+=OnLoadCompleteSaveGame;
         }
+    }
+    void OnLoadCompleteSaveGame(AsyncOperationHandle<GameObject> obj){
+        SetCurrentScenario(obj.Result);
+        AnimationHandle.current.EnableEnd(OnLoadGame);
+        Slots.retry = false;
+        AudioListener.pause=false;
     }
     void OnLoadComplete(AsyncOperationHandle<GameObject> obj){
         SetCurrentScenario(obj.Result);

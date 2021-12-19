@@ -15,7 +15,7 @@ namespace Enemy.Weapons
 
         bool IPooleable.pooleable { get => this.pooleable; set => this.pooleable=value; }
        
-        protected virtual new void OnEnable() {
+        protected new void OnEnable() {
             base.OnEnable();
             playerPosition = PlayerController.current.TransformCenter();
             Invoke("BackToShootPoint", livingTime);
@@ -23,7 +23,7 @@ namespace Enemy.Weapons
         protected void Start(){
             rigid=GetComponent<Rigidbody2D>();
         }
-        protected virtual void OnBecameInvisible()
+        protected void OnBecameInvisible()
         {
             BackToShootPoint();
         }
@@ -63,7 +63,8 @@ namespace Enemy.Weapons
         {
             switch(collision.tag){
                 case "Player":
-                    GameEvents.damagePlayer.Invoke(damage, transform.position.x);
+                    PlayerKnockBack playerKnockBack = collision.GetComponent<PlayerKnockBack>();
+                    playerKnockBack.HitPlayer(damage,transform.position.x);
                     BackToShootPoint();
                 break;
                 case "Suelo":BackToShootPoint();

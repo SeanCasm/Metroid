@@ -19,7 +19,6 @@ public class Retry : MonoBehaviour
     [SerializeField] FirstSelectedHandler menuFirst;
     private GameObject retryMenu,retryReference;
     private Button retry,mainMenu;
-    public static System.Action Start;
     public static System.Action Completed;
     #endregion
     #region Unity Methods

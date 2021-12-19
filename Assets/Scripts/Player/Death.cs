@@ -6,6 +6,8 @@ namespace Player.Animation{
     public class Death : MonoBehaviour
     {
         public static Death current;
+        [SerializeField] Animator deathCanvas;
+        [SerializeField] float timeToDestroyScenario;
         private Animator animator;
         private Action Completed,CanvasAnimationCompleted;
         private void Start() {
@@ -21,6 +23,12 @@ namespace Player.Animation{
             transform.position=position;
             Completed=action;
             animator.SetTrigger("Start");
+            deathCanvas.SetTrigger("Start");
+            StartCoroutine(nameof(DestroyScenario),timeToDestroyScenario);
+        }
+        IEnumerator DestroyScenario(){
+            yield return new WaitForSecondsRealtime(timeToDestroyScenario);
+            SceneHandler.current.DestroyScenario();
         }
         public void SyncWithThis(Action action){
             CanvasAnimationCompleted=action;

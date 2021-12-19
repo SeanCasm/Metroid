@@ -16,21 +16,19 @@ public class MapSaveSystem : MonoBehaviour
     public bool[] miniMapItem { get; set; }
     private Vector3Int cellPos;
 
-    public static List<int> mappers = new List<int>();
     #endregion
     #region Unity Methods
     void Awake()
     {
-        mappers = new List<int>();
         miniMapItem = new bool[40];
     }
     void OnEnable()
     {
-        GameEvents.UnexploredMap += SetUnexploredTile;
+        GameEvents.instance.UnexploredMap += SetUnexploredTile;
     }
     private void OnDisable()
     {
-        GameEvents.UnexploredMap -= SetUnexploredTile;
+        GameEvents.instance.UnexploredMap -= SetUnexploredTile;
     }
     #endregion
     public void UpdateTile(MiniMap miniMap){
@@ -51,7 +49,7 @@ public class MapSaveSystem : MonoBehaviour
         var tile2 = tileMap.GetTile(cellPos);
         if (tile2 == null || tile2.name[0] == '3' || tile2.name[0] == '2')
         {
-            tileInfo.Add((tileMap.name, cellPos.x, cellPos.y));
+            tileInfo.Add((miniMap.mapTile.name, cellPos.x, cellPos.y));
         }
         tileMap.SetTile(cellPos, miniMap.mapTile);
     }
@@ -65,48 +63,21 @@ public class MapSaveSystem : MonoBehaviour
     }
     private void SetTilesToTilemap()
     {
-        Dictionary<string, Tile> tiles1 = LoadFromResources("0");
-        Dictionary<string, Tile> tiles2 = LoadFromResources("1");
-        Dictionary<string, Tile> tiles3 = LoadFromResources("2");
-        Dictionary<string, Tile> tiles4 = LoadFromResources("3");
-        Dictionary<string, Tile> tiles5 = LoadFromResources("4");
-        Dictionary<string, Tile> tiles6 = LoadFromResources("5");
         tileInfo.ForEach(item =>
         {
             Vector3Int newPos = new Vector3Int(item.xpos, item.ypos, 0);
-            switch (item.name[0])
-            {
-                case '0':
-                    tileMap.SetTile(newPos, tiles1[item.name]);
-                    break;
-                case '1':
-                    tileMap.SetTile(newPos, tiles2[item.name]);
-                    break;
-                case '4':
-                    tileMap.SetTile(newPos, tiles5[item.name]);
-                    break;
-            }
+            tileMap.SetTile(newPos, LoadFromResources(item.name[0].ToString()+'/'+item.name));
         });
         tileInfoUnexplored.ForEach(item =>
         {
+            print(item);
             Vector3Int newPos = new Vector3Int(item.xpos, item.ypos, 0);
-            switch (item.name[0])
-            {
-                case '2':
-                    tileMap.SetTile(newPos, tiles3[item.name]);
-                    break;
-                case '3':
-                    tileMap.SetTile(newPos, tiles4[item.name]);
-                    break;
-                case '5':
-                    tileMap.SetTile(newPos, tiles6[item.name]);
-                    break;
-            }
+            tileMap.SetTile(newPos, LoadFromResources(item.name[0].ToString()+'/'+item.name));
         });
     }
-    private Dictionary<string, Tile> LoadFromResources(string route)
+    private Tile LoadFromResources(string route)
     {
-        return Resources.LoadAll(route, typeof(Tile)).Cast<Tile>().ToDictionary(item => item.name, item => item);
+        return Resources.Load<Tile>(route);
     }
     #endregion
     /// <summary>

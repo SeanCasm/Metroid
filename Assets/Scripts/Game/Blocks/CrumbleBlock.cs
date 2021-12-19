@@ -24,6 +24,10 @@ public class CrumbleBlock : MonoBehaviour
             onCollide?.Invoke();
             return;
         }
+        if(tags.Length==0){
+            onCollide?.Invoke();
+            return;
+        }
         CheckCollisionTag(tag,onCollide);
     }
     protected void CheckCollisionTag(string tag,System.Action onCollide){
@@ -51,7 +55,7 @@ public class CrumbleBlock : MonoBehaviour
    
     private void DeactivatingBlock()
     {
-        GameEvents.OnCrumble?.Invoke(transform.position);
+        GameEvents.instance.OnCrumble?.Invoke(transform.position);
         Destroy(gameObject);
     }
     #endregion

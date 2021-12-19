@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 22
   livingTime: 3
-  startSound: {fileID: 7119153977521584086, guid: 49a3ad49b42ec304aa85bbe0db514ff3, type: 3}
+  startSound: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   speed: 1.1
   pooleable: 0

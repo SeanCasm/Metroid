@@ -43,15 +43,19 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     public static CurrentDevice actualDevice;
     private void Start()
     {
-        CurrentControlScheme(playerInput);
+        #if UNITY_ANDROID
+        inputButton.interactable=false;
         controlPanel.text = "Gamepad options";
+        #endif
+        CurrentControlScheme(playerInput);
     }
     public void CurrentControlScheme(PlayerInput playerInput)
     {
+         print(playerInput.currentControlScheme);
         switch (playerInput.currentControlScheme)
         {
             case "Gamepad":
-            #if UNITY_STANDALONE
+#if UNITY_STANDALONE
 
                     RebindKeys.deviceType = CurrentDevice.Gamepad;
                     actualDevice = CurrentDevice.Gamepad;
@@ -67,15 +71,15 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
                         item.SetIndex(false);
                         item.SetKeyText();
                     });
-/*
+#endif
+
 #if UNITY_ANDROID
-                    touchpad.SetActive(false);
-                    selectBack.SetActive(true);
-                    inputButton.interactable = true;
+                //touchpad.SetActive(false);
+                selectBack.SetActive(true);
+                inputButton.interactable = true;
 
 #endif
-*/
-            #endif
+
                 break;
 #if UNITY_STANDALONE
             case "Keyboard&Mouse":
@@ -105,8 +109,7 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
                     options.SetActive(true);
                     eventSystem.SetSelectedGameObject(options.GetChild(0));
                 }
-                //inputButton.interactable = false;
-                //controlPanel.text = "No controls";
+                inputButton.interactable = false;
                 touchpad.SetActive(true);
                 actualDevice = CurrentDevice.Touch;
                 selectBack.SetActive(false);
@@ -148,11 +151,13 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     public void DisablePlayerInput() => inputClass.Player.Disable();
     public void DisableFireInput() => inputClass.Player.Fire.Disable();
     public void EnableFireInput() => inputClass.Player.Fire.Enable();
-    public void DisableAll(){
+    public void DisableAll()
+    {
         inputClass.Player.Disable();
         inputClass.UI.Disable();
     }
-    public void EnableAll(){
+    public void EnableAll()
+    {
         inputClass.Player.Enable();
         inputClass.UI.Enable();
     }
@@ -189,7 +194,7 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
         inputClass.Player.Morphball.Enable();
         inputClass.Player.Tab.Enable();
     }
-     
+
 
     public void OnAimdown(InputAction.CallbackContext context)
     {

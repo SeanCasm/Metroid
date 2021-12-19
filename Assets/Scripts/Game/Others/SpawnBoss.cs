@@ -10,7 +10,7 @@ public class SpawnBoss : MonoBehaviour
     void Awake()
     {
         int iD = bossToSpawn.GetComponent<Boss>().ID;
-        if (!Boss.defeateds.Contains(iD))
+        if (!GameDataContainer.instance.CheckBossExistence(iD))
         {
             
             GameObject boss = Instantiate(bossToSpawn, transform.position, Quaternion.identity);

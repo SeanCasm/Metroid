@@ -17,11 +17,11 @@ public class TimeCounter : MonoBehaviour
     }}
     public static string currentTimePause;
     private void OnEnable() {
-        GameEvents.timeCounter+=StartCounter;
+        GameEvents.instance.timeCounter+=StartCounter;
     }
     private void OnDisable() {
         ResetTime();
-        GameEvents.timeCounter -= StartCounter;
+        GameEvents.instance.timeCounter -= StartCounter;
     }
     public static void SetTimeAfterLoad(int[] time){
         hours=time[0];

@@ -9,6 +9,7 @@ public class SkinSwapper : MonoBehaviour
     [SerializeField] Image suit;
     [SerializeField] Suit power,gravity,corrupt; 
     [SerializeField] Materials materials;
+    [SerializeField] PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
     private bool gravityEquiped;
     private PlayerController playerController;
@@ -57,7 +58,7 @@ public class SkinSwapper : MonoBehaviour
     }
     void LateUpdate()
     {
-        if(!PlayerHealth.current.isDead && suitRight.Count>0 && playerController.GroundState!=GroundState.Balled){
+        if(!playerHealth.isDead && suitRight.Count>0 && playerController.GroundState!=GroundState.Balled){
             int index = int.Parse(spriteRenderer.sprite.name);
             spriteRenderer.sprite = playerController.leftLook ? suitLeft[index] : suitRight[index] ;
         }

@@ -442,6 +442,10 @@ MonoBehaviour:
   arm: {fileID: 7345347303073241733}
   armLeft: {fileID: 8594241718941849067}
   light: {fileID: 2977140755088041568}
+  playerPos: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &8598388826110938911
 Rigidbody2D:
   serializedVersion: 4
