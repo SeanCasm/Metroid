@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory
 {
-    public PlayerInventory playerInventory;
+    public Gun gun;
     public bool selected { get; set; }
     public int iD { get; set; }
     public Inventory(bool selected, int iD)

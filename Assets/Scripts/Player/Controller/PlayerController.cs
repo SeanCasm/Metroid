@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 posFrontRay, posBackRay, slopePerp,direction;
     private RaycastHit2D frontHit, backHit;
     private float jumpForce = 88, speed = 88, frontAngle, backAngle, curSpinOffset = 1,slow2Gravity = 1,curGroundDis;
-    private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, slopeAngle, aim,spriteCenter;
+    private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, slopeAngle, angleAim,spriteCenter;
     public float xInput{get;private set;}=0;
     public Animator anim{get;set;}
     private PlayerFXHandler playerFX;
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
             {
                 onMorphball?.Invoke();
                 OnSpin = false;
-                aim = 0;
+                angleAim = 0;
                 aimUpDown = 0;
             }
             else
@@ -396,7 +396,7 @@ public class PlayerController : MonoBehaviour
         if (_groundState == GroundState.Balled) anim.SetFloat(animatorHash[16], 1);
         else
         if (aimUpDown == 0 && !isJumping && status == Status.Normal && shinespark.ShinesparkState != ShinesparkState.Full 
-        && gun.fireType == FireType.Normal && aim == 0 && !airShoot && !onJumpingState && !_onSpin)
+        && gun.fireType == FireType.Normal && angleAim == 0 && !airShoot && !onJumpingState && !_onSpin)
         {
             fall = true;
         }
@@ -429,8 +429,8 @@ public class PlayerController : MonoBehaviour
     #endregion
     private void AnimStates()
     {
-        SetAnimation(0,aim<0);
-        SetAnimation(1, aim > 0);
+        SetAnimation(0,angleAim<0);
+        SetAnimation(1, angleAim > 0);
         SetAnimation(2, _groundState == GroundState.Balled);
         SetAnimation(3, isGrounded && xInput != 0 && !wallInFront  && !groundOverHead);
         SetAnimation(4, (_shootOnWalk || gun.fireType!=FireType.Normal) && isGrounded && xInput != 0);
@@ -512,7 +512,7 @@ public class PlayerController : MonoBehaviour
         fall = IsJumping = onJumpingState =checkFloor=
         isGrounded = OnSpin = ShootOnWalk = airShoot =false;
         xInput = yInput = 0;
-        aim = 0;
+        angleAim = 0;
         aimUpDown = 0;
         HyperJumpTimeAction();
         gun.fireType = FireType.Normal;
@@ -550,11 +550,11 @@ public class PlayerController : MonoBehaviour
         {
             case AngleAim.Both:
                 aimState = AngleAim.Down;
-                aim = -1;
+                angleAim = -1;
                 break;
             case AngleAim.Up:
                 aimState = AngleAim.None;
-                aim = 0;
+                angleAim = 0;
                 break;
         }
         aimUpDown = 0;
@@ -565,7 +565,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             aimState = AngleAim.Both;
-            aim = 0;
+            angleAim = 0;
             aimUpDown = 1;
             CheckAimUp();
         }
@@ -576,11 +576,11 @@ public class PlayerController : MonoBehaviour
         {
             case AngleAim.Both:
                 aimState = AngleAim.Up;
-                aim = 1;
+                angleAim = 1;
                 break;
             case AngleAim.Down:
                 aimState = AngleAim.None;
-                aim = 0;
+                angleAim = 0;
                 break;
         }
         aimUpDown = 0;
@@ -591,7 +591,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             aimState = AngleAim.Both;
-            aim = 0;
+            angleAim = 0;
             aimUpDown = 1;
             CheckAimUp();
         }
@@ -604,10 +604,10 @@ public class PlayerController : MonoBehaviour
             switch (_groundState)
             {
                 case GroundState.Stand:
-                    if (xInput == 0 && aim == 0) aimUpDown = 1;
+                    if (xInput == 0 && angleAim == 0) aimUpDown = 1;
                     break;
                 case GroundState.Crouched:
-                    if(!groundOverHead)GroundState = GroundState.Stand;
+                    if(!groundOverHead && aimState!=AngleAim.Both)GroundState = GroundState.Stand;
                     break;
                 case GroundState.Balled:
                     if(!groundOverHead)GroundState = GroundState.Crouched;
@@ -619,7 +619,7 @@ public class PlayerController : MonoBehaviour
             switch (_groundState)
             {
                 case GroundState.Stand:
-                    if (aim == 0) aimUpDown = 1;
+                    if (angleAim == 0) aimUpDown = 1;
                     break;
                 case GroundState.Balled:
                     if(!groundOverHead){
@@ -633,7 +633,7 @@ public class PlayerController : MonoBehaviour
     }
     private void AimUp()
     {
-        aim = 1;
+        angleAim = 1;
         aimState = AngleAim.Up;
         aimUpDown = 0;
         if (shinespark.ShinesparkState == ShinesparkState.Prepared)
@@ -645,7 +645,7 @@ public class PlayerController : MonoBehaviour
     private void AimDown()
     {
         aimState = AngleAim.Down;
-        aim = -1;
+        angleAim = -1;
         aimUpDown = 0;
     }
     public void OnLeft(bool value)
@@ -681,8 +681,8 @@ public class PlayerController : MonoBehaviour
         }
     }
     private void MoveHorCanceledAction(){
-        if (aim > 0) AimUp();
-        else if (aim < 0) AimDown();
+        if (angleAim > 0) AimUp();
+        else if (angleAim < 0) AimDown();
         if (isGrounded && speedBoosterComp.isInvoking) speedBoosterComp.CancelGhost();
         ShootOnWalk = false;
     }
@@ -698,7 +698,7 @@ public class PlayerController : MonoBehaviour
                     speedBoosterComp?.SetSpeedBooster(true);
                     Invoke("HyperJumpTimeAction", 2f);
                 }
-                if (_groundState != GroundState.Balled && xInput == 0f && aimState == AngleAim.None && !isGrounded) { aimUpDown = -1; aim = 0; }
+                if (_groundState != GroundState.Balled && xInput == 0f && aimState == AngleAim.None && !isGrounded) { aimUpDown = -1; angleAim = 0; }
                 else if (canMorph && _groundState == GroundState.Crouched) GroundState = GroundState.Balled;
                 else if (_groundState == GroundState.Stand && isGrounded && xInput == 0) GroundState = GroundState.Crouched;
             }

@@ -7,9 +7,7 @@ public class BaseDataDebug : BaseData
 {
     public override void SetInventoryData(PlayerInventory inventory)
     {
-        for(int i =0;i<4;i++){
-            inventory.limitedAmmo[i] = new LimitedAmmo(false, i, beams.limitedAmmo[i], missileAmmo, missileAmmo,inventory);
-        }
+
         for (int i = 0; i < 11; i++)
         {
             inventory.AddToItems(i, true);
@@ -17,5 +15,12 @@ public class BaseDataDebug : BaseData
         }
         inventory.transform.position = spawn;
         inventory.SetSuit();
+    }
+    public void SetGunData(Gun gun)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            gun.limitedAmmo[i] = new LimitedAmmo(false, i, beams.limitedAmmo[i], missileAmmo, missileAmmo, gun);
+        }
     }
 }

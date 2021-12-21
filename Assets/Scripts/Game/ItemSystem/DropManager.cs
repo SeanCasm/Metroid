@@ -14,7 +14,7 @@ public class DropManager : MonoBehaviour
     /// </summary>
     /// <param name="playerI"></param>
     /// <returns></returns>
-    private List<int> CheckForDrop(PlayerInventory playerI)
+    private List<int> CheckForDrop(Gun playerI)
     {
         int i = 0;
         List<int> ammo = new List<int>();
@@ -37,7 +37,7 @@ public class DropManager : MonoBehaviour
         if (playerH.CheckCurrentHealth()) return true;
         return false;
     }
-    private GameObject SendAmmoDrop(PlayerInventory playerInventory)
+    private GameObject SendAmmoDrop(Gun playerInventory)
     {
         var countableAmmo = playerInventory.limitedAmmo;
         List<GameObject> ammoOnInventory = new List<GameObject>();
@@ -54,7 +54,7 @@ public class DropManager : MonoBehaviour
     public GameObject TryToDrop()
     {
         PlayerHealth playerHealth = References.instance.playerHealth;
-        PlayerInventory playerInventory = References.instance.playerInventory;
+        Gun playerInventory = References.instance.playerInventory;
         bool health = CheckForDrop(playerHealth);
         int i = Random.Range(1, 21);
         var c = CheckForDrop(playerInventory);

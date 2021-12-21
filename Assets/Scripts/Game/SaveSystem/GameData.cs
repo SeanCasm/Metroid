@@ -21,10 +21,10 @@ public class GameData
     public Dictionary<string,bool> doorsUnlocked= new Dictionary<string, bool>();
     public int[] time = new int[4];
     public bool[] miniMapItem = new bool[40];
-    public GameData(PlayerInventory inventory, PlayerHealth energy, MapSaveSystem map, float[] pos, string sectorName)
+    public GameData(PlayerInventory inventory, PlayerHealth energy, MapSaveSystem map, float[] pos, string sectorName,Gun gun)
     {
             actualSector = sectorName;
-            var limitedAmmo = inventory.limitedAmmo;
+            var limitedAmmo = gun.limitedAmmo;
             for (int i = 0; i < limitedAmmo.Length; i++)
             {
                 if (limitedAmmo[i]!=null)

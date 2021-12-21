@@ -15,10 +15,10 @@ public class CollectorManager : MonoBehaviour
     [SerializeField] GameObject player, acquiredPanel, canvas;
     [SerializeField] Image suitUI;
     [SerializeField] Suit gravity, corrupt;
-    [SerializeField] GameObject[] defaultAmmoPrefabs;
     [SerializeField] ButtonUtilities buttonEssentials;
     [SerializeField] AudioMixerGroup mixerToMute;
     [SerializeField] InputManager inputManager;
+    [SerializeField] Gun gun;
     [SerializeField] PlayerHealth playerHealth;
     private PlayerInventory inventory;
     private float audioAux;
@@ -68,7 +68,7 @@ public class CollectorManager : MonoBehaviour
         switch (reserve.ItemType)
         {
             case ReserveType.Missile:
-                inventory.limitedAmmo[0].AddCapacity(reserve.Amount);
+                gun.limitedAmmo[0].AddCapacity(reserve.Amount);
                 break;
             case ReserveType.SuperMissile:
                 SetReserve(reserve,1);
@@ -89,8 +89,8 @@ public class CollectorManager : MonoBehaviour
     }
     private void SetReserve(ReserveAcquired reserve,int index)
     {
-        if (!inventory.CheckLimitedAmmo(index)) inventory.AddNewLimitedAmmo(index,reserve.Amount);
-        else inventory.limitedAmmo[index].AddCapacity(reserve.Amount);
+        if (!gun.CheckLimitedAmmo(index)) gun.AddNewLimitedAmmo(index,reserve.Amount);
+        else gun.limitedAmmo[index].AddCapacity(reserve.Amount);
     }
     private void ItemAcquired(ItemAcquired item)
     {

@@ -15,8 +15,7 @@ namespace Player{
         public Vector3 spawn;
         public float jumpForce,jumpForceUp;
         public Beams beams;
-        public virtual void SetInventoryData(PlayerInventory inventory){
-            inventory.limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], missileAmmo, missileAmmo,inventory);
+        public virtual void SetInventoryData(PlayerInventory inventory){ 
             inventory.AddToItems(4,true);//add the morfball item, initial game item by default.
             //inventory.transform.position=spawn;
             inventory.SetSuit();

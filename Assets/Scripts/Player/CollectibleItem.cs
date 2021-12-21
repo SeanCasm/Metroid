@@ -14,7 +14,7 @@ public class CollectibleItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerInventory pInventory = collision.GetComponentInParent<PlayerInventory>();
+            Gun pInventory = collision.GetComponentInParent<Gun>();
             PlayerHealth pHealth = collision.GetComponentInParent<PlayerHealth>();
             var ammo = pInventory.limitedAmmo;
 

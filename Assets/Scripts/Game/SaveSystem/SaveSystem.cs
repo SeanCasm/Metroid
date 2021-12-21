@@ -7,13 +7,13 @@ using System;
 public static class SaveSystem
 {
     public static void SavePlayerSlot(PlayerInventory inventory, PlayerHealth energy,
-        MapSaveSystem map,float[] pos, string sectorName, int slotIndex)
+        MapSaveSystem map,float[] pos, string sectorName, int slotIndex,Gun gun)
     {
         string slotPath = GetSlotPath(slotIndex);
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + slotPath;
         FileStream stream = new FileStream(path, FileMode.Create);
-        GameData data = new GameData(inventory, energy,map, pos, sectorName);
+        GameData data = new GameData(inventory, energy,map, pos, sectorName,gun);
         formatter.Serialize(stream, data);
         stream.Close();
     }

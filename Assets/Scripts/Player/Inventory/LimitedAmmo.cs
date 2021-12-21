@@ -10,24 +10,24 @@ public class LimitedAmmo : Ammo
 
     #endregion
     public LimitedAmmo(bool selected, int iD, GameObject ammoPrefab,
-        int maxAmmo, int actualAmmo,PlayerInventory playerInventory) : base(selected, iD, ammoPrefab)
+        int maxAmmo, int actualAmmo,Gun gun) : base(selected, iD, ammoPrefab)
     {
         this.selected = selected;
         this.iD = iD; this.ammoPrefab = ammoPrefab;
         this.maxAmmo = maxAmmo; this.actualAmmo = actualAmmo;
-        this.playerInventory=playerInventory;
-        playerInventory.ammoUpdate.Invoke(this.iD,this.actualAmmo);
-        playerInventory.enableItem.Invoke(this.iD);
+        this.gun=gun;
+        gun.ammoUpdate.Invoke(this.iD,this.actualAmmo);
+        gun.enableItem.Invoke(this.iD);
 
         SetFullCapacity();
     }
     public LimitedAmmo(bool selected, int iD, GameObject ammoPrefab,
-        int maxAmmo,PlayerInventory playerInventory) : base(selected, iD, ammoPrefab)
+        int maxAmmo,Gun playerInventory) : base(selected, iD, ammoPrefab)
     {
         this.selected = false;
         this.maxAmmo = this.actualAmmo = maxAmmo;
         this.ammoPrefab = ammoPrefab;
-        this.playerInventory = playerInventory;
+        this.gun = playerInventory;
         playerInventory.ammoUpdate.Invoke(this.iD,this.actualAmmo);
         playerInventory.enableItem.Invoke(this.iD);
         
@@ -37,7 +37,7 @@ public class LimitedAmmo : Ammo
     public void AddCapacity(int amount)
     {
         maxAmmo += amount; actualAmmo += amount;
-        playerInventory.ammoUpdate.Invoke(this.iD,this.actualAmmo);
+        gun.ammoUpdate.Invoke(this.iD,this.actualAmmo);
     }
     public void ActualAmmoCount(int amount)
     {
@@ -47,11 +47,11 @@ public class LimitedAmmo : Ammo
         {
             actualAmmo = 0; Select(false);
         }
-        playerInventory.ammoUpdate.Invoke(this.iD,this.actualAmmo);
+        gun.ammoUpdate.Invoke(this.iD,this.actualAmmo);
     }
     public void Select(bool select)
     {
-        playerInventory.viewUpdate.Invoke(this.iD,select);
+        gun.viewUpdate.Invoke(this.iD,select);
         this.selected = select;
         ammoSelected = iD;
     }
@@ -68,7 +68,7 @@ public class LimitedAmmo : Ammo
     public void SetFullCapacity()
     {
         this.actualAmmo = maxAmmo;
-        playerInventory.ammoUpdate.Invoke(this.iD,this.actualAmmo);
+        gun.ammoUpdate.Invoke(this.iD,this.actualAmmo);
     }
     #endregion
 }

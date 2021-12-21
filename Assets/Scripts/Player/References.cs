@@ -6,11 +6,12 @@ using UnityEngine.InputSystem;
 public class References : MonoBehaviour
 {
     public static References instance;
-    public  PlayerHealth playerHealth;
-    public  PlayerInventory playerInventory;
-    public  Tilemap map;
+    public PlayerHealth playerHealth;
+    public Gun playerInventory;
+    public Tilemap map;
     public Transform canvas;
-    private void Awake() {
-        instance=this;
+    private void Awake()
+    {
+        instance = this;
     }
 }

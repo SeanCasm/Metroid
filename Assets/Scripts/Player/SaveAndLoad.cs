@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class SaveAndLoad : MonoBehaviour
 {
     [SerializeField] PlayerInventory inventory;
+    [SerializeField] Gun gun;
     [SerializeField] PlayerHealth health;
     [SerializeField] PlayerController pContr;
     [SerializeField]MapSaveSystem map;
@@ -22,7 +23,7 @@ public class SaveAndLoad : MonoBehaviour
         position[1] = y;
         position[2] = z;
     }
-    public void SavePlayerSlot(int slotIndex) { SaveSystem.SavePlayerSlot(inventory, health,map, position, sectorName, slotIndex); }
+    public void SavePlayerSlot(int slotIndex) { SaveSystem.SavePlayerSlot(inventory, health,map, position, sectorName, slotIndex,gun); }
     public void LoadPlayerSlot(int slotIndex)
     {
         data = SaveSystem.LoadPlayerSlot(slotIndex);
