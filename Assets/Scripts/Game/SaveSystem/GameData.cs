@@ -18,11 +18,12 @@ public class GameData
     public List<int> mappers = new List<int>();
     public List<(string name, int xpos, int ypos)> tileInfo { get; set; } = new List<(string name, int xpos, int ypos)>();
     public List<(string name, int xpos, int ypos)> tileInfoUnexplroed { get; set; } = new List<(string name, int xpos, int ypos)>();
-    public Dictionary<string,bool> doorsUnlocked= new Dictionary<string, bool>();
+    public List<int> doorsUnlocked= new List<int>();
     public int[] time = new int[4];
     public bool[] miniMapItem = new bool[40];
     public GameData(PlayerInventory inventory, PlayerHealth energy, MapSaveSystem map, float[] pos, string sectorName,Gun gun)
     {
+        GameDataContainer gameDataContainer = GameDataContainer.instance;
             actualSector = sectorName;
             var limitedAmmo = gun.limitedAmmo;
             for (int i = 0; i < limitedAmmo.Length; i++)
@@ -40,13 +41,13 @@ public class GameData
             time[3] = TimeCounter.miliseconds;
             reserve = new List<int>(inventory.reserve);
             SelectItemsData(inventory);
-            bossesDefeated = new List<int>(GameDataContainer.instance.bossesDefeated);
+            bossesDefeated = new List<int>(gameDataContainer.bossesDefeated);
             tanks = energy.ETanks;
             position[0] = pos[0];
             position[1] = pos[1];
-            mappers = new List<int>(GameDataContainer.instance.mapTerminals);
+            mappers = new List<int>(gameDataContainer.mapTerminals);
             miniMapItem = map.miniMapItem;
-            doorsUnlocked = new Dictionary<string, bool>(Sensor.doorsUnlocked);
+            doorsUnlocked = new List<int>(gameDataContainer.doorsUnlocked);
     }
     void SelectItemsData(PlayerInventory inventory)
     {

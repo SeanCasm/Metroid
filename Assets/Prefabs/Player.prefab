@@ -890,7 +890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGun: {fileID: 23628482}
-  gun: {fileID: 3995245244221401216}
+  playerController: {fileID: 8898891342960035913}
+  groundChecker: {fileID: 210899528}
+  gun: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
 --- !u!1 &3428241261177986736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,7 +1895,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8898891342875543825}
-  - component: {fileID: 3995245244221401216}
   - component: {fileID: 383313207267993964}
   m_Layer: 12
   m_Name: ShootPoint
@@ -1918,71 +1919,6 @@ Transform:
   m_Father: {fileID: 3926644864004323400}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3995245244221401216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8898891342875543824}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b1ed53484063840921b8b148e0e548, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputManager: {fileID: 0}
-  firePoint: {fileID: 8898891342875543825}
-  beams: {fileID: 11400000, guid: 88f1c8eabe8ff2a47a83a76cd83e5b3f, type: 2}
-  pool: {fileID: 3881644217251450263}
-  pCont: {fileID: 8898891342960035913}
-  buttonEssentials: {fileID: 0}
-  gunSprite: {fileID: 23628482}
-  ammoUpdate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: UpdateText
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  viewUpdate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: UpdateSelection
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  enableItem:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: SetEnable
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  pressCount: -1
 --- !u!58 &383313207267993964
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2015,6 +1951,8 @@ GameObject:
   - component: {fileID: 210899527}
   - component: {fileID: 3881644217251450263}
   - component: {fileID: 210899530}
+  - component: {fileID: 210899528}
+  - component: {fileID: 210899533}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -2057,6 +1995,8 @@ MonoBehaviour:
   hurtBox: {fileID: 93741154669762153}
   jumpTime: 0.5
   camHandle: {fileID: 1334037074}
+  animatorHandler: {fileID: 1892889711}
+  groundChecker: {fileID: 210899528}
   groundLayer:
     serializedVersion: 2
     m_Bits: 16392
@@ -2065,12 +2005,6 @@ MonoBehaviour:
   wallEdgeOffset: 0.1
   edgesOffset: 2.79
   spinOffset: 0.42
-  groundDistance: 0.04
-  airGroundDistance: 0.015
-  slopeFrontRay: 0.095
-  slopeBackRay: 0.095
-  groundHitSlope: 0.152
-  slopeEdgesOffset: 0
   speedBoosterComp: {fileID: 1603253076}
   shinespark: {fileID: 1752309219}
   runningSpeed: 100
@@ -2119,7 +2053,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3995245244221401216}
+      - m_Target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: PlayerOnMorphball
         m_Mode: 1
@@ -2321,7 +2255,7 @@ MonoBehaviour:
   beams: {fileID: 11400000, guid: 88f1c8eabe8ff2a47a83a76cd83e5b3f, type: 2}
   baseData: {fileID: 11400000, guid: 6a01ece67ea3b1a4dbe2b2a45cc65d66, type: 2}
   buttonEssentials: {fileID: 0}
-  gun: {fileID: 3995245244221401216}
+  gun: {fileID: 210899533}
   imCont: {fileID: 0}
   playerFX: {fileID: 1473017728}
   skin: {fileID: 5876600726841306740}
@@ -2403,7 +2337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 99
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
-  baseData: {fileID: 11400000, guid: 9d0ea36ce2890554aa6e67056b98007e, type: 2}
+  baseData: {fileID: 11400000, guid: 6a01ece67ea3b1a4dbe2b2a45cc65d66, type: 2}
   invTime: 2
   death:
     m_PersistentCalls:
@@ -2448,6 +2382,100 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   damageClip: {fileID: 8300000, guid: 4020ca1de7d0526409c85ac4c7f8c527, type: 3}
+--- !u!114 &210899528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898891342960035920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a64b7a2489dab548bbab78154d446fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsule: {fileID: 6061818792502005122}
+  edgeCollider: {fileID: 4824138708365256273}
+  playerController: {fileID: 8898891342960035913}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  slopeFrontRay: 0.095
+  slopeBackRay: 0.095
+  groundHitSlope: 0.152
+  slopeEdgesOffset: 0
+  wallDistance: 0.02
+  wallEdgeOffset: 0.1
+  edgesOffset: 2.79
+  spinOffset: 0.42
+  groundDistance: 0.04
+  airGroundDistance: 0.015
+--- !u!114 &210899533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898891342960035920}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1ed53484063840921b8b148e0e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputManager: {fileID: 0}
+  firePoint: {fileID: 8898891342875543825}
+  beams: {fileID: 11400000, guid: 88f1c8eabe8ff2a47a83a76cd83e5b3f, type: 2}
+  pool: {fileID: 3881644217251450263}
+  pCont: {fileID: 8898891342960035913}
+  buttonEssentials: {fileID: 0}
+  gunSprite: {fileID: 23628482}
+  charge: {fileID: 8577092141467555868}
+  ammoUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  viewUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: UpdateSelection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  enableItem:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
+        m_MethodName: SetEnable
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  pressCount: -1
 --- !u!1 &8898891343973202748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,7 +2793,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3995245244221401216}
+      - m_Target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: OnShinesparkCollision
         m_Mode: 1
@@ -2843,7 +2871,7 @@ MonoBehaviour:
   OnCollided:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3995245244221401216}
+      - m_Target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: OnShinesparkCollision
         m_Mode: 1
@@ -2947,5 +2975,10 @@ PrefabInstance:
 --- !u!4 &2772086584705147518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4445136981969741609, guid: f334e4df56e0a9b4aa52b2b12cdabb91, type: 3}
+  m_PrefabInstance: {fileID: 2001887999255364951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8577092141467555868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7840715671931198795, guid: f334e4df56e0a9b4aa52b2b12cdabb91, type: 3}
   m_PrefabInstance: {fileID: 2001887999255364951}
   m_PrefabAsset: {fileID: 0}

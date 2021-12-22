@@ -49,13 +49,14 @@ public class SaveAndLoad : MonoBehaviour
         GameDataContainer.instance.InitBossList(data.bossesDefeated);
         TimeCounter.SetTimeAfterLoad(data.time);
         inventory.LoadInventory(data);
+        gun.LoadAndCreateLimitedAmmo(data);
         GameDataContainer.instance.InitMapTerminalsList(data.mappers);
         Vector3 position = new Vector3();
         position.x = data.position[0];
         position.y = data.position[1];
         position.z = 0;
         pContr.SetTransformCenter(position);
-        Sensor.doorsUnlocked = new Dictionary<string, bool>(data.doorsUnlocked);
+        GameDataContainer.instance.InitDoorsList(data.doorsUnlocked);
         SceneHandler.current.LoadFromSaveGame(OnCompleted);
     }
     void OnCompleted(){

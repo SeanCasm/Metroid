@@ -33,6 +33,8 @@ public class Warp : MonoBehaviour
             StartCoroutine("Resume");
             inputManager.DisableUIInput();
             Pause.PausePlayer(true);
+            print(other);
+
         }
     }
     IEnumerator Resume()

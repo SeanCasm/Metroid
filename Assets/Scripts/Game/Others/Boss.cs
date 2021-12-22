@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    [SerializeField] protected int iD;
+    [SerializeField] protected byte iD;
     public List<Sensor> roomDoors= new List<Sensor>();
     protected bool quarterReached, halfReached, lowReached;
     public int ID { get=>iD; }
@@ -14,10 +14,12 @@ public class Boss : MonoBehaviour
     }
     public void OnDeath()
     {
+        GameDataContainer gameDataContainer = GameDataContainer.instance;
         foreach (Sensor element in roomDoors)
         {
             element.EnableDoor();
+            gameDataContainer.AddDoor(element.ID);
         }
-        GameDataContainer.instance.AddBoss(iD);
+        gameDataContainer.AddBoss(iD);
     }
 }

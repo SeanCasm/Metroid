@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static Metroid;
 using Player.PowerUps;
 using System;
+using Player;
 using UnityEngine.Events;
 /// <summary>
 /// 
@@ -15,16 +15,15 @@ public class PlayerController : MonoBehaviour
     public static PlayerController current;
     [SerializeField] CapsuleCollider2D capsule;
     [SerializeField] InputManager inputManager;
-    [SerializeField] BoxCollider2D edgeCollider,hurtBox;
+    [SerializeField] BoxCollider2D edgeCollider, hurtBox;
     [SerializeField, Range(.01f, 1f)] float jumpTime = 0.35f;
     [SerializeField] Transform camHandle;
+    [SerializeField] AnimatorHandler animatorHandler;
     [Header("Floor config")]
+    [SerializeField] GroundChecker groundChecker;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] float overHeadCheck=.01f;
+    [SerializeField] float overHeadCheck = .01f;
     [SerializeField] float wallDistance, wallEdgeOffset, edgesOffset, spinOffset;
-    [SerializeField, Range(.001f, .88f)] float groundDistance = 0.18f,airGroundDistance = 0.18f;
-    [SerializeField, Range(.001f, .22f)] float slopeFrontRay = 0.08f,slopeBackRay = 0.08f,groundHitSlope;
-    [SerializeField, Range(-1, 1.5f)] float slopeEdgesOffset;
     [Header("Running and Speed Booster config")]
     [SerializeField] SpeedBooster speedBoosterComp;
     [SerializeField] Shinespark shinespark;
@@ -37,29 +36,43 @@ public class PlayerController : MonoBehaviour
     [Header("Misc events")]
     [SerializeField] UnityEvent<bool> onScrew;
     [SerializeField] UnityEvent onMorphball, onEnable;
-    private Vector2 posFrontRay, posBackRay, slopePerp,direction;
-    private RaycastHit2D frontHit, backHit;
-    private float jumpForce = 88, speed = 88, frontAngle, backAngle, curSpinOffset = 1,slow2Gravity = 1,curGroundDis;
-    private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, slopeAngle, angleAim,spriteCenter;
-    public float xInput{get;private set;}=0;
-    public Animator anim{get;set;}
+    private Vector2 direction;
+    private float jumpForce = 88, speed = 88, curSpinOffset = 1, slow2Gravity = 1;
+    private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, angleAim, spriteCenter;
+    public float XVelocity { get => xVelocity; }
+    public float Slow2Gravity
+    {
+        get
+        {
+            return slow2Gravity;
+        }
+        set
+        {
+            slow2Gravity = value;
+            rb.gravityScale /= slow2Gravity;
+        }
+    }
+    public float xInput { get; private set; } = 0;
+    public Animator anim { get; set; }
     private PlayerFXHandler playerFX;
     private SpriteRenderer spriteRenderer;
     private Gun gun;
-    private bool fall, isJumping, firstLand, firstAir, airShoot,morphSpin,rbStatic,
-       onJumpingState, _onSpin, onSlope, checkFloor = true, _shootOnWalk,wallInFront;
-    private System.Action OnJump=delegate{};
+    private bool fall, isJumping, firstAir, airShoot, morphSpin,
+       onJumpingState, _onSpin, _shootOnWalk, wallInFront;
+
+    private System.Action OnJump = delegate { };
     private GroundState _groundState = GroundState.Stand;
     public JumpType jumpType { get; set; } = JumpType.Default;
     private RunningState runningState = RunningState.None;
-    public AngleAim aimState{get;private set;} = AngleAim.None;
+    public AngleAim aimState { get; private set; } = AngleAim.None;
     public Status status { get; private set; } = Status.Normal;
     private int aimUpDown = 0;
-    int[] animatorHash = new int[27];
     public float currentJumpForce { get; set; }
-    public bool groundOverHead{get;private set;}
-    public bool canMorph{get;set;}=true;
+    private bool isGrounded { get; set; }
+    public bool groundOverHead { get; private set; }
+    public bool canMorph { get; set; } = true;
     public float slow2Forces = 1;
+    public AnimatorHandler AnimatorHandler{get=>animatorHandler;}
     public bool OnSpin
     {
         get => _onSpin;
@@ -86,10 +99,11 @@ public class PlayerController : MonoBehaviour
                     if (status != Status.Damaged) status = Status.Normal;
                 }
             }
-            //fix a issue with the sprite pivot. 
-            anim.SetBool(animatorHash[9], _onSpin && jumpType == JumpType.Default);//spin jump
-            anim.SetBool(animatorHash[12], jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);//screw
-            anim.SetBool(animatorHash[15], jumpType == JumpType.Space && _onSpin);//gravity jump
+            animatorHandler.FixSpritePivot(
+                _onSpin && jumpType == JumpType.Default,
+                jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand,
+                jumpType == JumpType.Space && _onSpin
+            );
         }
     }
     public bool leftLook { get; set; }
@@ -99,11 +113,8 @@ public class PlayerController : MonoBehaviour
         set
         {
             isJumping = value;
-            if (isJumping)
-            {
-                checkFloor = isGrounded = false;
-                CancelAndInvoke("CheckFloor", .3f);
-            }
+            if (isJumping) { groundChecker.OnJumping(); isGrounded = false; }
+            else jumpTimeCounter = 0;
         }
     }
     public bool ShootOnWalk
@@ -112,8 +123,8 @@ public class PlayerController : MonoBehaviour
         set
         {
             _shootOnWalk = value;
-            if (_shootOnWalk) CancelAndInvoke("shootingClocking", 2f);
-            else CancelInvoke("shootingClocking");
+            if (_shootOnWalk) CancelAndInvoke(nameof(shootingClocking), 2f);
+            else CancelInvoke(nameof(shootingClocking));
         }
     }
     public GroundState GroundState
@@ -131,19 +142,20 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                anim.SetFloat(animatorHash[16], 1);
                 gun.OnStand?.Invoke();
             }
         }
     }
     private Rigidbody2D rb;
-    public bool isGrounded { get; set; }
     #endregion
     #region Unity methods
-    private void OnEnable(){
+    private void OnEnable()
+    {
         onEnable.Invoke();
-        if(inputManager.lockFireInput)inputManager.DisableFireInput();
-        if(inputManager.HorizontalMovement==null){
+        groundChecker.OnGroundLanding += FirstOnGround;
+        if (inputManager.lockFireInput) inputManager.DisableFireInput();
+        if (inputManager.HorizontalMovement == null)
+        {
             inputManager.HorizontalMovement += MoveHorStarted;
             inputManager.HorizontalMovementCanceled += MoveHorCanceled;
             inputManager.VerticalMovement += MoveVerStarted;
@@ -159,10 +171,13 @@ public class PlayerController : MonoBehaviour
             inputManager.AimAngleDownCanceled += AngleAimDownCanceled;
         }
     }
-    private void OnDisable() {
+    private void OnDisable()
+    {
+        groundChecker.OnGroundLanding -= FirstOnGround;
         inputManager.DisablePlayerControls();
     }
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         inputManager.HorizontalMovement -= MoveHorStarted;
         inputManager.HorizontalMovementCanceled -= MoveHorCanceled;
         inputManager.VerticalMovement -= MoveVerStarted;
@@ -176,12 +191,12 @@ public class PlayerController : MonoBehaviour
         inputManager.AimAngleUpCanceled -= AngleAimUpCanceled;
         inputManager.AimAngleDown -= AngleAimDown;
         inputManager.AimAngleDownCanceled -= AngleAimDownCanceled;
-        current=null;
+        current = null;
     }
     void Awake()
     {
-        current=this;
-        slow2Gravity =1;
+        current = this;
+        slow2Gravity = 1;
         OnJump += OnNormalJump;
         jumpTimeCounter = jumpTime;
         currentJumpForce = jumpForce;
@@ -193,64 +208,52 @@ public class PlayerController : MonoBehaviour
         gun = GetComponentInChildren<Gun>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        for (int i = 0; i < anim.parameterCount - 2; i++) animatorHash[i] = Animator.StringToHash(anim.parameters[i].name);
         currentSpeed = speed;
-        curGroundDis =groundDistance;
     }
-     
+
     void Update()
     {
         if (status != Status.Damaged)
         {
             spriteCenter = spriteRenderer.bounds.size.y / 2;
-            if (checkFloor) CheckGround();
             camHandle.position = TransformCenter();
             hurtBox.transform.position = capsule.bounds.center;
-            hurtBox.size=new Vector2(capsule.bounds.size.x+ .01f,capsule.bounds.size.y+.01f);
+            hurtBox.size = new Vector2(capsule.bounds.size.x + .01f, capsule.bounds.size.y + .01f);
+
+            isGrounded = groundChecker.SetFloorChecking();
 
             if (isGrounded) OnGround();
             else OnAir();
-            if (isJumping)
-            {
-                if (jumpTimeCounter > 0) jumpTimeCounter -= Time.deltaTime;
-                else IsJumping = false;
-            }
+
         }
     }
     void FixedUpdate()
     {
         if (status != Status.Damaged)
         {
-            if(groundOverHead && _groundState!=GroundState.Balled) 
-                xInput=0;
+            if (groundOverHead && _groundState != GroundState.Balled)
+                xInput = 0;
 
             xVelocity = xInput * (currentSpeed / slow2Forces) * Time.deltaTime;
             if (!isGrounded)
             {
                 if (isJumping && jumpTimeCounter > 0f) rb.velocity = Vector2.up * (currentJumpForce / slow2Forces) * Time.deltaTime;
 
-                if (onJumpingState) SetVelocity( new Vector2(xVelocity/2 , rb.velocity.y));
-                else if (_onSpin || morphSpin) SetVelocity( new Vector2(xVelocity, rb.velocity.y));
+                if (onJumpingState) SetVelocity(new Vector2(xVelocity / 2, rb.velocity.y));
+                else if (_onSpin || morphSpin) SetVelocity(new Vector2(xVelocity, rb.velocity.y));
             }
-            else if (isGrounded && xInput != 0 && !wallInFront)
-            {
-                rb.velocity = (!onSlope) ? new Vector2(xVelocity, 0f) : new Vector2(-xVelocity* slopePerp.x, -xVelocity * slopePerp.y);
-                if ((frontAngle == 0 && backAngle != 0 && slopeAngle==0) && ((frontHit.point.y > backHit.point.y) || (frontHit.point.y < backHit.point.y)))
-                {
-                    transform.position.Set(frontHit.point.x,frontHit.point.y,0);
-                    SetVelocity( new Vector2(rb.velocity.x, 0f));
-                }
-            }
+            else if (isGrounded && xInput != 0 && !wallInFront) groundChecker.FixedUpdateOnGround();
         }
     }
     void LateUpdate()
     {
-        if (Time.timeScale > 0 && shinespark.ShinesparkState!=ShinesparkState.Full)AnimStates();
+        if (Time.timeScale > 0 && shinespark.ShinesparkState != ShinesparkState.Full) AnimStates();
     }
     #endregion
-    public void SetAllInput(bool active)=>inputManager.SetAllInput(active);
-    public Vector3 TransformCenter(){
-        return _onSpin ? transform.position: new Vector3(transform.position.x, transform.position.y + spriteCenter);
+    public void SetAllInput(bool active) => inputManager.SetAllInput(active);
+    public Vector3 TransformCenter()
+    {
+        return _onSpin ? transform.position : new Vector3(transform.position.x, transform.position.y + spriteCenter);
     }
     private void CancelAndInvoke(string method, float time)
     {
@@ -261,16 +264,11 @@ public class PlayerController : MonoBehaviour
     #region On ground methods
     void OnGround()
     {
-        CheckSlopesAndEdges();
+        groundChecker.CheckSlopesAndEdges();
         CheckWallInFront();
         CheckGroundUp();
         if (xInput != 0f)
         {
-            if (_groundState == GroundState.Balled)
-            {
-                anim.SetFloat(animatorHash[16], 1);
-            }
-            else
             if (runningState == RunningState.Running && slow2Forces == 1)
             {
                 currentSpeed += speedIncreaseOverTime;
@@ -288,125 +286,66 @@ public class PlayerController : MonoBehaviour
             {
                 speedBoosterComp.CancelGhost();
             }
-            else
-            if (_groundState == GroundState.Balled) anim.SetFloat(animatorHash[16], 0);
             rb.velocity = Vector2.zero;
             currentSpeed = speed;
         }
     }
-    void CheckWallInFront(){
-        RaycastHit2D wallHit=Physics2D.BoxCast(new Vector2(capsule.bounds.center.x+(capsule.size.x/2) * direction.x,
+    void CheckWallInFront()
+    {
+        RaycastHit2D wallHit = Physics2D.BoxCast(new Vector2(capsule.bounds.center.x + (capsule.size.x / 2) * direction.x,
         capsule.bounds.center.y),
-        new Vector2(wallDistance,capsule.bounds.size.y-wallEdgeOffset),0f,direction,wallDistance,groundLayer);
-        if(wallHit && Vector2.Angle(wallHit.normal,Vector2.up)==90){
-            wallInFront= true;
-            xInput=0;
+        new Vector2(wallDistance, capsule.bounds.size.y - wallEdgeOffset), 0f, direction, wallDistance, groundLayer);
+        if (wallHit && Vector2.Angle(wallHit.normal, Vector2.up) == 90)
+        {
+            wallInFront = true;
+            xInput = 0;
         }
         else wallInFront = false;
-    }
-    void CheckGround()
-    {
-        RaycastHit2D raycastHit2D = Physics2D.BoxCast(new Vector2(capsule.bounds.center.x,capsule.bounds.min.y), 
-        new Vector2(capsule.bounds.size.x / edgesOffset, curGroundDis), 0f, 
-        Vector2.down, curGroundDis*curSpinOffset, groundLayer);
-        if (raycastHit2D)
-        {
-            if (!firstLand) FirstOnGround(raycastHit2D.point.y);
-            isGrounded = true;
-            if(onSlope && xInput==0 && !rbStatic){
-                transform.position=new Vector3(transform.position.x,raycastHit2D.point.y,0);
-                rb.gravityScale=0;
-                rbStatic=true;
-            }else if(!onSlope || xInput!=0) {
-                rbStatic=false;
-                rb.gravityScale=1/slow2Gravity;
-            }
-        }
-        else isGrounded = false;
     }
     private void FirstOnGround(float y)
     {
         aimUpDown = 0;
-        curGroundDis = groundDistance;
-        if(_onSpin && !morphSpin){
+        if (_onSpin && !morphSpin)
+        {
             StartCoroutine(FixPivot(y));
-            if(groundOverHead)GroundState=GroundState.Crouched;
+            if (groundOverHead) GroundState = GroundState.Crouched;
         }
-        morphSpin=IsJumping = airShoot = OnSpin = firstAir = onJumpingState = fall = false;
+        morphSpin = IsJumping = airShoot = OnSpin = firstAir = onJumpingState = fall = false;
         playerFX.StopAudio(StopAction.All);
-        firstLand = true;
     }
     /// <summary>
     /// Fix the transform.position pivot center when player arrives to the ground at spin jump.
     /// </summary>
     /// <param name="y">point.y of the raycast collision with the ground</param>
     /// <returns></returns>
-    IEnumerator FixPivot(float y){
-        yield return new WaitWhile(()=>
-            anim.GetBool(animatorHash[9])==true ||
-            anim.GetBool(animatorHash[12])==true ||
-            anim.GetBool(animatorHash[15]) == true
-        );
-        transform.position=new Vector3(transform.position.x,y,0);
-    }
-    private void CheckSlopesAndEdges()
+    IEnumerator FixPivot(float y)
     {
-        Vector2 v=new Vector2(capsule.bounds.min.x + capsule.size.x/2, capsule.bounds.min.y);
-        posFrontRay = new Vector2(transform.position.x + capsule.size.x/2*(direction.x - slopeEdgesOffset), capsule.bounds.min.y+ .02f);
-        RaycastHit2D hit2D = Physics2D.Raycast(posFrontRay, Vector2.down, groundHitSlope, groundLayer);
-        RaycastHit2D hit = Physics2D.Raycast(v, Vector2.down, groundHitSlope, groundLayer);
-
-        if (hit2D && hit)
-        {
-            frontAngle = Vector2.Angle(hit2D.normal, Vector2.up);
-            slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
-            slopePerp = Vector2.Perpendicular(hit2D.normal).normalized;
-            if ((slopePerp.y < 0 && xInput < 0) || (slopePerp.y > 0 && xInput > 0)) frontAngle *= -1;
-
-            if ((frontAngle != 0) || (frontAngle == 0 && slopeAngle != 0) || slopeAngle != 0)
-                onSlope = true;
-            else if(frontAngle==0 && slopeAngle==0 && backAngle==0){
-                onSlope = false;
-            }
-            
-        }
-
-        posBackRay = new Vector2(transform.position.x - capsule.size.x/2 * (direction.x - slopeEdgesOffset), capsule.bounds.min.y+.02f);
-
-        frontHit = Physics2D.Raycast(posFrontRay, Vector2.down, slopeFrontRay, groundLayer);
-        backHit = Physics2D.Raycast(posBackRay, Vector2.down, slopeBackRay, groundLayer);
-        if (frontHit && backHit)
-        {
-            frontAngle = Vector2.Angle(frontHit.normal, Vector2.up);
-            backAngle = Vector2.Angle(backHit.normal, Vector2.up);
-        }
-
-        if ((!frontHit || !backHit) && !hit && !onSlope)
-        { // enable the edge collider when player is on ground edge
-            edgeCollider.enabled = true;
-            edgeCollider.transform.localPosition = new Vector3(0, 0.075f / 2);
-        }
-        else edgeCollider.enabled = false;
+        yield return new WaitWhile(() => animatorHandler.AnyJump());
+        transform.position = new Vector3(transform.position.x, y, 0);
     }
+
     #endregion
     #region On air methods 
     void OnAir()
     {
         FirstAir();
-        if (_groundState == GroundState.Balled) anim.SetFloat(animatorHash[16], 1);
-        else
-        if (aimUpDown == 0 && !isJumping && status == Status.Normal && shinespark.ShinesparkState != ShinesparkState.Full 
+        if (aimUpDown == 0 && !isJumping && status == Status.Normal && shinespark.ShinesparkState != ShinesparkState.Full
         && gun.fireType == FireType.Normal && angleAim == 0 && !airShoot && !onJumpingState && !_onSpin)
         {
             fall = true;
         }
-        else fall = false;
-        if (isJumping)
+        else
         {
-            if (Physics2D.Raycast(transform.position + new Vector3(0, spriteCenter), Vector2.up, spriteCenter, groundLayer))
+            fall = false;
+            if (isJumping)
             {
-                IsJumping = false;
-                jumpTimeCounter = 0;
+                if (Physics2D.Raycast(transform.position + new Vector3(0, spriteCenter), Vector2.up, spriteCenter, groundLayer))
+                {
+                    IsJumping = false;
+                    jumpTimeCounter = 0;
+                }
+                if (jumpTimeCounter > 0) jumpTimeCounter -= Time.deltaTime;
+                else IsJumping = false;
             }
         }
     }
@@ -420,38 +359,31 @@ public class PlayerController : MonoBehaviour
     {
         if (!firstAir)
         {
-            curGroundDis = airGroundDistance;
-            if(_onSpin)transform.position=new Vector3(transform.position.x,transform.position.y+spriteCenter,0);
-            edgeCollider.enabled = false; rb.gravityScale = 1/slow2Gravity; firstAir = true;
-            ShootOnWalk = firstLand = onSlope = false;
+            if (_onSpin) transform.position = new Vector3(transform.position.x, transform.position.y + spriteCenter, 0);
+            edgeCollider.enabled = false; rb.gravityScale = 1 / slow2Gravity; firstAir = true;
+            wallInFront = ShootOnWalk = groundChecker.OnSlope = false;
         }
     }
     #endregion
     private void AnimStates()
     {
-        SetAnimation(0,angleAim<0);
-        SetAnimation(1, angleAim > 0);
-        SetAnimation(2, _groundState == GroundState.Balled);
-        SetAnimation(3, isGrounded && xInput != 0 && !wallInFront  && !groundOverHead);
-        SetAnimation(4, (_shootOnWalk || gun.fireType!=FireType.Normal) && isGrounded && xInput != 0);
-        SetAnimation(5, _groundState == GroundState.Crouched);
-        SetAnimation(6, leftLook);
-        SetAnimation(7, isGrounded && xInput == 0);//idle
-        SetAnimation(8, isGrounded);
-        SetAnimation(9, _onSpin && jumpType == JumpType.Default);//spin jump
-        SetAnimation(11, (gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin);//airshoot
-        SetAnimation(12, jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);//screw
-        SetAnimation(13,onJumpingState);//jump state
-        SetAnimation(14, fall);
-        SetAnimation(15, jumpType == JumpType.Space && _onSpin);//gravity jump
-        anim.SetFloat(animatorHash[10], rb.velocity.y);
+        bool[] values =
+        {
+            angleAim < 0,angleAim > 0,  _groundState == GroundState.Balled,   isGrounded && xInput != 0 && !wallInFront && !groundOverHead,
+            (_shootOnWalk || gun.fireType != FireType.Normal) && isGrounded && xInput != 0,     _groundState == GroundState.Crouched,
+            leftLook,   /*idle*/isGrounded && xInput == 0,  isGrounded,/*spin jump*/_onSpin && jumpType == JumpType.Default,
+            /*airshoot*/(gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin,
+            /*screw*/jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand,
+            /*jump state*/onJumpingState,fall,  /*gravity jump*/jumpType == JumpType.Space && _onSpin
+        };
+        animatorHandler.SetAnimations(values);
 
-        anim.SetFloat(animatorHash[16], 1 / slow2Forces);
-        anim.SetInteger(animatorHash[18], aimUpDown);
-        anim.SetInteger(animatorHash[19], (int)xInput);
+        anim.SetFloat("VerticalVelocity", rb.velocity.y);
+        //anim.SetFloat(animatorHash[16], 1 / slow2Forces);
+        anim.SetInteger("upDown", aimUpDown);
+        anim.SetInteger("leftRight", (int)xInput);
     }
     #region Delayed Methods
-    void CheckFloor() => checkFloor = true;
     void shootingClocking() => ShootOnWalk = false;
     void HyperJumpTimeAction()
     {
@@ -476,76 +408,74 @@ public class PlayerController : MonoBehaviour
             status = Status.Normal;
 
         rb.gravityScale = isGrounded ? 8 : 1;
-        this.enabled = checkFloor = true;
+        this.enabled = groundChecker.checkFloor = true;
     }
-    public void ShootOnAir(){
+    public void ShootOnAir()
+    {
         airShoot = true;
         OnSpin = onJumpingState = false;
     }
     #region Rigidbody
-    public void SetGravitySlow(float amount){
-        slow2Gravity=amount;
-        rb.gravityScale/=slow2Gravity;
-    }
-    public void ResetGravity(){
-        if(onSlope)rb.gravityScale=0;
-        else rb.gravityScale=1;
-    }
-    public void SetStatus(Status newStatus)=>status = newStatus;
-    public void SetConstraints(RigidbodyConstraints2D constraints)=>rb.constraints=constraints;
+    public void SetStatus(Status newStatus) => status = newStatus;
+    public void SetConstraints(RigidbodyConstraints2D constraints) => rb.constraints = constraints;
     public void SetVelocity(Vector2 velocity) => rb.velocity = velocity;
     #endregion
     #region Animator
-    public void SetAnimation(int index,bool enable) => anim.SetBool(animatorHash[index],enable);
     #endregion
     public void SetSpeedToDefault() => maxSpeed = runningSpeed;
     public void SetSpeedToBooster() => maxSpeed = speedBooster;
     //Called in PlayerKnockBack UnityEvent
-    public void SetDamageState(){
+    public void SetDamageState()
+    {
         ResetState();
-        status=Status.Damaged;
+        status = Status.Damaged;
         if (GroundState != GroundState.Balled) { anim.SetTrigger("Hitted"); }
     }
     public void ResetState()
     {
         CancelInvoke();
-        fall = IsJumping = onJumpingState =checkFloor=
-        isGrounded = OnSpin = ShootOnWalk = airShoot =false;
+        groundChecker.ResetState();
+        fall = IsJumping = onJumpingState = isGrounded = OnSpin = ShootOnWalk = airShoot = false;
         xInput = yInput = 0;
         angleAim = 0;
         aimUpDown = 0;
         HyperJumpTimeAction();
         gun.fireType = FireType.Normal;
-        if(GroundState!=GroundState.Balled)GroundState = GroundState.Stand;
+        if (GroundState != GroundState.Balled) GroundState = GroundState.Stand;
         runningState = RunningState.None;
         shinespark.ShinesparkState = ShinesparkState.None;
         anim.Rebind();
         AnimStates();
-        anim.SetFloat(animatorHash[16], 1);
+        anim.SetFloat("AnimSpeed", 1);
     }
-    public void SetTransformCenter(Vector3 vector) => transform.position=vector;
+    public void SetTransformCenter(Vector3 vector) => transform.position = vector;
     public void RestoreValuesAfterHit()
     {
-        checkFloor = true;
+        groundChecker.checkFloor = true;
         status = Status.Normal;
-        if(groundOverHead) GroundState=GroundState.Crouched;
+        if (groundOverHead) GroundState = GroundState.Crouched;
         inputManager.EnablePlayerInput();
     }
-    public void Freeze(bool freeze){
-        if(freeze){
+    public void Freeze(bool freeze)
+    {
+        if (freeze)
+        {
             xInput = yInput = 0;
             inputManager.DisablePlayerInput();
             SetConstraints(RigidbodyConstraints2D.FreezeAll);
-            anim.enabled=this.enabled=false;
-        }else{
-            anim.enabled=this.enabled=true;
+            anim.enabled = this.enabled = false;
+        }
+        else
+        {
+            anim.enabled = this.enabled = true;
             inputManager.EnablePlayerInput();
             SetConstraints(RigidbodyConstraints2D.FreezeRotation);
         }
     }
 
     #region Aim methods
-    private void AngleAimUpCanceled(InputAction.CallbackContext context){
+    private void AngleAimUpCanceled(InputAction.CallbackContext context)
+    {
         switch (aimState)
         {
             case AngleAim.Both:
@@ -571,7 +501,8 @@ public class PlayerController : MonoBehaviour
         }
         ShootOnWalk = false;
     }
-    private void AngleAimDownCanceled(InputAction.CallbackContext context){
+    private void AngleAimDownCanceled(InputAction.CallbackContext context)
+    {
         switch (aimState)
         {
             case AngleAim.Both:
@@ -587,7 +518,7 @@ public class PlayerController : MonoBehaviour
     }
     public void AngleAimDown(InputAction.CallbackContext context)
     {
-        if (aimState != AngleAim.Up)AimDown();
+        if (aimState != AngleAim.Up) AimDown();
         else
         {
             aimState = AngleAim.Both;
@@ -607,10 +538,10 @@ public class PlayerController : MonoBehaviour
                     if (xInput == 0 && angleAim == 0) aimUpDown = 1;
                     break;
                 case GroundState.Crouched:
-                    if(!groundOverHead && aimState!=AngleAim.Both)GroundState = GroundState.Stand;
+                    if (!groundOverHead && aimState != AngleAim.Both) GroundState = GroundState.Stand;
                     break;
                 case GroundState.Balled:
-                    if(!groundOverHead)GroundState = GroundState.Crouched;
+                    if (!groundOverHead) GroundState = GroundState.Crouched;
                     break;
             }
         }
@@ -622,7 +553,8 @@ public class PlayerController : MonoBehaviour
                     if (angleAim == 0) aimUpDown = 1;
                     break;
                 case GroundState.Balled:
-                    if(!groundOverHead){
+                    if (!groundOverHead)
+                    {
                         GroundState = GroundState.Stand;
                         aimUpDown = 1;
                         OnSpin = false;
@@ -663,10 +595,11 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
-     
-    private void MoveHorStartedAction(){
+
+    private void MoveHorStartedAction()
+    {
         aimUpDown = 0;
-        
+
         if (xInput < 0 && !leftLook) OnLeft(true);
         else if (xInput > 0 && leftLook) OnLeft(false);
         if (shinespark.ShinesparkState != ShinesparkState.Prepared)
@@ -680,13 +613,15 @@ public class PlayerController : MonoBehaviour
             CancelInvoke("HyperJumpTimeAction");
         }
     }
-    private void MoveHorCanceledAction(){
+    private void MoveHorCanceledAction()
+    {
         if (angleAim > 0) AimUp();
         else if (angleAim < 0) AimDown();
         if (isGrounded && speedBoosterComp.isInvoking) speedBoosterComp.CancelGhost();
         ShootOnWalk = false;
     }
-    private void MoveVerStartedAction(){
+    private void MoveVerStartedAction()
+    {
         if (shinespark.ShinesparkState != ShinesparkState.Prepared)
         {
             if (yInput > 0f) CheckAimUp();
@@ -714,34 +649,39 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    private void MoveVerCanceledAction(){
+    private void MoveVerCanceledAction()
+    {
         if (aimState == AngleAim.None && aimUpDown > 0) aimUpDown = 0;
     }
-    private void MoveHorStarted(InputAction.CallbackContext context){
-        xInput =  context.ReadValue<float>() > 0 ? 1: -1;
-        if(Time.deltaTime>0) MoveHorStartedAction();
-        else inputManager.AddToUnscaledActions(2,MoveHorStartedAction);
+    private void MoveHorStarted(InputAction.CallbackContext context)
+    {
+        xInput = context.ReadValue<float>() > 0 ? 1 : -1;
+        if (Time.deltaTime > 0) MoveHorStartedAction();
+        else inputManager.AddToUnscaledActions(2, MoveHorStartedAction);
     }
-    private void MoveHorCanceled(InputAction.CallbackContext context){
+    private void MoveHorCanceled(InputAction.CallbackContext context)
+    {
         xInput = context.ReadValue<float>();
-        if(Time.deltaTime>0) MoveHorCanceledAction();
-        else inputManager.AddToUnscaledActions(0,MoveHorCanceledAction);
+        if (Time.deltaTime > 0) MoveHorCanceledAction();
+        else inputManager.AddToUnscaledActions(0, MoveHorCanceledAction);
     }
-    private void MoveVerStarted(InputAction.CallbackContext context){
+    private void MoveVerStarted(InputAction.CallbackContext context)
+    {
         yInput = context.ReadValue<float>();
-        if(Time.deltaTime>0)  MoveVerStartedAction();
-        else inputManager.AddToUnscaledActions(3,MoveVerStartedAction);
+        if (Time.deltaTime > 0) MoveVerStartedAction();
+        else inputManager.AddToUnscaledActions(3, MoveVerStartedAction);
     }
-    private void MoveVerCanceled(InputAction.CallbackContext context){
+    private void MoveVerCanceled(InputAction.CallbackContext context)
+    {
         yInput = context.ReadValue<float>();
 
-        if(Time.deltaTime>0) MoveVerCanceledAction();
-        else inputManager.AddToUnscaledActions(1,MoveVerCanceledAction);
+        if (Time.deltaTime > 0) MoveVerCanceledAction();
+        else inputManager.AddToUnscaledActions(1, MoveVerCanceledAction);
     }
     private void CheckGroundUp()
     {
-        groundOverHead=(Physics2D.Raycast(capsule.bounds.max, Vector2.up, overHeadCheck, groundLayer)
-                  && _groundState!=GroundState.Stand
+        groundOverHead = (Physics2D.Raycast(capsule.bounds.max, Vector2.up, overHeadCheck, groundLayer)
+                  && _groundState != GroundState.Stand
         );
     }
     private void QuickMorphball(InputAction.CallbackContext context)
@@ -752,7 +692,8 @@ public class PlayerController : MonoBehaviour
             if (_groundState != GroundState.Balled) GroundState = GroundState.Balled;
         }
     }
-    private void Run(InputAction.CallbackContext context){
+    private void Run(InputAction.CallbackContext context)
+    {
         if (isGrounded && _groundState != GroundState.Balled && xInput != 0)
             runningState = RunningState.Running;
     }
@@ -761,7 +702,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && _groundState != GroundState.Balled) { currentSpeed = speed; runningState = RunningState.None; }
         if (isGrounded && speedBoosterComp.isInvoking) speedBoosterComp.CancelGhost();
     }
-    
+
     #region Player jumping Methods
     public void SetGravityJump() => OnJump = OnGravityJump;
     public void SetNormalJump() => OnJump = OnNormalJump;
@@ -787,7 +728,7 @@ public class PlayerController : MonoBehaviour
             JumpManager(() => IsJumping = onJumpingState = true,
             () =>
             {
-                if (_groundState == GroundState.Balled) morphSpin=IsJumping = true;
+                if (_groundState == GroundState.Balled) morphSpin = IsJumping = true;
                 else IsJumping = OnSpin = true;
             });
         }

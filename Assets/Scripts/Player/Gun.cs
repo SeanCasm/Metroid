@@ -4,7 +4,7 @@ using UnityEngine;
 using Player.Weapon;
 using System;
 using UnityEngine.InputSystem;
-using Player.PowerUps;
+using Player;
 using UnityEngine.Events;
 
 public class Gun : MonoBehaviour, IFulleable
@@ -16,6 +16,7 @@ public class Gun : MonoBehaviour, IFulleable
     [SerializeField] PlayerController pCont;
     [SerializeField] ButtonUtilities buttonEssentials;
     [SerializeField] SpriteRenderer gunSprite;
+    [SerializeField] GameObject charge;
     public UnityEvent<int, int> ammoUpdate;
     public UnityEvent<int, bool> viewUpdate;
     public UnityEvent<int> enableItem;
@@ -23,9 +24,8 @@ public class Gun : MonoBehaviour, IFulleable
     public Action OnStand;
     private int[] beamsID { get; } = { 1, 2, 10 };
     private LimitedAmmo ammo;
-    private GameObject chargingLoad;
-    private int countableID;
-    private PlayerController playerController;
+    private int countableID; 
+    private GroundChecker groundChecker;
     private PlayerInventory inventory;
     public GameObject beamToShoot { get; set; }
     public FireType fireType { get; set; }
@@ -48,10 +48,9 @@ public class Gun : MonoBehaviour, IFulleable
     }
     void Awake()
     {
-        limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], 15, 15, this);
-        playerController = GetComponentInParent<PlayerController>();
-        chargingLoad = transform.GetChild(0).gameObject;
-        inventory = GetComponentInParent<PlayerInventory>();
+        limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], 15, 15, this); 
+        inventory = GetComponent<PlayerInventory>();
+        groundChecker=GetComponent<GroundChecker>();
         SetBeam();
     }
     private void OnEnable()
@@ -167,10 +166,10 @@ public class Gun : MonoBehaviour, IFulleable
     public void OnShinesparkCollision() => canInstantiate = true;
     public void OnResetingShinespark()
     {
-        if (playerController.status != Status.Damaged)
+        if (pCont.status != Status.Damaged)
             canInstantiate = true;
     }
-    public void Charge(bool value) => chargingLoad.SetActive(value);
+    public void Charge(bool value) => charge.SetActive(value);
 
     private void NormalShoot()
     {
@@ -206,14 +205,14 @@ public class Gun : MonoBehaviour, IFulleable
     {
         if (canInstantiate)
         {
-            if (!playerController.isGrounded && playerController.GroundState == GroundState.Stand)
-                playerController.ShootOnAir();
+            if (!groundChecker.isGrounded && pCont.GroundState == GroundState.Stand)
+                pCont.ShootOnAir();
 
-            if (playerController.GroundState != GroundState.Balled) Fire();
+            if (pCont.GroundState != GroundState.Balled) Fire();
             else SetBomb();
 
-            if (playerController.xInput != 0 && playerController.isGrounded && !playerController.OnSpin && playerController.aimState == AngleAim.None)
-                playerController.ShootOnWalk = true;
+            if (pCont.xInput != 0 && groundChecker.isGrounded && !pCont.OnSpin && pCont.aimState == AngleAim.None)
+                pCont.ShootOnWalk = true;
         }
     }
     private void FirePerformed(InputAction.CallbackContext context)
@@ -305,7 +304,7 @@ public class Gun : MonoBehaviour, IFulleable
         else DisableSelection();
     }
 #endif
-    public void LoadAndCreateLimitedAmmo(int id, GameData data)
+    public void LoadAndCreateLimitedAmmo(GameData data)
     {
         int ammo = 0;
         var ammoMn = data.ammoMunition;
@@ -314,7 +313,7 @@ public class Gun : MonoBehaviour, IFulleable
             if (data.ammoMunition.ContainsKey(i)) ammo = ammoMn[i];
             limitedAmmo[i] = CreateNewLimitedAmmo(i, ammo);
         }
-        limitedAmmo[0].maxAmmo = limitedAmmo[0].actualAmmo = data.ammoMunition[id];
+        limitedAmmo[0].maxAmmo = limitedAmmo[0].actualAmmo = data.ammoMunition[0];
         ammoUpdate.Invoke(0, limitedAmmo[0].maxAmmo);
     }
     public void SetBeam()

@@ -7,14 +7,15 @@ using UnityEngine.UI;
 
 public class Sensor : MonoBehaviour
 {
-    [SerializeField] bool bossDoor,isDefault;
+    [SerializeField] bool bossDoor, isDefault;
     [SerializeField] UnityEvent openEvent, closeEvent;
     [SerializeField] Sprite defaultSprite, lockedSprite;
     [SerializeField] WeaponHint weaponHint;
     [SerializeField] int weaponTierToUnlock;
-    [SerializeField] string idString;
+    [SerializeField] int id;
     [SerializeField] Color blueDoorColor;
-    public static Dictionary<string,bool> doorsUnlocked=new Dictionary<string, bool>();
+    public int ID{get=>id;}
+    GameDataContainer gameDataContainer;
     SpriteRenderer sRen;
     private Animator _animator;
     public AudioClip clip;
@@ -27,46 +28,52 @@ public class Sensor : MonoBehaviour
         sRen = GetComponent<SpriteRenderer>();
         audioClip = GetComponent<AudioSource>();
         _animator = GetComponent<Animator>();
+        gameDataContainer = GameDataContainer.instance;
 
-        if(isDefault && doorsUnlocked.ContainsKey(idString)){
-            var v = doorsUnlocked[idString];
-            if(v==true){
-                weaponTierToUnlock=0;
-                sRen.color=blueDoorColor;
-                isOpenedFirstTime=true;
-            }
+        if ((isDefault || bossDoor)  && gameDataContainer.DoorExist(id))
+        {
+            weaponTierToUnlock = 0;
+            sRen.color = blueDoorColor;
+            isOpenedFirstTime = true;
+            bossDoor=false;
         }
         if (bossDoor) LockDoor();
+
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (!bossDoor)
         {
-            
+
             IPlayerWeapon pWeapon = collision?.GetComponent<IPlayerWeapon>();
-            if (pWeapon!= null && pWeapon.weaponTier==weaponTierToUnlock)
+            if (pWeapon != null && pWeapon.weaponTier == weaponTierToUnlock)
             {
                 _animator.SetTrigger("Detect");
                 SetNewDoor();
-                isOpenedFirstTime=true;
+                isOpenedFirstTime = true;
             }
-            else if (pWeapon!=null && pWeapon.weaponTier!=weaponTierToUnlock && weaponHint!=null && !isOpenedFirstTime)
+            else if (pWeapon != null && pWeapon.weaponTier != weaponTierToUnlock && weaponHint != null && !isOpenedFirstTime)
             {
                 weaponHint.ShowHintCanvas();
             }
         }
     }
     #endregion
-    private void SetNewDoor(){
-        if(isDefault){
-            if(!doorsUnlocked.ContainsKey(idString)){
-                doorsUnlocked.Add(idString,true);
+    private void SetNewDoor()
+    {
+        if (isDefault)
+        {
+            if (!gameDataContainer.DoorExist(id))
+            {
+                gameDataContainer.AddDoor(id);
                 weaponTierToUnlock = 0;
+                print(id);
             }
         }
     }
-    public void SetNewDoorColor(){
-        sRen.color=blueDoorColor;
+    public void SetNewDoorColor()
+    {
+        sRen.color = blueDoorColor;
     }
     public void LockDoor()
     {

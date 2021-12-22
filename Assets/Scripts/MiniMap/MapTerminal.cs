@@ -34,7 +34,8 @@ public class MapTerminal : MonoBehaviour
         if (other.GetComponent<Gun>() && active)
         {
             pContr = other.GetComponentInParent<PlayerController>();
-            if(pContr.isGrounded && !pContr.IsJumping){
+            Player.GroundChecker groundChecker = other.GetComponentInParent<Player.GroundChecker>();
+            if(groundChecker.isGrounded && !pContr.IsJumping){
                 pAnim = pContr.anim;
                 if(other.transform.position.x > transform.position.x) arm.SetActive(true);
                 else armLeft.SetActive(true);

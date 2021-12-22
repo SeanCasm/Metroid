@@ -9,6 +9,7 @@ public class SaveStation : MonoBehaviour
     [SerializeField] Transform spawn;
     private SaveAndLoad saveLoad;
     private PlayerController playerController;
+    private Player.AnimatorHandler animatorHandler;
     private int gameSlot;
     public string actualSectorLoad;
     public static bool loaded;
@@ -26,7 +27,7 @@ public class SaveStation : MonoBehaviour
             inputManager = gC.GetInputManager;
             playerController.ResetState();
             playerController.SetTransformCenter(spawn.position);
-            playerController.isGrounded=true;
+            col.GetComponent<Player.GroundChecker>().isGrounded=true;
             loaded=true;
             for(int i=0;i<3;i++){
                 if(i==SaveAndLoad.slot)gameSlot=i;
@@ -49,7 +50,7 @@ public class SaveStation : MonoBehaviour
         {
             Pause.UnpausePlayer();
             unFreezeMoves();
-            playerController.SetAnimation(20, false);
+            playerController.AnimatorHandler.SetAnimation(20, false);
             inputManager.EnablePlayerInput();
         }
     }
@@ -59,7 +60,7 @@ public class SaveStation : MonoBehaviour
     /// </summary>
     void OnStation()
     {
-        playerController.SetAnimation(20, true);
+        playerController.AnimatorHandler.SetAnimation(20, true);
         playerController.SetTransformCenter(spawn.position);
         playerController.SetConstraints(RigidbodyConstraints2D.FreezeAll);
         inputManager.DisablePlayerInput();
@@ -77,8 +78,8 @@ public class SaveStation : MonoBehaviour
     }
     void PlayerAnimatorUpdate(bool saved, bool isSaving)
     {
-        playerController.SetAnimation(20,saved);
-        playerController.SetAnimation(17,isSaving);
+        playerController.AnimatorHandler.SetAnimation(20,saved);
+        playerController.AnimatorHandler.SetAnimation(17,isSaving);
     }
     #endregion
 }

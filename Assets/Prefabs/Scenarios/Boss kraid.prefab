@@ -5096,6 +5096,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7810795474416175326, guid: e48af5628365788498f4cdc18233dd3d, type: 3}
+      propertyPath: bossDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8281506755963439119, guid: e48af5628365788498f4cdc18233dd3d, type: 3}
       propertyPath: nextzone.m_AssetGUID
       value: 9feff8612a6624e47b5bb65bbbbcdaa2

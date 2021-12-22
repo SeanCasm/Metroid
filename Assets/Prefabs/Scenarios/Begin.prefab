@@ -56325,6 +56325,10 @@ PrefabInstance:
       value: 144cf6e1d03b3dd479d4763fc912758a
       objectReference: {fileID: 0}
     - target: {fileID: 7810795474416175326, guid: fd1750b2a5985e74abf5a0fba677cd69, type: 3}
+      propertyPath: id
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810795474416175326, guid: fd1750b2a5985e74abf5a0fba677cd69, type: 3}
       propertyPath: lockedSprite
       value: 
       objectReference: {fileID: 6350064902736675665, guid: 29cb496cd0a820e499b51ab4cf82b023, type: 3}

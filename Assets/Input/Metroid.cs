@@ -60,7 +60,7 @@ public partial class @Metroid : IInputActionCollection2, IDisposable
                     ""id"": ""32c870ed-edd5-4804-81a4-a1d15b332741"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)"",
+                    ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {

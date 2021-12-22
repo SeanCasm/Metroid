@@ -3066,6 +3066,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae0124298865f742870c510f034f424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &210899533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+  m_PrefabInstance: {fileID: 546514062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210899525}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1ed53484063840921b8b148e0e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &219114711
 GameObject:
   m_ObjectHideFlags: 0
@@ -7400,7 +7411,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1580027128}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Gun, Assembly-CSharp
           m_MethodName: AmmoSelection_Mobile
           m_Mode: 3
@@ -8233,6 +8244,26 @@ PrefabInstance:
       propertyPath: healthUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 128693699}
+    - target: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 1227241134}
+    - target: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: buttonEssentials
+      value: 
+      objectReference: {fileID: 1925283449}
+    - target: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
+    - target: {fileID: 210899533, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128693699}
     - target: {fileID: 546514065, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: mainCanvas
       value: 
@@ -8253,26 +8284,6 @@ PrefabInstance:
       propertyPath: inputManager
       value: 
       objectReference: {fileID: 1227241134}
-    - target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-      propertyPath: inputManager
-      value: 
-      objectReference: {fileID: 1227241134}
-    - target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-      propertyPath: buttonEssentials
-      value: 
-      objectReference: {fileID: 1925283449}
-    - target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-      propertyPath: ammoUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 128693699}
-    - target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-      propertyPath: enableItem.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 128693699}
-    - target: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-      propertyPath: viewUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 128693699}
     - target: {fileID: 5876600726841306740, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: suit
       value: 
@@ -53891,7 +53902,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1580027128}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Gun, Assembly-CSharp
           m_MethodName: AmmoSelection_Mobile
           m_Mode: 3
@@ -57908,7 +57919,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1580027128}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Gun, Assembly-CSharp
           m_MethodName: AmmoSelection_Mobile
           m_Mode: 3
@@ -58800,7 +58811,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: DisableIncompatibleBeams
         m_Mode: 3
@@ -58812,7 +58823,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: SetBeam
         m_Mode: 1
@@ -63855,17 +63866,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574808481}
   m_CullTransparentMesh: 1
---- !u!114 &1580027128 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3995245244221401216, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
-  m_PrefabInstance: {fileID: 546514062}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b1ed53484063840921b8b148e0e548, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1612497623
 GameObject:
   m_ObjectHideFlags: 0
@@ -64460,7 +64460,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1580027128}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Gun, Assembly-CSharp
           m_MethodName: AmmoSelection_Mobile
           m_Mode: 3
@@ -67391,7 +67391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 210899527}
-  gun: {fileID: 1580027128}
+  gun: {fileID: 210899533}
   health: {fileID: 210899530}
   pContr: {fileID: 210899529}
   map: {fileID: 1925283446}
@@ -67408,7 +67408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 210899530}
-  playerInventory: {fileID: 1580027128}
+  playerInventory: {fileID: 210899533}
   map: {fileID: 7012533267687539497}
   canvas: {fileID: 128693691}
 --- !u!114 &1925283446
@@ -67571,7 +67571,7 @@ MonoBehaviour:
   buttonEssentials: {fileID: 1925283449}
   mixerToMute: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   inputManager: {fileID: 1227241134}
-  gun: {fileID: 1580027128}
+  gun: {fileID: 210899533}
   playerHealth: {fileID: 210899530}
 --- !u!114 &1925283449
 MonoBehaviour:
@@ -68994,7 +68994,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: DisableIncompatibleBeams
         m_Mode: 3
@@ -69006,7 +69006,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: SetBeam
         m_Mode: 1
@@ -73224,7 +73224,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: DisableIncompatibleBeams
         m_Mode: 3
@@ -73236,7 +73236,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1580027128}
+      - m_Target: {fileID: 210899533}
         m_TargetAssemblyTypeName: Gun, Assembly-CSharp
         m_MethodName: SetBeam
         m_Mode: 1
@@ -78829,7 +78829,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 13.06
+  m_Spacing: 20.55
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -79301,7 +79301,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 13.06
+  m_Spacing: 20.55
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -81232,7 +81232,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 13.06
+  m_Spacing: 20.55
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
