@@ -29,6 +29,11 @@ public class WallWalking : EnemyBase
         GameEvents.instance.OnMissileImpact -= ReactToMissileImpact;
         GameEvents.instance.OnCrumble -= ReactToCrumbleBlock;
     }
+    private new void OnDestroy() {
+        base.OnDestroy();
+        GameEvents.instance.OnMissileImpact -= ReactToMissileImpact;
+        GameEvents.instance.OnCrumble -= ReactToCrumbleBlock;
+    }
     new void Awake()
     {
         base.Awake();
@@ -76,13 +81,12 @@ public class WallWalking : EnemyBase
     #region Private Methods 
     private void ReactToMissileImpact(Vector2 pos)
     {
-        if (transform.eulerAngles.z != 0 && Vector2.Distance(transform.position, pos) < 1.2f)
+        if (transform.eulerAngles.z != 0 && isVisible)
             Fall();
     }
     private void ReactToCrumbleBlock(Vector2 pos)
     {
-        if (Vector2.Distance(transform.position, pos) <= 0.2f)
-            Fall();
+        if (isVisible) Fall();
     }
     private void Fall()
     {

@@ -61,7 +61,7 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
             if (playerController.status != Status.Powered)
             {
                 PlayerKnockBack playerKnockBack = other.GetComponent<PlayerKnockBack>();
-                playerKnockBack.HitPlayer(collideDamage,transform.position.x);
+                playerKnockBack.HitPlayer(collideDamage, transform.position.x);
             }
         }
     }
@@ -121,7 +121,7 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         if (rigidCol) rigidCol.enabled = true;
         freezedCol.SetActive(false); hurtbox.enabled = false;
         Utilities.SetBehaviours(components, true);
-        _renderer.material = materials.defaultMaterial;
+        _renderer.material = dissolve;
         rb2d.constraints = RigidbodyConstraints2D.None;
         rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
         Physics2D.IgnoreLayerCollision(8, 9, true);
@@ -148,8 +148,8 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     IEnumerator Dissolve()
     {
         float fade = 1;
-        var obj = DropManager.instance.TryToDrop();
-        if(pooleable && obj != null)Instantiate(obj, transform.position, Quaternion.identity);
+        _renderer.material = dissolve;
+        DropManager.instance.TryToDrop(transform.position);
         foreach (var item in componentsToDisable)
         {
             item.enabled = false;
@@ -159,7 +159,6 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
             dissolve.SetFloat("_Fade", fade -= Time.deltaTime);
             yield return null;
         }
-        if (!pooleable && obj != null) Instantiate(obj, transform.position, Quaternion.identity);
         OnDeath?.Invoke();
     }
     private void DestroyOnDeath()
@@ -196,8 +195,12 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
 
     public void SetDide(float side)
     {
-        OnSideDamage?.Invoke(side);
-        side = 0;
+        if (!freezed)
+        {
+            OnSideDamage?.Invoke(side);
+            side = 0;
+
+        }
     }
     #endregion
 }

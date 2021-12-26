@@ -8,11 +8,6 @@ public class GameEvents:MonoBehaviour
     private void Awake() {
         instance=this;
     }
-    public Action<SaveStation> save;
-    /// <summary>
-    /// Displays the save message when player is using the save station.
-    /// </summary>
-    public Action saveMessage;
     public Action<MiniMap> UnexploredMap;
     /// <summary>
     /// Verifies the existence of reserve and items in the collector manager.
@@ -27,6 +22,6 @@ public class GameEvents:MonoBehaviour
     /// Starts the transition animation.
     /// </summary>
     public Func<float> StartTransition;
-    public Action<Vector2> OnMissileImpact=delegate{};
-    public Action<Vector2> OnCrumble=delegate{};
+    public Action<Vector2> OnMissileImpact;
+    public Action<Vector2> OnCrumble;
 }

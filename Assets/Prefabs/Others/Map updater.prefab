@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Intensity: 0.78
   m_LightVolumeIntensity: 0.71
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: 754742cc00000000a78875370d4b2100
+  m_ApplyToSortingLayers: a7887537
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -442,10 +442,6 @@ MonoBehaviour:
   arm: {fileID: 7345347303073241733}
   armLeft: {fileID: 8594241718941849067}
   light: {fileID: 2977140755088041568}
-  playerPos: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!50 &8598388826110938911
 Rigidbody2D:
   serializedVersion: 4

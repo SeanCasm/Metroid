@@ -9,7 +9,6 @@ namespace Player.Weapon
         [SerializeField] protected float speed;
         [Tooltip("When beam collides generates this impact.")]
         [SerializeField] protected GameObject impactPrefab;
-        [SerializeField] protected BoxCollider2D floorCol;
         [SerializeField] bool pooleable;
         [SerializeField] bool isSpazer,spazerChild;
         protected Rigidbody2D rigid;

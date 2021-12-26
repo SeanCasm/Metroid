@@ -24,8 +24,7 @@ public class Gun : MonoBehaviour, IFulleable
     public Action OnStand;
     private int[] beamsID { get; } = { 1, 2, 10 };
     private LimitedAmmo ammo;
-    private int countableID; 
-    private GroundChecker groundChecker;
+    private int countableID;
     private PlayerInventory inventory;
     public GameObject beamToShoot { get; set; }
     public FireType fireType { get; set; }
@@ -50,7 +49,6 @@ public class Gun : MonoBehaviour, IFulleable
     {
         limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], 15, 15, this); 
         inventory = GetComponent<PlayerInventory>();
-        groundChecker=GetComponent<GroundChecker>();
         SetBeam();
     }
     private void OnEnable()
@@ -205,14 +203,14 @@ public class Gun : MonoBehaviour, IFulleable
     {
         if (canInstantiate)
         {
-            if (!groundChecker.isGrounded && pCont.GroundState == GroundState.Stand)
+            if (!pCont.GroundChecker.isGrounded && pCont.GroundState == GroundState.Stand)
                 pCont.ShootOnAir();
 
             if (pCont.GroundState != GroundState.Balled) Fire();
             else SetBomb();
 
-            if (pCont.xInput != 0 && groundChecker.isGrounded && !pCont.OnSpin && pCont.aimState == AngleAim.None)
-                pCont.ShootOnWalk = true;
+            if (pCont.xInput != 0 && pCont.GroundChecker.isGrounded && !pCont.OnSpin && pCont.aimState == AngleAim.None)
+                pCont.GroundChecker.ShootOnWalk = true;
         }
     }
     private void FirePerformed(InputAction.CallbackContext context)
@@ -344,6 +342,9 @@ public class Gun : MonoBehaviour, IFulleable
         gunSprite.enabled=false;
         SetBeam();
     }
+    /*
+        Called in UnityEvent from PlayerController.cs
+    */
     public void PlayerOnMorphball()
     {
         Charge(false);

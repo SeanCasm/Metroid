@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8263877636044354757}
   - component: {fileID: 2691736313019410228}
   - component: {fileID: 8470301529499905807}
-  - component: {fileID: -6830923401528850172}
   m_Layer: 10
   m_Name: ReloadAll
   m_TagString: Untagged
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2181901
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 11
   m_Sprite: {fileID: -6219686852084726144, guid: 8d9b1a2b30de9c845a84a77e9ad3ee79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,17 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectibleSound: {fileID: 7939352876709887328, guid: ba920352bef274648ab24ab5e4dbe706, type: 3}
-  collectibleType: 4
+  collectibleType: 5
   pointsRestoration: 0
---- !u!114 &-6830923401528850172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263877636044354756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15398ae36b4ea8e45a2c0452d989447d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

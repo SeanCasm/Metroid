@@ -51,7 +51,6 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     }
     public void CurrentControlScheme(PlayerInput playerInput)
     {
-         print(playerInput.currentControlScheme);
         switch (playerInput.currentControlScheme)
         {
             case "Gamepad":

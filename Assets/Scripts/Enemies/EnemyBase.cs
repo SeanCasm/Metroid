@@ -16,7 +16,7 @@ namespace Enemy
         protected EnemyHealth enemyHealth;
         protected PlayerDetector pDetect;
         private float curGravity;
-        private bool isVisible,isSubscribed;
+        protected bool isVisible,isSubscribed;
         protected void Awake()
         {
             if (detectPlayer) pDetect = GetComponentInChildren<PlayerDetector>();

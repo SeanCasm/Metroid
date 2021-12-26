@@ -6,7 +6,6 @@ public class KraidIA : Boss
 {
     [SerializeField] Animator head;
     [SerializeField] AudioClip roarClip;
-    [SerializeField] Enemy.Weapon.Pool pool;
     private bool[] clawsInScene=new bool[3];
     private BossHealth health;
     private AudioSource audioPlayer;
@@ -21,8 +20,6 @@ public class KraidIA : Boss
     new void Start()
     {
         base.Start();
-        pool.SetKraidPool();
-        StartCoroutine(RandomHoleShoot());
     }
     private void Update() {
         if(health.Damaged){
@@ -43,22 +40,6 @@ public class KraidIA : Boss
     }
     void StopRoar(){
         onRoar=false;
-    }
-    IEnumerator RandomHoleShoot()
-    {
-        int index=2;
-        while (health.MyHealth > 0)
-        {
-            yield return new WaitForSeconds(3f);
-            if(!clawsInScene[index]){
-                BigClaw bg=pool.pool[index].GetComponent<BigClaw>();
-                pool.ActivePrevPoolObject();
-                bg.OnDissapear(()=>{clawsInScene[index] = false;});
-                clawsInScene[index] = true;
-            }
-            index--;
-            if(index <0)index =2;
-        }
     }
     private void Roar()
     {

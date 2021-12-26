@@ -29,11 +29,10 @@ public class Warp : MonoBehaviour
             sounds.audioMixer.SetFloat("SE volume",-80);
             playerController=other.GetComponentInParent<PlayerController>();
             playerController.enabled=false;
-            CurrentCamera.current.MoveTo(cameraTransition);
+            WarpAnimationCamera.current.MoveTo(cameraTransition);
             StartCoroutine("Resume");
             inputManager.DisableUIInput();
             Pause.PausePlayer(true);
-            print(other);
 
         }
     }
@@ -48,7 +47,7 @@ public class Warp : MonoBehaviour
             SceneHandler.current.SetCurrentScenario(g.Result);
         };
         playerController.enabled = true;
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
         sounds.audioMixer.SetFloat("SE volume",vol);
         inputManager.EnableUIInput();
         Pause.UnpausePlayer();

@@ -83,7 +83,7 @@ namespace Enemy.Weapons
         }
         protected void DoDrop()
         {
-            DropManager.instance.TryToDrop();
+            DropManager.instance.TryToDrop(transform.position);
             BackToShootPoint();
         }
     }

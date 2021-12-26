@@ -18,12 +18,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] BoxCollider2D edgeCollider, hurtBox;
     [SerializeField, Range(.01f, 1f)] float jumpTime = 0.35f;
     [SerializeField] Transform camHandle;
-    [SerializeField] AnimatorHandler animatorHandler;
     [Header("Floor config")]
     [SerializeField] GroundChecker groundChecker;
     [SerializeField] LayerMask groundLayer;
-    [SerializeField] float overHeadCheck = .01f;
-    [SerializeField] float wallDistance, wallEdgeOffset, edgesOffset, spinOffset;
+    [SerializeField] float spinOffset;
     [Header("Running and Speed Booster config")]
     [SerializeField] SpeedBooster speedBoosterComp;
     [SerializeField] Shinespark shinespark;
@@ -36,10 +34,8 @@ public class PlayerController : MonoBehaviour
     [Header("Misc events")]
     [SerializeField] UnityEvent<bool> onScrew;
     [SerializeField] UnityEvent onMorphball, onEnable;
-    private Vector2 direction;
     private float jumpForce = 88, speed = 88, curSpinOffset = 1, slow2Gravity = 1;
     private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, angleAim, spriteCenter;
-    public float XVelocity { get => xVelocity; }
     public float Slow2Gravity
     {
         get
@@ -52,14 +48,12 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale /= slow2Gravity;
         }
     }
-    public float xInput { get; private set; } = 0;
+    public float xInput { get; set; } = 0;
     public Animator anim { get; set; }
     private PlayerFXHandler playerFX;
     private SpriteRenderer spriteRenderer;
     private Gun gun;
-    private bool fall, isJumping, firstAir, airShoot, morphSpin,
-       onJumpingState, _onSpin, _shootOnWalk, wallInFront;
-
+    private bool fall, isJumping, airShoot, morphSpin, onJumpingState, _onSpin, isGrounded;
     private System.Action OnJump = delegate { };
     private GroundState _groundState = GroundState.Stand;
     public JumpType jumpType { get; set; } = JumpType.Default;
@@ -67,12 +61,11 @@ public class PlayerController : MonoBehaviour
     public AngleAim aimState { get; private set; } = AngleAim.None;
     public Status status { get; private set; } = Status.Normal;
     private int aimUpDown = 0;
+    int[] animatorHash = new int[27];
     public float currentJumpForce { get; set; }
-    private bool isGrounded { get; set; }
     public bool groundOverHead { get; private set; }
     public bool canMorph { get; set; } = true;
     public float slow2Forces = 1;
-    public AnimatorHandler AnimatorHandler{get=>animatorHandler;}
     public bool OnSpin
     {
         get => _onSpin;
@@ -99,13 +92,12 @@ public class PlayerController : MonoBehaviour
                     if (status != Status.Damaged) status = Status.Normal;
                 }
             }
-            animatorHandler.FixSpritePivot(
-                _onSpin && jumpType == JumpType.Default,
-                jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand,
-                jumpType == JumpType.Space && _onSpin
-            );
+            anim.SetBool(animatorHash[9], _onSpin && jumpType == JumpType.Default);//spin jump
+            anim.SetBool(animatorHash[12], jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);//screw
+            anim.SetBool(animatorHash[15], jumpType == JumpType.Space && _onSpin);//gravity jump
         }
     }
+    public GroundChecker GroundChecker { get => groundChecker; }
     public bool leftLook { get; set; }
     public bool IsJumping
     {
@@ -115,16 +107,6 @@ public class PlayerController : MonoBehaviour
             isJumping = value;
             if (isJumping) { groundChecker.OnJumping(); isGrounded = false; }
             else jumpTimeCounter = 0;
-        }
-    }
-    public bool ShootOnWalk
-    {
-        get => _shootOnWalk;
-        set
-        {
-            _shootOnWalk = value;
-            if (_shootOnWalk) CancelAndInvoke(nameof(shootingClocking), 2f);
-            else CancelInvoke(nameof(shootingClocking));
         }
     }
     public GroundState GroundState
@@ -139,20 +121,15 @@ public class PlayerController : MonoBehaviour
                 OnSpin = false;
                 angleAim = 0;
                 aimUpDown = 0;
-            }
-            else
-            {
-                gun.OnStand?.Invoke();
-            }
+            }else gun.OnStand?.Invoke();
         }
     }
-    private Rigidbody2D rb;
+    public Rigidbody2D rb { get; private set; }
     #endregion
     #region Unity methods
     private void OnEnable()
     {
         onEnable.Invoke();
-        groundChecker.OnGroundLanding += FirstOnGround;
         if (inputManager.lockFireInput) inputManager.DisableFireInput();
         if (inputManager.HorizontalMovement == null)
         {
@@ -173,7 +150,6 @@ public class PlayerController : MonoBehaviour
     }
     private void OnDisable()
     {
-        groundChecker.OnGroundLanding -= FirstOnGround;
         inputManager.DisablePlayerControls();
     }
     private void OnDestroy()
@@ -200,23 +176,24 @@ public class PlayerController : MonoBehaviour
         OnJump += OnNormalJump;
         jumpTimeCounter = jumpTime;
         currentJumpForce = jumpForce;
+        rb = GetComponent<Rigidbody2D>();
     }
     void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         playerFX = GetComponentInChildren<PlayerFXHandler>();
         gun = GetComponentInChildren<Gun>();
-        rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        for (int i = 0; i < anim.parameterCount; i++) animatorHash[i] = Animator.StringToHash(anim.parameters[i].name);
         currentSpeed = speed;
     }
 
     void Update()
     {
+        camHandle.position = TransformCenter();
         if (status != Status.Damaged)
         {
             spriteCenter = spriteRenderer.bounds.size.y / 2;
-            camHandle.position = TransformCenter();
             hurtBox.transform.position = capsule.bounds.center;
             hurtBox.size = new Vector2(capsule.bounds.size.x + .01f, capsule.bounds.size.y + .01f);
 
@@ -227,6 +204,8 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+    public void SetAnimation(int index, bool enable) => anim.SetBool(animatorHash[index], enable);
+
     void FixedUpdate()
     {
         if (status != Status.Damaged)
@@ -242,7 +221,8 @@ public class PlayerController : MonoBehaviour
                 if (onJumpingState) SetVelocity(new Vector2(xVelocity / 2, rb.velocity.y));
                 else if (_onSpin || morphSpin) SetVelocity(new Vector2(xVelocity, rb.velocity.y));
             }
-            else if (isGrounded && xInput != 0 && !wallInFront) groundChecker.FixedUpdateOnGround();
+
+            groundChecker.FixedUpdateOnGround(xInput, xVelocity);
         }
     }
     void LateUpdate()
@@ -255,18 +235,11 @@ public class PlayerController : MonoBehaviour
     {
         return _onSpin ? transform.position : new Vector3(transform.position.x, transform.position.y + spriteCenter);
     }
-    private void CancelAndInvoke(string method, float time)
-    {
-        CancelInvoke(method);
-        Invoke(method, time);
-    }
-
     #region On ground methods
     void OnGround()
     {
-        groundChecker.CheckSlopesAndEdges();
-        CheckWallInFront();
-        CheckGroundUp();
+        groundChecker.WallAndSlopeCheck(xInput);
+        groundOverHead = groundChecker.GroundOverHead;
         if (xInput != 0f)
         {
             if (runningState == RunningState.Running && slow2Forces == 1)
@@ -290,19 +263,8 @@ public class PlayerController : MonoBehaviour
             currentSpeed = speed;
         }
     }
-    void CheckWallInFront()
-    {
-        RaycastHit2D wallHit = Physics2D.BoxCast(new Vector2(capsule.bounds.center.x + (capsule.size.x / 2) * direction.x,
-        capsule.bounds.center.y),
-        new Vector2(wallDistance, capsule.bounds.size.y - wallEdgeOffset), 0f, direction, wallDistance, groundLayer);
-        if (wallHit && Vector2.Angle(wallHit.normal, Vector2.up) == 90)
-        {
-            wallInFront = true;
-            xInput = 0;
-        }
-        else wallInFront = false;
-    }
-    private void FirstOnGround(float y)
+
+    internal void FirstOnGround(float y)
     {
         aimUpDown = 0;
         if (_onSpin && !morphSpin)
@@ -310,7 +272,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(FixPivot(y));
             if (groundOverHead) GroundState = GroundState.Crouched;
         }
-        morphSpin = IsJumping = airShoot = OnSpin = firstAir = onJumpingState = fall = false;
+        morphSpin = IsJumping = airShoot = OnSpin = onJumpingState = fall = false;
         playerFX.StopAudio(StopAction.All);
     }
     /// <summary>
@@ -320,7 +282,11 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     IEnumerator FixPivot(float y)
     {
-        yield return new WaitWhile(() => animatorHandler.AnyJump());
+        yield return new WaitWhile(() =>
+            anim.GetBool(animatorHash[9]) ||
+            anim.GetBool(animatorHash[12]) ||
+            anim.GetBool(animatorHash[15])
+        );
         transform.position = new Vector3(transform.position.x, y, 0);
     }
 
@@ -328,7 +294,7 @@ public class PlayerController : MonoBehaviour
     #region On air methods 
     void OnAir()
     {
-        FirstAir();
+        groundChecker.FirstAir(_onSpin, slow2Gravity, spriteCenter);
         if (aimUpDown == 0 && !isJumping && status == Status.Normal && shinespark.ShinesparkState != ShinesparkState.Full
         && gun.fireType == FireType.Normal && angleAim == 0 && !airShoot && !onJumpingState && !_onSpin)
         {
@@ -344,39 +310,31 @@ public class PlayerController : MonoBehaviour
                     IsJumping = false;
                     jumpTimeCounter = 0;
                 }
+
                 if (jumpTimeCounter > 0) jumpTimeCounter -= Time.deltaTime;
                 else IsJumping = false;
             }
         }
     }
-    private bool CheckWallJump()
-    {
-        if (Physics2D.Raycast(transform.position, Vector2.left, 0.28f, groundLayer) && xInput > 0) return true;
-        else if (Physics2D.Raycast(transform.position, Vector2.right, 0.28f, groundLayer) && xInput < 0) return true;
-        return false;
-    }
-    private void FirstAir()
-    {
-        if (!firstAir)
-        {
-            if (_onSpin) transform.position = new Vector3(transform.position.x, transform.position.y + spriteCenter, 0);
-            edgeCollider.enabled = false; rb.gravityScale = 1 / slow2Gravity; firstAir = true;
-            wallInFront = ShootOnWalk = groundChecker.OnSlope = false;
-        }
-    }
     #endregion
     private void AnimStates()
     {
-        bool[] values =
-        {
-            angleAim < 0,angleAim > 0,  _groundState == GroundState.Balled,   isGrounded && xInput != 0 && !wallInFront && !groundOverHead,
-            (_shootOnWalk || gun.fireType != FireType.Normal) && isGrounded && xInput != 0,     _groundState == GroundState.Crouched,
-            leftLook,   /*idle*/isGrounded && xInput == 0,  isGrounded,/*spin jump*/_onSpin && jumpType == JumpType.Default,
-            /*airshoot*/(gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin,
-            /*screw*/jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand,
-            /*jump state*/onJumpingState,fall,  /*gravity jump*/jumpType == JumpType.Space && _onSpin
-        };
-        animatorHandler.SetAnimations(values);
+        anim.SetBool(animatorHash[0], angleAim < 0);
+        anim.SetBool(animatorHash[1], angleAim > 0);
+        anim.SetBool(animatorHash[2], _groundState == GroundState.Balled);
+        anim.SetBool(animatorHash[3], isGrounded && xInput != 0 && !groundChecker.wallInFront && !groundOverHead);
+        anim.SetBool(animatorHash[4], (groundChecker.ShootOnWalk || gun.fireType != FireType.Normal) && isGrounded && xInput != 0);
+        anim.SetBool(animatorHash[5], _groundState == GroundState.Crouched);
+        anim.SetBool(animatorHash[6], leftLook);
+        anim.SetBool(animatorHash[7],/*idle*/isGrounded && xInput == 0);
+        anim.SetBool(animatorHash[8], isGrounded);
+
+        anim.SetBool(animatorHash[9],/*spin jump*/_onSpin && jumpType == JumpType.Default);
+        anim.SetBool(animatorHash[10],/*airshoot*/(gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin);
+        anim.SetBool(animatorHash[11],/*screw*/jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);
+        anim.SetBool(animatorHash[12],/*jump state*/onJumpingState);
+        anim.SetBool(animatorHash[13], fall);
+        anim.SetBool(animatorHash[14],/*gravity jump*/jumpType == JumpType.Space && _onSpin);
 
         anim.SetFloat("VerticalVelocity", rb.velocity.y);
         //anim.SetFloat(animatorHash[16], 1 / slow2Forces);
@@ -384,7 +342,6 @@ public class PlayerController : MonoBehaviour
         anim.SetInteger("leftRight", (int)xInput);
     }
     #region Delayed Methods
-    void shootingClocking() => ShootOnWalk = false;
     void HyperJumpTimeAction()
     {
         runningState = RunningState.None;
@@ -394,6 +351,15 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
     #region Public methods
+    public void OnSaveStation(Vector2 position)
+    {
+        ResetState();
+        SetAnimation(15, true);
+        inputManager.DisableAll();
+        SetTransformCenter(position);
+        SetConstraints(RigidbodyConstraints2D.FreezeAll);
+        enabled = false;
+    }
     public void OnShinesparkFull()
     {
         rb.gravityScale = 0;
@@ -435,7 +401,7 @@ public class PlayerController : MonoBehaviour
     {
         CancelInvoke();
         groundChecker.ResetState();
-        fall = IsJumping = onJumpingState = isGrounded = OnSpin = ShootOnWalk = airShoot = false;
+        fall = IsJumping = onJumpingState = isGrounded = OnSpin = airShoot = false;
         xInput = yInput = 0;
         angleAim = 0;
         aimUpDown = 0;
@@ -499,7 +465,7 @@ public class PlayerController : MonoBehaviour
             aimUpDown = 1;
             CheckAimUp();
         }
-        ShootOnWalk = false;
+        groundChecker.ShootOnWalk = false;
     }
     private void AngleAimDownCanceled(InputAction.CallbackContext context)
     {
@@ -526,7 +492,7 @@ public class PlayerController : MonoBehaviour
             aimUpDown = 1;
             CheckAimUp();
         }
-        ShootOnWalk = false;
+        groundChecker.ShootOnWalk = false;
     }
     private void CheckAimUp()
     {
@@ -583,16 +549,7 @@ public class PlayerController : MonoBehaviour
     public void OnLeft(bool value)
     {
         leftLook = value;
-        if (value)
-        {
-            transform.eulerAngles = new Vector2(0, 180);
-            direction = Vector2.left;
-        }
-        else
-        {
-            transform.eulerAngles = new Vector2(0, 0);
-            direction = Vector2.right;
-        }
+        transform.eulerAngles = value ? new Vector2(0, 180) : new Vector2(0, 0);
     }
     #endregion
 
@@ -608,7 +565,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            shinespark.SetJumpToDirection(direction);
+            shinespark.SetJumpToDirection(new Vector2(xInput, 0));
             anim.SetTrigger("HyperJump LR");
             CancelInvoke("HyperJumpTimeAction");
         }
@@ -618,7 +575,7 @@ public class PlayerController : MonoBehaviour
         if (angleAim > 0) AimUp();
         else if (angleAim < 0) AimDown();
         if (isGrounded && speedBoosterComp.isInvoking) speedBoosterComp.CancelGhost();
-        ShootOnWalk = false;
+        groundChecker.ShootOnWalk = false;
     }
     private void MoveVerStartedAction()
     {
@@ -678,17 +635,11 @@ public class PlayerController : MonoBehaviour
         if (Time.deltaTime > 0) MoveVerCanceledAction();
         else inputManager.AddToUnscaledActions(1, MoveVerCanceledAction);
     }
-    private void CheckGroundUp()
-    {
-        groundOverHead = (Physics2D.Raycast(capsule.bounds.max, Vector2.up, overHeadCheck, groundLayer)
-                  && _groundState != GroundState.Stand
-        );
-    }
     private void QuickMorphball(InputAction.CallbackContext context)
     {
         if (canMorph)
         {
-            ShootOnWalk = false;
+            groundChecker.ShootOnWalk = false;
             if (_groundState != GroundState.Balled) GroundState = GroundState.Balled;
         }
     }
@@ -752,7 +703,7 @@ public class PlayerController : MonoBehaviour
         if (_groundState != GroundState.Crouched)
         {
             OnJump?.Invoke();
-            if (_onSpin && CheckWallJump())
+            if (_onSpin && groundChecker.CheckWallJump(xInput))
                 IsJumping = OnSpin = true;
         }
     }

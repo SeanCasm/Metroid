@@ -12,19 +12,18 @@ public class BigClaw : Weapon
     [SerializeField] GameObject explosion;
     [SerializeField] GameObject oneSide,damageCol;
     Animator animator;
-    public event Action dissapearCallback;
+    public event Action OnDisable;
     private float curSpeed;
-    public void OnDissapear(Action dissapearCallback)
-    {
-        this.dissapearCallback = dissapearCallback;
+    private new void OnEnable() {
+        
+    }
+    private new void OnBecameInvisible() {
+        
     }
     new void Start() {
         base.Start();
         curSpeed=speed;
         animator=GetComponent<Animator>();
-    }
-    new void FixedUpdate() {
-        base.FixedUpdate();
     }
     new void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Suelo") && other.IsTouching(floorCol)){
@@ -40,10 +39,10 @@ public class BigClaw : Weapon
     }
     void Explode(){
         Instantiate(explosion,transform.position,Quaternion.identity,null);
-        dissapearCallback?.Invoke();
         speed=curSpeed;
         damageCol.SetActive(true);
         oneSide.SetActive(false);
-        base.BackToShootPoint();
+        animator.Rebind();
+        OnDisable?.Invoke();
     }
 }

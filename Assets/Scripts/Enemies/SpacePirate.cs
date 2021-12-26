@@ -9,12 +9,17 @@ public class SpacePirate : EnemyBase
     [SerializeField] float minAltitude;
     private float currentSpeed, horizontalVelocity;
     private GroundSlopeChecker efd;
-    private bool idleShooting;
+    private bool idleShooting,isIdle;
+    private int[] idleTime=new int[10];
     #endregion
     #region Unity Methods
     protected void Awake()
     {
         base.Awake();
+        for (int i = 0; i < idleTime.Length; i++)
+        {
+            idleTime[i] = Random.Range(4,7);
+        }
         currentSpeed = speed;
         enemyHealth = GetComponentInChildren<EnemyHealth>();
         efd = GetComponent<GroundSlopeChecker>();
@@ -56,12 +61,17 @@ public class SpacePirate : EnemyBase
                 Invoke("StartCheck", 2f);
             }
         }
-        else if (!pDetect.detected) horizontalVelocity = speed;
+        else if (!pDetect.detected){
+             if(!IsInvoking(nameof(SetIdleState))){
+                Invoke(nameof(SetIdleState),idleTime[Random.Range(0,idleTime.Length)]);
+            }
+            horizontalVelocity = speed;
+        }
     }
-    protected void LateUpdate() => anim.SetBool("Idle", pDetect.detected);
+    protected void LateUpdate() => anim.SetBool("Idle", pDetect.detected || isIdle);
     private void FixedUpdate()
     {
-        if (pDetect.detected) { rigid.SetVelocity(0f, 0f); rigid.gravityScale = 0; }
+        if (pDetect.detected || (isIdle &&!pDetect.detected && !idleShooting)) { rigid.SetVelocity(0f, 0f); rigid.gravityScale = 0; }
         else if (!pDetect.detected && !idleShooting)
         {
             //rigid.gravityScale = 1;
@@ -71,6 +81,9 @@ public class SpacePirate : EnemyBase
     }
 
     #endregion
+    private void SetIdleState(){
+        isIdle=!isIdle;
+    }
     private void OnDamage(float side)
     {
         if (!pDetect.detected)

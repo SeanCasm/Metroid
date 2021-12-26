@@ -29,7 +29,7 @@ public class IceBeam : Beam,IBossFreezeable
                 if (!rejected) { Instantiate(impactPrefab, transform.position, Quaternion.identity, null); base.BackToGun(); }
                 else Reject();
             }
-        }else if (other.IsTouching(floorCol) && other.tag == "Suelo")FloorCollision();
+        }else if (other.CompareTag("Suelo"))FloorCollision();
     }
     new void OnBecameInvisible()
     {

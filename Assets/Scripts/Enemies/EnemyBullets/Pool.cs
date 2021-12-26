@@ -21,10 +21,6 @@ namespace Enemy.Weapon{
             if(shootPoint.Length==0){shootPoint=new Transform[1];shootPoint[0]=transform;}
             bulletPrefab.LoadAssetAsync<GameObject>().Completed+=OnLoadDone;
         }
-        public void SetKraidPool(){
-            poolSizeKraid =poolSize*shootPoint.Length;
-            prev=poolSizeKraid-1;
-        }
         public void ActiveNextPoolObject(){
             if(actual==poolSize)actual=0;
             OnShoot.Invoke();

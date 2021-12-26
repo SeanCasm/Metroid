@@ -13,73 +13,41 @@ public class SaveStation : MonoBehaviour
     private int gameSlot;
     public string actualSectorLoad;
     public static bool loaded;
-    private void OnDisable() {
-        loaded=false;
+    private void OnDisable()
+    {
+        loaded = false;
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player") && !loaded && 
-        (playerController=col.GetComponentInParent<PlayerController>()).GroundState!=GroundState.Balled)
+        if (col.CompareTag("Player") && !loaded &&
+        (playerController = col.GetComponentInParent<PlayerController>()).GroundState != GroundState.Balled)
         {
-            GameEvents.instance.save.Invoke(this);
-            var gC= col.GetComponent<GameComponents>();
+            var gC = col.GetComponent<GameComponents>();
             saveLoad = gC.GetSaveAndLoad;
             inputManager = gC.GetInputManager;
-            playerController.ResetState();
-            playerController.SetTransformCenter(spawn.position);
-            col.GetComponent<Player.GroundChecker>().isGrounded=true;
-            loaded=true;
-            for(int i=0;i<3;i++){
-                if(i==SaveAndLoad.slot)gameSlot=i;
+            loaded = true;
+            for (int i = 0; i < 3; i++)
+            {
+                if (i == SaveAndLoad.slot) gameSlot = i;
             }
-            OnStation();
+            playerController.OnSaveStation(spawn.position);
+            SaveGame();
         }
     }
-    public void saveGame(bool optionSelect)
+    private void SaveGame()
     {
-        if (optionSelect)
-        {
-            saveLoad.SetPositions(spawn.position.x, spawn.position.y, spawn.position.z);
-            SaveAndLoad.sectorName = actualSectorLoad;
-            inputManager.DisableUIInput();
-            saveLoad.SavePlayerSlot(gameSlot);
-            PlayerAnimatorUpdate(false, true);
-            Invoke("stopSavingAnim",4f);
-        }
-        else
-        {
-            Pause.UnpausePlayer();
-            unFreezeMoves();
-            playerController.AnimatorHandler.SetAnimation(20, false);
-            inputManager.EnablePlayerInput();
-        }
+        saveLoad.SetPositions(spawn.position.x, spawn.position.y, spawn.position.z);
+        SaveAndLoad.sectorName = actualSectorLoad;
+        saveLoad.SavePlayerSlot(gameSlot);
+        Invoke("StopSave", 3f);
     }
     #region Private methods
-    /// <summary>
-    /// Set the player to the save station position, change his animation state and disable all possible movements.
-    /// </summary>
-    void OnStation()
-    {
-        playerController.AnimatorHandler.SetAnimation(20, true);
-        playerController.SetTransformCenter(spawn.position);
-        playerController.SetConstraints(RigidbodyConstraints2D.FreezeAll);
-        inputManager.DisablePlayerInput();
-    }
-    void stopSavingAnim()
-    {
-        GameEvents.instance.saveMessage.Invoke();
-        unFreezeMoves();
-        PlayerAnimatorUpdate(false, false);
-        inputManager.EnableAll();
-    }
-    void unFreezeMoves()
+    void StopSave()
     {
         playerController.SetConstraints(RigidbodyConstraints2D.FreezeRotation);
-    }
-    void PlayerAnimatorUpdate(bool saved, bool isSaving)
-    {
-        playerController.AnimatorHandler.SetAnimation(20,saved);
-        playerController.AnimatorHandler.SetAnimation(17,isSaving);
+        playerController.SetAnimation(15,false);
+        inputManager.EnableAll();
+        playerController.enabled=true;
     }
     #endregion
 }
