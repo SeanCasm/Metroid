@@ -154,7 +154,7 @@ AudioSource:
   m_GameObject: {fileID: 4374123270714136259}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -1288401571560660904, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   m_audioClip: {fileID: 8300000, guid: 4c0ceed5880f00b45bceb5e1e9e4be1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -259,6 +259,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 15
   iD: 3
+  tier: 0
   beamType: 5
   bombExplosion: {fileID: 8300000, guid: 0abb9a5cc2d161e43b874afc79462e61, type: 3}
   timeToExplode: 1

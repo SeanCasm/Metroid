@@ -23,8 +23,8 @@ public class GameSettings : MonoBehaviour
     {
         Application.targetFrameRate=45;
         audioS = GetComponent<AudioSource>();
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         LoadSettings();
         if(PlayerPrefs.HasKey("dpad")){
             int j = PlayerPrefs.GetInt("dpad");
@@ -33,14 +33,16 @@ public class GameSettings : MonoBehaviour
             dpadEnabled.isOn=i;
         }
         if(PlayerPrefs.HasKey(soundVolume)){
-            audioMixer.SetFloat(soundVolume, volumeLevel);
-            soundSlider.value = volumeLevel = PlayerPrefs.GetFloat(soundVolume);
+            volumeLevel = PlayerPrefs.GetFloat(soundVolume);
+            audioMixer.SetFloat(soundVolume, Mathf.Log10(volumeLevel)*20);
+            soundSlider.value = volumeLevel;
 
         }else audioMixer.SetFloat(soundVolume, Mathf.Log10(initialVolumeLevel) * 20);
 
         if(PlayerPrefs.HasKey(musicVolume)){
-            musicSlider.value = musicLevel=PlayerPrefs.GetFloat(musicVolume);
-            musicMixer.SetFloat(musicVolume,musicLevel);
+            musicLevel = PlayerPrefs.GetFloat(musicVolume);
+            musicMixer.SetFloat(musicVolume,Mathf.Log10(musicLevel)*20);
+            musicSlider.value = musicLevel;
             
         }else musicMixer.SetFloat(musicVolume, Mathf.Log10(initialVolumeLevel) * 20);
     }
@@ -51,6 +53,7 @@ public class GameSettings : MonoBehaviour
         audioS.mute=false;
         float newVol=Mathf.Log10(volume)*20;
         audioMixer.SetFloat(soundVolume, volumeLevel=newVol);
+        PlayerPrefs.SetFloat(soundVolume,volume);
         if(!audioS.mute)audioS.ClipAndPlay(sampleClip);
         audioS.mute=true;
     }
@@ -69,6 +72,7 @@ public class GameSettings : MonoBehaviour
         audioS.mute=false;
         float newVol = Mathf.Log10(volume)*20;
         musicMixer.SetFloat(musicVolume, musicLevel = newVol);
+        PlayerPrefs.SetFloat(musicVolume,volume);
         if(!audioS.mute)audioS.ClipAndPlay(sampleClip);
         audioS.mute=true;
     } 

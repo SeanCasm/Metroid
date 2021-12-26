@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2899730908884267566}
   - component: {fileID: 6226225830681010221}
   - component: {fileID: 5502364957530216808}
-  - component: {fileID: 2098778019222674752}
   - component: {fileID: 6251411695404413827}
   - component: {fileID: 8076162896016766882}
   - component: {fileID: 36727740940705293}
@@ -116,19 +115,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.02}
   m_EdgeRadius: 0
---- !u!114 &2098778019222674752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015271050541418377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8c984490e8e1f41a5bbf42899d203e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSound: {fileID: 3031397718826181704, guid: 4e15429ac66bc2345aa128da8e59dde9, type: 3}
 --- !u!95 &6251411695404413827
 Animator:
   serializedVersion: 3
@@ -187,12 +173,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 0
   iD: 0
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 2
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 0
   spazerChild: 1
@@ -471,12 +457,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 35
   iD: -5
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 3
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 1
   spazerChild: 0
@@ -490,7 +476,7 @@ AudioSource:
   m_GameObject: {fileID: 2950322049571986289}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3712465155013880017, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -666,7 +652,6 @@ GameObject:
   - component: {fileID: 5162818073893571741}
   - component: {fileID: 6965093127239466911}
   - component: {fileID: 3356331310013543489}
-  - component: {fileID: 3253014429373361071}
   - component: {fileID: 1204894400059073394}
   - component: {fileID: 4667911480548011321}
   - component: {fileID: 2044932905343283179}
@@ -771,19 +756,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.02}
   m_EdgeRadius: 0
---- !u!114 &3253014429373361071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9044745316227916786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8c984490e8e1f41a5bbf42899d203e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSound: {fileID: 3031397718826181704, guid: 4e15429ac66bc2345aa128da8e59dde9, type: 3}
 --- !u!95 &1204894400059073394
 Animator:
   serializedVersion: 3
@@ -842,12 +814,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 0
   iD: 0
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 2
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 0
   spazerChild: 1

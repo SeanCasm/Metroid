@@ -72,5 +72,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemArea: 0
   bossArea: 0
-  mapTile: {fileID: 11400000, guid: 73bae2b666e9043449d3e4fd0a4da3fc, type: 2}
-  unexploredTile: {fileID: 11400000, guid: 7ab1b23b10fb8614faefe9006084f63b, type: 2}
+  mapTile: {fileID: 11400000, guid: d22307af43b448a4ea1e094c03464096, type: 2}
+  unexploredTile: {fileID: 11400000, guid: cba3cd6b3d87f3e408504ee69324b71e, type: 2}

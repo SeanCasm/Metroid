@@ -6445,11 +6445,11 @@ PrefabInstance:
     - target: {fileID: 8289400846630665936, guid: 4cf06f87b22ad88469f2aa5a430e50ca, type: 3}
       propertyPath: mapTile
       value: 
-      objectReference: {fileID: 11400000, guid: 18c1a16b21e63d244b6a5dda7ee1b16b, type: 2}
+      objectReference: {fileID: 11400000, guid: d22307af43b448a4ea1e094c03464096, type: 2}
     - target: {fileID: 8289400846630665936, guid: 4cf06f87b22ad88469f2aa5a430e50ca, type: 3}
       propertyPath: unexploredTile
       value: 
-      objectReference: {fileID: 11400000, guid: 53da01b6bc63ea740be71daf079ee89d, type: 2}
+      objectReference: {fileID: 11400000, guid: cba3cd6b3d87f3e408504ee69324b71e, type: 2}
     - target: {fileID: 8289400846630665942, guid: 4cf06f87b22ad88469f2aa5a430e50ca, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -152,12 +152,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 22
   iD: -4
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 3.5
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 3327496489573889271, guid: 3c3f290c030608f49bc63a69d1bdb418, type: 3}
   pooleable: 1
   isSpazer: 0
   spazerChild: 0
@@ -171,7 +171,7 @@ AudioSource:
   m_GameObject: {fileID: 8962746881424450070}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3712465155013880017, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -26,11 +26,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] SpeedBooster speedBoosterComp;
     [SerializeField] Shinespark shinespark;
     [Tooltip("Standard running without any boost.")]
-    [SerializeField, Range(0, 115)] float runningSpeed = 100;
+    [SerializeField, Range(0, 14)] float runningSpeed = 100;
     [Tooltip("Speed Booster max speed")]
-    [SerializeField, Range(100, 130)] float speedBooster = 115;
+    [SerializeField, Range(100, 130)] float speedBooster = 14;
     [SerializeField, Range(0, 200)] float maxSpeed;
-    [SerializeField, Range(0.15f, 3)] float speedIncreaseOverTime = 1.5f;
+    [SerializeField, Range(0.14f, 3)] float speedIncreaseOverTime = 1.5f;
     [Header("Misc events")]
     [SerializeField] UnityEvent<bool> onScrew;
     [SerializeField] UnityEvent onMorphball, onEnable;
@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
             }
             anim.SetBool(animatorHash[9], _onSpin && jumpType == JumpType.Default);//spin jump
             anim.SetBool(animatorHash[12], jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);//screw
-            anim.SetBool(animatorHash[15], jumpType == JumpType.Space && _onSpin);//gravity jump
+            anim.SetBool(animatorHash[14], jumpType == JumpType.Space && _onSpin);//gravity jump
         }
     }
     public GroundChecker GroundChecker { get => groundChecker; }
@@ -285,7 +285,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitWhile(() =>
             anim.GetBool(animatorHash[9]) ||
             anim.GetBool(animatorHash[12]) ||
-            anim.GetBool(animatorHash[15])
+            anim.GetBool(animatorHash[14])
         );
         transform.position = new Vector3(transform.position.x, y, 0);
     }
@@ -354,7 +354,7 @@ public class PlayerController : MonoBehaviour
     public void OnSaveStation(Vector2 position)
     {
         ResetState();
-        SetAnimation(15, true);
+        SetAnimation(14, true);
         inputManager.DisableAll();
         SetTransformCenter(position);
         SetConstraints(RigidbodyConstraints2D.FreezeAll);

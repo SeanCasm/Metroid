@@ -2,24 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Player.Weapon;
-public class IceBeam : Beam,IBossFreezeable
+public class IceBeam : Beam, IBossFreezeable
 {
-    [SerializeField]AudioClip freezeClip;
+    [SerializeField] AudioClip freezeClip;
     #region Unity Methods
-    new private void Awake() {
-        base.Awake();
-    }
-    new void OnDisable() {
-        base.OnDisable();
-    }
-    new void OnEnable() {
-        base.OnEnable();
-    }
-    new void FixedUpdate() {
-       base.FixedUpdate(); 
-    }
-    new  void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Enemy")){
+    new void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
             IDamageable<float> health = other.GetComponent<IDamageable<float>>();
             IFreezeable ifreeze = other.GetComponent<IFreezeable>();
             IInvulnerable iInvulnerable = other.GetComponent<IInvulnerable>();
@@ -29,7 +19,8 @@ public class IceBeam : Beam,IBossFreezeable
                 if (!rejected) { Instantiate(impactPrefab, transform.position, Quaternion.identity, null); base.BackToGun(); }
                 else Reject();
             }
-        }else if (other.CompareTag("Suelo"))FloorCollision();
+            return;
+        }else base.CheckCollisions(other);
     }
     new void OnBecameInvisible()
     {
@@ -38,9 +29,10 @@ public class IceBeam : Beam,IBossFreezeable
     #endregion
     private void TryDoFreeze(IDamageable<float> healthManager, IFreezeable ifreeze, IInvulnerable iInvulnerable)
     {
-        if (!iInvulnerable.InvFreeze) {
-            if(ifreeze.freezed && !ifreeze.unFreezing) healthManager.AddDamage(damage); 
-            ifreeze.FreezeMe(); 
+        if (!iInvulnerable.InvFreeze)
+        {
+            if (ifreeze.freezed && !ifreeze.unFreezing) healthManager.AddDamage(damage);
+            ifreeze.FreezeMe();
         }
         else rejected = true;
     }

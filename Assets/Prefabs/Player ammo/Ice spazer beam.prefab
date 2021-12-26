@@ -152,12 +152,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 0
   iD: 0
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 3
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 0
   spazerChild: 1
@@ -434,12 +434,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 0
   iD: 0
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 3
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 0
   spazerChild: 1
@@ -576,7 +576,6 @@ GameObject:
   - component: {fileID: 571656484416654104}
   - component: {fileID: 3372344257565815578}
   - component: {fileID: 4463664850828288969}
-  - component: {fileID: 7669165866775176763}
   - component: {fileID: 12152963436924501}
   - component: {fileID: 853792333049753948}
   - component: {fileID: 7465182800218616743}
@@ -696,19 +695,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7669165866775176763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4633565312394270705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8c984490e8e1f41a5bbf42899d203e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSound: {fileID: 3031397718826181704, guid: 4e15429ac66bc2345aa128da8e59dde9, type: 3}
 --- !u!61 &12152963436924501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -753,12 +739,12 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 27
   iD: 5
+  tier: 0
   beamType: 3
   reject: {fileID: 1269435714947100089, guid: 1526e6a0d59e4104091250b4d03d7a52, type: 3}
   impactClip: {fileID: 0}
   speed: 3
   impactPrefab: {fileID: 1767709753732197920, guid: 42ef9b281033cae4bba51ecc771b45d7, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 1
   spazerChild: 0
@@ -772,7 +758,7 @@ AudioSource:
   m_GameObject: {fileID: 4633565312394270705}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3712465155013880017, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

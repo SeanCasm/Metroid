@@ -31,7 +31,7 @@ public class MapTerminal : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Gun>() && active)
+        if (other.GetComponentInParent<Gun>() && active)
         {
             pContr = other.GetComponentInParent<PlayerController>();
             Player.GroundChecker groundChecker = other.GetComponentInParent<Player.GroundChecker>();

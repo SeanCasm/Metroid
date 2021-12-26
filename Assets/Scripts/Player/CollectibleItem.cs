@@ -6,6 +6,10 @@ public class CollectibleItem : MonoBehaviour
     [SerializeField] GameObject collectibleSound;
     [SerializeField] CollectibleType collectibleType;
     public int pointsRestoration;
+    private void Start() {
+        if(collectibleType!=CollectibleType.Special)
+            Destroy(gameObject,5f);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

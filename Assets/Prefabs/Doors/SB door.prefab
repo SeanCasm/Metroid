@@ -618,7 +618,7 @@ MonoBehaviour:
   lockedSprite: {fileID: 6350064902736675665, guid: 29cb496cd0a820e499b51ab4cf82b023, type: 3}
   weaponHint: {fileID: 7991537019154631358}
   weaponTierToUnlock: 3
-  idString: 
+  id: 0
   blueDoorColor: {r: 0, g: 0.8117647, b: 1, a: 1}
   clip: {fileID: 8300000, guid: efbd98783e53db2419fdf540a54a5be1, type: 3}
   clip2: {fileID: 8300000, guid: 62ddddc16a76d2447ad975bd16d168e2, type: 3}
@@ -699,7 +699,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

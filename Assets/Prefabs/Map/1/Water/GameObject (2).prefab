@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8795975620068511199}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -72,5 +72,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemArea: 0
   bossArea: 0
-  mapTile: {fileID: 11400000, guid: edffad266fd07bb4aa5505e4ece77f2c, type: 2}
-  unexploredTile: {fileID: 11400000, guid: f267632ccc3c8da448084a842493c2d8, type: 2}
+  mapTile: {fileID: 11400000, guid: aa324a4669676a64889704af7213a010, type: 2}
+  unexploredTile: {fileID: 11400000, guid: e80aa68b1368d1f4391e1442f401a055, type: 2}
