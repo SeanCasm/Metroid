@@ -11,7 +11,7 @@ namespace Player
 
         [Header("Floor config")]
         [SerializeField] LayerMask groundLayer;
-        [SerializeField] float overHeadCheck = .01f;
+        [SerializeField] float overHeadCheck = .01f,wallJumpCheckDistance=.3f;
         [SerializeField, Range(.001f, .22f)] float slopeFrontRay = 0.08f, slopeBackRay = 0.08f, groundHitSlope;
         [SerializeField, Range(-1, 1.5f)] float slopeEdgesOffset;
         [SerializeField] float wallDistance, wallEdgeOffset, edgesOffset, spinOffset;
@@ -78,8 +78,8 @@ namespace Player
         }
         internal bool CheckWallJump(float xInput)
         {
-            if (Physics2D.Raycast(transform.position, Vector2.left, 0.3f, groundLayer) && xInput > 0) return true;
-            else if (Physics2D.Raycast(transform.position, Vector2.right, 0.3f, groundLayer) && xInput < 0) return true;
+            if (Physics2D.Raycast(transform.position, Vector2.left, wallJumpCheckDistance, groundLayer) && xInput > 0) return true;
+            else if (Physics2D.Raycast(transform.position, Vector2.right, wallJumpCheckDistance, groundLayer) && xInput < 0) return true;
             return false;
         }
         void CheckWallInFront(float xInput)

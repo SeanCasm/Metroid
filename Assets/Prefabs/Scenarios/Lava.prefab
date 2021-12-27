@@ -13675,6 +13675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacatar 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3433510383267070281, guid: 26bb29abac99d264aa42af6d89209981, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7156983898826931200, guid: 26bb29abac99d264aa42af6d89209981, type: 3}
       propertyPath: m_RootOrder
       value: 9

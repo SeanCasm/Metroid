@@ -71,14 +71,6 @@ namespace Enemy
             }
             else wallInFront = false;
         }
-        /*private void OnDrawGizmos()
-        {
-            Gizmos.DrawWireCube(new Vector2(coll.bounds.center.x + (coll.size.x / 2) * dir,
-            coll.bounds.center.y), new Vector2(wallDistance, coll.bounds.size.y - wallDistance));
-            Gizmos.DrawRay(new Vector2((coll.bounds.min.x + coll.bounds.size.x) * (dir-slopeEdgesOffset), coll.bounds.min.y),Vector3.down*slopeFrontRay);
-            Gizmos.DrawRay(new Vector2((coll.bounds.min.x + coll.bounds.size.x) * -(dir - slopeEdgesOffset), coll.bounds.min.y), Vector3.down * slopeBackRay);
-            Gizmos.DrawRay(new Vector2(coll.bounds.min.x + coll.size.x / 2, coll.bounds.min.y), Vector3.down * groundHitSlope);
-        }*/
         public void Flip()
         {
             facingRight = !facingRight;

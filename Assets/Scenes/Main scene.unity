@@ -60829,6 +60829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 1547749234}
+  time: 0
 --- !u!1 &1359320729
 GameObject:
   m_ObjectHideFlags: 0

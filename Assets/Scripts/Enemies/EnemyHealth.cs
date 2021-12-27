@@ -20,7 +20,6 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     public Action OnDamage;
     public Action<float> OnSideDamage;
     public int collideDamage;
-    public GameObject deadPrefab;
     private Behaviour[] components;
     protected Collider2D hurtbox;
     private PlayerController playerController;

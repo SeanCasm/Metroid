@@ -248,4 +248,5 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 2
   pooleable: 1
+  collisionParticles: {fileID: 1445918874815795454, guid: e3371070540864848b55dba04588d5ad, type: 3}
   angleLimit: 45

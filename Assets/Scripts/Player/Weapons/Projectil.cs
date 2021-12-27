@@ -53,8 +53,12 @@ namespace Player.Weapon
             {
                 health = collision.GetComponent<IDamageable<float>>();
                 iInvulnerable = collision.GetComponent<IInvulnerable>();
-                if (health == null && iInvulnerable != null) Reject();
-                if (health != null && iInvulnerable != null)
+                if (health == null && iInvulnerable != null)
+                {
+                    Instantiate(impactPrefab, transform.position, Quaternion.identity, null);
+                    Reject();
+                }
+                else if (health != null && iInvulnerable != null)
                 {
                     TryDoDamage(damage, health, beamType, iInvulnerable);
                     if (!collided) Instantiate(impactPrefab, transform.position, Quaternion.identity, null);
@@ -62,7 +66,8 @@ namespace Player.Weapon
                 }
                 BackToGun();
                 return;
-            }else CheckCollisions(collision);
+            }
+            else CheckCollisions(collision);
         }
         protected void CheckCollisions(Collider2D collision)
         {

@@ -1,5 +1,83 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1799860238106709421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7278545551737814706}
+  - component: {fileID: 7493885164272113581}
+  - component: {fileID: 3838641171617271482}
+  m_Layer: 9
+  m_Name: body
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7278545551737814706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799860238106709421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.017, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4006037521312536418}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7493885164272113581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799860238106709421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f574d9b504010264aa6173d6d9400def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invMissile: 1
+  invSuperMissile: 1
+  invBomb: 1
+  invSuperBomb: 1
+  invFreeze: 1
+  invBeam: 1
+  invPlasma: 1
+  invSpazer: 1
+--- !u!61 &3838641171617271482
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799860238106709421}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.44}
+  m_EdgeRadius: 0
 --- !u!1 &4006037521312536428
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,6 +111,7 @@ Transform:
   m_Children:
   - {fileID: 7163018749533205304}
   - {fileID: 5087077402712921751}
+  - {fileID: 7278545551737814706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 930449575
   m_SortingLayer: 1
   m_SortingOrder: 14
-  m_Sprite: {fileID: 7465757490682690496, guid: e1feb40f77132884f94bb96692afca50, type: 3}
+  m_Sprite: {fileID: 8594102065694713815, guid: 1b54b27d134b8494ca798f96bda73f62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -85,7 +164,7 @@ SpriteRenderer:
   m_Size: {x: 0.24, y: 0.65}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2984047993921823497
@@ -103,10 +182,7 @@ MonoBehaviour:
   speed: 0
   detectPlayer: 1
   stopAll: 0
-  hurtBox: {fileID: 7940985189559548081}
   gadoraBlast: {fileID: 1843530356404384999, guid: 8558d56c18a1fa145ac9337cad46db36, type: 3}
-  deadSound: {fileID: 5122862422074326034, guid: bccb81efe6a1c09469ab7d11ee28ede4, type: 3}
-  deadPrefab: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
   shootPoint: {fileID: 5087077402712921751}
 --- !u!95 &7426352251889530698
 Animator:
@@ -120,8 +196,8 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6f0ead23ba5fc1b44a326f2cffa43bbf, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -174,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6816403141603077964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.083, y: 0, z: 0}
+  m_LocalPosition: {x: 0.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4006037521312536418}
@@ -219,7 +295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  enemyType: 0
   invMissiles: 0
   invSuperMissiles: 0
   invBeams: 1
@@ -236,11 +311,10 @@ MonoBehaviour:
   plasma: 0
   charged: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
-  deathClip: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
   freezedCol: {fileID: 0}
   rigidCol: {fileID: 0}
+  pooleable: 0
   collideDamage: 14
-  deadPrefab: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
 --- !u!1 &8003527851385378797
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 2181901
   m_SortingLayer: 2
   m_SortingOrder: 6
-  m_Sprite: {fileID: 7540216219028455526, guid: e1feb40f77132884f94bb96692afca50, type: 3}
+  m_Sprite: {fileID: -7656317365198251544, guid: 1b54b27d134b8494ca798f96bda73f62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -171,3 +171,5 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 1.5
   pooleable: 0
+  collisionParticles: {fileID: 1445918874815795454, guid: e3371070540864848b55dba04588d5ad, type: 3}
+  canDestroyBeams: 1

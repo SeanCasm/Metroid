@@ -34,8 +34,8 @@ public class Turret : MonoBehaviour
     IEnumerator Attack(){
         while (player != null)
         {
-            Shoot();
             yield return new WaitForSeconds(3.5f);
+            Shoot();
         }
     }
     private void Shoot(){

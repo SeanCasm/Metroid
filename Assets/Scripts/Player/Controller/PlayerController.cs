@@ -121,7 +121,8 @@ public class PlayerController : MonoBehaviour
                 OnSpin = false;
                 angleAim = 0;
                 aimUpDown = 0;
-            }else gun.OnStand?.Invoke();
+            }
+            else gun.OnStand?.Invoke();
         }
     }
     public Rigidbody2D rb { get; private set; }
@@ -704,11 +705,22 @@ public class PlayerController : MonoBehaviour
         if (_groundState != GroundState.Crouched)
         {
             OnJump?.Invoke();
-            if (_onSpin && groundChecker.CheckWallJump(xInput))
-                IsJumping = OnSpin = true;
+            StartCoroutine(nameof(WaitToWallJump));
         }
     }
     #endregion
+    /*
+        Called at the end of the current frame to solve a issue with the pivot.
+    */
+    IEnumerator WaitToWallJump()
+    {
+        yield return new WaitForEndOfFrame();
+        if (_onSpin && groundChecker.CheckWallJump(xInput))
+        {
+            IsJumping = OnSpin = true;
+            jumpTimeCounter = jumpTime/2;
+        }
+    }
     #endregion
 }
 public enum AngleAim

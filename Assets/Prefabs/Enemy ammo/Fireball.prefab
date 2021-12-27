@@ -141,6 +141,8 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 2
   pooleable: 0
+  collisionParticles: {fileID: 1445918874815795454, guid: e3371070540864848b55dba04588d5ad, type: 3}
+  angleLimit: 0
   groundFireBall: {fileID: 4126431908860608458, guid: c876da530d3a8784787c5d5aba6900d2, type: 3}
   groundFireBallTime: 2.54
 --- !u!50 &1580789749538741161

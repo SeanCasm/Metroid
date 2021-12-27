@@ -270,6 +270,8 @@ MonoBehaviour:
   direction: {x: 1, y: 0, z: 0}
   speed: 1.35
   pooleable: 1
+  collisionParticles: {fileID: 1445918874815795454, guid: e3371070540864848b55dba04588d5ad, type: 3}
+  canDestroyBeams: 1
   floorCol: {fileID: 3451057166715912256}
   explosion: {fileID: 338955410158009082, guid: ed52c26abe576934ab72d20f58cd6283, type: 3}
   oneSide: {fileID: 1403161124463890837}
@@ -422,4 +424,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 216775255422320508}
