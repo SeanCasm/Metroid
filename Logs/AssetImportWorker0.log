@@ -15,11 +15,11 @@ C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64474
+61729
 Successfully changed project path to: C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 C:/Users/Sebastian Cataldo/Documents/GitHub/Metroid
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 144.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 95.06 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.2f1 (e5d502d80fbb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Resources/UnitySubsystems
@@ -36,252 +36,140 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002517 seconds.
+Registered in 0.002079 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 116.93 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 88.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.191 seconds
+- Completed reload, in  1.757 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006571 seconds.
+Registered in 0.004432 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 87.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.342 seconds
+- Completed reload, in  1.017 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4735 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.8 MB.
+System memory in use before: 200.9 MB.
 System memory in use after: 201.1 MB.
 
 Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 5176.
-Total: 4.178900 ms (FindLiveObjects: 0.425500 ms CreateObjectMapping: 0.176500 ms MarkObjects: 3.486100 ms  DeleteObjects: 0.090000 ms)
+Total: 4.066000 ms (FindLiveObjects: 0.949800 ms CreateObjectMapping: 0.286900 ms MarkObjects: 2.746300 ms  DeleteObjects: 0.081600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/Enemies/Blue Choot.png
-  artifactKey: Guid(d6a72397fbe8be34abe3fa3f32d5acfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Blue Choot.png using Guid(d6a72397fbe8be34abe3fa3f32d5acfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2e6db58387a96553feedcc685ddc54') in 0.194936 seconds 
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dcb5bad0d6e0499438b8723603528c3') in 0.296605 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/Sprites/Enemies/Others enemies.png
-  artifactKey: Guid(20f53ea33696a764e83d37dc498c7a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Others enemies.png using Guid(20f53ea33696a764e83d37dc498c7a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c81abfb6ea9ebd89ac9bfa52540d947') in 0.066284 seconds 
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c835d5d81cbd61faf037eecf4555fb') in 0.023185 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/Sprites/Enemies/Kraid front leg.psb
-  artifactKey: Guid(1f22334dddf75fc4eb4c6e33dcaba4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Kraid front leg.psb using Guid(1f22334dddf75fc4eb4c6e33dcaba4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d72f6068670b50b7794c2f6fd651e6') in 0.196904 seconds 
+  Time since last request: 42.435067 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c1dd13eaa732a9eb9a34572b515d75') in 0.051105 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000353 seconds.
-  path: Assets/Sprites/Enemies/Black pirate.png
-  artifactKey: Guid(02ac32b88a231044ca82eee86e4494a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Black pirate.png using Guid(02ac32b88a231044ca82eee86e4494a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ade748816dd60b4144fc76f3102bf0d') in 0.195307 seconds 
+  Time since last request: 0.000177 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957a1b69d005357678680c9e36f9a254') in 0.021902 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Sprites/Enemies/Walkers.png
-  artifactKey: Guid(1f56c361216d78e41af99fa5ee0818b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Walkers.png using Guid(1f56c361216d78e41af99fa5ee0818b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70313d2ead604ff7277310e9f759e38') in 0.124139 seconds 
+  Time since last request: 27.146107 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad2a13b82c78f67984e5344d6d001d0') in 0.050435 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Sprites/Enemies/Towards.png
-  artifactKey: Guid(9ce6d137f4166574abe0e24fd023bef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Towards.png using Guid(9ce6d137f4166574abe0e24fd023bef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adfa2fe1dbc4cdfa44d47ea3815f813b') in 0.071372 seconds 
+  Time since last request: 0.000189 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4572196270aacc52da850e2297a4ba86') in 0.022279 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4554 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.5 MB.
+System memory in use after: 200.9 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 6690.
+Total: 7.079600 ms (FindLiveObjects: 0.720000 ms CreateObjectMapping: 0.506200 ms MarkObjects: 5.802700 ms  DeleteObjects: 0.048700 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Sprites/Enemies/Flyings.png
-  artifactKey: Guid(04eae3ff68dfa004587569f7c74380c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Flyings.png using Guid(04eae3ff68dfa004587569f7c74380c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57b760e2bbc3b27fa1eeaa497306787') in 0.066307 seconds 
+  Time since last request: 76.413129 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b8a04b493a76cda9c45ab360ff93b5') in 0.219465 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Sprites/Enemies/pixilart-drawing.png
-  artifactKey: Guid(6a255735cfc961948b1cc5ef0a5bc312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/pixilart-drawing.png using Guid(6a255735cfc961948b1cc5ef0a5bc312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66a78520542d55bb2a3474ab677a460') in 0.025139 seconds 
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47cab5da682d230184f804d6c2c092e') in 0.022036 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Sprites/Enemies/Ridley tail.psb
-  artifactKey: Guid(f1dd1b872e405f641b53f03bcab22875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Ridley tail.psb using Guid(f1dd1b872e405f641b53f03bcab22875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9ed651929353743bad0e54bd1a6e8a') in 0.061895 seconds 
+  Time since last request: 2.182027 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b2f0e098b9e7cdb9dd5a28ae44a9b5') in 0.052140 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/Sprites/Enemies/Serris.png
-  artifactKey: Guid(3117facfdab29594da507466e84618e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Serris.png using Guid(3117facfdab29594da507466e84618e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a4b19a2697f5de6df83489b09ed26b') in 0.056208 seconds 
+  Time since last request: 0.000211 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34390247e3e1476cbbb5b8a84af10233') in 0.022412 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Sprites/Enemies/Moto.png
-  artifactKey: Guid(6f472b52e1398314d9c4c1ec9f19f8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Moto.png using Guid(6f472b52e1398314d9c4c1ec9f19f8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bfc2fd49bc6f6797b2c0312fac16735') in 0.081056 seconds 
+  Time since last request: 48.974561 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ea64a41bdc6d8fcf97a591eac32df3') in 0.060055 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Sprites/Enemies/ridley sprites.png
-  artifactKey: Guid(73b98196b9ef68d4d870c47f54ba0ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/ridley sprites.png using Guid(73b98196b9ef68d4d870c47f54ba0ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475d98c20f7561a8532c423020e91094') in 0.157512 seconds 
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5bfd7669f565ebdf4b6a054ecadae4') in 0.022568 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Sprites/Enemies/Powamp.png
-  artifactKey: Guid(6dc7efc05c5cac047a838d9aa16ae0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Powamp.png using Guid(6dc7efc05c5cac047a838d9aa16ae0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6d38f2de6691ecf6673f84606c88a0') in 0.047158 seconds 
+  Time since last request: 2.327586 seconds.
+  path: Assets/Prefabs/Scenarios/Map room.prefab
+  artifactKey: Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Map room.prefab using Guid(144cf6e1d03b3dd479d4763fc912758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bb56a5af1f6cd7711b21eb635326ca') in 0.049492 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Sprites/Enemies/Gadora.png
-  artifactKey: Guid(1b54b27d134b8494ca798f96bda73f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Gadora.png using Guid(1b54b27d134b8494ca798f96bda73f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba485edf5c374d8bc3875234feacfb79') in 0.036346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Sprites/Enemies/Hornad.png
-  artifactKey: Guid(12b787167f766d646a7b7ef0e900527f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Hornad.png using Guid(12b787167f766d646a7b7ef0e900527f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9935275530bb79e37f6c5a72318fdb36') in 0.080746 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Sprites/Enemies/Kraid_final.png
-  artifactKey: Guid(21f9bdde2fe306c4c88a0c4da832378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Kraid_final.png using Guid(21f9bdde2fe306c4c88a0c4da832378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650e6245827d2c7d51c6bf043c54fd5a') in 0.122317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Sprites/Enemies/Minis.png
-  artifactKey: Guid(f7a49c419be602a4e9042f8ef19e65df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Minis.png using Guid(f7a49c419be602a4e9042f8ef19e65df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f03bc7c41bf45181105c2a990a083c') in 0.055162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Sprites/Enemies/Cacatacs.png
-  artifactKey: Guid(16e5cab630711cf40823da5f2e549583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Cacatacs.png using Guid(16e5cab630711cf40823da5f2e549583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0966a20fdd8b2f7afe07288d8c79741') in 0.069571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000476 seconds.
-  path: Assets/Sprites/Enemies/Metroids.png
-  artifactKey: Guid(f968214e70bc6a74d905ebee309af540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Metroids.png using Guid(f968214e70bc6a74d905ebee309af540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0afc4d33b29d54ab974b16f263a8f7') in 0.038321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Sprites/Enemies/ice pirate.png
-  artifactKey: Guid(3efbe7aed5dfb334aab2f81bd48a143d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/ice pirate.png using Guid(3efbe7aed5dfb334aab2f81bd48a143d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2136033bfcc6d8d7086c37f248e52d0b') in 0.136644 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Sprites/Enemies/space pirates.png
-  artifactKey: Guid(6dcac50c00a3a2b49ab7ee0fb0d62442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/space pirates.png using Guid(6dcac50c00a3a2b49ab7ee0fb0d62442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc395fb2eeeb8474163e60791939b76') in 0.134140 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.465597 seconds.
-  path: Assets/Sprites/Enemies/Enemies.spriteatlas
-  artifactKey: Guid(fa0f849ad3d800b428b8b599d6ab4e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Enemies.spriteatlas using Guid(fa0f849ad3d800b428b8b599d6ab4e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b392494c97cac66b8da56589344ffa86') in 0.046684 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.825973 seconds.
-  path: Assets/Resources/PlayerSuits/Death.png
-  artifactKey: Guid(e827c709b0292884e9aafbbcfa31ede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Death.png using Guid(e827c709b0292884e9aafbbcfa31ede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851b625892b34bb3c0e885c776e92d18') in 0.060733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Resources/PlayerSuits/Player.png
-  artifactKey: Guid(feb6850fa9c9d3141a9253a33abe97d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player.png using Guid(feb6850fa9c9d3141a9253a33abe97d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39512172b26ef67b7a6469f0ade3099') in 0.301469 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Resources/PlayerSuits/PlayerL.png
-  artifactKey: Guid(a7a0e8ceed40e4d4f857d6e4522354ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/PlayerL.png using Guid(a7a0e8ceed40e4d4f857d6e4522354ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f128774b3ae4f76a19d66f227ce46015') in 0.222829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Resources/PlayerSuits/Player3.png
-  artifactKey: Guid(df93096a8fb33f446913542c1494f6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player3.png using Guid(df93096a8fb33f446913542c1494f6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e351d78246d33038f121019df44e0b') in 0.197363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Resources/PlayerSuits/Player3L.png
-  artifactKey: Guid(cf1b2e5620dbd264ba4886500e0eec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player3L.png using Guid(cf1b2e5620dbd264ba4886500e0eec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1dbbbb7d4aa075965a01a7014c57bc') in 0.197065 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.725744 seconds.
-  path: Assets/Resources/PlayerSuits/Player.spriteatlas
-  artifactKey: Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player.spriteatlas using Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa5d975c67022cbaed730f881c0465b') in 0.005234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 63.718057 seconds.
-  path: Assets/Resources/PlayerSuits/Player.spriteatlas
-  artifactKey: Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player.spriteatlas using Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76292700479666d40475e6820d39297') in 0.025015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.917058 seconds.
-  path: Assets/Resources/PlayerSuits/Player.spriteatlas
-  artifactKey: Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player.spriteatlas using Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87340a8ec81880abbd91fab6a6024d6b') in 0.025266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.134228 seconds.
-  path: Assets/Resources/PlayerSuits/Player.spriteatlas
-  artifactKey: Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PlayerSuits/Player.spriteatlas using Guid(b8bdbb17eca63f744925ee7e8457cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0aef69ff86e461ae8bcdec97124eb77') in 0.024873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.219519 seconds.
-  path: Assets/Sprites/Objects/Ridley special tail.psb
-  artifactKey: Guid(9bcd91438fe64874f9bd628887bfbda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Objects/Ridley special tail.psb using Guid(9bcd91438fe64874f9bd628887bfbda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5782350c5068137d7b7055fb7ebf935') in 0.073892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.934649 seconds.
-  path: Assets/Sprites/Objects/Items and more.spriteatlas
-  artifactKey: Guid(a524bd3b04f529c42be89555d124943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Objects/Items and more.spriteatlas using Guid(a524bd3b04f529c42be89555d124943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0a740b6a7b31a2b6e1fa5088085ad0') in 0.008671 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.808885 seconds.
-  path: Assets/Sprites/Objects/Items and more.spriteatlas
-  artifactKey: Guid(a524bd3b04f529c42be89555d124943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Objects/Items and more.spriteatlas using Guid(a524bd3b04f529c42be89555d124943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09116b2b7620f802683f865eef02d3a2') in 0.007721 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.687655 seconds.
-  path: Assets/Sprites/Enemies/Enemies.spriteatlas
-  artifactKey: Guid(fa0f849ad3d800b428b8b599d6ab4e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enemies/Enemies.spriteatlas using Guid(fa0f849ad3d800b428b8b599d6ab4e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd879d0581657d2d57b1e4a6feee2fbd0') in 0.044353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.885395 seconds.
-  path: Assets/Sprites/Tiles/Tiles.spriteatlas
-  artifactKey: Guid(40518265419e8714380281758accac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Tiles/Tiles.spriteatlas using Guid(40518265419e8714380281758accac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1882430eed44f8f3ab0a5c763d5be9') in 0.013875 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  Time since last request: 0.000188 seconds.
+  path: Assets/Prefabs/Scenarios/Save Station.prefab
+  artifactKey: Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenarios/Save Station.prefab using Guid(a8d90b10eeec382479caea196d2e12da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb19325e12dd7d25cf2a69faaf2387e') in 0.021868 seconds 

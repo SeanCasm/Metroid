@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2139196174266745950}
   - component: {fileID: 3969038758238261161}
   - component: {fileID: 7824893213575205020}
-  - component: {fileID: 7693889550428308709}
   - component: {fileID: 8125364518172503431}
   m_Layer: 9
   m_Name: Waver 2
@@ -116,7 +115,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139196174266745951}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -129,32 +128,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &7693889550428308709
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139196174266745951}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0041446686, y: -0.0062179565}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.11}
-    newSize: {x: 0.26, y: 0.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1812439, y: 0.07269287}
-  m_EdgeRadius: 0
 --- !u!114 &8125364518172503431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,10 +140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b84ca1036b6f84f9c3a91d16ca2ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 42
   detectPlayer: 0
   stopAll: 0
   direction: {x: 1, y: -1}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!58 &7426799986739773032
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -258,7 +234,7 @@ PrefabInstance:
     - target: {fileID: -5384935738484045062, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: rigidCol
       value: 
-      objectReference: {fileID: 7693889550428308709}
+      objectReference: {fileID: 0}
     - target: {fileID: -5384935738484045062, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 
@@ -326,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: rigidCol
       value: 
-      objectReference: {fileID: 7693889550428308709}
+      objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 

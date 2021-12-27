@@ -47,7 +47,7 @@ public class SaveAndLoad : MonoBehaviour
         health.LoadHealth(data);
         map.LoadMap(data);
         GameDataContainer.instance.InitBossList(data.bossesDefeated);
-        TimeCounter.SetTimeAfterLoad(data.time);
+        TimeCounter.instance.time=data.time;
         inventory.LoadInventory(data);
         gun.LoadAndCreateLimitedAmmo(data);
         GameDataContainer.instance.InitMapTerminalsList(data.mappers);
@@ -70,6 +70,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         Pause.onGame = true;
         Slots.retry = false;
+        TimeCounter.instance.StartCounter();
         Time.timeScale = 1f;
     }
 }

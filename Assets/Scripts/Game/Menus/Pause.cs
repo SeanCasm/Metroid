@@ -97,6 +97,7 @@ public class Pause : MonoBehaviour
         gameSettings.SetEffectsVolume(true);
         gameSettings.SetMusicVolume(true);
         Time.timeScale = 0f;
+        TimeCounter.instance.PauseTimer();
     }
     public void Unpause()
     {
@@ -109,11 +110,11 @@ public class Pause : MonoBehaviour
         PauseSystem.instance.EnablePlayerContoller(true);
         gameSettings.SetEffectsVolume(false);
         gameSettings.SetMusicVolume(false);
-        GameEvents.instance.timeCounter?.Invoke(true);
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
         playerMenu.SetActive(false);
         escPause=enterPause = false;
+        TimeCounter.instance.StartCounter();
     }
     /// <summary>
     /// Used in Resume button onclick event at playerMenu.
@@ -150,7 +151,6 @@ public class Pause : MonoBehaviour
         //Setting the first select.
         options = GetComponentAtIndex(pauseMenu, 2);
 
-        GameEvents.instance.timeCounter.Invoke(false);//pauses the time counter.
     }
     private Button GetComponentAtIndex(GameObject someObject, int index)
     {

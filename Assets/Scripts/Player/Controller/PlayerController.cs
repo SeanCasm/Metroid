@@ -354,7 +354,7 @@ public class PlayerController : MonoBehaviour
     public void OnSaveStation(Vector2 position)
     {
         ResetState();
-        SetAnimation(14, true);
+        SetAnimation(15, true);
         inputManager.DisableAll();
         SetTransformCenter(position);
         SetConstraints(RigidbodyConstraints2D.FreezeAll);
@@ -401,6 +401,7 @@ public class PlayerController : MonoBehaviour
     {
         CancelInvoke();
         groundChecker.ResetState();
+        inputManager.DisablePlayerInput();
         fall = IsJumping = onJumpingState = isGrounded = OnSpin = airShoot = false;
         xInput = yInput = 0;
         angleAim = 0;

@@ -13,7 +13,6 @@ public class GameEvents:MonoBehaviour
     /// Verifies the existence of reserve and items in the collector manager.
     /// </summary>
     public Func<int,bool,bool> CheckExistence;
-    public Action<bool> timeCounter;
     /// <summary>
     /// Goes directly to the minimap, used in map updater.
     /// </summary>

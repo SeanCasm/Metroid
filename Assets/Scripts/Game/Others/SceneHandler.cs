@@ -74,6 +74,7 @@ public class SceneHandler : MonoBehaviour
             e.enabled = true;
         }
         Pause.onGame = true;
+        TimeCounter.instance.StartCounter();
         Time.timeScale = 1f;
     }
 }

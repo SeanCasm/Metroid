@@ -7,6 +7,7 @@ public class SaveStation : MonoBehaviour
 {
     private InputManager inputManager;
     [SerializeField] Transform spawn;
+    [SerializeField] GameObject canvasObject;
     private SaveAndLoad saveLoad;
     private PlayerController playerController;
     private Player.AnimatorHandler animatorHandler;
@@ -48,6 +49,12 @@ public class SaveStation : MonoBehaviour
         playerController.SetAnimation(15,false);
         inputManager.EnableAll();
         playerController.enabled=true;
+
+        canvasObject.SetActive(true);
+        Invoke(nameof(DisableCanvasObject),2f);
+    }
+    void DisableCanvasObject(){
+        canvasObject.SetActive(false);
     }
     #endregion
 }

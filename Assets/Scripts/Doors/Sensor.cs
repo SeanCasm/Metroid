@@ -67,7 +67,6 @@ public class Sensor : MonoBehaviour
             {
                 gameDataContainer.AddDoor(id);
                 weaponTierToUnlock = 0;
-                print(id);
             }
         }
     }

@@ -76,7 +76,7 @@ public class Slots : MonoBehaviour
             stickySlots[slotIndex].SetActive(true);
             stickySlots[slotIndex].GetComponentInChildren<TextMeshProUGUI>().text = data.ammoMunition[3].ToString();
         }
-        times[slotIndex].text = TimeCounter.TimeArrayIntToString(data.time);
+        times[slotIndex].text = TimeCounter.instance.TimeArrayIntToString(data.time);
         energySlot[slotIndex].SetActive(true);
         energyUI[slotIndex].sizeDelta = new Vector2(16f * totalTanks, 16f);
     }
@@ -120,7 +120,6 @@ public class Slots : MonoBehaviour
         else NewGameData();
         startGame.Invoke();
         Pause.OnPauseInput?.Invoke(false);
-        GameEvents.instance.timeCounter.Invoke(true);
     }
     private void OnDestroy() {
         pointer.SetParent(canvas);

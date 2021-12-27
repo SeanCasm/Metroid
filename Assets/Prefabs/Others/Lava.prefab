@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageCall: 1
-  damage: 2
+  damage: 7
 --- !u!1 &4485313583166043462
 GameObject:
   m_ObjectHideFlags: 0

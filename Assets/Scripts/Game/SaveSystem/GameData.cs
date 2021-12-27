@@ -19,7 +19,7 @@ public class GameData
     public List<(string name, int xpos, int ypos)> tileInfo { get; set; } = new List<(string name, int xpos, int ypos)>();
     public List<(string name, int xpos, int ypos)> tileInfoUnexplroed { get; set; } = new List<(string name, int xpos, int ypos)>();
     public List<int> doorsUnlocked= new List<int>();
-    public int[] time = new int[4];
+    public float time;
     public bool[] miniMapItem = new bool[40];
     public GameData(PlayerInventory inventory, PlayerHealth energy, MapSaveSystem map, float[] pos, string sectorName,Gun gun)
     {
@@ -35,10 +35,7 @@ public class GameData
             }
             tileInfo =  new List<(string name, int xpos, int ypos)>(map.tileInfo);
             tileInfoUnexplroed= new List<(string name, int xpos, int ypos)>(map.tileInfoUnexplored);
-            time[0] = TimeCounter.hours;
-            time[1] = TimeCounter.minutes;
-            time[2] = TimeCounter.seconds;
-            time[3] = TimeCounter.miliseconds;
+            time = TimeCounter.instance.time;
             reserve = new List<int>(inventory.reserve);
             SelectItemsData(inventory);
             bossesDefeated = new List<int>(gameDataContainer.bossesDefeated);

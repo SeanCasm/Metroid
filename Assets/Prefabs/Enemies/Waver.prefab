@@ -241,10 +241,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b84ca1036b6f84f9c3a91d16ca2ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 42
   detectPlayer: 0
   stopAll: 0
-  direction: {x: 0, y: 0}
+  direction: {x: 1, y: 1}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &8631883446290072926
 GameObject:
   m_ObjectHideFlags: 0

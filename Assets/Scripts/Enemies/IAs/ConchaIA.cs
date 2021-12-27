@@ -4,27 +4,26 @@ using UnityEngine;
 using Enemy;
 public class ConchaIA : EnemyBase
 {
-    [SerializeField]Vector2 direction;
+    [SerializeField] Vector2 direction;
+    [SerializeField] LayerMask groundLayer;
     private float currentSpeed;
-    Vector2 lastVelocity;
     new void Awake()
     {
         base.Awake();
         currentSpeed = speed;
     }
-    void FixedUpdate()
+    void Update()
     {
-        lastVelocity = rigid.velocity;
-        rigid.velocity = direction.normalized * currentSpeed;
-    }
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Suelo")
+        RaycastHit2D raycastHit2D = Physics2D.CircleCast(transform.position, .1f, Vector2.zero, 0, groundLayer);
+        if (raycastHit2D)
         {
-            var speed = lastVelocity.magnitude;
-            direction = Vector2.Reflect(lastVelocity.normalized, col.contacts[0].normal);
-            rigid.SetVelocity(direction * Mathf.Max(currentSpeed, 0f));
-            transform.eulerAngles=(direction.x<0)?new Vector3(0, 180, 0):new Vector3(0, 0, 0);
+            direction = Vector2.Reflect(direction, raycastHit2D.normal);
         }
+        transform.eulerAngles = (direction.x < 0) ? new Vector3(0, 180, 0) : new Vector3(0, 0, 0);
+
     }
+    private void FixedUpdate() {
+        rigid.velocity = direction*currentSpeed*Time.deltaTime;
+    }
+
 }

@@ -545,6 +545,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: ab65e26ea4da9d34f83094c1e8812d58
+    m_Address: Assets/Prefabs/Scenarios/Lava.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4192fab993b12ba48878343d399f62c1, type: 2}
   m_SchemaSet:
