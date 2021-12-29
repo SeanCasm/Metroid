@@ -11,6 +11,7 @@ public class GameUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI health;
     [SerializeField] RectTransform healthImage;
     [SerializeField] List<GameObject> hudElements;
+    [SerializeField] GameObject teleportElement;
     //toggleUI+=UpdateSelection;
       //  enableUI+=SetEnable;
     #endregion

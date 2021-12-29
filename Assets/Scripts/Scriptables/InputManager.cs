@@ -13,6 +13,11 @@ using static Metroid;
 //[CreateAssetMenu(fileName = "InputManager", menuName = "ScriptableObjects/Input/InputManager")]
 public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
 {
+    [SerializeField] TextMeshProUGUI controlPanel;
+    [SerializeField] Button inputButton;
+    [SerializeField] GameObject options, control, touchpad, selectBack;
+    [SerializeField] EventSystem eventSystem;
+    [SerializeField] List<KeySet> keyCollection = new List<KeySet>();
     public PlayerInput playerInput;
     private Metroid inputClass;
     public Action<InputAction.CallbackContext> HorizontalMovement, HorizontalMovementCanceled = delegate { };
@@ -35,18 +40,16 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     private Queue inputQueue;
     public bool lockFireInput { get; set; }
     public bool isTouchingStick { get; set; }
-    [SerializeField] TextMeshProUGUI controlPanel;
-    [SerializeField] Button inputButton;
-    [SerializeField] GameObject options, control, touchpad, selectBack;
-    [SerializeField] EventSystem eventSystem;
-    [SerializeField] List<KeySet> keyCollection = new List<KeySet>();
-    public static CurrentDevice actualDevice;
+
+    private CurrentDevice actualDevice;
     private void Start()
     {
-        #if UNITY_ANDROID
+        playerInput.enabled=true;
+#if UNITY_ANDROID
         inputButton.interactable=false;
+        playerInput.enabled=false;
         controlPanel.text = "Gamepad options";
-        #endif
+#endif
         CurrentControlScheme(playerInput);
     }
     public void CurrentControlScheme(PlayerInput playerInput)
@@ -56,20 +59,20 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
             case "Gamepad":
 #if UNITY_STANDALONE
 
-                    RebindKeys.deviceType = CurrentDevice.Gamepad;
-                    actualDevice = CurrentDevice.Gamepad;
-                    controlPanel.text = "Gamepad options";
-                    UIInputKeyHandler.current.SetInputKeys(InputControlPath.ToHumanReadableString(
-                 GetBackEffectivePath(1),
-                 InputControlPath.HumanReadableStringOptions.OmitDevice
-             ), InputControlPath.ToHumanReadableString(GetSelectEffectivePath(1),
-                 InputControlPath.HumanReadableStringOptions.OmitDevice));
-                 keyCollection.ForEach(item =>
-                    {
-                        item.Start();
-                        item.SetIndex(false);
-                        item.SetKeyText();
-                    });
+                RebindKeys.deviceType = CurrentDevice.Gamepad;
+                actualDevice = CurrentDevice.Gamepad;
+                controlPanel.text = "Gamepad options";
+                UIInputKeyHandler.current.SetInputKeys(InputControlPath.ToHumanReadableString(
+             GetBackEffectivePath(1),
+             InputControlPath.HumanReadableStringOptions.OmitDevice
+         ), InputControlPath.ToHumanReadableString(GetSelectEffectivePath(1),
+             InputControlPath.HumanReadableStringOptions.OmitDevice));
+                keyCollection.ForEach(item =>
+                   {
+                       item.Start();
+                       item.SetIndex(false);
+                       item.SetKeyText();
+                   });
 #endif
 
 #if UNITY_ANDROID
@@ -90,7 +93,7 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
                     item.Start();
                     item.SetIndex(true);
                     item.SetKeyText();
-                    
+
                 });
                 UIInputKeyHandler.current.SetInputKeys(InputControlPath.ToHumanReadableString(
             GetBackEffectivePath(0),

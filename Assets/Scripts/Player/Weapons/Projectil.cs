@@ -15,7 +15,6 @@ namespace Player.Weapon
         protected IDamageable<float> health;
         private bool poolRemoved, collided;
         protected IInvulnerable iInvulnerable;
-        public Vector3 Direction { get { return direction; } set { direction = value; } }
         public bool IsSpazer => isSpazer;
 
         public Transform parent { get; set; }

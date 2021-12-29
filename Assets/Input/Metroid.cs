@@ -256,7 +256,7 @@ public partial class @Metroid : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""adfc01d1-5bd6-4a0b-892e-d28e80147aa5"",
-                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""path"": ""<Gamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -267,7 +267,7 @@ public partial class @Metroid : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""8f4e8402-468a-4f9b-b59c-bf5f2e5bd811"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""path"": ""<Gamepad>/dpad/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -311,7 +311,7 @@ public partial class @Metroid : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""345e21a3-647f-46b1-97fc-ec8d96371221"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""path"": ""<Gamepad>/dpad/right"",
                     ""interactions"": """",
                     ""processors"": ""StickDeadzone"",
                     ""groups"": ""Gamepad"",
@@ -322,7 +322,7 @@ public partial class @Metroid : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""3982df20-456b-43b5-b488-32ae36f02b7d"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""path"": ""<Gamepad>/dpad/left"",
                     ""interactions"": """",
                     ""processors"": ""StickDeadzone"",
                     ""groups"": ""Gamepad"",

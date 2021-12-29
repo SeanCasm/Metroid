@@ -17,9 +17,6 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] SkinSwapper skin;
     [SerializeField] PlayerHealth playerHealth;
     [SerializeField] TouchpadHandler touchpadHandler;
-    public UnityEvent<int,int> ammoUpdate;
-    public UnityEvent<int,bool> viewUpdate;
-    public UnityEvent<int> enableItem;
     public static System.Action GravitySetted;
     public ButtonUtilities bUtilities{get=>buttonEssentials;set=>buttonEssentials=value;}
     public static System.Action GravityUnsetted;
@@ -107,7 +104,6 @@ public class PlayerInventory : MonoBehaviour
             touchpadHandler.SwapSpriteSuits("power");
         }
     }
-     
  
     public void SetSpaceJump(){
         playerFX.StopJumps();

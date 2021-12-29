@@ -143,6 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e7c9931a143df40927f205f64894d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Infinite jumps on air
+  message: Loopeable jumps
   iD: 9
   itemType: 0

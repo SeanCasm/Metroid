@@ -4,7 +4,6 @@ using UnityEngine;
 using Player.Weapon;
 using System;
 using UnityEngine.InputSystem;
-using Player;
 using UnityEngine.Events;
 
 public class Gun : MonoBehaviour, IFulleable
@@ -34,15 +33,10 @@ public class Gun : MonoBehaviour, IFulleable
     public bool canInstantiate { get; set; } = true;
     //0: missiles, 1: super missiles, 2: super bombs, 3: bouncing bomb
     public LimitedAmmo[] limitedAmmo { get; set; } = new LimitedAmmo[4];
-    public bool GunMissileAmmoSelected
-    {
+    public bool GunMissileAmmoSelected{
         get
         {
-            foreach (var item in gunSelectedID)
-            {
-                if (item == pressCount) return true;
-            }
-            return false;
+            return Array.Exists(gunSelectedID,item=>item==pressCount);
         }
     }
     void Awake()
@@ -61,7 +55,6 @@ public class Gun : MonoBehaviour, IFulleable
     private void OnDisable()
     {
         inputManager.AmmoSelection -= SelectingAmmo;
-
         inputManager.Fire -= FireStarted;
         inputManager.FirePerformed -= FirePerformed;
         inputManager.FireCanceled -= FireCanceled;
@@ -131,6 +124,7 @@ public class Gun : MonoBehaviour, IFulleable
                 }
                 else
                 {
+                    gunSprite.enabled=false;
                     if (pCont.GroundState != GroundState.Balled)
                     {
                         OnStand = BombSelectionOnStand;

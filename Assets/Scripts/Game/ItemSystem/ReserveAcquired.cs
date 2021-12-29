@@ -48,4 +48,4 @@ public class ReserveAcquired : MonoBehaviour,ICollecteable
   
     #endregion
 }
-public enum ReserveType{Missile, SuperMissile, SuperBomb, EnergyTank, BouncingBomb}
+public enum ReserveType{Missile, SuperMissile, SuperBomb, EnergyTank, BouncingBomb,Special}

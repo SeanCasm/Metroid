@@ -8,9 +8,8 @@ using UnityEngine;
 /// </summary>
 public class BigClaw : Weapon
 {
-    [SerializeField] Collider2D floorCol;
     [SerializeField] GameObject explosion;
-    [SerializeField] GameObject oneSide,damageCol;
+    [SerializeField] GameObject damageCol,ground;
     Animator animator;
     public event Action OnDisable;
     private float curSpeed;
@@ -23,13 +22,14 @@ public class BigClaw : Weapon
     new void Start() {
         base.Start();
         curSpeed=speed;
-        animator=GetComponent<Animator>();
+        animator=GetComponentInChildren<Animator>();
     }
     new void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Suelo") && other.IsTouching(floorCol)){
+        if(other.CompareTag("Suelo")){
             base.speed=0;
             damageCol.SetActive(false);
-            oneSide.SetActive(true);
+            ground.SetActive(true);
+            rigid.bodyType = RigidbodyType2D.Static;
             Invoke("Break",livingTime/2);
         }
     }
@@ -38,10 +38,11 @@ public class BigClaw : Weapon
         Invoke("Explode",livingTime/2);
     }
     void Explode(){
+        ground.SetActive(false);
         Instantiate(explosion,transform.position,Quaternion.identity,null);
+        rigid.bodyType = RigidbodyType2D.Kinematic;
         speed=curSpeed;
         damageCol.SetActive(true);
-        oneSide.SetActive(false);
         animator.Rebind();
         OnDisable?.Invoke();
     }

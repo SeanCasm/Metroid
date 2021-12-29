@@ -71,25 +71,30 @@ public class CollectorManager : MonoBehaviour
                 gun.limitedAmmo[0].AddCapacity(reserve.Amount);
                 break;
             case ReserveType.SuperMissile:
-                SetReserve(reserve,1);
+                SetReserve(reserve, 1);
                 break;
             case ReserveType.SuperBomb:
-                SetReserve(reserve,2);
+                SetReserve(reserve, 2);
                 break;
             case ReserveType.EnergyTank:
                 playerHealth.FillHealth();
                 break;
             case ReserveType.BouncingBomb:
-                SetReserve(reserve,3);
+                SetReserve(reserve, 3);
+                break;
+            case ReserveType.Special:
+                SetSpecialReserve(reserve);
                 break;
         }
         inventory.reserve.Add(reserve.ID);
         audioPlayer.ClipAndPlay(reserveAcquired);
         panel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = reserve.nameItem;
     }
-    private void SetReserve(ReserveAcquired reserve,int index)
+    private void SetSpecialReserve(ReserveAcquired reserve){
+    }
+    private void SetReserve(ReserveAcquired reserve, int index)
     {
-        if (!gun.CheckLimitedAmmo(index)) gun.AddNewLimitedAmmo(index,reserve.Amount);
+        if (!gun.CheckLimitedAmmo(index)) gun.AddNewLimitedAmmo(index, reserve.Amount);
         else gun.limitedAmmo[index].AddCapacity(reserve.Amount);
     }
     private void ItemAcquired(ItemAcquired item)

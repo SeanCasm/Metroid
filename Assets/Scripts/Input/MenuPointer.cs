@@ -8,11 +8,7 @@ public class MenuPointer : MonoBehaviour
 {
     [SerializeField] float distance;
     [SerializeField] RectTransform rect;
-    public static bool canMove=true;
     private RectTransform previousRectr;
-    void OnEnable() {
-        canMove=true;
-    }
     #region UI
     public void SetPointerPosition(RectTransform buttonRectr)
     {
@@ -34,11 +30,5 @@ public class MenuPointer : MonoBehaviour
         rect.anchoredPosition=new Vector2(-previousRectr.sizeDelta.x/2-distance,0);
         rect.localScale=new Vector2(1,1);
     }
-    public void DisablePointer(bool disable){
-        if(disable)canMove=false;
-        else canMove = true;
-    }
-        
     #endregion 
-    
 }

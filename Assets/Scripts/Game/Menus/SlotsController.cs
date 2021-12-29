@@ -22,7 +22,6 @@ public class SlotsController : Controller
     new void Back(InputAction.CallbackContext context) {
         if(onPanel){
             this.slot.interactable = !this.slot.interactable;
-            MenuPointer.canMove = true;
             curPanel.GetParent().SetActive(false);
             this.curPanel =null;
             eventSystem.SetSelectedGameObject(slot.gameObject);
@@ -32,12 +31,15 @@ public class SlotsController : Controller
     public void SetCurrentSlotPressed(Button slot){
         this.slot=slot;
         this.slot.interactable = !this.slot.interactable;
-        MenuPointer.canMove = this.slot.interactable;
         onPanel=true;
     }
     public void SetCurrentPanelFirstSelected(GameObject panelFirst){
         curPanel=panelFirst;
         eventSystem.SetSelectedGameObject(panelFirst);
+        onPanel=true;
+    }
+    public void SetCurrentPanelFirstSelected(){
+        eventSystem.SetSelectedGameObject(curPanel);
         onPanel=true;
     }
     public void SetOptionsFirstSelected(){

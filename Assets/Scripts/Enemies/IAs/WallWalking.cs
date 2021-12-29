@@ -98,6 +98,7 @@ public class WallWalking : EnemyBase
     private void CheckAlign()
     {
         RaycastHit2D align = Physics2D.Raycast(coll.bounds.center, -transform.up, floorAware, groundLayer);
+        transform.position = new Vector3(transform.position.x,align.point.y);
         if (align) SlopeInit(align);
     }
     private void SlopeInit(RaycastHit2D align)
@@ -112,12 +113,13 @@ public class WallWalking : EnemyBase
         if (prevAngle != curAngle) checkFloor = false;
         if (checkFloor) transform.eulerAngles = new Vector3(0, 0, slopeAngle);
         else if (!IsInvoking("CheckFloor")) Invoke("CheckFloor", checkDelay);
+
     }
     void CheckFloor() => checkFloor = true;
     private void CheckWall()
     {
         RaycastHit2D wallHit = Physics2D.Raycast(coll.bounds.center, transform.right, wallAware, groundLayer);
-        if (wallHit)
+        if (wallHit && transform.eulerAngles.z%90==0)
         {
             wallAngle = Vector2.Angle(wallHit.normal, Vector2.up);
             if ((CheckWallAngle(89, 91) || CheckWallAngle(-1, 1) || CheckWallAngle(179, 181))) wallInFront = true;

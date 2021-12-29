@@ -143,6 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e7c9931a143df40927f205f64894d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Increase running speed over time
+  message: Increase the running speed over time
   iD: 8
   itemType: 0

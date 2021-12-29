@@ -13,6 +13,7 @@ public class ItemMenuController : Controller
     [SerializeField] UnityEvent backEvent;
     [SerializeField] ButtonUtilities buttonEssentials;
     [SerializeField] GameObject menuPointer;
+    [SerializeField] Canvas hudCanvas;
     int idFirst;
     Button firstItem;
     private MenuPointer mPointer;
@@ -26,11 +27,14 @@ public class ItemMenuController : Controller
         StartCoroutine("SelectContinueButtonLater");
         base.inputManager.Back+=Back;
         firstItem.Select();
+        hudCanvas.overrideSorting=true;
+        hudCanvas.sortingOrder=8;
     }
     void OnDisable()
     {
         base.inputManager.Back -= Back;
         menuPointer.SetActive(false);
+        hudCanvas.overrideSorting=false;
     }
     IEnumerator SelectContinueButtonLater()
     {
