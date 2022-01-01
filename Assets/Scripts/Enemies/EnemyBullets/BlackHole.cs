@@ -34,12 +34,12 @@ public class BlackHole : LookPlayerFirst
             PlayerKnockBack playerKnockBack = collision.GetComponent<PlayerKnockBack>();
             playerKnockBack.HitPlayer(damage,transform.position.x);
             pContr=collision.GetComponentInParent<PlayerController>();
-            pContr.slow2Forces = 1.5f;
+            pContr.slow = .5f;
             Anim();
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Player")) pContr.slow2Forces = 1f;
+        if (other.CompareTag("Player")) pContr.slow = 1f;
     }
     public void Destroy(){
         Destroy(gameObject);

@@ -18,7 +18,7 @@ namespace EnemyBoss.Serris{
             public Color lowHealth;
         }
         [SerializeField]SerrisIA serrisIA;
-        public static float totalHealth,currentHealth;
+        private float totalHealth,currentHealth;
         public bool InvMissiles => invMissiles;
         public bool InvSuperMissiles => invSuperMissiles;
         public bool InvBeams => invBeams;

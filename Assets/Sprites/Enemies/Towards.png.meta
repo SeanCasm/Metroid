@@ -123,6 +123,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -132,11 +133,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -904,6 +905,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Towards_19: -7341436033437832949
+      Towards_27: -4716428441533913743
+      Towards_16: 2441045142980127142
+      Towards_14: -5126101137965816634
+      Towards_5: -7226684198594996501
+      Towards_26: 7241584328320732177
+      Towards_4: 9079741425232094108
+      Towards_3: -1610985397125883843
+      Towards_9: -9162188542775935970
+      Towards_20: -3212274514062158337
+      Towards_24: 2732773811873843513
+      Towards_13: -8226471751457604172
+      Towards_17: -5420570539162531065
+      Towards_2: 7960837521797860148
+      Towards_10: 5678082416290466648
+      Towards_30: -5467295101514012888
+      Towards_15: 2625871164951166499
+      Towards_0: 8183047373111569927
+      Towards_29: 8829055744084617753
+      Towards_12: 272064102095267900
+      Towards_7: 4258306833664281502
+      Towards_11: 8147849055263836187
+      Towards_32: 7536953322315624001
+      Towards_6: 8528322031812462975
+      Towards_1: 8859251160306084607
+      Towards_8: 4978315771776946534
+      Towards_18: -2563725598113327653
+      Towards_23: 8852199653902202315
+      Towards_22: 2521797426991089306
+      Towards_28: -3051635696284291390
+      Towards_25: -2738031055171277594
+      Towards_31: -2056600799208427243
+      Towards_21: -1770987022668326390
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

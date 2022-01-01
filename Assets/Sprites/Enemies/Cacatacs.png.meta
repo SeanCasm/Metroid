@@ -132,6 +132,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -141,11 +142,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -976,6 +977,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cacatacs_25: -8187589822652771557
+      Cacatacs_24: 6891481234915088863
+      Cacatacs_22: 3899129538203181110
+      Cacatacs_1: 5396910720375224749
+      Cacatacs_23: -678678169700018505
+      Cacatacs_20: 5508428225750511605
+      Cacatacs_29: 9066046297836436409
+      Cacatacs_0: 7007815160896129951
+      Cacatacs_8: 8653713053054435423
+      Cacatacs_33: 1097578253058867450
+      Cacatacs_21: -361984756398123882
+      Cacatacs_18: 6931690974617116530
+      Cacatacs_10: -3724055768775551896
+      Cacatacs_26: -8913533339837110815
+      Cacatacs_17: 6856332770880364355
+      Cacatacs_12: 7597902697819478210
+      Cacatacs_3: 3370556697003784390
+      Cacatacs_11: 4979500022083162831
+      Cacatacs_27: -1604828671492932806
+      Cacatacs_7: 783503251593611377
+      Cacatacs_4: -6351216370165835228
+      Cacatacs_16: 1551630883960333369
+      Cacatacs_28: -7313703836769029900
+      Cacatacs_15: 4445106631131582923
+      Cacatacs_31: 3717956753611070084
+      Cacatacs_30: 2031919049832525602
+      Cacatacs_34: -2106539193693103802
+      Cacatacs_32: 404758539131139804
+      Cacatacs_35: 5379523950485805107
+      Cacatacs_6: 8555973364326715410
+      Cacatacs_9: 2583390821811381194
+      Cacatacs_2: 7363232363228251935
+      Cacatacs_13: 815464703537391590
+      Cacatacs_14: -3156499405203624573
+      Cacatacs_19: -1203201931682103199
+      Cacatacs_5: 1676842813894918524
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 namespace Player
 {
     public class GroundChecker : MonoBehaviour
@@ -71,10 +73,12 @@ namespace Player
 
             return isGrounded;
         }
-        internal void WallAndSlopeCheck(float xInput)
+        internal float WallAndSlopeCheck(float xInput)
         {
-            CheckWallInFront(xInput);
+            float newXInput=CheckWallInFront(xInput);
             CheckSlopesAndEdges(xInput);
+
+            return newXInput;
         }
         internal bool CheckWallJump(float xInput)
         {
@@ -82,7 +86,7 @@ namespace Player
             else if (Physics2D.Raycast(transform.position, Vector2.right, wallJumpCheckDistance, groundLayer) && xInput < 0) return true;
             return false;
         }
-        void CheckWallInFront(float xInput)
+        float CheckWallInFront(float xInput)
         {
             RaycastHit2D wallHit = Physics2D.BoxCast(new Vector2(capsule.bounds.center.x + (capsule.size.x / 2) * xInput,
             capsule.bounds.center.y),
@@ -93,6 +97,8 @@ namespace Player
                 xInput = 0;
             }
             else wallInFront = false;
+
+            return xInput;
         }
         private void CheckGround()
         {
@@ -176,18 +182,18 @@ namespace Player
             else if (!onSlope || playerController.xInput != 0)
             {
                 rbStatic = false;
-                rigid.gravityScale = 1 / playerController.Slow2Gravity;
+                rigid.gravityScale = 1 * playerController.slow;
             }
             curGroundDis = groundDistance;
             firstAir=false;
             isLanding = true;
         }
-        internal void FirstAir(bool onSpin, float slow2Gravity, float spriteCenter)
+        internal void FirstAir(bool onSpin, float slow, float spriteCenter)
         {
             if (!firstAir)
             {
                 if (onSpin) transform.position = new Vector3(transform.position.x, transform.position.y + spriteCenter, 0);
-                edgeCollider.enabled = false; playerController.rb.gravityScale = 1 / slow2Gravity; firstAir = true;
+                edgeCollider.enabled = false; playerController.rb.gravityScale = 1 * slow; firstAir = true;
                 OnAir(); ShootOnWalk = false;
             }
         }

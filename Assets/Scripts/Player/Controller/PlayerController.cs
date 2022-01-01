@@ -36,18 +36,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] UnityEvent onMorphball, onEnable;
     private float jumpForce = 88, speed = 88, curSpinOffset = 1, slow2Gravity = 1;
     private float yInput = 0, xVelocity, jumpTimeCounter, currentSpeed, angleAim, spriteCenter;
-    public float Slow2Gravity
-    {
-        get
-        {
-            return slow2Gravity;
-        }
-        set
-        {
-            slow2Gravity = value;
-            rb.gravityScale /= slow2Gravity;
-        }
-    }
     public float xInput { get; set; } = 0;
     public Animator anim { get; set; }
     private PlayerFXHandler playerFX;
@@ -63,9 +51,10 @@ public class PlayerController : MonoBehaviour
     private int aimUpDown = 0;
     int[] animatorHash = new int[27];
     public float currentJumpForce { get; set; }
+    public float slow{get;set;}=1;
+    public float morphballSlow{get;set;}=1;
     public bool groundOverHead { get; private set; }
     public bool canMorph { get; set; } = true;
-    public float slow2Forces = 1;
     public bool OnSpin
     {
         get => _onSpin;
@@ -214,10 +203,10 @@ public class PlayerController : MonoBehaviour
             if (groundOverHead && _groundState != GroundState.Balled)
                 xInput = 0;
 
-            xVelocity = xInput * (currentSpeed / slow2Forces) * Time.deltaTime;
+            xVelocity = xInput * (currentSpeed * slow) * Time.deltaTime;
             if (!isGrounded)
             {
-                if (isJumping && jumpTimeCounter > 0f) rb.velocity = Vector2.up * (currentJumpForce / slow2Forces) * Time.deltaTime;
+                if (isJumping && jumpTimeCounter > 0f) rb.velocity = Vector2.up * (currentJumpForce * slow) * Time.deltaTime;
 
                 if (onJumpingState) SetVelocity(new Vector2(xVelocity / 2, rb.velocity.y));
                 else if (_onSpin || morphSpin) SetVelocity(new Vector2(xVelocity, rb.velocity.y));
@@ -239,11 +228,11 @@ public class PlayerController : MonoBehaviour
     #region On ground methods
     void OnGround()
     {
-        groundChecker.WallAndSlopeCheck(xInput);
+        xInput=groundChecker.WallAndSlopeCheck(xInput);
         groundOverHead = groundChecker.GroundOverHead;
         if (xInput != 0f)
         {
-            if (runningState == RunningState.Running && slow2Forces == 1)
+            if (runningState == RunningState.Running && slow == 1)
             {
                 currentSpeed += speedIncreaseOverTime;
                 if (currentSpeed >= maxSpeed) currentSpeed = maxSpeed;
@@ -323,13 +312,12 @@ public class PlayerController : MonoBehaviour
         anim.SetBool(animatorHash[0], angleAim < 0);
         anim.SetBool(animatorHash[1], angleAim > 0);
         anim.SetBool(animatorHash[2], _groundState == GroundState.Balled);
-        anim.SetBool(animatorHash[3], isGrounded && xInput != 0 && !groundChecker.wallInFront && !groundOverHead);
+        anim.SetBool(animatorHash[3], isGrounded && xInput != 0 && !groundChecker.wallInFront && !groundOverHead); //walk
         anim.SetBool(animatorHash[4], (groundChecker.ShootOnWalk || gun.fireType != FireType.Normal) && isGrounded && xInput != 0);
         anim.SetBool(animatorHash[5], _groundState == GroundState.Crouched);
         anim.SetBool(animatorHash[6], leftLook);
         anim.SetBool(animatorHash[7],/*idle*/isGrounded && xInput == 0);
         anim.SetBool(animatorHash[8], isGrounded);
-
         anim.SetBool(animatorHash[9],/*spin jump*/_onSpin && jumpType == JumpType.Default);
         anim.SetBool(animatorHash[10],/*airshoot*/(gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin);
         anim.SetBool(animatorHash[11],/*screw*/jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);
@@ -338,9 +326,9 @@ public class PlayerController : MonoBehaviour
         anim.SetBool(animatorHash[14],/*gravity jump*/jumpType == JumpType.Space && _onSpin);
 
         anim.SetFloat("VerticalVelocity", rb.velocity.y);
-        //anim.SetFloat(animatorHash[16], 1 / slow2Forces);
+        anim.SetFloat("AnimSpeed", slow>morphballSlow ? morphballSlow : slow);
         anim.SetInteger("upDown", aimUpDown);
-        anim.SetInteger("leftRight", (int)xInput);
+        anim.SetInteger("leftRight", (int)xInput );
     }
     #region Delayed Methods
     void HyperJumpTimeAction()

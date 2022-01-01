@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -117,8 +118,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -679,6 +680,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Blue Choot_4: 4024505325903665445
+      Blue Choot_5: 4020941564440482182
+      Blue Choot_1: 7924994898327298220
+      Blue Choot_26: -4253115281271776935
+      Blue Choot_27: -3302468007038077744
+      Blue Choot_21: 2391950219379353665
+      Blue Choot_14: -6853991933841375572
+      Blue Choot_15: -7460908565931900757
+      Blue Choot_16: 2932847148525950143
+      Blue Choot_22: -2285956509856422162
+      Blue Choot_3: 7024796768731972224
+      Blue Choot_9: 1953432114929931335
+      Blue Choot_10: -8133169181180962267
+      Blue Choot_8: -6428671340408377301
+      Blue Choot_17: 3087789729216052500
+      Blue Choot_2: 9023194411884701975
+      Blue Choot_25: 5307090541249213070
+      Blue Choot_12: -6969710116571605009
+      Blue Choot_6: 2823531698709393188
+      Blue Choot_11: 8752026327346600235
+      Blue Choot_7: -2878150233722483491
+      Blue Choot_0: -3609749086729023969
+      Blue Choot_13: -4505997689933817906
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

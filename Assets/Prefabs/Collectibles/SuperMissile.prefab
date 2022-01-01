@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 904580178638045105}
   - component: {fileID: 8336849341774268452}
   - component: {fileID: 6662763485759936222}
-  - component: {fileID: -5806946090622192981}
   m_Layer: 10
   m_Name: SuperMissile
   m_TagString: Untagged
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2181901
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -6099050445329199328, guid: 23d99310723061546b0df82c6462ad31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -169,15 +168,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-5806946090622192981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212318987332589821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15398ae36b4ea8e45a2c0452d989447d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

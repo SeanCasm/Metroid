@@ -306,6 +306,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -315,11 +316,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -2436,6 +2437,101 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slopes and other_13: 1803416378301300525
+      Slopes and other_18: -9054754017774247935
+      Slopes and other_43: 4607198203787918267
+      Slopes and other_64: -3929180096122658835
+      Slopes and other_59: 6563127748344353124
+      Slopes and other_15: -9132857974468620252
+      Slopes and other_24: 2933268006903239382
+      Slopes and other_9: 5211439080652993646
+      Slopes and other_22: 6586516754923174210
+      Slopes and other_21: 1369198831295525319
+      Slopes and other_16: 8642631713981504583
+      Slopes and other_67: 1435735926989191466
+      Slopes and other_49: 2076363729422159264
+      Slopes and other_89: 5512706513605404034
+      Slopes and other_37: -4416203328793630686
+      Slopes and other_93: -2048793611103296247
+      Slopes and other_77: -7266485496606802143
+      Slopes and other_80: -618588594852652576
+      Slopes and other_41: -2082766957108764642
+      Slopes and other_86: 2131918643633437849
+      Slopes and other_70: 2736907511285771865
+      Slopes and other_85: 4905505360877808172
+      Slopes and other_82: -5336558897938346329
+      Slopes and other_51: -3364111219236942693
+      Slopes and other_32: -4972990472347589326
+      Slopes and other_20: 822278934946543656
+      Slopes and other_30: -776651387690057009
+      Slopes and other_34: -1687200281376018366
+      Slopes and other_36: -2150582482409182432
+      Slopes and other_75: 2587290403548913718
+      Slopes and other_87: 6721039422189792047
+      Slopes and other_29: 2100892678455151623
+      Slopes and other_23: 568845269279443810
+      Slopes and other_78: 5162825199607747014
+      Slopes and other_27: 9061137210093135847
+      Slopes and other_5: -6790173479476850292
+      Slopes and other_39: -2612448271764199439
+      Slopes and other_91: -4729490724720429369
+      Slopes and other_76: 4186104656935765107
+      Slopes and other_54: -1393640814780295283
+      Slopes and other_79: -585461658190321026
+      Slopes and other_44: -9098992542210936379
+      Slopes and other_88: -4369105889212112937
+      Slopes and other_10: -2050975699434725812
+      Slopes and other_57: 3632036047838654382
+      Slopes and other_11: 1620839274014505947
+      Slopes and other_69: -8385425284024379083
+      Slopes and other_19: 7225763194914961220
+      Slopes and other_38: -2025394051069771893
+      Slopes and other_84: 5551286131300244267
+      Slopes and other_50: 1664165208168032525
+      Slopes and other_62: -4063203211587418196
+      Slopes and other_17: -5017300882807853701
+      Slopes and other_35: 3886216028403244208
+      Slopes and other_6: -6911878688790455749
+      Slopes and other_71: -1050995771491597495
+      Slopes and other_61: -4144996512184453341
+      Slopes and other_92: -7565804467027659855
+      Slopes and other_33: -7644618080781858856
+      Slopes and other_8: -8806996231603951866
+      Slopes and other_63: -5182690074777849310
+      Slopes and other_26: -3258183906551260668
+      Slopes and other_28: -6544378825266487678
+      Slopes and other_45: -631807591785577939
+      Slopes and other_3: 2192115422726106767
+      Slopes and other_14: 5666092837503020158
+      Slopes and other_1: -605132454559562296
+      Slopes and other_31: -3489848052725808636
+      Slopes and other_83: -5499525258661473575
+      Slopes and other_0: 3654696260162307889
+      Slopes and other_53: -6104417873892125108
+      Slopes and other_55: 5853389727346080499
+      Slopes and other_40: 1489781374749956482
+      Slopes and other_68: -2504229818773735820
+      Slopes and other_72: 3546197451675639570
+      Slopes and other_90: 5663914078443212934
+      Slopes and other_66: 6504191765182785622
+      Slopes and other_25: -3290956608982247412
+      Slopes and other_7: -1157185565348922531
+      Slopes and other_65: -1731879009697168744
+      Slopes and other_81: -1176344493652553094
+      Slopes and other_47: 628754184244468336
+      Slopes and other_46: 5830844553366531017
+      Slopes and other_74: -5447297950690156189
+      Slopes and other_73: -150568933948874091
+      Slopes and other_58: 5467105188793619595
+      Slopes and other_42: -7965720062242771949
+      Slopes and other_52: 4131155539687116501
+      Slopes and other_60: 6285268994967211134
+      Slopes and other_4: -7079729282238478238
+      Slopes and other_48: -8338739386642687142
+      Slopes and other_12: -7426836749627659818
+      Slopes and other_2: -4085621543850634427
+      Slopes and other_56: 661252951261302844
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

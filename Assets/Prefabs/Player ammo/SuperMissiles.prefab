@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 12
   livingTime: 3
-  startSound: {fileID: 7119153977521584086, guid: 7f2e0c8c54deb6c44aebc2f957df0ce4, type: 3}
+  startSound: {fileID: 7119153977521584086, guid: ee8ceb9871c2a3e4bb964140c20840b5, type: 3}
   direction: {x: 0, y: 0, z: 0}
   hotPoints: 20
   iD: 1
@@ -179,7 +179,6 @@ MonoBehaviour:
   impactClip: {fileID: 4461508904645531800, guid: b60ed1da80de53742b8d9c37b597d0f0, type: 3}
   speed: 3.5
   impactPrefab: {fileID: 1402059906027353583, guid: 89025be6ef7841e4b9ae9e4551a0de8d, type: 3}
-  floorCol: {fileID: 0}
   pooleable: 1
   isSpazer: 0
   spazerChild: 0

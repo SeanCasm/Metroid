@@ -9,7 +9,6 @@ public class SkinSwapper : MonoBehaviour
     [SerializeField] Image suit;
     [SerializeField] Suit power,gravity,corrupt; 
     [SerializeField] Materials materials;
-    [SerializeField] PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
     private bool gravityEquiped;
     private PlayerController playerController;
@@ -25,16 +24,8 @@ public class SkinSwapper : MonoBehaviour
     public void SetPowerSuit()
     {
         suit.sprite = power.portait;
-        suitLeft = new List<Sprite>();
-        suitRight=new List<Sprite>();
-        foreach (Sprite element in power.suitLeft)
-        {
-            suitLeft.Add(element);
-        }
-        foreach (Sprite element in power.suitRight)
-        {
-            suitRight.Add(element);
-        }
+        suitLeft = new List<Sprite>(power.suitLeft);
+        suitRight=new List<Sprite>(power.suitRight);
         gravityEquiped = false;
     }
     public void SetScrewAttack(bool value)
@@ -45,20 +36,13 @@ public class SkinSwapper : MonoBehaviour
     public void SetGravitySuit()
     {
         suit.sprite = gravity.portait;
-        suitLeft= new List<Sprite>();
-        suitRight=new List<Sprite>();
-        foreach(Sprite element in gravity.suitLeft){
-            suitLeft.Add(element);
-        }
-        foreach (Sprite element in gravity.suitRight)
-        {
-            suitRight.Add(element);
-        }
+        suitLeft= new List<Sprite>(gravity.suitLeft);
+        suitRight=new List<Sprite>(gravity.suitRight);
         gravityEquiped = true;
     }
     void LateUpdate()
     {
-        if(!playerHealth.isDead && suitRight.Count>0 && playerController.GroundState!=GroundState.Balled){
+        if(suitRight.Count>0 && playerController.GroundState!=GroundState.Balled){
             int index = int.Parse(spriteRenderer.sprite.name);
             spriteRenderer.sprite = playerController.leftLook ? suitLeft[index] : suitRight[index] ;
         }

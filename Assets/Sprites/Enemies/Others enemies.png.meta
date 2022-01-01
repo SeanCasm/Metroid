@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -99,11 +100,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -640,6 +641,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Others enemies_7: 6737417039820850747
+      Others enemies_4: -1073971857580843169
+      Others enemies_0: 2198948086791370623
+      Others enemies_14: -7981577671439586969
+      Others enemies_2: -2028745169455499501
+      Others enemies_11: 8621030784883482769
+      Others enemies_15: -3759453680671762788
+      Others enemies_10: 8147610815266510125
+      Others enemies_13: 1913470062554550893
+      Others enemies_17: -3330971036068434648
+      Others enemies_3: 7393590929463937230
+      Others enemies_19: 7117639958703359393
+      Others enemies_18: -7562936214861556159
+      Others enemies_21: 3560262922820378776
+      Others enemies_1: 7181496049309011889
+      Others enemies_12: 2780830975663777062
+      Others enemies_9: -2163486158952068373
+      Others enemies_5: -1856170867863643577
+      Others enemies_16: 8383961574180029660
+      Others enemies_20: 8545543272647737683
+      Others enemies_8: 8654179601665799605
+      Others enemies_6: -8084988696716140977
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

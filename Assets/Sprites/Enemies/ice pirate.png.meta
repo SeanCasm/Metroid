@@ -273,6 +273,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -282,11 +283,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -2104,6 +2105,90 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Ice pirate_21: -7906581697178598264
+      Ice pirate_57: -2841598875566238914
+      Ice pirate_35: -583711460442567327
+      Ice pirate_40: -1065125457345842029
+      Ice pirate_13: 577176966715911345
+      Ice pirate_25: 5584302899679486809
+      Ice pirate_20: -2307207173001916818
+      Ice pirate_45: -2322716710838480409
+      Ice pirate_5: 5723172631379236352
+      Ice pirate_51: -2061361637299601010
+      Ice pirate_44: 9222833558450274562
+      Ice pirate_54: -8141848395308355689
+      Ice pirate_6: 7674881087231517285
+      Ice pirate_41: 4182485100212328260
+      Ice pirate_42: -8523211671548766515
+      Ice pirate_58: 3266329125438825048
+      Ice pirate_71: -4240160226206923606
+      Ice pirate_64: 2336605912258173360
+      Ice pirate_75: 4549707283621308122
+      Ice pirate_4: -5491614918697399383
+      Ice pirate_24: 4782579353334409803
+      Ice pirate_80: 6043092618235526561
+      Ice pirate_30: 4676582344917020156
+      Ice pirate_11: -8582230550889703999
+      Ice pirate_56: 6068320727467203555
+      Ice pirate_38: 5278664916486767279
+      Ice pirate_60: 7409611670770954271
+      Ice pirate_77: 4065636612814876163
+      Ice pirate_17: -7804594224239849927
+      Ice pirate_79: -4822707040885009433
+      Ice pirate_2: -3901453344164091643
+      Ice pirate_59: 7172915316772316588
+      Ice pirate_72: 7269737714704118947
+      Ice pirate_78: -6970821660498264203
+      Ice pirate_73: 2539062336213300022
+      Ice pirate_49: 8855952695342005839
+      Ice pirate_7: 6212706643349274878
+      Ice pirate_63: -961845078199954199
+      Ice pirate_9: -4217579137014765418
+      Ice pirate_12: 2341587985697619856
+      Ice pirate_32: 3072163732619125513
+      Ice pirate_46: -5837653580699181099
+      Ice pirate_18: 7958986561987119538
+      Ice pirate_48: 192604794381081263
+      Ice pirate_19: -8200901453594119186
+      Ice pirate_10: 6675370084966344159
+      Ice pirate_33: -6394800552247847369
+      Ice pirate_55: -8094916546920812485
+      Ice pirate_39: 6508995961663571558
+      Ice pirate_23: 6321778106770893560
+      Ice pirate_62: 2839933642046440329
+      Ice pirate_74: -5699410525239240382
+      Ice pirate_27: 4259018934262952883
+      Ice pirate_29: -1555003635432438040
+      Ice pirate_34: -7946281559910741469
+      Ice pirate_37: -4753892853468842588
+      Ice pirate_28: 2208414942261460746
+      Ice pirate_52: 5112720543467733454
+      Ice pirate_65: -1362381194874426233
+      Ice pirate_50: -2734933207724803925
+      Ice pirate_0: 1895841454170592428
+      Ice pirate_26: 1751669640103247753
+      Ice pirate_36: 8594792013304962108
+      Ice pirate_68: 558124035180864048
+      Ice pirate_69: 843914159523339535
+      Ice pirate_8: 4079734338220757878
+      Ice pirate_82: -7753903201618527620
+      Ice pirate_3: 1418354584018086662
+      Ice pirate_47: 1166391707101122708
+      Ice pirate_81: 3915215776718916183
+      Ice pirate_1: -8701188978935790088
+      Ice pirate_31: -6589379904091988957
+      Ice pirate_53: -32079791395119131
+      Ice pirate_16: 3050834611151378211
+      Ice pirate_61: -5099532132033637835
+      Ice pirate_66: -2192202351460017807
+      Ice pirate_22: 2472044794666328045
+      Ice pirate_14: 942678396053904746
+      Ice pirate_15: -6688319176989768375
+      Ice pirate_67: -7272386094749821091
+      Ice pirate_70: -3804420411242167700
+      Ice pirate_43: -394885459878769853
+      Ice pirate_76: 9193113329337699605
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

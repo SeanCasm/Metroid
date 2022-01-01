@@ -105,6 +105,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -114,11 +115,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -760,6 +761,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Serris_7: -6978280253361156221
+      Serris_11: -5457841060982944783
+      Serris_5: 8900385880242018835
+      Serris_22: 4994923837677027153
+      Serris_8: 4135372347957144133
+      Serris_23: -1115526218764115297
+      Serris_10: 2199914197825792180
+      Serris_1: -76475173123207152
+      Serris_19: -3088112089537434697
+      Serris_20: -4529400218162768037
+      Serris_3: -2139279280050907068
+      Serris_18: 3182841827038716026
+      Serris_2: -4227167435806121265
+      Serris_14: -6670873337591913745
+      Serris_13: -6883393762334331691
+      Serris_16: 3742982756172680086
+      Serris_9: -6106726758215677853
+      Serris_21: -9219220216742188129
+      Serris_24: -1537083263288083167
+      Serris_4: 8005053779046133558
+      Serris_26: -1974194017324556345
+      Serris_17: 7696798674659097146
+      Serris_25: 2099713135705734676
+      Serris_15: 3109024598931337735
+      Serris_12: 3462496969272316499
+      Serris_6: -1733819752203295930
+      Serris_0: 3357155168893365598
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

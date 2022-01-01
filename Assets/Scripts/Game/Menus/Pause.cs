@@ -13,6 +13,7 @@ public class Pause : MonoBehaviour
     [SerializeField] GameSettings gameSettings;
     [SerializeField] GameObject pauseMenu;
     [SerializeField] FirstSelectedHandler menuFirst;
+    [SerializeField] CanvasGroup hudCanvasGroup;
     public static System.Action<bool> OnPauseInput,OnPause;
     public static bool onGame,escPause;
     public GameObject player;
@@ -85,13 +86,14 @@ public class Pause : MonoBehaviour
     #region Private Methods
     private bool CheckBeforePause()
     {
-        if (player.activeSelf && !enterPause && onGame) return true;
+        if (player.activeSelf && !enterPause && onGame && !escPause) return true;
         else return false;
     }
     
     #region UnityEvent
     public void GeneralPause()
     {
+        hudCanvasGroup.interactable=false;
         PausePlayer(false);
         OnPause?.Invoke(false);
         gameSettings.SetEffectsVolume(true);
@@ -102,6 +104,7 @@ public class Pause : MonoBehaviour
     public void Unpause()
     {
         OnPauseInput?.Invoke(false);
+        hudCanvasGroup.interactable=true;
         UnpausePlayer();
         #if UNITY_ANDROID
         unpauseAndroid.Invoke();

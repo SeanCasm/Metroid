@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2181901
   m_SortingLayer: 2
-  m_SortingOrder: 60
+  m_SortingOrder: 80
   m_Sprite: {fileID: -1912643350613227332, guid: c9c84027e9b07b444bab03450c585e5e, type: 3}
   m_Color: {r: 0.93725497, g: 0.6117647, b: 0, a: 1}
   m_FlipX: 0
@@ -117,7 +117,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1cb8508d9c02e1e47a453e37ea200dfd, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 561462568bb00934cb46a37dd83e8ce5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9c5f3e07a87305e408bdbf27ba6afe6a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -250,7 +250,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351056426103883310}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

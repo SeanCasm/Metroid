@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 6097327195557800101}
   - component: {fileID: 6945393772138969461}
   - component: {fileID: 4784996519427011924}
-  - component: {fileID: 5296988509222238233}
   m_Layer: 9
   m_Name: Skree
   m_TagString: Untagged
@@ -208,8 +207,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 930449575
-  m_SortingLayer: 1
+  m_SortingLayerID: 2181901
+  m_SortingLayer: 2
   m_SortingOrder: 10
   m_Sprite: {fileID: -7940451141992525510, guid: 04eae3ff68dfa004587569f7c74380c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -277,32 +276,8 @@ MonoBehaviour:
   speed: 1
   detectPlayer: 0
   stopAll: 1
---- !u!61 &5296988509222238233
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5221374413264815730}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0004348755, y: 0.019535303}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.27}
-    newSize: {x: 0.16, y: 0.14}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.112130165, y: 0.14064312}
-  m_EdgeRadius: 0
+  projectil: {fileID: 2604744191709347511, guid: d61bd5d9b3c8d0447b817d4c3f8a4943, type: 3}
+  detector: {fileID: 7920352398929668922}
 --- !u!61 &919515731315814414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -316,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.009648204}
+  m_Offset: {x: 0.00000011920929, y: 0.024337351}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -327,7 +302,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15095925, y: 0.23457694}
+  m_Size: {x: 0.15095925, y: 0.16660583}
   m_EdgeRadius: 0
 --- !u!1001 &3728667778065211758
 PrefabInstance:
@@ -343,7 +318,7 @@ PrefabInstance:
     - target: {fileID: -5384935738484045062, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: rigidCol
       value: 
-      objectReference: {fileID: 5296988509222238233}
+      objectReference: {fileID: 0}
     - target: {fileID: -5384935738484045062, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 
@@ -411,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: rigidCol
       value: 
-      objectReference: {fileID: 5296988509222238233}
+      objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 

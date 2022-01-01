@@ -228,6 +228,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -238,10 +239,10 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 1
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1744,6 +1745,75 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ridley sprites_61: 7524855490725093421
+      ridley sprites_51: -8171845727768560374
+      ridley sprites_3: -4819110229049387863
+      ridley sprites_14: -4939162335134122344
+      ridley sprites_37: -300424824810856737
+      ridley sprites_32: -8462069136490520544
+      ridley sprites_29: 1358537072296270374
+      ridley sprites_6: 1837592028268539361
+      ridley sprites_38: -1557598687389937727
+      ridley sprites_0: -7852679207277131248
+      ridley sprites_60: -1312530264616314841
+      ridley sprites_25: -293328804577835089
+      ridley sprites_2: 6112005388181521144
+      ridley sprites_41: 1744021447944194026
+      ridley sprites_4: 2806873777810594562
+      ridley sprites_34: -8125550514568523582
+      ridley sprites_36: 2013988419970353300
+      ridley sprites_13: -7872716138906678694
+      ridley sprites_48: -3778399759605996281
+      ridley sprites_64: 6040290485945965382
+      ridley sprites_12: 1963492351352063985
+      ridley sprites_28: 3017792362901616261
+      ridley sprites_24: -1539624301413562625
+      ridley sprites_55: -4415017190718701079
+      ridley sprites_50: 1305120661621808963
+      ridley sprites_40: 1244036238914241234
+      ridley sprites_9: 2205527534467865875
+      ridley sprites_23: -581793064458463796
+      ridley sprites_21: 1336319920095382788
+      ridley sprites_30: 3231870715014996020
+      ridley sprites_45: -1394197646136409382
+      ridley sprites_1: -5624783264595213057
+      ridley sprites_31: 6163169071649146109
+      ridley sprites_17: -7003868662299523897
+      ridley sprites_57: -1115697198759687762
+      ridley sprites_39: -3545055428479137691
+      ridley sprites_18: 6296264422179931659
+      ridley sprites_35: -2552115309725924204
+      ridley sprites_59: -4194440554437210509
+      ridley sprites_16: 8936939291290247832
+      ridley sprites_43: 5995228817515140620
+      ridley sprites_49: 2448207645271140334
+      ridley sprites_54: -707089214640091281
+      ridley sprites_20: 8190293786479281426
+      ridley sprites_15: 2691558835955361502
+      ridley sprites_47: 6425725020969217633
+      ridley sprites_53: 7441549690438472641
+      ridley sprites_63: 8710851758889135630
+      ridley sprites_5: -5098712924466360448
+      ridley sprites_19: 7074480688455627311
+      ridley sprites_58: -4874024905623801952
+      ridley sprites_22: -6902723070492046020
+      ridley sprites_11: 7620512440551701022
+      ridley sprites_42: 7165471862704790937
+      ridley sprites_52: 356228123677484564
+      ridley sprites_33: -7541833518345035230
+      ridley sprites_56: 584395270802674898
+      ridley sprites_67: -1925601338947536011
+      ridley sprites_66: -8491972464688118110
+      ridley sprites_7: -928032044450447947
+      ridley sprites_27: -801248030835894651
+      ridley sprites_10: 49785936519917549
+      ridley sprites_26: -7535497982055312282
+      ridley sprites_8: -2200883631668715358
+      ridley sprites_44: -903286391008529663
+      ridley sprites_62: 1442019242432170519
+      ridley sprites_46: -4043189553917270086
+      ridley sprites_65: 4907662387738907089
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

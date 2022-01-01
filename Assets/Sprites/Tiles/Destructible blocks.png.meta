@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -84,8 +85,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -415,6 +416,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Destructible blocks_8: -1308834203044968611
+      Destructible blocks_4: -4671116244304381747
+      Destructible blocks_1: -4670975878934122241
+      Destructible blocks_2: 6076874933251125086
+      Destructible blocks_12: -8535070742602985876
+      Destructible blocks_5: 6230793162137654755
+      Destructible blocks_11: -8142270646969451207
+      Destructible blocks_3: 6333802911126779220
+      Destructible blocks_6: -7078369635561547217
+      Destructible blocks_10: 4764820443228512025
+      Destructible blocks_9: -4269634751303618634
+      Destructible blocks_0: 2514459657827723210
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

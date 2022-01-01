@@ -207,6 +207,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -216,11 +217,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1576,6 +1577,68 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Walkers_19: -7169683721640549308
+      Walkers_49: 2233193199732567519
+      Walkers_1: -7878161114062312029
+      Walkers_40: 568524178139554620
+      Walkers_0: -8352886157025502390
+      Walkers_18: 4941777440949705983
+      Walkers_45: -760216086015545358
+      Walkers_37: 3943126929903725498
+      Walkers_50: -196981205733872200
+      Walkers_9: -4575229753160328760
+      Walkers_16: -7612663214871118931
+      Walkers_33: -1798611571300134053
+      Walkers_51: 750937479858071356
+      Walkers_56: 732895054278948226
+      Walkers_14: -439576001540239186
+      Walkers_27: 3781280312360235134
+      Walkers_22: -2015220836672944452
+      Walkers_31: 6501827169770622372
+      Walkers_28: 1458259583798659846
+      Walkers_24: -8701298929851558795
+      Walkers_38: -36312903156229084
+      Walkers_12: 9173512146615399046
+      Walkers_53: -5653713279681261085
+      Walkers_32: 59082636495548146
+      Walkers_20: -8055268113411709427
+      Walkers_29: 5609610591707834638
+      Walkers_2: -3087408623630418182
+      Walkers_10: -8380649923991800772
+      Walkers_15: 2354424480903211185
+      Walkers_57: 1475184100990969027
+      Walkers_59: 7249084678577024785
+      Walkers_25: 4985479550049596397
+      Walkers_39: -2918721899305242553
+      Walkers_58: -8256029868861157998
+      Walkers_26: 3320322034389033452
+      Walkers_36: -3805761491334265852
+      Walkers_44: 1016061143364265152
+      Walkers_4: -8692180410050894852
+      Walkers_43: 2476941265956933865
+      Walkers_8: -8353183414766643031
+      Walkers_47: -1851823654953846472
+      Walkers_5: 9125546163975105687
+      Walkers_60: 3835145166615657252
+      Walkers_48: 2808835758774205481
+      Walkers_46: -4590095301728530513
+      Walkers_11: -4569903117052884544
+      Walkers_52: 4251584932357702960
+      Walkers_54: 2347392894639264193
+      Walkers_3: -3867967941833324188
+      Walkers_21: -8726270157508454535
+      Walkers_13: -2747104275950998119
+      Walkers_41: 1223592138931298800
+      Walkers_23: 6764869381529294906
+      Walkers_34: -10168545904987515
+      Walkers_55: -1736438025238194494
+      Walkers_35: -2333479970398101833
+      Walkers_30: -3365360750223880933
+      Walkers_17: 2576586529537143629
+      Walkers_7: 7616301222335004382
+      Walkers_42: -7522967170512497927
+      Walkers_6: 2196944598518313411
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -79,7 +79,7 @@ public class CollectorManager : MonoBehaviour
             case ReserveType.EnergyTank:
                 playerHealth.FillHealth();
                 break;
-            case ReserveType.BouncingBomb:
+            case ReserveType.StickyBomb:
                 SetReserve(reserve, 3);
                 break;
             case ReserveType.Special:
@@ -87,7 +87,8 @@ public class CollectorManager : MonoBehaviour
                 break;
         }
         inventory.reserve.Add(reserve.ID);
-        audioPlayer.ClipAndPlay(reserveAcquired);
+        audioPlayer.clip = reserveAcquired;
+        audioPlayer.Play();
         panel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = reserve.nameItem;
     }
     private void SetSpecialReserve(ReserveAcquired reserve){
@@ -110,7 +111,8 @@ public class CollectorManager : MonoBehaviour
         panel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = itemName;
         panel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.Message;
         AddToPlayerInventory(item);
-        audioPlayer.ClipAndPlay(itemAcquired);
+        audioPlayer.clip = itemAcquired;
+        audioPlayer.Play();
     }
     public void HandlePickupItem(ItemAcquired itemS)
     {

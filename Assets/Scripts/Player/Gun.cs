@@ -109,7 +109,7 @@ public class Gun : MonoBehaviour, IFulleable
         for (int i = itemIndex; i < limitedAmmo.Length; i++)
         {
             if (itemIndex - 1 >= 0 && limitedAmmo[itemIndex - 1] != null) limitedAmmo[itemIndex - 1].Select(false);//previous ammo selected
-            if (limitedAmmo[i] != null && limitedAmmo[i].CheckAmmo())
+            if (limitedAmmo[i] != null && limitedAmmo[i].hasAmmo)
             {
                 limitedAmmo[i].Select(true);
                 countableID = i;
@@ -260,7 +260,7 @@ public class Gun : MonoBehaviour, IFulleable
         if (CheckLimitedAmmo(2)) ammo = limitedAmmo[2];
         if (ammo != null)
         {
-            if (ammo.CheckAmmo() && ammo.selected)
+            if (ammo.hasAmmo && ammo.selected)
             {
                 GameObject mb = Instantiate(ammo.ammoPrefab, firePoint.position, Quaternion.identity) as GameObject;
                 ammo.ActualAmmoCount(-1);

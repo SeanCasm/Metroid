@@ -126,6 +126,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -135,11 +136,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -928,6 +929,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Flyings_15: -8869102086896946772
+      Flyings_6: 4348653748430444304
+      Flyings_13: -7389945439282797271
+      Flyings_21: -4121606008278893601
+      Flyings_22: 3521369255784064269
+      Flyings_2: -2800883043578654787
+      Flyings_31: 1551298951343623487
+      Flyings_16: 8727541053766026960
+      Flyings_18: 7177651693195175776
+      Flyings_23: 3382985123969430486
+      Flyings_24: -4862944090281560420
+      Flyings_0: -7940451141992525510
+      Flyings_14: -1387003416069403638
+      Flyings_26: -136752839054356028
+      Flyings_19: 8214533453919594856
+      Flyings_4: 8094478103202304245
+      Flyings_20: 4243010851452873988
+      Flyings_17: -3511044684026353636
+      Flyings_9: -936592786923770314
+      Flyings_28: 8292184227028635649
+      Flyings_30: -6602984882641986957
+      Flyings_32: 9166843502826909648
+      Flyings_11: 2332689741972585377
+      Flyings_29: 4330674092343549377
+      Flyings_7: -7139376760406164407
+      Flyings_27: -5442541470048297206
+      Flyings_5: 2009826821099773618
+      Flyings_3: -2586443633394057229
+      Flyings_10: -8357195922447241939
+      Flyings_8: -8059199201341993981
+      Flyings_25: 3234168432409375628
+      Flyings_33: -349932096310769734
+      Flyings_1: 5481868931794596107
+      Flyings_12: -902013870692430664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

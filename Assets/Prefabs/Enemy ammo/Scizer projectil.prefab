@@ -142,4 +142,5 @@ MonoBehaviour:
   speed: 1
   pooleable: 0
   collisionParticles: {fileID: 1445918874815795454, guid: e3371070540864848b55dba04588d5ad, type: 3}
+  canDestroyBeams: 0
   timeTillHit: 0.3

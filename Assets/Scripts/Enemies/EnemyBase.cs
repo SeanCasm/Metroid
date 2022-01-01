@@ -9,7 +9,6 @@ namespace Enemy
         [Header("Enemy settings")]
         [SerializeField] protected float speed;
         [SerializeField] protected bool detectPlayer;
-        [Header("On became invisible")]
         [SerializeField] bool stopAll;
         public Animator anim { get; set; }
         public Rigidbody2D rigid { get; set; }

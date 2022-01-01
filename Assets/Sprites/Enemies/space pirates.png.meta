@@ -273,6 +273,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -282,11 +283,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -2104,6 +2105,90 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      space pirates_28: -2284923413296767687
+      space pirates_61: -3478172919539824902
+      space pirates_38: -8398229206634983556
+      space pirates_68: -6007601110964832820
+      space pirates_43: 3507524356649794641
+      space pirates_32: -4094935546912181022
+      space pirates_54: 7376778388030153919
+      space pirates_72: 5378678591507872243
+      space pirates_79: 424497982653339414
+      space pirates_76: -3611162985041169213
+      space pirates_60: -5673110852735209033
+      space pirates_31: -8015753252349312714
+      space pirates_42: -1711231010741149745
+      space pirates_0: 7550931354876384427
+      space pirates_49: 4944542932231162756
+      space pirates_26: 6322163805473196247
+      space pirates_23: -343856841208020184
+      space pirates_69: -9074950365889637116
+      space pirates_71: 8458855657149517808
+      space pirates_29: 3183309564062010967
+      space pirates_59: 104763890563958371
+      space pirates_55: -6351849663482515596
+      space pirates_66: -7127225475788408401
+      space pirates_5: 7959072836004224711
+      space pirates_50: 5766222992428842800
+      space pirates_57: 3423693518441006758
+      space pirates_17: -8930172608573145779
+      space pirates_9: 8181047651825402971
+      space pirates_27: 1452417638770129019
+      space pirates_63: 1583716458046127435
+      space pirates_33: -5280482819192694978
+      space pirates_78: -133424679176630604
+      space pirates_46: -7403110321131302594
+      space pirates_58: -2525478904758620010
+      space pirates_67: 8854103643772531874
+      space pirates_56: 7052815492128403439
+      space pirates_81: 2187868359417143719
+      space pirates_10: -2685789641386037151
+      space pirates_19: 1424397276528364609
+      space pirates_11: -1619536366347743290
+      space pirates_40: -6458013210365601879
+      space pirates_47: -1821368075576639858
+      space pirates_20: 8752150247219984604
+      space pirates_22: -8085951658051003616
+      space pirates_16: -934969860921211484
+      space pirates_2: 5637933645530132759
+      space pirates_7: -2172669170666497723
+      space pirates_8: -5859980545070791953
+      space pirates_53: 7621281978768431031
+      space pirates_75: 1801376385491092600
+      space pirates_37: 5448585776825214845
+      space pirates_15: 6630672447500250064
+      space pirates_18: -7836052082757573713
+      space pirates_52: 2919443201906820860
+      space pirates_64: -7301888479645593870
+      space pirates_30: -4364718043313629612
+      space pirates_6: 8935842606478526787
+      space pirates_51: 3175410465212574161
+      space pirates_45: -8949009550661040831
+      space pirates_82: -6068000427320426937
+      space pirates_21: -3772631178696091604
+      space pirates_70: -8470869266865083524
+      space pirates_41: 4924988696807283661
+      space pirates_1: -3961135967604467726
+      space pirates_12: -4245154994391510182
+      space pirates_24: -3386479594060032231
+      space pirates_74: 1351850435809316440
+      space pirates_36: -3818933604151043678
+      space pirates_35: 937300349891539602
+      space pirates_77: 6705417549357300288
+      space pirates_4: -2329665731670625770
+      space pirates_25: -198186697331459266
+      space pirates_65: 9029905458084494575
+      space pirates_34: 4874865881607702900
+      space pirates_39: -2551921860615819422
+      space pirates_62: -7239653600661986223
+      space pirates_80: 6111541398592916030
+      space pirates_13: -524151812688639830
+      space pirates_48: -5132043969280907228
+      space pirates_3: -1907131614715177007
+      space pirates_44: -8183725113155123865
+      space pirates_73: -4478679023960963216
+      space pirates_14: -292090968017096753
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -44,10 +44,8 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
     private CurrentDevice actualDevice;
     private void Start()
     {
-        playerInput.enabled=true;
 #if UNITY_ANDROID
         inputButton.interactable=false;
-        playerInput.enabled=false;
         controlPanel.text = "Gamepad options";
 #endif
         CurrentControlScheme(playerInput);

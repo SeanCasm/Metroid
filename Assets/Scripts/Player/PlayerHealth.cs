@@ -27,7 +27,6 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         return (healthRound*health<healthRound*99) ? true : false;
     }
     public bool unFreezing { get; set; }
-    public bool isDead{get;private set;}
     #endregion
     #region Unity Methods
     private void Start() {
@@ -158,7 +157,8 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
     {
         Damage(amount);
         audioPlayer.loop=false;
-        audioPlayer.ClipAndPlay(damageClip);
+        audioPlayer.clip = damageClip;
+        audioPlayer.Play();
     }
     private void Damage(int amount){
         if (health >= amount)
@@ -184,7 +184,6 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         }
     }
     private void OnDeath(){
-        isDead=true;
         StopAllCoroutines();
         player.ResetState();
         Player.Animation.Death.current.StartAnimation(Retry.Completed,_renderer.transform.eulerAngles.y,player.TransformCenter());

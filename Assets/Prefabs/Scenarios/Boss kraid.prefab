@@ -7228,7 +7228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8281506755963439119, guid: e48af5628365788498f4cdc18233dd3d, type: 3}
       propertyPath: nextzone.m_AssetGUID
-      value: 9feff8612a6624e47b5bb65bbbbcdaa2
+      value: ab65e26ea4da9d34f83094c1e8812d58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e48af5628365788498f4cdc18233dd3d, type: 3}

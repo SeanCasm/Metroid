@@ -4,6 +4,7 @@ using UnityEngine;
 using Player.Weapon;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Sensor : MonoBehaviour
 {
@@ -14,28 +15,27 @@ public class Sensor : MonoBehaviour
     [SerializeField] int weaponTierToUnlock;
     [SerializeField] int id;
     [SerializeField] Color blueDoorColor;
-    public int ID{get=>id;}
+    [SerializeField] AudioSource audioClip;
+    public int ID { get => id; }
     GameDataContainer gameDataContainer;
     SpriteRenderer sRen;
     private Animator _animator;
     public AudioClip clip;
     public AudioClip clip2;
     private bool isOpenedFirstTime;
-    private AudioSource audioClip;
     #region Unity Methods
     private void Awake()
     {
         sRen = GetComponent<SpriteRenderer>();
-        audioClip = GetComponent<AudioSource>();
         _animator = GetComponent<Animator>();
         gameDataContainer = GameDataContainer.instance;
 
-        if ((isDefault || bossDoor)  && gameDataContainer.DoorExist(id))
+        if ((isDefault || bossDoor) && gameDataContainer.DoorExist(id))
         {
             weaponTierToUnlock = 0;
             sRen.color = blueDoorColor;
             isOpenedFirstTime = true;
-            bossDoor=false;
+            bossDoor = false;
         }
         if (bossDoor) LockDoor();
 
@@ -88,21 +88,12 @@ public class Sensor : MonoBehaviour
     public void Open()
     {
         openEvent.Invoke();
+        audioClip.PlayOneShot(clip,PlayerPrefs.GetFloat("SE volume"));
     }
     public void Close()
     {
         closeEvent.Invoke();
         _animator.SetTrigger("Close");
+        audioClip.PlayOneShot(clip2,PlayerPrefs.GetFloat("SE volume"));
     }
-    public void AudioOpen()
-    {
-        audioClip.clip = clip;
-        audioClip.Play();
-    }
-    public void AudioClose()
-    {
-        audioClip.clip = clip2;
-        audioClip.Play();
-    }
-
 }

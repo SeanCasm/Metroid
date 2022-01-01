@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3552171552454182223}
   - component: {fileID: 3315859546314471129}
   m_Layer: 0
-  m_Name: Bouncing Bombs
+  m_Name: Sticky bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

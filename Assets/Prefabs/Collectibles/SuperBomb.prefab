@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7207223171471185893}
   - component: {fileID: 4862417815326061644}
   - component: {fileID: -730319872368912530}
-  - component: {fileID: -2361122379655537117}
   m_Layer: 10
   m_Name: SuperBomb
   m_TagString: Untagged
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2181901
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3694533877916086887, guid: 23d99310723061546b0df82c6462ad31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -169,15 +168,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-2361122379655537117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5728783538257747033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15398ae36b4ea8e45a2c0452d989447d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

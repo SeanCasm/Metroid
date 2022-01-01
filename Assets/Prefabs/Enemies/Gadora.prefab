@@ -302,7 +302,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 1
   invPlasma: 1
-  invCharged: 0
+  invCharged: 1
   missiles: 0
   superMissiles: 0
   beams: 0

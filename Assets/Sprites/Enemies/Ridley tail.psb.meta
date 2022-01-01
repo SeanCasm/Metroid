@@ -1995,121 +1995,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -10, y: -62}
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 1
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: 47
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 64
-  importedTextureHeight: 128
-  documentSize: {x: 200, y: 163}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 64
-  textureActualHeight: 128
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Capa 7
-    spriteName: Capa 7
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 11565969ea47d03409792b206a74ae1f
-    layerID: 9
-    mosaicPosition: {x: 4, y: 29}
-  - name: Capa 9
-    spriteName: Capa 9
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b2d946f9aa336124e9a2af6dbb7e6b5d
-    layerID: 11
-    mosaicPosition: {x: 4, y: 52}
-  - name: Capa 8
-    spriteName: Capa 8
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2d6d0e4d3db00f24294b4cd0914bd4e4
-    layerID: 10
-    mosaicPosition: {x: 4, y: 75}
-  - name: Capa 6
-    spriteName: Capa 6
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fcc93a84da7209f46817c9b798b55c1f
-    layerID: 8
-    mosaicPosition: {x: 4, y: 98}
-  - name: Capa 5
-    spriteName: Capa 5
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 13ec2ad2f91ec27419b195f6f790f890
-    layerID: 7
-    mosaicPosition: {x: 41, y: 4}
-  - name: Capa 4
-    spriteName: Capa 4
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 9611d9852abcb8443bb86b2e1a688e42
-    layerID: 6
-    mosaicPosition: {x: 41, y: 27}
-  - name: Capa 3
-    spriteName: Capa 3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a70e19668af7b46498d20a16c5cfd3eb
-    layerID: 5
-    mosaicPosition: {x: 41, y: 50}
-  - name: Capa 2
-    spriteName: Capa 2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 59eda64f171c3cd4584d381ecd12be59
-    layerID: 4
-    mosaicPosition: {x: 41, y: 73}
-  - name: Capa 1
-    spriteName: Capa 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 68c0455f4e9231f4d92bcb88c5595ba8
-    layerID: 2
-    mosaicPosition: {x: 4, y: 4}
   characterData:
     bones:
     - name: bone_1
@@ -2277,8 +2162,134 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 1
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 64
+  importedTextureHeight: 128
+  documentSize: {x: 200, y: 163}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 64
+  textureActualHeight: 128
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Capa 7
+    spriteName: Capa 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 11565969ea47d03409792b206a74ae1f
+    layerID: 9
+    mosaicPosition: {x: 4, y: 29}
+  - name: Capa 9
+    spriteName: Capa 9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b2d946f9aa336124e9a2af6dbb7e6b5d
+    layerID: 11
+    mosaicPosition: {x: 4, y: 52}
+  - name: Capa 8
+    spriteName: Capa 8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2d6d0e4d3db00f24294b4cd0914bd4e4
+    layerID: 10
+    mosaicPosition: {x: 4, y: 75}
+  - name: Capa 6
+    spriteName: Capa 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fcc93a84da7209f46817c9b798b55c1f
+    layerID: 8
+    mosaicPosition: {x: 4, y: 98}
+  - name: Capa 5
+    spriteName: Capa 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 13ec2ad2f91ec27419b195f6f790f890
+    layerID: 7
+    mosaicPosition: {x: 41, y: 4}
+  - name: Capa 4
+    spriteName: Capa 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9611d9852abcb8443bb86b2e1a688e42
+    layerID: 6
+    mosaicPosition: {x: 41, y: 27}
+  - name: Capa 3
+    spriteName: Capa 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a70e19668af7b46498d20a16c5cfd3eb
+    layerID: 5
+    mosaicPosition: {x: 41, y: 50}
+  - name: Capa 2
+    spriteName: Capa 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 59eda64f171c3cd4584d381ecd12be59
+    layerID: 4
+    mosaicPosition: {x: 41, y: 73}
+  - name: Capa 1
+    spriteName: Capa 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 68c0455f4e9231f4d92bcb88c5595ba8
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+  sharedRigPSDLayers: []
   generateGOHierarchy: 0
   textureAssetName: Ridley tail Texture
   prefabAssetName: Ridley tail Prefab
   spriteLibAssetName: Ridley tail Sprite Lib
+  skeletonAssetName: Ridley tail Skeleton
   secondarySpriteTextures: []

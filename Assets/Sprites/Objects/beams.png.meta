@@ -111,6 +111,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -120,11 +121,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -808,6 +809,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      beams_22: -3708074645100094667
+      beams_24: 6657893770769798689
+      beams_5: -224264422132340645
+      beams_0: 8813226132166169265
+      beams_11: -7550472941382305865
+      beams_26: -4223754384032259362
+      beams_20: 3117329161928284718
+      beams_3: -864346992521728030
+      beams_21: 7197149788720406248
+      beams_27: 2183476718214222350
+      beams_2: -3008786985731672919
+      beams_7: 3086281766754650022
+      beams_8: -5887574851830874244
+      beams_28: -8470403037619771882
+      beams_10: -4389689700790840645
+      beams_18: 4172045527919470226
+      beams_14: -1065171029721156181
+      beams_13: -1513116261127942503
+      beams_19: 1555915593380633493
+      beams_16: 6100613402793374524
+      beams_23: 550197025238284939
+      beams_15: 6221243194420154528
+      beams_1: -342841500392956471
+      beams_9: -3532125607399209406
+      beams_25: -4187057815155954561
+      beams_4: 2448983918405450708
+      beams_6: 3221046606929183262
+      beams_12: 1340418249766201452
+      beams_17: -5481649109184314681
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

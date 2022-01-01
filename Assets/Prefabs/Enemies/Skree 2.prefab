@@ -88,7 +88,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.009648204}
+  m_Offset: {x: 0.00000011920929, y: 0.022227913}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -99,7 +99,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15095925, y: 0.23457694}
+  m_Size: {x: 0.15095925, y: 0.1708247}
   m_EdgeRadius: 0
 --- !u!1 &4160540817514644578
 GameObject:
@@ -111,7 +111,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4160540817514644583}
   - component: {fileID: 4160540817514644582}
-  - component: {fileID: 4160540817514644581}
   - component: {fileID: 4160540817514644580}
   - component: {fileID: 4160540817514644579}
   - component: {fileID: 5888694808659608292}
@@ -177,9 +176,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 930449575
-  m_SortingLayer: 1
-  m_SortingOrder: 9
+  m_SortingLayerID: 2181901
+  m_SortingLayer: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: -7139376760406164407, guid: 04eae3ff68dfa004587569f7c74380c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -191,32 +190,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4160540817514644581
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4160540817514644578}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0044802614, y: 0.014713846}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.26}
-    newSize: {x: 0.13, y: 0.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.11502061, y: 0.12668073}
-  m_EdgeRadius: 0
 --- !u!50 &4160540817514644580
 Rigidbody2D:
   serializedVersion: 4
@@ -272,6 +245,8 @@ MonoBehaviour:
   speed: 1
   detectPlayer: 0
   stopAll: 1
+  projectil: {fileID: 2604744191709347511, guid: d61bd5d9b3c8d0447b817d4c3f8a4943, type: 3}
+  detector: {fileID: 798748158706842966}
 --- !u!1 &6357082124730199634
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: rigidCol
       value: 
-      objectReference: {fileID: 4160540817514644581}
+      objectReference: {fileID: 0}
     - target: {fileID: 5999238706005282191, guid: 270d2a303514dae408b1fc32378c6829, type: 3}
       propertyPath: freezedCol
       value: 

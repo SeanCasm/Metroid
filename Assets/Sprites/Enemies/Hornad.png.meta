@@ -138,6 +138,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -147,11 +148,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1024,6 +1025,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Hornad_15: -3539924561993943958
+      Hornad_35: 4459834235666466508
+      Hornad_4: -826103959775347478
+      Hornad_9: 3729869921122391719
+      Hornad_13: -6616960325718922539
+      Hornad_29: -7316618485535636092
+      Hornad_28: 8365764100591857026
+      Hornad_14: -2776549886055109477
+      Hornad_6: -6593447785076872817
+      Hornad_1: 6377771591887944840
+      Hornad_0: -8431610324023101731
+      Hornad_22: -607760950776434403
+      Hornad_36: 8807432171012179193
+      Hornad_3: 4596482149499103481
+      Hornad_34: 7677153359735424474
+      Hornad_7: -3606218401253291143
+      Hornad_2: -4413279383703658922
+      Hornad_16: 7581800625980014240
+      Hornad_33: 6135051822022637877
+      Hornad_37: -4705088488737842112
+      Hornad_20: 7793743326866861695
+      Hornad_17: -8451971340945265677
+      Hornad_5: 8568129056324819576
+      Hornad_18: -9059848172864483072
+      Hornad_23: -7734036700923278709
+      Hornad_27: 6540742789889279371
+      Hornad_19: -3667703003820283272
+      Hornad_11: -2872773073817331519
+      Hornad_12: -7665596147590321474
+      Hornad_30: 3877897669738335434
+      Hornad_25: 7315500180749424885
+      Hornad_10: 2965558852527578925
+      Hornad_21: 794004645177772027
+      Hornad_26: 3701348292900258069
+      Hornad_8: -8258353318287276584
+      Hornad_24: 8078568713596754249
+      Hornad_31: -1889291759602461502
+      Hornad_32: -8997863948473069991
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

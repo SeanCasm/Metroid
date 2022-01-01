@@ -13,7 +13,7 @@ public class DropManager : MonoBehaviour
     }
     private LimitedAmmo[] CheckForDrop(Gun playerI)
     {
-        return Array.FindAll(playerI.limitedAmmo,item=>item!=null && item.CheckCapacity());
+        return Array.FindAll(playerI.limitedAmmo,item=>item!=null && item.isFullCapacity);
     }
     private bool CheckForDrop(PlayerHealth playerH)
     {

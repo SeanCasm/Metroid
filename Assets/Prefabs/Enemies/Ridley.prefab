@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 33
-  col: {fileID: 0}
 --- !u!95 &256668921872687258
 Animator:
   serializedVersion: 3
@@ -355,7 +354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 33
-  col: {fileID: 143746677747306224}
 --- !u!1 &7143990052933894555
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +586,8 @@ MonoBehaviour:
   invBombs: 1
   invSuperBombs: 1
   invFreeze: 1
-  invPlasma: 0
+  invPlasma: 1
+  invSpazer: 1
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   sprites:
   - {fileID: 3285893384805320917}
@@ -617,7 +616,6 @@ MonoBehaviour:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
     halfHealth: {r: 0.8235294, g: 0.38918576, b: 0, a: 1}
     lowHealth: {r: 0.7924528, g: 0, b: 0, a: 1}
-  drop: {fileID: 11400000, guid: 339b2add36489e24c9b39d502f978f5b, type: 2}
 --- !u!114 &8695142215604625808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 33
-  col: {fileID: 9112067698128330857}
 --- !u!1 &9112067698250555844
 GameObject:
   m_ObjectHideFlags: 0

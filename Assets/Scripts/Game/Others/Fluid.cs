@@ -28,11 +28,7 @@ public class Fluid : MonoBehaviour
             pSkin = col.GetComponentInParent<SkinSwapper>();
             playerController = col.GetComponentInParent<PlayerController>();
             groundChecker = col.GetComponentInParent<Player.GroundChecker>();
-            if (!pSkin.Gravity)
-            {
-                playerController.slow2Forces = 1.75f;
-                playerController.Slow2Gravity = 2f;
-            }
+            if (!pSkin.Gravity) playerController.slow = .5f;
             else playerGravity = true;
 
         }
@@ -41,15 +37,12 @@ public class Fluid : MonoBehaviour
     private void SetSlow()
     {
         playerGravity = false;
-        playerController.slow2Forces = 1.75f;
-        playerController.Slow2Gravity = 2f;
+        playerController.slow = .5f;
     }
     private void UnsetSlow()
     {
         playerGravity = true;
-        playerController.slow2Forces = 1;
-        playerController.Slow2Gravity = 1;
-
+        playerController.slow = 1;
     }
     protected void OnTriggerExit2D(Collider2D col)
     {
@@ -57,8 +50,7 @@ public class Fluid : MonoBehaviour
         {
             if (!pSkin.Gravity)
             {
-                playerController.slow2Forces = 1;
-                playerController.Slow2Gravity = 1;
+                playerController.slow = 1;
                 groundChecker.ResetGravity();
             }
         }

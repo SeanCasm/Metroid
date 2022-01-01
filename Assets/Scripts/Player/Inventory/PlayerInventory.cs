@@ -96,12 +96,12 @@ public class PlayerInventory : MonoBehaviour
         if(CheckItem(3)){
             skin.SetGravitySuit();
             GravitySetted?.Invoke();
-            touchpadHandler.SwapSpriteSuits("gravity");
+            touchpadHandler?.SwapSpriteSuits("gravity");
         }
         else {
             skin.SetPowerSuit();
             GravityUnsetted?.Invoke();
-            touchpadHandler.SwapSpriteSuits("power");
+            touchpadHandler?.SwapSpriteSuits("power");
         }
     }
  

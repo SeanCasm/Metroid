@@ -195,6 +195,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -204,11 +205,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1480,6 +1481,64 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Kraid_final_16: 2790672823253857967
+      Kraid_final_18: -7927994020768245834
+      Kraid_final_2: -2040165807818058614
+      Kraid_final_45: -2673678919369667638
+      Kraid_final_21: 3147176993595007476
+      Kraid_final_14: 6387410485559412967
+      Kraid_final_50: -2703847434183274396
+      Kraid_final_43: 2270734492290175055
+      Kraid_final_31: -3722021989633539879
+      Kraid_final_7: 6413268145016937973
+      Kraid_final_26: 6725170546207737793
+      Kraid_final_37: 3134900148307257864
+      Kraid_final_56: -4015737777599713620
+      Kraid_final_13: -4941056388184331778
+      Kraid_final_53: -9096299720121527240
+      Kraid_final_19: 1046603855707135444
+      Kraid_final_32: -3499602207894129419
+      Kraid_final_22: 357829285751631654
+      Kraid_final_42: -2902823847299127692
+      Kraid_final_44: -3144085133273837454
+      Kraid_final_34: 7073845885168171930
+      Kraid_final_40: 2696899626923096703
+      Kraid_final_15: 3129617108913945044
+      Kraid_final_0: -1760781921426782045
+      Kraid_final_29: -2593655867845850558
+      Kraid_final_52: 2917737704705466272
+      Kraid_final_11: -2247749058878438253
+      Kraid_final_35: 902684008457885483
+      Kraid_final_54: 157639494633910840
+      Kraid_final_51: 2329057067821780990
+      Kraid_final_27: 4502860592903688666
+      Kraid_final_55: 1527214080728381250
+      Kraid_final_8: -7844005556480004464
+      Kraid_final_3: -6520147962045359330
+      Kraid_final_30: 5480370041272967952
+      Kraid_final_17: -7608201918122384632
+      Kraid_final_39: -3962660020752109539
+      Kraid_final_4: -6259199138042749309
+      Kraid_final_25: -8591562771352807829
+      Kraid_final_48: 794074370478187809
+      Kraid_final_46: -9141732380572586578
+      Kraid_final_10: 6130718900630121943
+      Kraid_final_6: 6375180307237025922
+      Kraid_final_24: -8468680980074195003
+      Kraid_final_49: 1389771706176448791
+      Kraid_final_12: 6291002386387900977
+      Kraid_final_20: 2189651836044809652
+      Kraid_final_23: 5078869310684115112
+      Kraid_final_36: 996461264559326556
+      Kraid_final_41: 5966174683650762816
+      Kraid_final_9: 7413245357746723030
+      Kraid_final_47: -4207728897949800891
+      Kraid_final_33: -748296538681401393
+      Kraid_final_5: -8890357986632287091
+      Kraid_final_1: -3095666789296791976
+      Kraid_final_38: 6549399234593699772
+      Kraid_final_28: 4273739599181439839
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

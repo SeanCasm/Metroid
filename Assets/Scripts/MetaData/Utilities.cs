@@ -112,15 +112,6 @@ public static class Utilities
         }
     }
     /// <summary>
-    /// Sets clip to audioSource and play it inmediatly
-    /// </summary>
-    /// <param name="audioSource"></param>
-    /// <param name="clip"></param>
-    public static void ClipAndPlay(this AudioSource audioSource,AudioClip clip){
-        audioSource.clip=clip;
-        audioSource.Play();
-    }
-    /// <summary>
     /// Gets a random position of list.
     /// </summary>
     /// <param name="list"></param>

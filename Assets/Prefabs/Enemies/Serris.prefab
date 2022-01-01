@@ -124,6 +124,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -143,7 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 4566538297473408965}
 --- !u!58 &4566538297473408965
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -284,6 +284,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -303,7 +304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 1204188521559075805}
 --- !u!58 &1204188521559075805
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -394,6 +394,7 @@ MonoBehaviour:
   invFreeze: 0
   invBeam: 1
   invPlasma: 1
+  invSpazer: 0
 --- !u!58 &2352330084952517190
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -423,7 +424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  col: {fileID: 2352330084952517190}
 --- !u!1 &1367119138968271876
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +548,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -567,7 +568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 5925793441485882086}
 --- !u!58 &5925793441485882086
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -852,6 +852,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 1
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -871,7 +872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 6005011226840015608}
 --- !u!58 &6005011226840015608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -935,7 +935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iD: 2
-  bossColors: {fileID: 11400000, guid: 14f77821e7e47dd40a92186793818c57, type: 2}
   roomDoors: []
   bodyRenderers:
   - {fileID: 1367119139770916335}
@@ -967,7 +966,6 @@ MonoBehaviour:
   rageSpeed: 4
   head: {fileID: 1367119138956224552}
   body: {fileID: 1367119139341842916}
-  drop: {fileID: 11400000, guid: 339b2add36489e24c9b39d502f978f5b, type: 2}
 --- !u!114 &1367119140286748053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1190,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -1211,7 +1210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 8782937039249302364}
 --- !u!58 &8782937039249302364
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1352,6 +1350,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -1371,7 +1370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 7258007475972422621}
 --- !u!58 &7258007475972422621
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1512,6 +1510,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -1531,7 +1530,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 430456289059676486}
 --- !u!58 &430456289059676486
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1672,6 +1670,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -1691,7 +1690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 7826121689201969343}
 --- !u!58 &7826121689201969343
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1832,6 +1830,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -1851,7 +1850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 4146420100148065827}
 --- !u!58 &4146420100148065827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1992,6 +1990,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -2011,7 +2010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 7836648839255618646}
 --- !u!58 &7836648839255618646
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2152,6 +2150,7 @@ MonoBehaviour:
   invSuperBombs: 1
   invFreeze: 0
   invPlasma: 1
+  invSpazer: 0
   materials: {fileID: 11400000, guid: 57f0750b5c65c8944a3209add1eaf321, type: 2}
   healthConfig:
     quarterHealth: {r: 0.8413064, g: 0.8679245, b: 0, a: 1}
@@ -2171,7 +2170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  col: {fileID: 555257720172899440}
 --- !u!58 &555257720172899440
 CircleCollider2D:
   m_ObjectHideFlags: 0

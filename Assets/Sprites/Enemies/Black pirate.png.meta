@@ -273,6 +273,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -282,11 +283,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -2104,6 +2105,90 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Black pirate_11: 7197050894255429126
+      Black pirate_13: -2506080059187033552
+      Black pirate_30: 8165008778775507890
+      Black pirate_37: -6093843840398552099
+      Black pirate_17: -2982751009777859168
+      Black pirate_62: 4288922560472821579
+      Black pirate_38: -3594921897269600890
+      Black pirate_59: 2852152800232951001
+      Black pirate_24: 4676952148220948617
+      Black pirate_42: -3278726353691673682
+      Black pirate_20: 6771220866801209374
+      Black pirate_23: 1743289539432468562
+      Black pirate_64: -548964287260914287
+      Black pirate_46: -821398463368676142
+      Black pirate_67: 6560966517869711015
+      Black pirate_10: -3581207259421529870
+      Black pirate_66: 2619554092767192562
+      Black pirate_5: 2809232444071310480
+      Black pirate_7: -21074078490737485
+      Black pirate_43: 8378003252755467042
+      Black pirate_27: 4858401180637115665
+      Black pirate_56: 2962157787032226208
+      Black pirate_69: -3234733145444259186
+      Black pirate_32: -2448960656985182918
+      Black pirate_74: -6409642270686852808
+      Black pirate_33: 7863342280461908777
+      Black pirate_36: 2782277442001521818
+      Black pirate_25: -5340692979803902082
+      Black pirate_57: -6869843364909137182
+      Black pirate_0: -5077796895730867841
+      Black pirate_12: 4027113508899389762
+      Black pirate_60: 6006687875160272836
+      Black pirate_68: 5737224041511707898
+      Black pirate_72: 5595626941495988167
+      Black pirate_48: 6851804482888354029
+      Black pirate_6: 8450323838269614788
+      Black pirate_76: 1834061122307401920
+      Black pirate_55: -2080500512861528484
+      Black pirate_52: 4589760152006495401
+      Black pirate_79: -1688669515619929790
+      Black pirate_41: -8030817209055071581
+      Black pirate_21: -1389858515092641668
+      Black pirate_8: -6335488798771715862
+      Black pirate_45: -1667306012584184857
+      Black pirate_71: 1345579858053200756
+      Black pirate_28: -592393788446764408
+      Black pirate_3: -3446320661868132827
+      Black pirate_51: -5166270747955881518
+      Black pirate_77: -6751197290030587791
+      Black pirate_80: -1178405717839119120
+      Black pirate_9: 250784225622650009
+      Black pirate_18: 6150407602644115508
+      Black pirate_50: 2392923377494778657
+      Black pirate_54: -3462850807996213327
+      Black pirate_81: -5569898876553099515
+      Black pirate_1: -4604031156628521321
+      Black pirate_35: -1329679594552063370
+      Black pirate_29: 8688504502467368242
+      Black pirate_49: -5436922561570390739
+      Black pirate_70: -2873795274730825178
+      Black pirate_75: -2028740636212002723
+      Black pirate_26: 422230813348281928
+      Black pirate_58: 5164482927053632431
+      Black pirate_16: 3863878922064787912
+      Black pirate_78: 3415728780838557827
+      Black pirate_73: 1537320703177212818
+      Black pirate_22: -3015545982590367147
+      Black pirate_2: -348636844597101606
+      Black pirate_40: 1037755259111651695
+      Black pirate_53: -2423684782739060399
+      Black pirate_63: -5000210965244962016
+      Black pirate_4: -3404354720859070485
+      Black pirate_14: 2642550898388673342
+      Black pirate_31: 5368250641306836524
+      Black pirate_34: -7518324996163835001
+      Black pirate_61: -9196895870310814580
+      Black pirate_39: 2839529835384775649
+      Black pirate_82: 6333951832451689500
+      Black pirate_65: -1913112654989624231
+      Black pirate_19: 8540245474777374188
+      Black pirate_47: 8198824454186782932
+      Black pirate_15: -4288500864489194677
+      Black pirate_44: -4633086958395491946
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

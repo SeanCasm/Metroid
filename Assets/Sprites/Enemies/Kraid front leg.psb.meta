@@ -91,6 +91,28 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: Capa 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 4
+      width: 36
+      height: 31
+    spriteID: 5ccbfaae418903f4baf020537775e688
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: -82}
   - name: Capa 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1134,86 +1156,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -41, y: -39}
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 1
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: 48
-    textureCompression: 3
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 128
-  importedTextureHeight: 128
-  documentSize: {x: 180, y: 166}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 128
-  textureActualHeight: 128
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Capa 4
-    spriteName: Capa 4
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 5ccbfaae418903f4baf020537775e688
-    layerID: 6
-    mosaicPosition: {x: 70, y: 4}
-  - name: Capa 3
-    spriteName: Capa 3
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 63a6ef8947441c74dbdf837857dd2a5f
-    layerID: 5
-    mosaicPosition: {x: 4, y: 4}
-  - name: Capa 2
-    spriteName: Capa 2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b9b620fcefb50f94f8c168388244dc7a
-    layerID: 4
-    mosaicPosition: {x: 57, y: 52}
-  - name: Capa 1
-    spriteName: Capa 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 1d85ab63467d2b64d9272f1f671e8fc7
-    layerID: 2
-    mosaicPosition: {x: 4, y: 52}
   characterData:
     bones:
     - name: bone_1
@@ -1282,8 +1224,99 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 1
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 3
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 128
+  importedTextureHeight: 128
+  documentSize: {x: 180, y: 166}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 128
+  textureActualHeight: 128
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Capa 4
+    spriteName: Capa 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5ccbfaae418903f4baf020537775e688
+    layerID: 6
+    mosaicPosition: {x: 70, y: 4}
+  - name: Capa 3
+    spriteName: Capa 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 63a6ef8947441c74dbdf837857dd2a5f
+    layerID: 5
+    mosaicPosition: {x: 4, y: 4}
+  - name: Capa 2
+    spriteName: Capa 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b9b620fcefb50f94f8c168388244dc7a
+    layerID: 4
+    mosaicPosition: {x: 57, y: 52}
+  - name: Capa 1
+    spriteName: Capa 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1d85ab63467d2b64d9272f1f671e8fc7
+    layerID: 2
+    mosaicPosition: {x: 4, y: 52}
+  sharedRigPSDLayers: []
   generateGOHierarchy: 0
   textureAssetName: Kraid front leg Texture
   prefabAssetName: Kraid front leg Prefab
   spriteLibAssetName: Kraid front leg Sprite Lib
+  skeletonAssetName: Kraid front leg Skeleton
   secondarySpriteTextures: []

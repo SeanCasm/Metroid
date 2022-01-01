@@ -135,6 +135,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -144,11 +145,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -979,6 +980,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Moto_14: -214018639080276170
+      Moto_23: -1471246442378298070
+      Moto_18: -5546742568755810223
+      Moto_17: 3053934104571480226
+      Moto_26: 1226305955693650046
+      Moto_8: -4877704236891572117
+      Moto_25: 6784675002514687568
+      Moto_7: 2570874734953896195
+      Moto_0: 1388856922576863098
+      Moto_11: 8038853165274041019
+      Moto_21: 8549732135834388525
+      Moto_22: -5881212660028296052
+      Moto_30: -1627892496719174056
+      Moto_27: -7757634403555227511
+      Moto_29: 2445489505920264368
+      Moto_35: -1742638205236986885
+      Moto_32: 5599024096567371836
+      Moto_6: 8765899726312235848
+      Moto_19: 100833788387435623
+      Moto_2: -7837453240405076311
+      Moto_5: -5017245567621902587
+      Moto_20: -6183784912032591980
+      Moto_3: -2113048674528392864
+      Moto_33: -8773242623624432835
+      Moto_4: -7860636323130802301
+      Moto_13: 4398551242636173466
+      Moto_9: 2522593044396681052
+      Moto_10: -4354048850205407253
+      Moto_15: -4203358056237630833
+      Moto_28: 8340431511720943038
+      Moto_1: 8155444238537676111
+      Moto_12: -5749006850987067374
+      Moto_24: 1329042722469992548
+      Moto_16: 2932790594312454958
+      Moto_34: 174090062195518906
+      Moto_31: -463914967384562846
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,7 +7,8 @@ public class LimitedAmmo : Ammo
      #region Properties
     public int maxAmmo { get; set; }
     public int actualAmmo { get; set; }
-
+    public bool isFullCapacity { get=> actualAmmo < maxAmmo;}
+    public bool hasAmmo{get=>actualAmmo > 0;}
     #endregion
     public LimitedAmmo(bool selected, int iD, GameObject ammoPrefab,
         int maxAmmo, int actualAmmo,Gun gun) : base(selected, iD, ammoPrefab)
@@ -54,16 +55,6 @@ public class LimitedAmmo : Ammo
         gun.viewUpdate.Invoke(this.iD,select);
         this.selected = select;
         ammoSelected = iD;
-    }
-    public bool CheckAmmo()
-    {
-        if (actualAmmo > 0) return true;
-        else return false;
-    }
-    public bool CheckCapacity()
-    {
-        if (actualAmmo < maxAmmo) return true;
-        else return false;
     }
     public void SetFullCapacity()
     {

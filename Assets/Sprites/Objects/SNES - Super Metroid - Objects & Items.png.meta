@@ -228,6 +228,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -237,11 +238,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1702,6 +1703,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SNES - Super Metroid - Objects & Items_56: 3372670990493904219
+      SNES - Super Metroid - Objects & Items_58: 2702265521708382939
+      SNES - Super Metroid - Objects & Items_3: 418980756511747012
+      SNES - Super Metroid - Objects & Items_40: 3014009188278104686
+      SNES - Super Metroid - Objects & Items_54: -8784149345001395665
+      SNES - Super Metroid - Objects & Items_10: 3883438143654965975
+      SNES - Super Metroid - Objects & Items_22: 8484999192541654860
+      SNES - Super Metroid - Objects & Items_71: 3489784131672902027
+      SNES - Super Metroid - Objects & Items_7: -7214552945346294982
+      SNES - Super Metroid - Objects & Items_60: -7923700259810204841
+      SNES - Super Metroid - Objects & Items_64: 8007444767071561657
+      SNES - Super Metroid - Objects & Items_38: 6455714572947123595
+      SNES - Super Metroid - Objects & Items_79: -7184082728024169840
+      SNES - Super Metroid - Objects & Items_70: 422595090832136130
+      SNES - Super Metroid - Objects & Items_37: 466524091102455944
+      SNES - Super Metroid - Objects & Items_19: -749557119928366212
+      SNES - Super Metroid - Objects & Items_76: 9127590948526549200
+      SNES - Super Metroid - Objects & Items_47: 8947029055128061289
+      SNES - Super Metroid - Objects & Items_15: 4944866180020501164
+      SNES - Super Metroid - Objects & Items_5: -6047410120628483946
+      SNES - Super Metroid - Objects & Items_55: 8249058004784669822
+      SNES - Super Metroid - Objects & Items_48: -5603445481288420742
+      SNES - Super Metroid - Objects & Items_9: -4168408125093721019
+      SNES - Super Metroid - Objects & Items_13: -7588473618869542630
+      SNES - Super Metroid - Objects & Items_12: -2701119431097996385
+      SNES - Super Metroid - Objects & Items_8: -242523821994941082
+      SNES - Super Metroid - Objects & Items_21: -4840942174738585013
+      SNES - Super Metroid - Objects & Items_53: 6090601720764284560
+      SNES - Super Metroid - Objects & Items_63: -5658207431906645359
+      SNES - Super Metroid - Objects & Items_16: 848112955086998302
+      SNES - Super Metroid - Objects & Items_0: -5529105562516088763
+      SNES - Super Metroid - Objects & Items_18: 7250735866035218967
+      SNES - Super Metroid - Objects & Items_65: -8725044164153162191
+      SNES - Super Metroid - Objects & Items_50: -5559562161454349968
+      SNES - Super Metroid - Objects & Items_57: -9080225761873516179
+      SNES - Super Metroid - Objects & Items_61: -7701410768069326661
+      SNES - Super Metroid - Objects & Items_66: -6066451354878948244
+      SNES - Super Metroid - Objects & Items_27: 2167825153446433220
+      SNES - Super Metroid - Objects & Items_68: 6380939395085632018
+      SNES - Super Metroid - Objects & Items_45: 2721831675974565530
+      SNES - Super Metroid - Objects & Items_49: -6975778789617534296
+      SNES - Super Metroid - Objects & Items_28: 8713359535075647126
+      SNES - Super Metroid - Objects & Items_4: -6709996260003573752
+      SNES - Super Metroid - Objects & Items_46: -3174295610184713529
+      SNES - Super Metroid - Objects & Items_14: 8227986413772207028
+      SNES - Super Metroid - Objects & Items_62: 5640822696610617358
+      SNES - Super Metroid - Objects & Items_2: -6141277309860363814
+      SNES - Super Metroid - Objects & Items_23: -4673723604235849164
+      SNES - Super Metroid - Objects & Items_25: -8003814093237196519
+      SNES - Super Metroid - Objects & Items_73: -7886169725842539505
+      SNES - Super Metroid - Objects & Items_26: 2701646522077303741
+      SNES - Super Metroid - Objects & Items_39: -7256367656741960906
+      SNES - Super Metroid - Objects & Items_59: -9184283323926638873
+      SNES - Super Metroid - Objects & Items_74: 574631718913397799
+      SNES - Super Metroid - Objects & Items_32: 492323500917238264
+      SNES - Super Metroid - Objects & Items_17: 4885791308427191209
+      SNES - Super Metroid - Objects & Items_24: 8365424814296599434
+      SNES - Super Metroid - Objects & Items_72: 131230269595478695
+      SNES - Super Metroid - Objects & Items_11: 2705456826101777092
+      SNES - Super Metroid - Objects & Items_6: 8994973938939510404
+      SNES - Super Metroid - Objects & Items_36: 6350064902736675665
+      SNES - Super Metroid - Objects & Items_20: -5783698737293472190
+      SNES - Super Metroid - Objects & Items_67: -6992488428067827619
+      SNES - Super Metroid - Objects & Items_69: 6732781538323121758
+      SNES - Super Metroid - Objects & Items_78: -6953461858415811546
+      SNES - Super Metroid - Objects & Items_1: -4392424347842619719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

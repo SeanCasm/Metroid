@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -75,8 +76,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -448,6 +449,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Metroids_13: -8304496255976415663
+      Metroids_5: 6491336026755495038
+      Metroids_4: -3321910064954758191
+      Metroids_2: -395359062883202087
+      Metroids_3: 3088784047871330213
+      Metroids_7: 1849603354630475317
+      Metroids_10: 7739518298786566659
+      Metroids_12: -8392048209432472733
+      Metroids_8: 4541062948057979725
+      Metroids_9: 6967758106570733148
+      Metroids_6: -3057661864135072010
+      Metroids_0: -7088990402741051286
+      Metroids_11: -9113769064068485228
+      Metroids_1: 8320156730320702149
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
