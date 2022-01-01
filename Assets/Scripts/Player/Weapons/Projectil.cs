@@ -75,7 +75,7 @@ namespace Player.Weapon
                 IDrop iDrop = collision.GetComponent<IDrop>();
                 if (iDrop != null) FloorCollision();
             }
-            else if (collision.CompareTag("Suelo")) FloorCollision();
+            else if (collision.CompareTag("Suelo") && collision.name!="freezed") FloorCollision();
             else if (collision.CompareTag("Crumble"))
             {
                 collision.GetComponent<CrumbleBlock>().CheckCollision(gameObject.tag, FloorCollision);

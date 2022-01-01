@@ -20,7 +20,8 @@ public class IceBeam : Beam, IBossFreezeable
                 else Reject();
             }
             return;
-        }else base.CheckCollisions(other);
+        }
+        else base.CheckCollisions(other);
     }
     new void OnBecameInvisible()
     {

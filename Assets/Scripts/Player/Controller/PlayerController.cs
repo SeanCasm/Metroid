@@ -410,7 +410,7 @@ public class PlayerController : MonoBehaviour
         groundChecker.checkFloor = true;
         status = Status.Normal;
         if (groundOverHead) GroundState = GroundState.Crouched;
-        inputManager.EnablePlayerInput();
+        if (!inputManager.lockFireInput) inputManager.EnablePlayerInput();
     }
     public void Freeze(bool freeze)
     {

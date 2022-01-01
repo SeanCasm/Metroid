@@ -101,18 +101,23 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     }
     public void FreezeMe()
     {
-        CancelInvoke("Unfreeze");
-        SetFreezedInv();
+        if(health<=0 || (freezed && !unFreezing)){
+            return;
+        }
+        CancelInvoke();
         StopAllCoroutines();
+        SetFreezedInv();
+        _renderer.color.SetColorRGB(1);
         if (rigidCol) rigidCol.enabled = false;
-        freezedCol.SetActive(true); freezed = true;
-        Invoke("Unfreeze", 4f);
+        freezedCol.SetActive(true); 
+        freezed = true;
+        unFreezing=false; 
         _renderer.material = materials.freeze;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
         components = transform.parent.gameObject.GetComponents<Behaviour>();
         Utilities.SetBehaviours(components, false);
         Physics2D.IgnoreLayerCollision(8, 9, false);
-        StartCoroutine(FreezeVisualFeedBack());
+        StartCoroutine(nameof(FreezeVisualFeedBack));
     }
 
     public void Unfreeze()
@@ -137,7 +142,7 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
             hurtbox.enabled = false;
 
             rb2d.velocity = Vector2.zero;
-
+            StopAllCoroutines();
             StartCoroutine(nameof(Dissolve));
         }
         else StartCoroutine(VisualFeedBack());
@@ -174,22 +179,26 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     {
         _renderer.color = _renderer.color.Default();
         yield return new WaitForSeconds(2f);
+        float time = 0;
         unFreezing = true;
-        while (freezed)
+        while (time<=4)
         {
             for (float i = 1; i >= 0.5f; i -= .5f)
             {
                 Color color = _renderer.color;
                 _renderer.color = color.SetColorRGB(i);
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(.05f);
+                time+=.05f;
             }
             for (float i = 0.5f; i <= 1; i += .5f)
             {
                 Color color = _renderer.color;
                 _renderer.color = color.SetColorRGB(i);
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(.05f);
+                time+=.05f;
             }
         }
+        Unfreeze();
     }
 
     public void SetDide(float side)
@@ -198,16 +207,10 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         {
             OnSideDamage?.Invoke(side);
             side = 0;
-
         }
     }
     #endregion
 }
-public enum EnemyType
-{
-    Destroyable, Pooleable
-}
-
 public interface IInvulnerable
 {
     bool InvMissiles { get; }

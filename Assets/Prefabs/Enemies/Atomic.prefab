@@ -122,8 +122,6 @@ MonoBehaviour:
   speed: 0.56
   detectPlayer: 1
   stopAll: 1
-  distance: 0.75
-  horizontalPattern: 1
   ground:
     serializedVersion: 2
     m_Bits: 8
