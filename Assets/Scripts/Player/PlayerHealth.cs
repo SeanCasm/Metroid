@@ -6,14 +6,14 @@ using Player;
 using System;
 using UnityEngine.Events;
 
-public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
+public class PlayerHealth : Health<int>, IDamageable<int>, IFreezeable
 {
     #region Properties
     [SerializeField] Materials materials;
     [SerializeField] BaseData baseData;
     [SerializeField] float invTime;
     [SerializeField] UnityEvent death;
-    public UnityEvent<int,int> healthUpdate;
+    public UnityEvent<int, int> healthUpdate;
     private int healthRound=1;
     private float currentTankSize;
     private PlayerController player;
@@ -21,50 +21,55 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
     private GameData data;
     public AudioClip damageClip;
     public int ETanks { get; set; }
-    public bool invulnerable{get;set;} public bool freezed { get; set; }
+    public bool invulnerable { get; set; }
+    public bool freezed { get; set; }
     private bool freezeInvulnerablility;
-    public bool CheckCurrentHealth(){
-        return (healthRound*health<healthRound*99) ? true : false;
+    public bool CheckCurrentHealth()
+    {
+        return (healthRound * health < healthRound * 99) ? true : false;
     }
     public bool unFreezing { get; set; }
     #endregion
     #region Unity Methods
-    private void Start() {
+    private void Start()
+    {
         anim = GetComponentInChildren<Animator>();
         _renderer = GetComponentInChildren<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         audioPlayer = GetComponent<AudioSource>();
-        player=GetComponent<PlayerController>();;
+        player = GetComponent<PlayerController>(); ;
     }
-    private void Awake() => baseData.SetHealthData(this); 
+    private void Awake() => baseData.SetHealthData(this);
     #endregion
     #region Public Methods
-    public void FreezeMe(){
-        if(!freezeInvulnerablility){
+    public void FreezeMe()
+    {
+        if (!freezeInvulnerablility)
+        {
             CancelInvoke("Unfreeze");
             StopAllCoroutines();
             Invoke("Unfreeze", 4f);
             _renderer.material = materials.freeze;
             player.Freeze(true);
-            freezed=freezeInvulnerablility = true;
+            freezed = freezeInvulnerablility = true;
             StartCoroutine(FreezeVisualFeedBack());
         }
     }
     public void Unfreeze()
     {
-        Invoke("CanBeFreeze",2.5f);
+        Invoke("CanBeFreeze", 2.5f);
         _renderer.material = materials.defaultMaterial;
         player.Freeze(false);
         freezed = false;
     }
     public void LoadHealth(GameData data)
     {
-        this.data=data;
+        this.data = data;
         healthRound += data.tanks;
         ETanks = data.tanks;
         health = 99;
         currentTankSize = 16f * ETanks;
-        healthUpdate.Invoke(health,ETanks);
+        healthUpdate.Invoke(health, healthRound-1);
     }
     /// <summary>
     /// Adds a tank to the total tanks count and refill the player health
@@ -74,7 +79,7 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         ETanks += 1;
         health = 99;
         healthRound = ETanks + 1;
-        healthUpdate.Invoke(health,ETanks);
+        healthUpdate.Invoke(health, healthRound-1);
     }
     /// <summary>
     /// Sets damage to the player
@@ -111,27 +116,27 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
             int healthNext = health + amount - 99;
             health = healthNext;
             healthRound++;
-            healthUpdate.Invoke(health,ETanks);
-            return;
         }
-        healthUpdate.Invoke(health,ETanks);
+        healthUpdate.Invoke(health, healthRound-1);
     }
 
     #endregion
     #region Private Methods
-    private IEnumerator InvulnerableFeedback(){
-        float time=0;
-        while(time<invTime){
-            _renderer.color=Color.red;
+    private IEnumerator InvulnerableFeedback()
+    {
+        float time = 0;
+        while (time < invTime)
+        {
+            _renderer.color = Color.red;
             yield return new WaitForSeconds(.1f);
             _renderer.color = Color.white;
             yield return new WaitForSeconds(.1f);
-            time+=.2f;
+            time += .2f;
         }
         invulnerable = false;
         _renderer.color = Color.white;
     }
-    private void CanBeFreeze() => freezeInvulnerablility=false;
+    private void CanBeFreeze() => freezeInvulnerablility = false;
     public IEnumerator FreezeVisualFeedBack()
     {
         _renderer.color = _renderer.color.Default();
@@ -140,8 +145,8 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
         {
             for (float i = 1; i >= 0.5f; i -= .5f)
             {
-                Color color=_renderer.color;
-                _renderer.color =color.SetColorRGB(i);
+                Color color = _renderer.color;
+                _renderer.color = color.SetColorRGB(i);
                 yield return new WaitForSeconds(0.05f);
             }
             for (float i = 0.5f; i <= 1; i += .5f)
@@ -156,15 +161,15 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
     private void SetDamage(int amount)
     {
         Damage(amount);
-        audioPlayer.loop=false;
+        audioPlayer.loop = false;
         audioPlayer.clip = damageClip;
         audioPlayer.Play();
     }
-    private void Damage(int amount){
+    private void Damage(int amount)
+    {
         if (health >= amount)
         {
             health -= amount;
-            healthUpdate.Invoke(health,ETanks);
         }
         else
         if (health < amount)
@@ -177,24 +182,26 @@ public class PlayerHealth : Health<int>,IDamageable<int>,IFreezeable
                 OnDeath();
                 return;
             }
-            if (ETanks > 0) ETanks--;
             int healthPrev = amount - health;
             health = 99 - healthPrev;
-            healthUpdate.Invoke(health,ETanks);
         }
+        healthUpdate.Invoke(health, healthRound-1);
+
     }
-    private void OnDeath(){
+    private void OnDeath()
+    {
         StopAllCoroutines();
         player.ResetState();
-        Player.Animation.Death.current.StartAnimation(Retry.Completed,_renderer.transform.eulerAngles.y,player.TransformCenter());
+        Player.Animation.Death.current.StartAnimation(Retry.Completed, _renderer.transform.eulerAngles.y, player.TransformCenter());
         AudioListener.pause = true;
         gameObject.SetActive(false);
         Time.timeScale = 0f;
     }
     public void SetFullCapacity()
     {
-        this.health=99;this.healthRound=ETanks+1;
-        healthUpdate.Invoke(health,ETanks);
+        this.health = 99; 
+        this.healthRound = ETanks + 1;
+        healthUpdate.Invoke(health, healthRound-1);
     }
 
     public void SetDide(float side)
