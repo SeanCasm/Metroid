@@ -39,7 +39,7 @@ public class BuildManager : MonoBehaviour
         var raycasters = FindObjectsOfType<GraphicRaycaster>();
         foreach (var item in raycasters)
         {
-            Destroy(item);
+            item.enabled=false;
         }
         var imageRaycasters = FindObjectsOfType<Image>();
         foreach (var item in imageRaycasters)

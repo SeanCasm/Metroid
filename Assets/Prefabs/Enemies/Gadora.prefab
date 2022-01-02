@@ -184,6 +184,8 @@ MonoBehaviour:
   stopAll: 0
   gadoraBlast: {fileID: 1843530356404384999, guid: 8558d56c18a1fa145ac9337cad46db36, type: 3}
   shootPoint: {fileID: 5087077402712921751}
+  hurtbox: {fileID: 7940985189559548081}
+  id: 0
 --- !u!95 &7426352251889530698
 Animator:
   serializedVersion: 3

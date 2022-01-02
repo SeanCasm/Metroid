@@ -8,11 +8,14 @@ public class GameDataContainer : MonoBehaviour
     public List<int> bossesDefeated { get; private set; } = new List<int>();
     public List<int> mapTerminals { get; private set; } = new List<int>();
     public List<int> doorsUnlocked { get; private set; } = new List<int>();
-
+    public List<int> gadoraKills{get;private set;}=new List<int>();
 
     private void Awake()
     {
         instance = this;
+    }
+    public void AddGadora(int id){
+        gadoraKills.Add(id);
     }
     public void AddBoss(int id)
     {
@@ -21,6 +24,9 @@ public class GameDataContainer : MonoBehaviour
     public void AddDoor(int id)
     {
         doorsUnlocked.Add(id);
+    }
+    public bool GadoraExist(int id){
+        return gadoraKills.Contains(id);
     }
     public bool DoorExist(int id)
     {

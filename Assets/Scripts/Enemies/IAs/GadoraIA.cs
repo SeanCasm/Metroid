@@ -7,33 +7,43 @@ public class GadoraIA : EnemyBase
 {
     [SerializeField]GameObject gadoraBlast;
     [SerializeField]Transform shootPoint;
-    private EnemyHealth eHealth;
+    [SerializeField] Collider2D hurtbox;
+    [SerializeField] int id;
     PlayerDetector playerDetector;
     private int[] attackPattern=new int[10];
     new void Awake()
     {
         base.Awake();
-        eHealth=GetComponentInChildren<EnemyHealth>();
+        enemyHealth=GetComponentInChildren<EnemyHealth>();
         playerDetector=GetComponentInChildren<PlayerDetector>();
         for(int i=0;i<attackPattern.Length;i++){
             attackPattern[i]=Random.Range(2,3);
         }
-
     }
     private new void OnEnable() {
+        if(GameDataContainer.instance.GadoraExist(id)){
+
+            Destroy(gameObject);
+        }
         base.OnEnable();
-        eHealth.OnDamage+=OnDamage;
+        enemyHealth.OnDamage+=OnDamage;
     }
     private void OnDisable() {
-        eHealth.OnDamage-=OnDamage;
+        enemyHealth.OnDamage-=OnDamage;
     }
+
     private void OnDamage(){
+        if(enemyHealth.MyHealth<=0){
+            GameDataContainer.instance.AddGadora(id);
+        }
+        hurtbox.enabled=false;
         anim.SetBool("Blink", true);
         Invoke("OpenEye",attackPattern[Random.Range(0,attackPattern.Length)]);
     }
      
     public void OpenEye(){
         anim.SetBool("Blink", false);
+        hurtbox.enabled=true;
     }
     public void Attack()
     {

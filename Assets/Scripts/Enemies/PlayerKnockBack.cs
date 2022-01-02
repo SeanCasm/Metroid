@@ -12,7 +12,6 @@ public class PlayerKnockBack : MonoBehaviour
     [SerializeField] Player.PowerUps.Shinespark shinespark;
     [SerializeField] PlayerHealth health;
     [SerializeField] float knockBackPowUp, knockBackPowHor;
-    [SerializeField] UnityEvent knockBack;
     private float dir;
     PlayerController player;
     #endregion
@@ -29,7 +28,6 @@ public class PlayerKnockBack : MonoBehaviour
     {
         if (!health.invulnerable)
         {
-            knockBack?.Invoke();
             Hitted(transform.position.x, xPosition,damage);
         }
     }
@@ -46,6 +44,8 @@ public class PlayerKnockBack : MonoBehaviour
         if (collisionX >= myXPosition) { dir = -1; player.leftLook = false; player.OnLeft(false); }
         else { player.leftLook = true; player.OnLeft(true); dir = 1; }
         if(!player.groundOverHead) player.SetVelocity(new Vector2(dir * knockBackPowHor, knockBackPowUp));
+        player.SetDamageState();
+        player.enabled=false;
         Invoke("EnableMovement", .5f);
     }
     private void EnableMovement()=>player.RestoreValuesAfterHit();

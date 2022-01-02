@@ -91,13 +91,13 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     }
     private void SetDefaultInvulnerabilities()
     {
-        invMissiles = defaultInv[invMissiles.ToString()];
-        invSuperBombs = defaultInv[invSuperBombs.ToString()];
-        invBeams = defaultInv[invBeams.ToString()];
-        invCharged = defaultInv[invCharged.ToString()];
-        invPlasma = defaultInv[invPlasma.ToString()];
-        invSuperMissiles = defaultInv[invSuperMissiles.ToString()];
-        invBombs = defaultInv[invBombs.ToString()];
+        invMissiles = defaultInv[nameof(invMissiles)];
+        invSuperBombs = defaultInv[nameof(invSuperBombs)];
+        invBeams = defaultInv[nameof(invBeams)];
+        invCharged = defaultInv[nameof(invCharged)];
+        invPlasma = defaultInv[nameof(invPlasma)];
+        invSuperMissiles = defaultInv[nameof(invSuperMissiles)];
+        invBombs = defaultInv[nameof(invBombs)];
     }
     public void FreezeMe()
     {
@@ -139,6 +139,7 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         OnDamage?.Invoke();
         if (health <= 0)
         {
+            OnDeath?.Invoke();
             hurtbox.enabled = false;
 
             rb2d.velocity = Vector2.zero;

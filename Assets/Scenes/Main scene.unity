@@ -9041,6 +9041,18 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 210899533}
+    - target: {fileID: 4423377101258200405, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: m_Size.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423377101258200405, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: m_Size.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423377101258200405, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5876600726841306740, guid: ff0dfbd5da8619a49bc4f9b08a3622da, type: 3}
       propertyPath: suit
       value: 
@@ -10356,8 +10368,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1309314086}
   - {fileID: 1388997443932267503}
+  - {fileID: 1309314086}
   - {fileID: 184771867}
   m_Father: {fileID: 2030108189}
   m_RootOrder: 7
@@ -58987,8 +58999,8 @@ MonoBehaviour:
     Dutch: 0
     ModeOverride: 3
     LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 0.54, y: 0.3}
+    GateFit: 0
+    m_SensorSize: {x: 1.65, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -61408,7 +61420,7 @@ RectTransform:
   - {fileID: 573764612}
   - {fileID: 483475213}
   m_Father: {fileID: 669711346}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -69839,11 +69851,11 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 2
-  m_GateFitMode: 2
+  m_GateFitMode: 0
   m_FOVAxisMode: 1
-  m_SensorSize: {x: 0.54, y: 0.3}
+  m_SensorSize: {x: 1.65, y: 1}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 1.2210001
+  m_FocalLength: 4.07
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -73311,7 +73323,7 @@ RectTransform:
   - {fileID: 3913743905084579189}
   - {fileID: 5477157333468021234}
   m_Father: {fileID: 669711346}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}

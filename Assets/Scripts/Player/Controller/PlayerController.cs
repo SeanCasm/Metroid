@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         onEnable.Invoke();
+
         if (inputManager.lockFireInput) inputManager.DisableFireInput();
         if (inputManager.HorizontalMovement == null)
         {
@@ -407,10 +408,10 @@ public class PlayerController : MonoBehaviour
     public void SetTransformCenter(Vector3 vector) => transform.position = vector;
     public void RestoreValuesAfterHit()
     {
-        groundChecker.checkFloor = true;
         status = Status.Normal;
-        if (groundOverHead) GroundState = GroundState.Crouched;
+        if (groundOverHead && _groundState!=GroundState.Balled) GroundState = GroundState.Crouched;
         if (!inputManager.lockFireInput) inputManager.EnablePlayerInput();
+        groundChecker.checkFloor =enabled=true;
     }
     public void Freeze(bool freeze)
     {

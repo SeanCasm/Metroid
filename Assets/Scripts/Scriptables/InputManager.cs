@@ -187,6 +187,7 @@ public class InputManager : MonoBehaviour, IPlayerActions, IUIActions
         inputClass.Player.Morphball.Disable();
         inputClass.Player.Tab.Disable();
         inputClass.Player.Fire.Disable();
+
     }
     //Called from UnityEvent
     public void EnablePlayerControls()
