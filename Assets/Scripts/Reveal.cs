@@ -16,8 +16,9 @@ public class Reveal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(confiner!=null && confiner is PolygonCollider2D){
-                CurrentCamera.current.SwapConfiner(confiner);
+            if (confiner != null && confiner is PolygonCollider2D)
+            {
+                CurrentCamera.current.CamHideConfiner(confiner);
             }
             StartCoroutine(FadeOut(tilemap.color));
         }
@@ -26,7 +27,7 @@ public class Reveal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(confiner!=null && confiner is PolygonCollider2D)
+            if (confiner != null && confiner is PolygonCollider2D)
             {
                 CurrentCamera.current.SetDefaultConfiner();
             }
@@ -39,15 +40,15 @@ public class Reveal : MonoBehaviour
         {
             tempColor = color;
             tempColor.a = i;
-            color= tempColor;
-            tilemap.color=color;
+            color = tempColor;
+            tilemap.color = color;
             yield return new WaitForSeconds(0.05f);
         }
         //Fixed alpha
-        tempColor=color;
-        tempColor.a=0;
-        color=tempColor;
-        tilemap.color=color;
+        tempColor = color;
+        tempColor.a = 0;
+        color = tempColor;
+        tilemap.color = color;
     }
     IEnumerator FadeIn(Color color)
     {
@@ -55,14 +56,14 @@ public class Reveal : MonoBehaviour
         {
             tempColor = color;
             tempColor.a = i;
-            color= tempColor;
-            tilemap.color=color;
+            color = tempColor;
+            tilemap.color = color;
             yield return new WaitForSeconds(0.05f);
         }
         //Fixed alpha
         tempColor = color;
         tempColor.a = 1;
         color = tempColor;
-        tilemap.color=color;
+        tilemap.color = color;
     }
 }

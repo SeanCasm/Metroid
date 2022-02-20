@@ -33,15 +33,16 @@ public class Gun : MonoBehaviour, IFulleable
     public bool canInstantiate { get; set; } = true;
     //0: missiles, 1: super missiles, 2: super bombs, 3: bouncing bomb
     public LimitedAmmo[] limitedAmmo { get; set; } = new LimitedAmmo[4];
-    public bool GunMissileAmmoSelected{
+    public bool GunMissileAmmoSelected
+    {
         get
         {
-            return Array.Exists(gunSelectedID,item=>item==pressCount);
+            return Array.Exists(gunSelectedID, item => item == pressCount);
         }
     }
     void Awake()
     {
-        limitedAmmo[0]=new LimitedAmmo(false, 0, beams.limitedAmmo[0], 15, 15, this); 
+        limitedAmmo[0] = new LimitedAmmo(false, 0, beams.limitedAmmo[0], 15, 15, this);
         inventory = GetComponent<PlayerInventory>();
         SetBeam();
     }
@@ -119,12 +120,12 @@ public class Gun : MonoBehaviour, IFulleable
                     SetLimitedShoot();
                     canShootBeams = false;
                     pool.SetBeamToPool(limitedAmmo[i].ammoPrefab);
-                    gunSprite.enabled=true;
+                    gunSprite.enabled = true;
 
                 }
                 else
                 {
-                    gunSprite.enabled=false;
+                    gunSprite.enabled = false;
                     if (pCont.GroundState != GroundState.Balled)
                     {
                         OnStand = BombSelectionOnStand;
@@ -143,7 +144,7 @@ public class Gun : MonoBehaviour, IFulleable
     }
     public void UpdateCapacity(int id, int amount)
     {
-        limitedAmmo[id].ActualAmmoCount(amount);
+        limitedAmmo[id].ActualAmmoCount(amount, gunSprite);
     }
     public void SetBombToPool(GameObject bomb)
     {
@@ -243,7 +244,7 @@ public class Gun : MonoBehaviour, IFulleable
         {
             var ammoPos = limitedAmmo[countableID];
             pool.ActiveNextPoolObject();
-            ammoPos.ActualAmmoCount(-1);
+            ammoPos.ActualAmmoCount(-1, gunSprite);
             if (ammoPos.actualAmmo <= 0) SetBeam();
         }
     }
@@ -263,7 +264,7 @@ public class Gun : MonoBehaviour, IFulleable
             if (ammo.hasAmmo && ammo.selected)
             {
                 GameObject mb = Instantiate(ammo.ammoPrefab, firePoint.position, Quaternion.identity) as GameObject;
-                ammo.ActualAmmoCount(-1);
+                ammo.ActualAmmoCount(-1, gunSprite);
             }
         }
         if ((ammo == null || !ammo.selected) && inventory.CheckItem(6))
@@ -276,12 +277,12 @@ public class Gun : MonoBehaviour, IFulleable
     {
         foreach (var i in limitedAmmo)
         {
-            if (i!=null && i.iD != index) i.Select(false);
+            if (i != null && i.iD != index) i.Select(false);
         }
 
         var lAmmo = limitedAmmo[index];
         lAmmo.Select(!lAmmo.selected);
-        gunSprite.enabled=!lAmmo.selected;
+        gunSprite.enabled = !lAmmo.selected;
 
         canShootBeams = lAmmo.selected;
         if (lAmmo.selected)
@@ -332,8 +333,8 @@ public class Gun : MonoBehaviour, IFulleable
     }
     public void DisableSelection()
     {
-        foreach (var element in limitedAmmo) if(element!=null) element.Select(false);
-        gunSprite.enabled=false;
+        foreach (var element in limitedAmmo) if (element != null) element.Select(false);
+        gunSprite.enabled = false;
         SetBeam();
     }
     /*
@@ -346,9 +347,9 @@ public class Gun : MonoBehaviour, IFulleable
     }
     public void SetFullCapacity()
     {
-        foreach (var item in limitedAmmo) 
+        foreach (var item in limitedAmmo)
         {
-            if(item!=null) item.SetFullCapacity();
+            if (item != null) item.SetFullCapacity();
         }
     }
     public void SetNormalShoot() => Fire = NormalShoot;

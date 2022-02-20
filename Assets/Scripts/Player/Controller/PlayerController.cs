@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour
     private int aimUpDown = 0;
     int[] animatorHash = new int[27];
     public float currentJumpForce { get; set; }
-    public float slow{get;set;}=1;
-    public float morphballSlow{get;set;}=1;
+    public float slow { get; set; } = 1;
+    public float morphballSlow { get; set; } = 1;
     public bool groundOverHead { get; private set; }
     public bool canMorph { get; set; } = true;
     public bool OnSpin
@@ -81,9 +81,8 @@ public class PlayerController : MonoBehaviour
                     if (status != Status.Damaged) status = Status.Normal;
                 }
             }
-            anim.SetBool(animatorHash[9], _onSpin && jumpType == JumpType.Default);//spin jump
-            anim.SetBool(animatorHash[12], jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);//screw
-            anim.SetBool(animatorHash[14], jumpType == JumpType.Space && _onSpin);//gravity jump
+            anim.SetBool(animatorHash[9],/*spin jump*/_onSpin && jumpType == JumpType.Default);
+            anim.SetBool(animatorHash[13],/*gravity jump*/jumpType == JumpType.Space && _onSpin);
         }
     }
     public GroundChecker GroundChecker { get => groundChecker; }
@@ -229,7 +228,7 @@ public class PlayerController : MonoBehaviour
     #region On ground methods
     void OnGround()
     {
-        xInput=groundChecker.WallAndSlopeCheck(xInput);
+        xInput = groundChecker.WallAndSlopeCheck(xInput);
         groundOverHead = groundChecker.GroundOverHead;
         if (xInput != 0f)
         {
@@ -321,15 +320,14 @@ public class PlayerController : MonoBehaviour
         anim.SetBool(animatorHash[8], isGrounded);
         anim.SetBool(animatorHash[9],/*spin jump*/_onSpin && jumpType == JumpType.Default);
         anim.SetBool(animatorHash[10],/*airshoot*/(gun.fireType != FireType.Normal || airShoot) && !isGrounded && !_onSpin);
-        anim.SetBool(animatorHash[11],/*screw*/jumpType == JumpType.Screw && _onSpin && _groundState == GroundState.Stand);
-        anim.SetBool(animatorHash[12],/*jump state*/onJumpingState);
-        anim.SetBool(animatorHash[13], fall);
-        anim.SetBool(animatorHash[14],/*gravity jump*/jumpType == JumpType.Space && _onSpin);
+        anim.SetBool(animatorHash[11],/*jump state*/onJumpingState);
+        anim.SetBool(animatorHash[12], fall);
+        anim.SetBool(animatorHash[13],/*gravity jump*/(jumpType == JumpType.Space || jumpType == JumpType.Screw ) && _onSpin);
 
         anim.SetFloat("VerticalVelocity", rb.velocity.y);
-        anim.SetFloat("AnimSpeed", slow>morphballSlow ? morphballSlow : slow);
+        anim.SetFloat("AnimSpeed", slow > morphballSlow ? morphballSlow : slow);
         anim.SetInteger("upDown", aimUpDown);
-        anim.SetInteger("leftRight", (int)xInput );
+        anim.SetInteger("leftRight", (int)xInput);
     }
     #region Delayed Methods
     void HyperJumpTimeAction()
@@ -344,7 +342,7 @@ public class PlayerController : MonoBehaviour
     public void OnSaveStation(Vector2 position)
     {
         ResetState();
-        SetAnimation(15, true);
+        SetAnimation(14, true);
         inputManager.DisableAll();
         SetTransformCenter(position);
         SetConstraints(RigidbodyConstraints2D.FreezeAll);
@@ -409,9 +407,9 @@ public class PlayerController : MonoBehaviour
     public void RestoreValuesAfterHit()
     {
         status = Status.Normal;
-        if (groundOverHead && _groundState!=GroundState.Balled) GroundState = GroundState.Crouched;
+        if (groundOverHead && _groundState != GroundState.Balled) GroundState = GroundState.Crouched;
         if (!inputManager.lockFireInput) inputManager.EnablePlayerInput();
-        groundChecker.checkFloor =enabled=true;
+        groundChecker.checkFloor = enabled = true;
     }
     public void Freeze(bool freeze)
     {
@@ -707,7 +705,7 @@ public class PlayerController : MonoBehaviour
         if (_onSpin && groundChecker.CheckWallJump(xInput))
         {
             IsJumping = OnSpin = true;
-            jumpTimeCounter = jumpTime/2;
+            jumpTimeCounter = jumpTime / 2;
         }
     }
     #endregion

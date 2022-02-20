@@ -13,14 +13,14 @@ namespace Player
 
         [Header("Floor config")]
         [SerializeField] LayerMask groundLayer;
-        [SerializeField] float overHeadCheck = .01f,wallJumpCheckDistance=.3f;
+        [SerializeField] float overHeadCheck = .01f, wallJumpCheckDistance = .3f;
         [SerializeField, Range(.001f, .22f)] float slopeFrontRay = 0.08f, slopeBackRay = 0.08f, groundHitSlope;
         [SerializeField, Range(-1, 1.5f)] float slopeEdgesOffset;
         [SerializeField] float wallDistance, wallEdgeOffset, edgesOffset, spinOffset;
         [SerializeField, Range(.001f, .88f)] float groundDistance = 0.18f, airGroundDistance = 0.18f;
         private RaycastHit2D frontHit, backHit;
         private Rigidbody2D rigid;
-        private bool rbStatic, isLanding, firstAir,_shootOnWalk;
+        private bool rbStatic, isLanding, firstAir, _shootOnWalk;
         float frontAngle = 0, slopeAngle = 0, backAngle = 0, curGroundDis, curSpinOffset = 1;
         private Vector2 posFrontRay, posBackRay, slopePerp;
         public bool onSlope { get; set; }
@@ -41,6 +41,7 @@ namespace Player
         {
             get
             {
+                Debug.DrawRay(capsule.bounds.max, Vector2.up*overHeadCheck);
                 return Physics2D.Raycast(capsule.bounds.max, Vector2.up, overHeadCheck, groundLayer)
                       && playerController.GroundState != GroundState.Stand;
             }
@@ -75,7 +76,7 @@ namespace Player
         }
         internal float WallAndSlopeCheck(float xInput)
         {
-            float newXInput=CheckWallInFront(xInput);
+            float newXInput = CheckWallInFront(xInput);
             CheckSlopesAndEdges(xInput);
 
             return newXInput;
@@ -113,7 +114,7 @@ namespace Player
         }
         private void OnAir()
         {
-            isLanding = wallInFront = onSlope = false;
+            isGrounded = isLanding = wallInFront = onSlope = false;
         }
         public void OnJumping()
         {
@@ -122,7 +123,7 @@ namespace Player
         }
         internal void ResetState()
         {
-            ShootOnWalk=checkFloor = isGrounded = false;
+            ShootOnWalk = checkFloor = isGrounded = false;
         }
         internal void CheckSlopesAndEdges(float xInput)
         {
@@ -185,7 +186,7 @@ namespace Player
                 rigid.gravityScale = 1 * playerController.slow;
             }
             curGroundDis = groundDistance;
-            firstAir=false;
+            firstAir = false;
             isLanding = true;
         }
         internal void FirstAir(bool onSpin, float slow, float spriteCenter)

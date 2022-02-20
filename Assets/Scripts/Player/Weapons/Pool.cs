@@ -34,10 +34,7 @@ namespace Player.Weapon{
                 var gObj = Instantiate(beamPrefab, shootPoint.position, Quaternion.identity, shootPoint);
                 gObj.GetComponent<IPooleable>().parent = shootPoint;
                 var component = gObj.GetComponent<Projectil>();
-                if(component!=null && component.IsSpazer){
-                    gObj.GetChild(0).GetComponent<IPooleable>().parent=gObj.transform;
-                    gObj.GetChild(1).GetComponent<IPooleable>().parent = gObj.transform;
-                }
+                
                 pool.Add(gObj);
                 gObj.SetActive(false);
             }
@@ -62,13 +59,6 @@ namespace Player.Weapon{
             {
                 var gObj = Instantiate(beamPrefab, shootPoint.position, Quaternion.identity, shootPoint);
                 gObj.GetComponent<IPooleable>().parent = shootPoint;
-                var component = gObj.GetComponent<Projectil>();
-
-                if (component != null && component.IsSpazer)
-                {
-                    gObj.GetChild(0).GetComponent<Projectil>().parent = gObj.transform;
-                    gObj.GetChild(1).GetComponent<Projectil>().parent = gObj.transform;
-                }
                 chargedPool.Add(gObj);
                 gObj.SetActive(false);
             }

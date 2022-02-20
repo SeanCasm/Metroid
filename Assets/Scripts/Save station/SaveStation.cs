@@ -46,7 +46,7 @@ public class SaveStation : MonoBehaviour
     void StopSave()
     {
         playerController.SetConstraints(RigidbodyConstraints2D.FreezeRotation);
-        playerController.SetAnimation(15,false);
+        playerController.SetAnimation(14,false);
         inputManager.EnableAll();
         playerController.enabled=true;
 

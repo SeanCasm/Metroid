@@ -101,7 +101,8 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
     }
     public void FreezeMe()
     {
-        if(health<=0 || (freezed && !unFreezing)){
+        if (health <= 0 || (freezed && !unFreezing))
+        {
             return;
         }
         CancelInvoke();
@@ -109,9 +110,9 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         SetFreezedInv();
         _renderer.color.SetColorRGB(1);
         if (rigidCol) rigidCol.enabled = false;
-        freezedCol.SetActive(true); 
+        freezedCol.SetActive(true);
         freezed = true;
-        unFreezing=false; 
+        unFreezing = false;
         _renderer.material = materials.freeze;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
         components = transform.parent.gameObject.GetComponents<Behaviour>();
@@ -139,9 +140,7 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         OnDamage?.Invoke();
         if (health <= 0)
         {
-            OnDeath?.Invoke();
             hurtbox.enabled = false;
-
             rb2d.velocity = Vector2.zero;
             StopAllCoroutines();
             StartCoroutine(nameof(Dissolve));
@@ -182,21 +181,21 @@ public class EnemyHealth : Health<float>, IDamageable<float>, IFreezeable, IInvu
         yield return new WaitForSeconds(2f);
         float time = 0;
         unFreezing = true;
-        while (time<=4)
+        while (time <= 4)
         {
             for (float i = 1; i >= 0.5f; i -= .5f)
             {
                 Color color = _renderer.color;
                 _renderer.color = color.SetColorRGB(i);
                 yield return new WaitForSeconds(.05f);
-                time+=.05f;
+                time += .05f;
             }
             for (float i = 0.5f; i <= 1; i += .5f)
             {
                 Color color = _renderer.color;
                 _renderer.color = color.SetColorRGB(i);
                 yield return new WaitForSeconds(.05f);
-                time+=.05f;
+                time += .05f;
             }
         }
         Unfreeze();

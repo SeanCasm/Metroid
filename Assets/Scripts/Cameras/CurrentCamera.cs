@@ -10,12 +10,14 @@ public class CurrentCamera : MonoBehaviour
     public CinemachineVirtualCamera virtualCam;
     float aux;
     CinemachineFramingTransposer framingTransposer;
-    private Collider2D curCollider;
+    private Collider2D scenarioConfiner, hideConfiner;
     private void Awake()
     {
         current = this;
-        curCollider = CMConfiner.m_BoundingShape2D;
-        Screen.SetResolution(1280,768,true);
+    }
+    private void Start()
+    {
+        Screen.SetResolution(1280, 720, true);
     }
     public void SetPosition2CenterOfPlayer()
     {
@@ -33,12 +35,23 @@ public class CurrentCamera : MonoBehaviour
         yield return new WaitForEndOfFrame();
         framingTransposer.m_DeadZoneHeight = aux;
     }
-    public void SwapConfiner(Collider2D newCol)
+    public void CamScenarioConfiner(Collider2D confiner)
     {
-        CMConfiner.m_BoundingShape2D = newCol;
+        scenarioConfiner = confiner;
+        CMConfiner.m_BoundingShape2D = scenarioConfiner;
+    }
+    public void CamHideConfiner(Collider2D confiner)
+    {
+        hideConfiner = confiner;
+        CMConfiner.m_BoundingShape2D = hideConfiner;
+    }
+    public void PlayerDeathConfiner()
+    {
+        CMConfiner.m_BoundingShape2D = null;
     }
     public void SetDefaultConfiner()
     {
-        CMConfiner.m_BoundingShape2D = curCollider;
+        CMConfiner.m_BoundingShape2D = scenarioConfiner;
+        hideConfiner = null;
     }
 }
