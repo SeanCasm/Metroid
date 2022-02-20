@@ -4,7 +4,7 @@ Metroid2D made in Unity.
 <p align="center"><img src="https://user-images.githubusercontent.com/51692672/120400439-e04aff00-c30b-11eb-90df-8f645c00e7aa.gif" alt="animated"></p>
 
 ## How to play
-Drive to download PC or Android version: https://drive.google.com/drive/folders/1kKt06KT_dy960zHwlaVa43WHQWFFbjRz?usp=sharing
+Download PC or Android version: https://drive.google.com/drive/folders/1kKt06KT_dy960zHwlaVa43WHQWFFbjRz?usp=sharing
 
 ## Content
 
